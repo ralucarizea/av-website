@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense } from "react";
+import { useTranslation } from "react-i18next";
+import "./assets/fonts/fonts.css";
+import * as React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+
+const locales = {
+  en: { title: "Engleza" },
+  ro: { title: "Romana" },
+};
 
 function App() {
+  const { t, i18n } = useTranslation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ul>
+        {Object.keys(locales).map((language) => (
+          <li key={language}>
+            {" "}
+            <button
+              style={{
+                fontWeight:
+                  i18n.resolvedLanguage === language ? "bold" : "normal",
+              }}
+              type="submit"
+              onClick={() => i18n.changeLanguage(language)}
+            >
+              {locales[language].title}
+            </button>
+          </li>
+        ))}
+      </ul>
+      <h1
+        style={{
+          fontFamily: "WardahRounded",
+          fontSize: "30px",
+          letterSpacing: "-0.5px",
+        }}
+      >
+        {t("main.header")}
+      </h1>
     </div>
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <ChakraProvider>
+      <Suspense fallback="...loading">
+        <App />
+      </Suspense>
+    </ChakraProvider>
+  );
+}
