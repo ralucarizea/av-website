@@ -22,3 +22,6 @@ import { createIcon } from "@chakra-ui/react";
 //     });
 //   };
   
+//scopul acestei functii este sa preia ca parametru un fisier de tip svg, sa extraga automat valorile atributelor width si height ale tagului <svg>, dupa care sa genereze automat 
+// o componenta noua de tip Icon nou folosind functia createIcon si inserand valorile extrase initial, adaugand de asemenea pe pozitia atributului path: (...) intregul svg insusi
+// problema intampinata: numele fiecarui Icon trb sa fie unul unic si sa fie extras astfel incat sa poata fi folosit ulterior. Cum ? Nush

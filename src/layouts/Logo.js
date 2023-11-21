@@ -4,7 +4,7 @@ import { createIcon } from "@chakra-ui/icons";
 
  const Logo = createIcon({
   displayName: "Logo",
-  viewBox: "0 0 285 230",
+  viewBox: "0 0 282 230",
   path: (
     <svg  fill="none" xmlns="http://www.w3.org/2000/svg">
       <mask

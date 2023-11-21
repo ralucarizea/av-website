@@ -1,34 +1,51 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Flex, Box, Show, Button, Icon } from "@chakra-ui/react";
+import { Flex, Box, Show, Button, Icon, Link } from "@chakra-ui/react";
 import Logo from "./Logo";
 
 const NavbarLogoContainer = styled(Flex)`
-  width: 35%;
+  width: 38%;
   align-items: center;
   min-width: 200px;
+  color: ${(props) => props.color};
+  
 `;
-const NavbarButtonsContainer = styled(Box)``;
+const NavbarButtonsContainer = styled(Flex)`
+  color: ${(props) => props.color};
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10vw;
+  width: 100%;
+`;
 const NavSidebarButton = styled(Button)``;
+const NavLink = styled(Link)`
+  font-family: "DM Sans"
+  letter-spacing: 0.5px;
+  font-size: calc(8px + 0.45vw);
+  font-weight:400;
+  margin: 0px 2vw;
+`;
 
 const Navbar = () => {
   return (
     <Flex
       width="100%"
-      minHeight="7vh"
-      maxHeight="12vh"
+      // minHeight="10vh"
+      maxHeight="12.5vh"
       height="fit-content"
       justifyContent={"space-between"}
-      color={"neutrals.dark"}
       boxShadow={"0px 1.5px 8px 1px rgba(0,0,0,0.41)"}
-      zIndex={10}
+      zIndex={15}
+      position={"sticky"}
+      top={0}
+      bg="#fff"
     >
-      <NavbarLogoContainer>
+      <NavbarLogoContainer color={"neutrals.dark"}>
         <Icon
-          margin="4px "
-          p="calc(6px + 0.75vw) 0.2vw calc(6px + 0.75vw) 0.75vw"
-          minWidth="68px"
-          width="20%"
+          margin="4px"
+          p="calc(7px + 0.55vw) 0.2vw calc(7px + 0.55vw) 0.9vw"
+          minWidth="67px"
+          width="22%"
           height="100%"
           as={Logo}
         />
@@ -68,10 +85,14 @@ const Navbar = () => {
           </Box>{" "}
         </Flex>
       </NavbarLogoContainer>
-      <Show above="sm">
-        <NavbarButtonsContainer> </NavbarButtonsContainer>
+      <Show above="md">
+        <NavbarButtonsContainer color={"accents.red"}>
+          <NavLink> SERVICII</NavLink>
+          <NavLink> ARTICOLE</NavLink>
+          <NavLink> DESPRE MINE</NavLink>
+        </NavbarButtonsContainer>
       </Show>
-      <Show below="sm">
+      <Show below="md">
         <NavSidebarButton> </NavSidebarButton>
       </Show>
     </Flex>
