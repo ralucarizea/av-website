@@ -31,6 +31,7 @@ export const theme = extendTheme({
   },
   lineHeights: {
     none: 1,
+    "2xs": 1.12,
     xs: 1.25,
     sm: 1.375,
     md: 1.5,
@@ -56,7 +57,6 @@ export const theme = extendTheme({
     min: "min-content",
     full: "100%",
     fit: "fit-content",
-    
   },
   colors: {
     accents: {
@@ -76,6 +76,14 @@ export const theme = extendTheme({
     },
   },
 });
+export const SMfont = {
+  base: "10px",
+  xs: "xs",
+  sm: "xs",
+  md: "xs",
+  lg: "sm",
+  xl: "sm",
+};
 export const MDfont = {
   base: "11px",
   xs: "xs",

@@ -4,7 +4,7 @@ import {  XXLfont } from "../../../assets/styles/theme";
 
 export default function HomeInfoBanner() {
   return (
-    <VStack bg="accents.army" color="tints.red" p="4vw" h="auto" w="100vw" justifyContent={"space-evenly"}>
+    <VStack bg="accents.army" color="tints.red" p="4vw" h="auto" maxW="100vw" justifyContent={"space-evenly"}>
       <Text
         fontSize={XXLfont}
         fontFamily={"handwritten"}

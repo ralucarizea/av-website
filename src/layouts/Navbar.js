@@ -30,6 +30,7 @@ const Navbar = () => {
   return (
     <Flex
       width="100%"
+      maxWidth="100vw"
       // minHeight="10vh"
       maxHeight="12.5vh"
       height="fit-content"

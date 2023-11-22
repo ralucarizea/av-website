@@ -4,6 +4,7 @@ import HomeHero from "./sections/HomeHero.js";
 import HomeAboutIntro from "./sections/HomeAboutIntro.js";
 import HomeInfoBanner from "./sections/HomeInfoBanner.js";
 import HomeServicesMenu from "./sections/HomeServicesMenu.js";
+import HomeParallax from "./sections/HomeParallax.js";
 function Home() {
   
     return (
@@ -13,6 +14,7 @@ function Home() {
         <HomeAboutIntro />
         <HomeInfoBanner />
         <HomeServicesMenu />
+        <HomeParallax />
 
       </>
     );

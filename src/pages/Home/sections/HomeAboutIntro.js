@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Box, Text, Show, VStack } from "@chakra-ui/react";
 import { HeroHeading } from "../../../assets/constants/styledcomponents";
 import StyledListItem from "../../../components/StyledListItem";
-import { HomeAboutIntroListContent } from "../../../assets/constants/constants";
+import { HomeAboutIntroListContent } from "../../../assets/constants/data";
 import {
   MDfont,
   XXLfont,
