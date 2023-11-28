@@ -66,8 +66,8 @@ export const theme = extendTheme({
       army: "#4B510B",
     },
     tints: {
-      yellow: "#fbdf83",
-      red: "#f5bcbc",
+      yellow: "#fdf2ce",
+      red: "#fadcdc",
       lime: "#EBF5C9",
     },
     neutrals: {
@@ -87,9 +87,9 @@ export const SMfont = {
 export const MDfont = {
   base: "11px",
   xs: "xs",
-  sm: "xs",
+  sm: "sm",
   md: "sm",
-  lg: "sm",
+  lg: "md",
   xl: "md",
 };
 export const LGfont = {
@@ -107,6 +107,14 @@ export const XXLfont = {
   md: "xl",
   lg: "xl",
   xl: "3xl",
+};
+export const XXXLfont = {
+  base: "md",
+  xs: "lg",
+  sm: "lg",
+  md: "2xl",
+  lg: "3xl",
+  xl: "4xl",
 };
 export const locales = {
   en: { title: "EN" },

@@ -10,7 +10,7 @@ import {
 } from "../../../assets/constants/constants";
 import PuzzlePieceBase from "../../../components/PuzzlePieceBase";
 import { HomeServicesMenuData } from "../../../assets/constants/data";
-import { XXLfont } from "../../../assets/styles/theme";
+import { XXLfont, XXXLfont } from "../../../assets/styles/theme";
 
 
 export default function HomeServicesMenu() {
@@ -19,12 +19,13 @@ export default function HomeServicesMenu() {
       maxW="100vw"
       py="14vw"
       px="8vw"
+      mb="14vh"
       //   bg="pink"
       alignItems={"center"}
       justifyContent={"center"}
       flexWrap={"wrap"}
     >
-        <Text mb="6vw" fontSize={{base: "24px", md: "28px", lg: "38px", xl: "48px"}} fontFamily={"handwritten"} w="100%" textAlign={"center"}> Servicii</Text>
+        <Text mb="6vw" fontSize={XXXLfont} fontFamily={"handwritten"} w="100%" textAlign={"center"} color="neutrals.dark"> Servicii</Text>
       {Object.keys(HomeServicesMenuData).map((element, index) => 
         index % 2 === 0 ? (
           <PuzzlePieceBase

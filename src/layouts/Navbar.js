@@ -36,7 +36,7 @@ const Navbar = () => {
       height="fit-content"
       justifyContent={"space-between"}
       boxShadow={"0px 1.5px 8px 1px rgba(0,0,0,0.41)"}
-      zIndex={15}
+      zIndex={8}
       position={"sticky"}
       top={0}
       bg="#fff"

@@ -1,17 +1,18 @@
 import React from "react";
 import {  Box, Text, Flex, VStack } from "@chakra-ui/react";
-import {  XXLfont } from "../../../assets/styles/theme";
+import {  XXXLfont } from "../../../assets/styles/theme";
 
 export default function HomeInfoBanner() {
   return (
-    <VStack bg="accents.army" color="tints.red" p="4vw" h="auto" maxW="100vw" justifyContent={"space-evenly"}>
+    <VStack bg="accents.army" color="tints.red" p="6vw" h="auto" maxW="100vw" justifyContent={"space-evenly"}>
       <Text
-        fontSize={XXLfont}
+        fontSize={XXXLfont}
         fontFamily={"handwritten"}
         mb={{ base: 4, md: 10, lg: 16 }}
         w="68%"
         textAlign={"center"}
         area={"header"}
+
       >
         Cum se desfasoară o sedintă
       </Text>

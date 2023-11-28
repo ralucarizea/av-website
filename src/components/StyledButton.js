@@ -4,10 +4,11 @@ import { Button } from "@chakra-ui/react";
 export default function StyledButton({ text, width, height }) {
   return (
     <Button
-    my={{base: 3, sm: 6, md: 8}}
+      fontFamily={"sans"}
+      my={{ base: 3, sm: 5, md: 8 }}
       fontSize="inherit"
       borderRadius="30px"
-      bg={"bg"}
+      bg={"#fff"}
       color={"neutrals.dark"}
       py={[3, 4]}
       px={[2, 3, 5]}

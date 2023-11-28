@@ -44,6 +44,7 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
           fontFamily={"sans"}
           fontWeight={600}
           _active={{ bgColor: `${service.color}`, color: `${service.bgColor}` }}
+          _hover={{ bgColor: `${service.color}`, color: `${service.bgColor}` }}
           _focusVisible={{
             bgColor: `${service.color}`,
             color: `${service.bgColor}`,
