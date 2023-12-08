@@ -15,17 +15,16 @@ import SocialProofCard from "./SocialProofCard";
 import { MDfont, XXLfont, XXXLfont } from "../assets/styles/theme";
 
 export default function SocialProof() {
+  
   const {
     carouselFragment,
     slideToPrevItem,
     slideToNextItem,
   } = useSpringCarousel({
-    // slideType: 'fluid',
     initialActiveItem: 0,
     initialStartingPosition: "center",
     itemsPerSlide: 2.25,
     withLoop: true,
-    // withThumbs: true,
     startEndGutter: -20,
     enableFreeScrollDrag: true,
     items: socialProofReviews.map((review, index) => ({

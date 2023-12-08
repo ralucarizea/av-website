@@ -12,15 +12,12 @@ import Footer from "../../layouts/Footer";
 function Home() {
   return (
     <>
-      <Navbar />
       <HomeHero />
       <HomeAboutIntro />
       <HomeInfoBanner />
       <HomeServicesMenu />
       <HomeParallax />
       <SocialProof />
-      <FAQ />
-      <Footer />
     </>
   );
 }

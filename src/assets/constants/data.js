@@ -1,3 +1,18 @@
+export const ROUTES = {
+  HOME: "/",
+  ABOUT: "/despre-mine",
+  BLOG: "/blog",
+  SERVICES: "/servicii",
+  INDIVIDUAL: "/servicii/psihoterapie-individuala",
+  COUPLE: "/servicii/psihoterapie-cuplu-familie",
+  HIPNO: "/servicii/hipnoterapie",
+  TRAUMA: "/servicii/trauma",
+  EVALUATION: "/servicii/evaluare-psihologica",
+  ONLINE: "/servicii/psihoterapie-online",
+  ARTICLE: "/:articleID",
+  NOT_FOUND: "*",
+};
+
 export const HomeAboutIntroListContent = {
   0: {
     text: "Sindromul stresului post-traumatic (PTSD)",
@@ -51,7 +66,6 @@ export const socialProofReviews = [
     rating: "",
     bgColor: "tints.red",
     color: "accents.red",
-
   },
   {
     name: "Andrei",
@@ -63,7 +77,6 @@ export const socialProofReviews = [
     rating: "",
     bgColor: "tints.lime",
     color: "accents.army",
-
   },
 ];
 export const HomeServicesMenuData = {
@@ -180,3 +193,123 @@ export const faqMainpage = {
     color: "neutrals.dark",
   },
 };
+
+export const resumeData = {
+  0: {
+    title: "Studii & specializări",
+    achievements: [
+      "Training Somatic Experiencing® Trainer Liane Pinto",
+      "EMDR Training, Londra, U.K, EMDR Extra, Trainer: Dr. Manda Holmshaw (UKCP)",
+      "Masterat de psihologie clinică, Universitatea Pitești, Facultatea de Științe ale Educatiei, Științe Sociale și Psihologie",
+      "Diplomă de licență în psihologie, Universitatea București, Facultatea de Psihologie și Științele Educației",
+    ],
+    years: [2021, 2018, 2014, 2011],
+    bgColor: "tints.red",
+    color: "accents.army",
+  },
+  1: {
+    title: "Experiență profesională",
+    achievements: [
+      "Psiholog specialist, Psihoterapeut, Supervizor, Formator integrativ (CPR, ECIP)",
+      "Facilitator Somatic Experiencing",
+      "Facilitator atestat TRE® (Tension and Trauma Releasing Exercises)",
+      "Membră a Federației Române de Psihoterapie (FRP)",
+    ],
+    years: ["", "", "", ""],
+    bgColor: "accents.army",
+    color: "tints.lime",
+  },
+  2: {
+    title: "Workshop-uri",
+    achievements: [
+      "Traumă și atașament. Strategii de intervenție psihoterapeutică (în cuplu și individual) ",
+      "Psihosexologie – evaluare și intervenție terapeutică",
+      "Psihotrauma – evaluare și intervenţie psihologică",
+      "Evaluarea psihologică în deteriorarea cognitivă a adultului",
+    ],
+    years: [2021, 2018, 2014, 2011],
+    bgColor: "tints.yellow",
+    color: "neutrals.dark",
+  },
+};
+
+export const performanceCounterData = {
+  0: { indicator: "pacienți", number: 248 },
+  1: { indicator: "ani de experiență", number: 12 },
+  2: { indicator: "ore de practică", number: 6000 },
+  3: { indicator: "specializări", number: 13 },
+};
+
+export const articles = [
+  {
+    titleBold: "Puterea vindecătoare a grupului:",
+    title:
+      "cum ne ajută traumele celor din jur să ni le vindecăm pe ale noastre",
+    content: " ",
+    keywords: ["traumă", "", ""],
+    img: "",
+
+  },
+  {
+    titleBold: "Prietenie la terapie -",
+    title: "gestionarea dificultăților întâmpinate în conexiunile sociale",
+    content: " ",
+    keywords: ["relații", "", ""],
+    img: "",
+
+  },
+  {
+    titleBold: "Bolile psihiatrice nu sunt obstacole imposibil de depășit",
+    title: "",
+    content: " ",
+    keywords: ["psihiatrie", "", ""],
+
+  },
+  {
+    titleBold: "Reconsolidarea încrederii în partener:",
+    title: "mai poate fi posibilă după adulter?",
+    content: " ",
+    keywords: ["cuplu", "", ""],
+    img: "",
+
+  },
+  {
+    titleBold: "Relația părinte-adolescent rebel:",
+    title: " eliminarea decalajului dintre generații",
+    content: " ",
+    keywords: ["familie", "", ""],
+    img: "",
+  
+  },
+  {
+    titleBold: "Depresia & singurătatea:",
+    title: "care o provoacă pe care?",
+    content: " ",
+    keywords: ["psihiatrie", "", ""],
+    img: "",
+
+  },
+];
+
+export const articleTags = {
+  "familie" : {
+    bgColor: "accents.yellow",
+    color: "neutrals.dark",
+  },
+  "cuplu" : {
+    bgColor: "tints.red",
+    color: "accents.red",
+  },
+  "traumă":{
+    bgColor: "accents.red",
+    color: "tints.red",
+  },
+  "psihiatrie": {
+    bgColor: "tints.yellow",
+    color: "neutrals.dark",
+  },
+  "relații": {
+    bgColor: "accents.army",
+    color: "tints.lime",
+  },
+}

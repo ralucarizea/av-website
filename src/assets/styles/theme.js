@@ -31,7 +31,7 @@ export const theme = extendTheme({
   },
   lineHeights: {
     none: 1,
-    "2xs": 1.12,
+    "2xs": 1.1,
     xs: 1.25,
     sm: 1.375,
     md: 1.5,
@@ -104,7 +104,7 @@ export const XXLfont = {
   base: "md",
   xs: "lg",
   sm: "lg",
-  md: "xl",
+  md: "lg",
   lg: "xl",
   xl: "3xl",
 };

@@ -1,13 +1,8 @@
 import React from "react";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import {
-  emptyPieceHeights,
-  emptyPieceWidths,
-  filledPieceHeights,
-  filledPieceWidths,
-} from "../assets/constants/constants";
-import { LGfont, MDfont, SMfont, XXLfont } from "../assets/styles/theme";
+
+import { MDfont, SMfont, XXLfont } from "../assets/styles/theme";
 
 export default function PuzzlePieceBase({ width, height, clipPath, service }) {
   return (
@@ -29,7 +24,7 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
           {service.title}
         </Box>
         <Box
-          m={{ base: "4px", sm: "8px", lg:"10px", xl: "16px" }}
+          m={{ base: "4px", sm: "8px", lg: "10px", xl: "16px" }}
           fontSize={SMfont}
           fontFamily={"sans"}
         >

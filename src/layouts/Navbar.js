@@ -1,15 +1,19 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Flex, Box, Show, Button, Icon, Link } from "@chakra-ui/react";
-import Logo from "./Logo";
+import {
+  Flex,
+  Show,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
+import { ROUTES } from "../assets/constants/data";
+import { Link } from "react-router-dom";
+import LogoContainer from "../components/LogoContainer";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
-const NavbarLogoContainer = styled(Flex)`
-  width: 38%;
-  align-items: center;
-  min-width: 200px;
-  color: ${(props) => props.color};
-  
-`;
 const NavbarButtonsContainer = styled(Flex)`
   color: ${(props) => props.color};
   align-items: center;
@@ -18,11 +22,12 @@ const NavbarButtonsContainer = styled(Flex)`
   width: 100%;
 `;
 const NavSidebarButton = styled(Button)``;
+
 const NavLink = styled(Link)`
-  font-family: "DM Sans"
+  font-family: "DM Sans";
   letter-spacing: 0.5px;
   font-size: calc(8px + 0.45vw);
-  font-weight:400;
+  font-weight: 400;
   margin: 0px 2vw;
 `;
 
@@ -31,8 +36,7 @@ const Navbar = () => {
     <Flex
       width="100%"
       maxWidth="100vw"
-      // minHeight="10vh"
-      maxHeight="12.5vh"
+      minHeight="10.5vh"
       height="fit-content"
       justifyContent={"space-between"}
       boxShadow={"0px 1.5px 8px 1px rgba(0,0,0,0.41)"}
@@ -41,56 +45,43 @@ const Navbar = () => {
       top={0}
       bg="#fff"
     >
-      <NavbarLogoContainer color={"neutrals.dark"}>
-        <Icon
-          margin="4px"
-          p="calc(7px + 0.55vw) 0.2vw calc(7px + 0.55vw) 0.9vw"
-          minWidth="67px"
-          width="22%"
-          height="100%"
-          as={Logo}
-        />
-        <Flex
-          flexDirection={"column"}
-          alignItems={"center"}
-          minWidth="fit-content"
-        >
-          <Box
-            fontFamily={"WardahRounded"}
-            fontSize={{
-              base: "13px",
-              sm: "16px",
-              md: "17px",
-              lg: "20px",
-              xl: "23px",
-            }}
-            mb="-2px"
-          >
-            Adina Varodi
-          </Box>
-          <Box
-            fontFamily={"DM Sans"}
-            letterSpacing={"1px"}
-            color={"firstAccent"}
-            fontWeight={600}
-            fontSize={{
-              base: "8px",
-              sm: "9px",
-              md: "10px",
-              lg: "11px",
-              xl: "12px",
-            }}
-            mt="-2px"
-          >
-            PSIHOTERAPEUT
-          </Box>{" "}
-        </Flex>
-      </NavbarLogoContainer>
+      <LogoContainer
+        color={"neutrals.dark"}
+        justifyContent={"flex-start"}
+        width={"25%"}
+      />
       <Show above="md">
         <NavbarButtonsContainer color={"accents.red"}>
-          <NavLink> SERVICII</NavLink>
-          <NavLink> ARTICOLE</NavLink>
-          <NavLink> DESPRE MINE</NavLink>
+          <NavLink>
+            <Menu>
+              <MenuButton
+                px={4}
+                py={2}
+                transition="all 0.2s"
+                _hover={{ bg: "tints.red" }}
+                _expanded={{ bg: "accents.red", color: "#fff"}}
+                _focus={{ boxShadow: "" }}
+              >
+                <Link to={ROUTES.SERVICES}>
+                  SERVICII <ChevronDownIcon />
+                </Link>
+              </MenuButton>
+              <MenuList borderRadius="0" outlineOffset={"0"} outline={"none"} >
+                <MenuItem my="4px">Psihoterapie individuală</MenuItem>
+                <MenuItem my="4px">Psihoterapie de cuplu/familie</MenuItem>
+                <MenuItem my="4px">Hipnoză</MenuItem>
+                <MenuItem my="4px">Traumă</MenuItem>
+                <MenuItem my="4px">Evaluare psihologică</MenuItem>
+                <MenuItem my="4px">Psihoterapie online</MenuItem>
+              </MenuList>
+            </Menu>
+          </NavLink>
+          <NavLink>
+            <Link to={ROUTES.BLOG}>ARTICOLE</Link>
+          </NavLink>
+          <NavLink>
+            <Link to={ROUTES.ABOUT}>DESPRE MINE</Link>
+          </NavLink>
         </NavbarButtonsContainer>
       </Show>
       <Show below="md">
