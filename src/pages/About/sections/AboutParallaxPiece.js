@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  List,
-  ListItem,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, List, ListItem, VStack } from "@chakra-ui/react";
 import React from "react";
 import {
   filledSM,
@@ -23,7 +15,7 @@ import {
   filledXL,
   filledXS,
 } from "../../../assets/constants/constants";
-import { LGfont, MDfont, SMfont, XXLfont } from "../../../assets/styles/theme";
+import { MDfont } from "../../../assets/styles/theme";
 
 export default function AboutParallaxPiece({ element }) {
   return (

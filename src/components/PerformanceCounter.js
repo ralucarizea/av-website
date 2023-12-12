@@ -8,7 +8,7 @@ export default function PerformanceCounter() {
     <Flex
       w="100%"
       h="fit"
-      my="5vw"
+      my={{base: "2vw", md: "3vw",  lg: "5vw" }}
       py="8vw"
       px={{ base: "16vw", sm: "14vw", md: "12vw",  lg: "3.75vw" }}
       justifyContent={"space-evenly"}

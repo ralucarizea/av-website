@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import img1 from "../../../assets/images/cabinet1.jpg";
-import img2 from "../../../assets/images/cabinet2.jpg";
+// import img1 from "../../../assets/images/cabinet1.jpg";
+// import img2 from "../../../assets/images/cabinet2.jpg";
 
 const ParallaxText = styled(Text)`
   min-width: 170px;
@@ -20,9 +20,16 @@ function HomeParallax() {
     <Box
       maxW="100vw"
       h="fit-content"
-      minH={{base: "100vh"}}
+      minH={{ base: "100vh" }}
       pt={{ base: "23vw", xs: "20vw", sm: "14vw", md: "10vw", lg: "8vw" }}
-      mb={{base: "10vh", xs: "13vh", sm: "17vh",  md: "25vh", lg: "40vh", xl:"80vh"}}
+      mb={{
+        base: "10vh",
+        xs: "13vh",
+        sm: "17vh",
+        md: "25vh",
+        lg: "40vh",
+        xl: "80vh",
+      }}
       border="1px solid blue"
       position="relative"
       color="accents.army"
@@ -90,7 +97,7 @@ function HomeParallax() {
         left={{ base: "10%", md: "12%", lg: "20%" }}
         w={{ base: "28vw", md: "26vw", lg: "20vw", xl: "16vw" }}
         h={{ base: "36vw", md: "36vw", lg: "27vw", xl: "20vw" }}
-        bgImage={img2}
+        bgImage={"/images/cabinet2.jpg"}
         bgSize={"cover"}
         bgPosition={"center"}
         zIndex={"-2"}
@@ -115,7 +122,7 @@ function HomeParallax() {
           lg: "26vw",
           xl: "19vw",
         }}
-        bgImage={img1}
+        bgImage={"/images/cabinet1.jpg"}
         bgSize={"cover"}
         bgPosition={"center"}
         zIndex={"-2"}

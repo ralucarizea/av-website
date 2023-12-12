@@ -1,7 +1,7 @@
-import { Button, Heading, Text, VStack, Image, Box } from "@chakra-ui/react";
+import { Button, Text, VStack, Image, Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
-import { LGfont, MDfont, SMfont, XXLfont } from "../../../assets/styles/theme";
+import { LGfont, MDfont} from "../../../assets/styles/theme";
 import { articleTags } from "../../../assets/constants/data";
 
 export const MainCategoryTag = styled(Box)`
@@ -22,13 +22,7 @@ export const MainCategoryTag = styled(Box)`
   padding: 1px 3px;
 `;
 
-export default function BlogCard({
-  titleBold,
-  title,
-  content,
-  img,
-  keywords,
-}) {
+export default function BlogCard({ titleBold, title, content, keywords, img }) {
   return (
     <VStack
       p={4}
@@ -37,6 +31,7 @@ export default function BlogCard({
       width="100%"
       fontFamily={"sans"}
       position="relative"
+      justifyContent={"space-between"}
     >
       <MainCategoryTag
         fontSize={{ base: "9.5px", md: "11px", lg: "13px" }}
@@ -46,7 +41,13 @@ export default function BlogCard({
       >
         {keywords[0].toUpperCase()}
       </MainCategoryTag>
-      <Image />
+      <Image
+        p="5% 12% 1%"
+        aspectRatio="auto"
+        maxHeight="300px"
+        width="auto"
+        src={img}
+      />
       <Text
         fontSize={LGfont}
         w="90%"
@@ -65,11 +66,16 @@ export default function BlogCard({
       </Text>
       <Text>{content}</Text>
       <Button
-      color="inherit"
+        color="inherit"
         alignSelf={"flex-end"}
         fontSize={MDfont}
         bgColor={"transparent"}
-        textDecoration={"underline"}
+        _focus={{
+          backgroundColor: articleTags[keywords[0]]?.bgColor,
+          color: articleTags[keywords[0]]?.color,
+          transition: "all 0.35s ease-out allow-discrete"
+        }}
+        _hover={{ textDecoration: "underline", }}
       >
         {" "}
         Citește mai multe

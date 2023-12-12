@@ -1,13 +1,14 @@
 import React from "react";
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Box, Button, Collapse, VStack } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { useDisclosure } from "@chakra-ui/react";
 
 import { MDfont, SMfont, XXLfont } from "../assets/styles/theme";
 
 export default function PuzzlePieceBase({ width, height, clipPath, service }) {
+  const { isOpen, onToggle } = useDisclosure();
   return (
-    <Flex
-      flexDirection={"column"}
+    <VStack
       justifyContent={"center"}
       alignItems={"center"}
       clipPath={clipPath}
@@ -17,40 +18,78 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
       height={height}
       lineHeight={"2xs"}
       mx="-0.75vw"
+      role="group"
+      onMouseEnter={onToggle}
+      onMouseLeave={onToggle}
     >
-      <Box height="40%" width="60%" textAlign={"center"}>
+      <Box width="60%" textAlign={"center"}>
         {" "}
-        <Box fontSize={XXLfont} fontFamily={"serif"}>
+        <Box
+          fontSize={{ base: "lg", lg: "xl", xl: "3xl" }}
+          fontFamily={"serif"}
+          lineHeight={"none"}
+          mb={{ base: "10px", md: "12px", lg: "14px" }}
+        >
           {service.title}
         </Box>
-        <Box
-          m={{ base: "4px", sm: "8px", lg: "10px", xl: "16px" }}
-          fontSize={SMfont}
-          fontFamily={"sans"}
-        >
-          {service.brief}
-        </Box>
-        <Button
-          bgColor="inherit"
-          color="inherit"
-          textDecoration={"underline"}
-          m="6px"
-          fontSize={MDfont}
-          fontFamily={"sans"}
-          fontWeight={600}
-          _active={{ bgColor: `${service.color}`, color: `${service.bgColor}` }}
-          _hover={{ bgColor: `${service.color}`, color: `${service.bgColor}` }}
-          _focusVisible={{
-            bgColor: `${service.color}`,
-            color: `${service.bgColor}`,
-            boxShadow: `0px 0px 28px -7px ${service.color}`,
-          }}
-          _focus={{ bgColor: `${service.color}`, color: `${service.bgColor}` }}
-        >
-          Citește mai mult
-          <ArrowForwardIcon mx="4px" />{" "}
-        </Button>
+        <Collapse in={isOpen} animateOpacity>
+          <Box>
+            <Box
+              mb={{
+                base: "10px",
+                md: "12px",
+                lg: "12px",
+                xl: "16px",
+              }}
+              fontSize={{
+                base: "11.5px",
+                md: "12px",
+                lg: "13.5px",
+                xl: "16px",
+              }}
+              fontFamily={"sans"}
+            >
+              {service.brief}
+            </Box>
+            <Button
+              role="group"
+              bgColor={service.color}
+              color={service.bgColor}
+              p="4px"
+              mb="4px"
+              h="fit"
+              fontSize={SMfont}
+              fontFamily={"sans"}
+              fontWeight={500}
+              _active={{
+                bgColor: `${service.color}`,
+                color: `${service.bgColor}`,
+              }}
+              _hover={{
+                bgColor: `${service.color}`,
+                color: `${service.bgColor}`,
+              }}
+              _focusVisible={{
+                bgColor: `${service.color}`,
+                color: `${service.bgColor}`,
+                boxShadow: `0px 0px 28px -7px ${service.color}`,
+              }}
+              _focus={{
+                bgColor: `${service.color}`,
+                color: `${service.bgColor}`,
+              }}
+              // _groupHover={{ display: "inline-block" }}
+            >
+              Citește mai mult
+              <ArrowForwardIcon
+                display="none"
+                mx="4px"
+                _groupHover={{ display: "inline-block" }}
+              />
+            </Button>
+          </Box>
+        </Collapse>
       </Box>
-    </Flex>
+    </VStack>
   );
 }

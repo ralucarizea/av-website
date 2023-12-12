@@ -1,13 +1,14 @@
 import React from "react";
 import { Flex, Box, Text, VStack } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import {  XXLfont } from "../../../assets/styles/theme";
+import { XXLfont } from "../../../assets/styles/theme";
 export const PageTitle = styled(Text)`
   font-family: "WardahRounded";
   font-size: calc(16px + 0.95vw);
   color: inherit;
   text-align: center;
-  margin: 7vw auto 3vw;
+  margin: 7vw auto 5.5vw;
+  width: 80%;
 `;
 
 export default function AboutHero() {
@@ -22,18 +23,17 @@ export default function AboutHero() {
       <PageTitle>Despre mine</PageTitle>
       <Flex
         flexDirection={{ base: "column-reverse", sm: "row" }}
-        // textAlign={{ base: "center", sm: "left" }}
         flexWrap="wrap"
         alignItems="center"
         justifyContent="center"
-        minH="80vh"
+        minH={{base: "70vh", sm: "70vh", md: "70vh",  lg: "80vh" }}
         w="inherit"
         px={[1, 3, 4, 8, 10, 12, 20]}
-        my={["60px", "60px", "76px", "80px", "88px", "100px"]}
+        mt={["60px", "60px", "76px", "60px", "80px", "100px"]}
+        mb={{base: "60px", xs: "60px", sm: "0px", md: "40px", xl: "100px"}}
         position="relative"
       >
         <Box
-          //   mx={[0, 2, 4, 4, 10, 12, 16]}
           borderRadius={"13vw 0 0 0vw"}
           position="absolute"
           top="0"
@@ -71,16 +71,18 @@ export default function AboutHero() {
             xl: "33vw",
           }}
           maxW="600px"
-          bg="accents.lime"
+          bgImage={'url("https://res.cloudinary.com/dd82hyvds/image/upload/v1702369405/portraitImages/12-1_qemncp.jpg")'}
+          bgSize="cover"
+          bgPosition="bottom"
           zIndex={1}
         />
         <VStack
-        bg="#fff"
-        boxShadow={"5px 4px 12px 2px rgba(0,0,0,0.5)"}
+          bg="#fff"
+          boxShadow={"5px 4px 12px 2px rgba(0,0,0,0.5)"}
           alignItems="flex-start"
           p={{
             base: "24px",
-            xs:"10px 14px",
+            xs: "10px 14px",
             sm: "14px 18px",
             md: "18px 20px",
             lg: "24px 28px",
@@ -102,7 +104,7 @@ export default function AboutHero() {
             lg: "26vw",
             xl: "22vw",
           }}
-          minW={{base:"240px", xs:"200px"}}
+          minW={{ base: "240px", xs: "200px" }}
           fontSize={{
             base: "11px",
             xs: "xs",
@@ -113,7 +115,7 @@ export default function AboutHero() {
           }}
           position="absolute"
           top={{
-            base: "36%",
+            base: "55%",
             xs: "13%",
             sm: "16%",
             md: "20%",

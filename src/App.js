@@ -1,23 +1,48 @@
-import * as React from "react";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { ROUTES } from "./assets/constants/data";
-
 import { ChakraProvider } from "@chakra-ui/react";
+import { HomeServicesMenuData, ROUTES } from "./assets/constants/data";
 import "./assets/fonts/fonts.css";
-import {
-  theme,
-  // locales
-} from "./assets/styles/theme";
+import { theme } from "./assets/styles/theme";
 import Home from "./pages/Home/Home";
 import Navbar from "./layouts/Navbar";
 import Blog from "./pages/Blog/Blog";
-import Services from "./pages/Services/Services";
+import ServicePage from "./pages/Services/ServicePage";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound";
 import Footer from "./layouts/Footer";
 import FAQ from "./layouts/FAQ";
-// import CustomIcon from "./components/CustomIcon";
+
+const routes = [
+  { path: ROUTES.HOME, element: <Home /> },
+  { path: ROUTES.ABOUT, element: <About /> },
+  { path: ROUTES.BLOG, element: <Blog /> },
+  {
+    path: ROUTES.INDIVIDUAL,
+    element: <ServicePage service={HomeServicesMenuData[0]} />,
+  },
+  {
+    path: ROUTES.COUPLE,
+    element: <ServicePage service={HomeServicesMenuData[1]} />,
+  },
+  {
+    path: ROUTES.TRAUMA,
+    element: <ServicePage service={HomeServicesMenuData[2]} />,
+  },
+  {
+    path: ROUTES.HIPNO,
+    element: <ServicePage service={HomeServicesMenuData[3]} />,
+  },
+  {
+    path: ROUTES.EVALUATION,
+    element: <ServicePage service={HomeServicesMenuData[4]} />,
+  },
+  {
+    path: ROUTES.ONLINE,
+    element: <ServicePage service={HomeServicesMenuData[5]} />,
+  },
+  { path: ROUTES.NOT_FOUND, element: <NotFound /> },
+];
 
 function App() {
   // const { t, i18n } = useTranslation();
@@ -26,11 +51,9 @@ function App() {
     <ChakraProvider theme={theme}>
       <Navbar />
       <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.ABOUT} element={<About />} />
-        <Route path={ROUTES.BLOG} element={<Blog />} />
-        <Route path={ROUTES.SERVICES} element={<Services />} />
-        <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
+        {routes.map(({ path, element }, index) => (
+          <Route key={index} path={path} element={element} />
+        ))}
       </Routes>
       <FAQ />
       <Footer />

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Flex, Box, Icon } from "@chakra-ui/react";
+import { Flex, Icon } from "@chakra-ui/react";
 import { useSpringCarousel } from "react-spring-carousel";
 import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
 
@@ -12,38 +12,34 @@ import "swiper/css/navigation";
 import "./styles.css";
 import { socialProofReviews } from "../assets/constants/data";
 import SocialProofCard from "./SocialProofCard";
-import { MDfont, XXLfont, XXXLfont } from "../assets/styles/theme";
+import { MDfont, XXXLfont } from "../assets/styles/theme";
 
 export default function SocialProof() {
-  
-  const {
-    carouselFragment,
-    slideToPrevItem,
-    slideToNextItem,
-  } = useSpringCarousel({
-    initialActiveItem: 0,
-    initialStartingPosition: "center",
-    itemsPerSlide: 2.25,
-    withLoop: true,
-    startEndGutter: -20,
-    enableFreeScrollDrag: true,
-    items: socialProofReviews.map((review, index) => ({
-      ...review,
-      id: review.id,
-      renderItem: (
-        <SocialProofCard
-          key={index}
-          name={review.name}
-          thumbnail={review.thumbnail}
-          reviewText={review.caption}
-          age={review.age}
-          bgColor={review.bgColor}
-          color={review.color}
-        />
-      ),
-      // renderThumb: <CarouselThumb text={index}></CarouselThumb>,
-    })),
-  });
+  const { carouselFragment, slideToPrevItem, slideToNextItem } =
+    useSpringCarousel({
+      initialActiveItem: 0,
+      initialStartingPosition: "center",
+      itemsPerSlide: 2.25,
+      withLoop: true,
+      startEndGutter: -20,
+      enableFreeScrollDrag: true,
+      items: socialProofReviews.map((review, index) => ({
+        ...review,
+        id: review.id,
+        renderItem: (
+          <SocialProofCard
+            key={index}
+            name={review.name}
+            thumbnail={review.thumbnail}
+            reviewText={review.caption}
+            age={review.age}
+            bgColor={review.bgColor}
+            color={review.color}
+          />
+        ),
+        // renderThumb: <CarouselThumb text={index}></CarouselThumb>,
+      })),
+    });
 
   const StyledSliderButton = styled.button`
     position: ${(props) => props.position};
@@ -64,10 +60,10 @@ export default function SocialProof() {
     }
   `;
   const StyledCarouselFragment = styled.div`
-    &:.use-spring-carousel-item {
-        border: 1px solid red;
+    &: .use-spring-carousel-item {
+      border: 1px solid red;
     }
-  `
+  `;
   return (
     <>
       <Flex
@@ -98,9 +94,7 @@ export default function SocialProof() {
           position={"relative"}
           userSelect={"none"}
           fontSize={MDfont}
-          pb={{base: "9vw", sm: "8vw", md: "7vw"}}
-        //   boxShadow="inset 0px 0px 10px 10px #000"
-
+          pb={{ base: "9vw", sm: "8vw", md: "7vw" }}
         >
           <StyledSliderButton
             onClick={slideToPrevItem}
@@ -109,22 +103,26 @@ export default function SocialProof() {
             bottom="0"
             zIndex={2}
           >
-            <Icon as={VscArrowLeft} fill="neutrals.dark" width={{
-                    base: "16px",
-                    xs: "18px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "24px",
-                    xl: "26px",
-                  }}
-                  height={{
-                    base: "16px",
-                    xs: "18px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "24px",
-                    xl: "26px",
-                  }} />
+            <Icon
+              as={VscArrowLeft}
+              fill="neutrals.dark"
+              width={{
+                base: "16px",
+                xs: "18px",
+                sm: "20px",
+                md: "20px",
+                lg: "24px",
+                xl: "26px",
+              }}
+              height={{
+                base: "16px",
+                xs: "18px",
+                sm: "20px",
+                md: "20px",
+                lg: "24px",
+                xl: "26px",
+              }}
+            />
           </StyledSliderButton>
           {carouselFragment}
           <StyledSliderButton
@@ -134,22 +132,26 @@ export default function SocialProof() {
             bottom="0px"
             zIndex={2}
           >
-            <Icon as={VscArrowRight} fill="neutrals.dark"  width={{
-                    base: "16px",
-                    xs: "18px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "24px",
-                    xl: "26px",
-                  }}
-                  height={{
-                    base: "16px",
-                    xs: "18px",
-                    sm: "20px",
-                    md: "20px",
-                    lg: "24px",
-                    xl: "26px",
-                  }} />
+            <Icon
+              as={VscArrowRight}
+              fill="neutrals.dark"
+              width={{
+                base: "16px",
+                xs: "18px",
+                sm: "20px",
+                md: "20px",
+                lg: "24px",
+                xl: "26px",
+              }}
+              height={{
+                base: "16px",
+                xs: "18px",
+                sm: "20px",
+                md: "20px",
+                lg: "24px",
+                xl: "26px",
+              }}
+            />
           </StyledSliderButton>
         </Flex>
       </Flex>

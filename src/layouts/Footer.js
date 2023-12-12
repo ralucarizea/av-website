@@ -1,4 +1,4 @@
-import { HStack, Text, VStack, Flex, Box } from "@chakra-ui/react";
+import {  Text, VStack, Flex, Box } from "@chakra-ui/react";
 import React from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
@@ -106,7 +106,7 @@ export default function Footer() {
           alignItems={{base: "center", sm: "flex-start"}}
           gap={{base:3, sm:5, md: 7}}
         >
-          <StyledStackBox  bg="tomato">
+          <StyledStackBox>
             <Box h="fit" >
               <FooterNavbarCategoryTag>LOCAȚIE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
@@ -129,7 +129,7 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>
-          <StyledStackBox  bg="yellow">
+          <StyledStackBox >
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
@@ -151,7 +151,7 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>
-          <StyledStackBox  bg="lime">
+          <StyledStackBox >
             <Box h="fit">
               <FooterNavbarCategoryTag>SERVICII</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>

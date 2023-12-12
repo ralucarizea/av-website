@@ -1,6 +1,6 @@
-import { Box, Divider, Flex, HStack, Show, VStack } from "@chakra-ui/react";
+import { Box, Divider, HStack, Show, VStack } from "@chakra-ui/react";
 import React from "react";
-import { MDfont, XXXLfont } from "../../../assets/styles/theme";
+import { MDfont } from "../../../assets/styles/theme";
 
 export default function AboutBanner() {
   return (
@@ -14,19 +14,27 @@ export default function AboutBanner() {
       fontFamily={"sans"}
       fontSize={MDfont}
     >
-      <Show above="md"><Divider w="99%" /></Show>
+      <Show above="md">
+        <Divider w="99%" />
+      </Show>
       <HStack
-        px={{ base: "2vw", sm:"2vw", md: "4vw", lg: "4vw" }}
+        px={{ base: "2vw", sm: "2vw", md: "4vw", lg: "4vw" }}
         mt="1vw"
         w="100%"
         justifyContent={"space-between"}
         gap="5%"
-        flexDirection={{base:"column", sm:"row"}}
+        flexDirection={{ base: "column", sm: "row" }}
       >
         <Box
           w="100%"
-          my={{base:"3vw", md:"1vw"}}
-          fontSize={{ base: "24px", xs:"28px",sm: "32px", md: "40px", lg: "55px" }}
+          my={{ base: "3vw", md: "1vw" }}
+          fontSize={{
+            base: "24px",
+            xs: "28px",
+            sm: "32px",
+            md: "40px",
+            lg: "55px",
+          }}
           lineHeight={"2xs"}
           fontFamily={"serif"}
         >

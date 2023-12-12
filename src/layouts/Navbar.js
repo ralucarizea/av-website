@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "@emotion/styled";
 import {
   Flex,
@@ -8,11 +8,23 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  useDisclosure,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerHeader,
+  DrawerBody,
+  DrawerFooter,
+  Input,
+  Icon,
+  VStack,
 } from "@chakra-ui/react";
 import { ROUTES } from "../assets/constants/data";
 import { Link } from "react-router-dom";
 import LogoContainer from "../components/LogoContainer";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
+import SidebarButton from "../components/SidebarButton";
 
 const NavbarButtonsContainer = styled(Flex)`
   color: ${(props) => props.color};
@@ -21,17 +33,27 @@ const NavbarButtonsContainer = styled(Flex)`
   padding-right: 10vw;
   width: 100%;
 `;
-const NavSidebarButton = styled(Button)``;
-
-const NavLink = styled(Link)`
+const NavSidebarButton = styled(Link)`
   font-family: "DM Sans";
   letter-spacing: 0.5px;
-  font-size: calc(8px + 0.45vw);
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   margin: 0px 2vw;
 `;
 
+const NavLink = styled(Link)`
+  font-family: "DM Sans";
+  letter-spacing: -1px;
+  font-size: calc(8px + 0.45vw);
+  font-weight: 400;
+  margin: 0px 2vw;
+  color: inherit;
+`;
+
 const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
+
   return (
     <Flex
       width="100%"
@@ -50,7 +72,7 @@ const Navbar = () => {
         justifyContent={"flex-start"}
         width={"25%"}
       />
-      <Show above="md">
+      <Show above="sm">
         <NavbarButtonsContainer color={"accents.red"}>
           <NavLink>
             <Menu>
@@ -59,20 +81,30 @@ const Navbar = () => {
                 py={2}
                 transition="all 0.2s"
                 _hover={{ bg: "tints.red" }}
-                _expanded={{ bg: "accents.red", color: "#fff"}}
+                _expanded={{ bg: "accents.red", color: "#fff" }}
                 _focus={{ boxShadow: "" }}
               >
-                <Link to={ROUTES.SERVICES}>
-                  SERVICII <ChevronDownIcon />
-                </Link>
+                SERVICII <ChevronDownIcon />
               </MenuButton>
-              <MenuList borderRadius="0" outlineOffset={"0"} outline={"none"} >
-                <MenuItem my="4px">Psihoterapie individuală</MenuItem>
-                <MenuItem my="4px">Psihoterapie de cuplu/familie</MenuItem>
-                <MenuItem my="4px">Hipnoză</MenuItem>
-                <MenuItem my="4px">Traumă</MenuItem>
-                <MenuItem my="4px">Evaluare psihologică</MenuItem>
-                <MenuItem my="4px">Psihoterapie online</MenuItem>
+              <MenuList borderRadius="0" outlineOffset={"0"} outline={"none"}>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.INDIVIDUAL}>Psihoterapie individuală</Link>
+                </MenuItem>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.COUPLE}>Psihoterapie de cuplu/familie</Link>
+                </MenuItem>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.HIPNO}>Hipnoză</Link>
+                </MenuItem>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.TRAUMA}>Traumă</Link>
+                </MenuItem>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.EVALUATION}>Evaluare psihologică</Link>
+                </MenuItem>
+                <MenuItem my="4px">
+                  <Link to={ROUTES.ONLINE}>Psihoterapie online</Link>
+                </MenuItem>
               </MenuList>
             </Menu>
           </NavLink>
@@ -84,8 +116,69 @@ const Navbar = () => {
           </NavLink>
         </NavbarButtonsContainer>
       </Show>
-      <Show below="md">
-        <NavSidebarButton> </NavSidebarButton>
+      <Show below="sm">
+        <Button
+          mr="16px"
+          alignSelf="center"
+          bg="transparent"
+          ref={btnRef}
+          onClick={onOpen}
+          // border="0.5px solid"
+          borderColor=""
+        >
+          <Icon w="20px" h="20px" as={HamburgerIcon} color="neutrals.dark" />
+        </Button>
+        <Drawer
+          isOpen={isOpen}
+          placement="right"
+          onClose={onClose}
+          finalFocusRef={btnRef}
+        >
+          <DrawerOverlay />
+          <DrawerContent width="80%" color="neutrals.dark">
+            <DrawerCloseButton color="neutrals.dark" mt="3%" />
+
+            <DrawerBody>
+              <VStack
+                my="30vw"
+                h="50%"
+                alignItems={"flex-start"}
+                justifyContent={"space-evenly"}
+              >
+                <Link to={ROUTES.INDIVIDUAL} onClick={onClose}>
+                  <SidebarButton
+                    text={"Psihoterapie individuală"}
+                    color="accents.red"
+                  />
+                </Link>
+                <Link to={ROUTES.COUPLE} onClick={onClose}>
+                  <SidebarButton
+                    text={"Psihoterapie de cuplu/familie"}
+                    color="accents.red"
+                  />
+                </Link>
+                <Link to={ROUTES.HIPNO} onClick={onClose}>
+                  <SidebarButton text={"Hipnoză"} color="accents.red" />
+                </Link>
+                <Link to={ROUTES.TRAUMA} onClick={onClose}>
+                  <SidebarButton text={"Traumă"} color="accents.red" />
+                </Link>
+                <Link to={ROUTES.EVALUATION} onClick={onClose}>
+                  <SidebarButton
+                    text={"Evaluare psihologică"}
+                    color="accents.red"
+                  />
+                </Link>
+                <Link to={ROUTES.ONLINE} >
+                  <SidebarButton
+                    text={"Psihoterapie online"}
+                    color="accents.red"
+                  />
+                </Link>
+              </VStack>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
       </Show>
     </Flex>
   );

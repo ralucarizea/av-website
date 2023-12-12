@@ -19,7 +19,8 @@ export default function StyledButton({ text, width, height }) {
       _hover={{
         backgroundColor: "tints.red",
         color: "accents.red",
-        borderColor: "tints.red",
+        borderColor: "transparent",
+        boxShadow: "0px 7px 16px 1px rgb(210 30 31 / 45%)",
       }}
     >
       {text}

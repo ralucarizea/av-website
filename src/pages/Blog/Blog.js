@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Flex, Box, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { SimpleGrid, VStack } from "@chakra-ui/react";
 import { articles } from "../../assets/constants/data";
 import { PageTitle } from "../About/sections/AboutHero";
 import BlogCard from "./sections/BlogCard";
@@ -19,9 +19,14 @@ export default function Blog() {
       px={{ base: "36px", sm: "48px", lg: "64px" }}
     >
       <PageTitle>Articole</PageTitle>
-      <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={5}>
+      <SimpleGrid
+        my={{ base: "10vw", sm: "8vw", lg: "6vw" }}
+        columns={{ base: 1, sm: 2, lg: 3 }}
+        columnGap={4}
+        rowGap={8}
+      >
         {articles.map((article, index) => (
-          <BlogCard key={index} {...article} />
+          <BlogCard key={index} img={article.img} {...article} />
         ))}
       </SimpleGrid>
     </VStack>

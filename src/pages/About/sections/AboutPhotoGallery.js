@@ -1,13 +1,15 @@
-import { Box, Text, VStack, Flex, Image } from "@chakra-ui/react";
+import { Text, VStack, Image } from "@chakra-ui/react";
 import React from "react";
 import { MDfont, XXXLfont } from "../../../assets/styles/theme";
 import styled from "@emotion/styled";
 import Marquee from "react-fast-marquee";
 
+//next update needed : dynamically import images from the folder !!!!!!!!!
+
 export const StyledMarqueeItem = styled(Image)`
   aspect-ratio: auto;
   width: auto;
-  max-width: 350px;
+  max-width: 3200px;
   max-height: 250px;
   margin-left: 16px;
   src: ${(props) => props.src};
@@ -23,18 +25,8 @@ export const StyledMarqueeItem = styled(Image)`
     margin-left: 10px;
   }
 `;
-// export const StyledMarqueeList = styled.ul`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1rem;
-// `;
-// export const StyledMarqueeContainer = styled.div`
-//   border: 2px solid blue;
-//   margin: 0 24px;
-//   width: auto;
-// `;
 
-export default function AboutPhotoGallery() {
+function AboutPhotoGallery() {
   return (
     <VStack
       my={{ base: "33%", sm: "20vw", md: "18vw", lg: "15vw" }}
@@ -44,7 +36,7 @@ export default function AboutPhotoGallery() {
       alignItems={"flex-end"}
     >
       <VStack
-        mb={{base: "28px", sm:"40px", md: "64px", lg: "70px"}}
+        mb={{ base: "28px", sm: "40px", md: "64px", lg: "70px" }}
         pl={{
           base: "24px",
           xs: "48px",
@@ -63,9 +55,9 @@ export default function AboutPhotoGallery() {
         <Text>un simplu om</Text>
       </VStack>
       <VStack
-        mr={{ base: "24px", sm: "40px", md: "60px"}}
+        mr={{ base: "24px", sm: "40px", md: "60px" }}
         h="fit-content"
-        w={{ base: "100vw", sm: "85vw", md: "75vw"}}
+        w={{ base: "100vw", sm: "85vw", md: "75vw" }}
         justifyContent={"center"}
         overflow={"hidden"}
       >
@@ -78,44 +70,48 @@ export default function AboutPhotoGallery() {
           speed="25"
         >
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/2.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369366/personalGallery/20-min_vp3x0x.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/3.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369364/personalGallery/19-min_nc0end.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/4.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369363/personalGallery/18-min_gaasjj.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/5.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369362/personalGallery/17-min_jvs05y.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/6.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369361/personalGallery/16-min_mnk9kw.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/7.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369360/personalGallery/15-min_ag5r2z.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/8.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369359/personalGallery/14-min_vvj0ag.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/9.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369358/personalGallery/13-min_lqqt6h.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/10.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369358/personalGallery/12-min_qd24yw.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/11.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369357/personalGallery/11-min_cvgajs.jpg`}
+            alt={``}
+          />
+          <StyledMarqueeItem
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369356/personalGallery/10-min_gu0e48.jpg`}
+            alt={``}
           />
         </Marquee>
         <Marquee
@@ -127,47 +123,49 @@ export default function AboutPhotoGallery() {
           speed="25"
         >
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/12.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369355/personalGallery/9-min_yrt0jz.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/13.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369354/personalGallery/8-min_ymhvde.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/14.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369353/personalGallery/7-min_syikam.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/15.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369353/personalGallery/6-min_hf7ncv.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/16.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369352/personalGallery/5-min_ttvtpf.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/17.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369351/personalGallery/4-min_vydbee.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/18.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369350/personalGallery/3-min_hxlz1y.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/19.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369350/personalGallery/2-min_e8dilq.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/20.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369349/personalGallery/1-min_kyc8ev.jpg`}
+            alt={``}
           />
           <StyledMarqueeItem
-            src={require("../../../assets/images/memories/21.jpg")}
-            alt=""
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369349/personalGallery/0-min_fib9e2.jpg`}
+            alt={``}
           />
         </Marquee>
       </VStack>
     </VStack>
   );
 }
+
+export default AboutPhotoGallery;

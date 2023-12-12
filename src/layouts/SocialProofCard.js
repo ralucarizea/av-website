@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { Box, VStack } from "@chakra-ui/react";
 import "./styles.css";
 import { MDfont } from "../assets/styles/theme";
-// import { ReactComponent as PuzzleReview } from "../assets/images/puzzleReview-green.svg";
 
 export default function SocialProofCard({
   name,

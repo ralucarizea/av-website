@@ -8,7 +8,7 @@ export const CaptionBox = styled(Box)`
   height: 100%;
   padding: ${(props) => props.p};
   min-width: 350px;
-  font-size: calc(12px + 0.12vw);
+  font-size: calc(12.5px + 0.15vw);
 
   @media only screen and (max-width: 550px) {
     min-width: fit-content;
@@ -30,6 +30,8 @@ export const CaptionText = styled(Box)`
   margin: 0 auto;
   width: 80%;
   min-width: 300px;
+  font-family: "DM Sans";
+  font-weight: 400;
 
   @media only screen and (max-width: 750px) {
     width: 100%;
@@ -46,6 +48,7 @@ export default function AboutTherapeuticStyle() {
       color="neutrals.dark"
       flexWrap={"wrap"}
       mx={{ base: "44px", md: "8vw", lg: "10vw" }}
+      my={{base: "40px", }}
       justifyContent="center"
     >
       <Text
@@ -64,10 +67,10 @@ export default function AboutTherapeuticStyle() {
           <Icon
             transform={`rotate(0deg)`}
             opacity="0.6"
-            top="-130%"
-            left="-17%"
-            w={{ base: "18vw", md: "12vw", xl: "10vw" }}
-            h={{ base: "18vw", md: "12vw", xl: "10vw" }}
+            top={{ base: "-100%", xs: "-90%", sm: "-80%", md: "-130%" }}
+            left={{ base: "-2%", xs: "-5%", md: "-17%" }}
+            w={{ base: "25vw", xs: "20vw", sm: "18vw", md: "13vw", xl: "10vw" }}
+            h={{ base: "25vw", xs: "20vw", sm: "18vw", md: "13vw", xl: "10vw" }}
             as={HiPuzzle}
             color={"tints.lime"}
             position="absolute"
@@ -88,10 +91,10 @@ export default function AboutTherapeuticStyle() {
           <Icon
             transform={`rotate(180deg)`}
             opacity="0.45"
-            top="0%"
-            right="-8%"
-            w={{ base: "18vw", md: "12vw", xl: "10vw" }}
-            h={{ base: "18vw", md: "12vw", xl: "10vw" }}
+            top={{ base: "-40%", xs: "-50%", sm: "-80%", md: "-15%" }}
+            right={{ base: "-2%", xs: "5%", sm: "-3%", md: "-15%" }}
+            w={{ base: "24vw", xs: "20vw", md: "12vw", xl: "10vw" }}
+            h={{ base: "24vw", xs: "20vw", md: "12vw", xl: "10vw" }}
             as={HiPuzzle}
             color={"tints.yellow"}
             position="absolute"
@@ -112,10 +115,10 @@ export default function AboutTherapeuticStyle() {
           <Icon
             transform={`rotate(270deg)`}
             opacity="0.5"
-            top="-20%"
-            right="7%"
-            w={{ base: "18vw", md: "12vw", xl: "10vw" }}
-            h={{ base: "18vw", md: "12vw", xl: "10vw" }}
+            top={{ base: "-40%", xs: "-50%", sm: "-80%", md: "140%" }}
+            right={{ base: "-2%", xs: "5%", sm: "-3%", md: "-6%" }}
+            w={{ base: "24vw", xs: "20vw", md: "12vw", xl: "10vw" }}
+            h={{ base: "24vw", xs: "20vw", md: "12vw", xl: "10vw" }}
             as={HiPuzzle}
             color={"tints.red"}
             position="absolute"
@@ -149,9 +152,9 @@ export default function AboutTherapeuticStyle() {
         <CaptionText>
           {" "}
           Connect the apps your team already uses into your Trello workflow or
-          add a Power-Up to fine-tune your specific needs.  We stand out from the rest by providing
-          reward-winning 24/7 support, fast hosting, dependable services, and
-          affordable pricing worldwide.
+          add a Power-Up to fine-tune your specific needs. We stand out from the
+          rest by providing reward-winning 24/7 support, fast hosting,
+          dependable services, and affordable pricing worldwide.
         </CaptionText>
       </CaptionBox>
       <CaptionTitle></CaptionTitle>

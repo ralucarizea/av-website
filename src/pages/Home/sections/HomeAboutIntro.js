@@ -1,63 +1,62 @@
 import React from "react";
-import { Flex, Box, Text, Show, VStack } from "@chakra-ui/react";
+import { Flex, Box, Text, Show, VStack, Image } from "@chakra-ui/react";
 import { HeroHeading } from "../../../assets/constants/styledcomponents";
 import StyledListItem from "../../../components/StyledListItem";
 import { HomeAboutIntroListContent } from "../../../assets/constants/data";
-import {
-  MDfont,
-  XXLfont,
-  LGfont,
-} from "../../../assets/styles/theme";
+import { MDfont, XXLfont, LGfont } from "../../../assets/styles/theme";
 
 function HomeAboutIntro() {
   return (
     <Flex
       maxW="100vw"
       h="fit"
-      px={[1, 3, 4, 8, 10, 10, 16]}
+      px={[4, 5, 6, 8, 10, 10, 16]}
       py={[16, 20, 22, 24, 20, 28]}
       justifyContent={"center"}
       flexWrap="wrap"
       color={"neutrals.dark"}
       fontSize={MDfont}
+      gap={{ md: 6, lg: 14, xl: 20 }}
+      fontFamily={"sans"}
+      lineHeight={"sm"}
     >
-      <Box
-        // mr={[0, 3, 4, 6, 7, 10]}
-        mr={{ base: 0, md: 8, lg: 12 }}
-        mb={{ base: 3, sm: 2, md: 3 }}
+      <Image
         h={{
-          base: "35vh",
-          xs: "36vh",
-          sm: "48vh",
-          md: "60vh",
-          lg: "68vh",
-          xl: "72vh",
+          base: "45vh",
+          xs: "52vh",
+          sm: "64vh",
+          md: "70vh",
+          lg: "74vh",
+          xl: "75vh",
         }}
-        minW="220px"
+        minW="280px"
+        minH="400px"
         w={{
-          base: "50vw",
-          xs: "46vw",
-          sm: "44vw",
-          md: "40vw",
+          base: "65vw",
+          xs: "60vw",
+          sm: "57vw",
+          md: "60vw",
           lg: "38vw",
-          xl: "38vw",
+          xl: "33vw",
         }}
-        maxW="600px"
-        bg="accents.lime"
-        zIndex="2"
+        // maxW="600px"
+        src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702369406/portraitImages/17-min_sm9oev.jpg"
+        objectFit={"cover"}
+        objectPosition={"bottom"}
       />
       <VStack
-        maxW={{ base: "auto", md: "50%", lg: "35%" }}
+        maxW={{ base: "65%", lg: "40%" }}
         h="fit"
-        justifyContent={"space-evenly"}
+        justifyContent={{ base: "center", lg: "space-evenly" }}
         m={{ base: 4, sm: 6, md: 0 }}
-        alignItems="flex-start"
+        alignItems={"flex-start"}
       >
-        <HeroHeading fontSize={XXLfont}>
-          {" "}
-          Licensed psychologist, MD
-        </HeroHeading>
-        <Text my={{ base: 0, sm: 1, md: 6, lg: 12 }} w="85%">
+        <HeroHeading fontSize={XXLfont}> Licensed psychologist, MD</HeroHeading>
+        <Text
+          mt={{ base: 2, sm: 3, md: 6, lg: 8, xl: 10 }}
+          mb={{ base: 2, sm: 3, md: 4, xl: 4 }}
+          w={{ base: "100%", lg: "88%" }}
+        >
           I help people find relief from anxiety, depression, trauma and other
           mental stress that prevents one from enjoying a full life. My
           therapeutic approach is relational and transpersonal with an intention
@@ -67,16 +66,13 @@ function HomeAboutIntro() {
           personalised therapy plan.
         </Text>
         <Show above="md">
-          <HeroHeading fontSize={LGfont}>
+          <HeroHeading fontSize={LGfont} mb={{ base: "10px", lg: "16px" }}>
             Te pot ajuta cu următoarele tipuri de probleme:{" "}
           </HeroHeading>
           <VStack
-            mt={[4, 6]}
-            maxW="36vw"
             flexWrap={"wrap"}
-            h={{ base: "480px", md: "480px", lg: "360px", xl: "220px" }}
+            h={{ base: "480px", md: "200px", lg: "250px", xl: "280px" }}
             alignItems="flex-start"
-
           >
             {Object.keys(HomeAboutIntroListContent).map((index) => (
               <StyledListItem
@@ -87,40 +83,29 @@ function HomeAboutIntro() {
             ))}
           </VStack>
         </Show>
-      </VStack>
-      <Show below="md">
-        <VStack
-          w="full"
-          alignItems={"flex-start"}
-          flexDirection={"column"}
-          m={[3, 4, 5, 6, 8]}
-        >
-          <HeroHeading fontSize={LGfont}>
-            Te pot ajuta cu următoarele tipuri de probleme:
-          </HeroHeading>
-          <VStack
-            mt={[4, 6]}
-            maxW="40vw"
-            alignItems="flex-start"
-            flexWrap={"wrap"}
-            h={{
-              base: "280px",
-              sm: "220px",
-              md: "480px",
-              lg: "360px",
-              xl: "220px",
-            }}
-          >
-            {Object.keys(HomeAboutIntroListContent).map((index) => (
-              <StyledListItem
-                text={HomeAboutIntroListContent[index].text}
-                angle={HomeAboutIntroListContent[index].angle}
-                color={HomeAboutIntroListContent[index].color}
-              />
-            ))}
+        <Show below="md">
+          <VStack w="70%" alignItems={"center"}>
+            <HeroHeading fontSize={"18px"} mb={{ base: "10px", lg: "16px" }}>
+              Te pot ajuta cu următoarele tipuri de probleme:
+            </HeroHeading>
+            <VStack
+              maxW="45vw"
+              alignItems="flex-start"
+              flexWrap={"wrap"}
+              h="250px"
+              ml={{ base: "-48px", xs: "-8px", sm: 0 }}
+            >
+              {Object.keys(HomeAboutIntroListContent).map((index) => (
+                <StyledListItem
+                  text={HomeAboutIntroListContent[index].text}
+                  angle={HomeAboutIntroListContent[index].angle}
+                  color={HomeAboutIntroListContent[index].color}
+                />
+              ))}
+            </VStack>
           </VStack>
-        </VStack>
-      </Show>
+        </Show>
+      </VStack>
     </Flex>
   );
 }
