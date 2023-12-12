@@ -77,7 +77,7 @@ export const theme = extendTheme({
   },
 });
 export const SMfont = {
-  base: "10px",
+  base: "11.75px",
   xs: "xs",
   sm: "xs",
   md: "xs",
@@ -85,7 +85,7 @@ export const SMfont = {
   xl: "sm",
 };
 export const MDfont = {
-  base: "11px",
+  base: "11.75px",
   xs: "xs",
   sm: "sm",
   md: "sm",

@@ -7,14 +7,14 @@ import { StyledStackBox } from "../pages/Home/sections/HomeInfoBanner";
 import styled from "@emotion/styled";
 
 const FooterNavbarCategoryTag = styled(Text)`
-  font-size: calc(1em - 1px);
+  font-size: calc(1.1em - 1px);
   font-weight: 600;
   letter-spacing: -0.5px;
 //   width: fit-content;
 `;
 const FooterNavbarCategoryLink = styled(Text)`
 //   width: 80%;
-  font-size: calc(1em - 1px);
+  font-size: calc(1.1em - 1px);
   font-weight: 300;
   letter-spacing: 0px;
   line-height: 1.25em;
