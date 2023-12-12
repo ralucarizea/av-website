@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Flex, Icon } from "@chakra-ui/react";
+import { Flex, Icon, useMediaQuery } from "@chakra-ui/react";
 import { useSpringCarousel } from "react-spring-carousel";
 import { VscArrowLeft, VscArrowRight } from "react-icons/vsc";
 
@@ -15,11 +15,13 @@ import SocialProofCard from "./SocialProofCard";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 
 export default function SocialProof() {
+  const [isMobile] = useMediaQuery("(max-width: 425px)");
+
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
       initialActiveItem: 0,
       initialStartingPosition: "center",
-      itemsPerSlide: 2.25,
+      itemsPerSlide: isMobile ? 1 : 2.25,
       withLoop: true,
       startEndGutter: -20,
       enableFreeScrollDrag: true,
@@ -28,6 +30,7 @@ export default function SocialProof() {
         id: review.id,
         renderItem: (
           <SocialProofCard
+            isMobile={isMobile}
             key={index}
             name={review.name}
             thumbnail={review.thumbnail}
@@ -59,11 +62,7 @@ export default function SocialProof() {
       }
     }
   `;
-  const StyledCarouselFragment = styled.div`
-    &: .use-spring-carousel-item {
-      border: 1px solid red;
-    }
-  `;
+
   return (
     <>
       <Flex

@@ -78,7 +78,7 @@ export default function AboutHero() {
         />
         <VStack
           bg="#fff"
-          boxShadow={"5px 4px 12px 2px rgba(0,0,0,0.5)"}
+          boxShadow={"0px 3px 11px 2px rgba(0,0,0,0.07)"}
           alignItems="flex-start"
           p={{
             base: "24px",

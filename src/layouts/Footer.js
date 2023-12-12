@@ -1,4 +1,4 @@
-import {  Text, VStack, Flex, Box } from "@chakra-ui/react";
+import { Text, VStack, Flex, Box } from "@chakra-ui/react";
 import React from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
@@ -10,10 +10,10 @@ const FooterNavbarCategoryTag = styled(Text)`
   font-size: calc(1.1em - 1px);
   font-weight: 600;
   letter-spacing: -0.5px;
-//   width: fit-content;
+  //   width: fit-content;
 `;
 const FooterNavbarCategoryLink = styled(Text)`
-//   width: 80%;
+  //   width: 80%;
   font-size: calc(1.1em - 1px);
   font-weight: 300;
   letter-spacing: 0px;
@@ -33,9 +33,10 @@ export default function Footer() {
       maxW="100vw"
       fontFamily={"sans"}
       color="neutrals.dark"
-    //   justifyContent={{base: "space-between", md:"flex-start"}}
+      //   justifyContent={{base: "space-between", md:"flex-start"}}
     >
       <VStack
+        style={{ zIndex: 30000 }}
         h="fit"
         w="100%"
         bg="accents.army"
@@ -94,21 +95,25 @@ export default function Footer() {
         flexDirection={{ base: "column", md: "row" }}
         alignItems={{ base: "center", md: "flex-start" }}
         // textAlign={{base:"center", md: "left"}}
-
       >
-        <LogoContainer color={"neutrals.dark"} justifyContent={{base:"center", md: "flex-start"}} width={{base: "15%", md: "22%"}}/>
+        <LogoContainer
+          color={"neutrals.dark"}
+          justifyContent={{ base: "center", md: "flex-start" }}
+          width={{ base: "15%", md: "22%" }}
+          mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
+        />
         <Flex
           mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
-          pr={{base: "10vw", md:"36px", lg: "48px", xl:"84px"}}
-          pl={{base: "10vw", md:"36px", lg: "48px", xl:"84px"}}
-          flexWrap={{base: "wrap", sm:"nowrap" }}
+          pr={{ base: "10vw", md: "36px", lg: "48px", xl: "84px" }}
+          pl={{ base: "10vw", md: "36px", lg: "48px", xl: "84px" }}
+          flexWrap={{ base: "wrap", sm: "nowrap" }}
           w="100%"
           justifyContent={{ base: "center", md: "space-evenly" }}
-          alignItems={{base: "center", sm: "flex-start"}}
-          gap={{base:3, sm:5, md: 7}}
+          alignItems={{ base: "center", sm: "flex-start" }}
+          gap={{ base: 3, sm: 5, md: 7 }}
         >
           <StyledStackBox>
-            <Box h="fit" >
+            <Box h="fit">
               <FooterNavbarCategoryTag>LOCAȚIE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
                 Calea Moșilor, nr. 214, bl. C10, sc.C, ap 89
@@ -130,7 +135,7 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>
-          <StyledStackBox >
+          <StyledStackBox>
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
@@ -152,7 +157,7 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>
-          <StyledStackBox >
+          <StyledStackBox>
             <Box h="fit">
               <FooterNavbarCategoryTag>SERVICII</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>

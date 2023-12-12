@@ -4,10 +4,11 @@ import Logo from "../layouts/Logo";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../assets/constants/data";
 
-export default function LogoContainer({ color, justifyContent, width }) {
+export default function LogoContainer({ color, justifyContent, width, mt }) {
   return (
     <Link to={ROUTES.HOME}>
       <Flex
+        mt={mt}
         color={color}
         justifyContent={justifyContent}
         maxW="fit-content"

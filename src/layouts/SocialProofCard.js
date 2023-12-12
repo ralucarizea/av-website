@@ -10,6 +10,7 @@ export default function SocialProofCard({
   age,
   bgColor,
   color,
+  isMobile,
 }) {
   const Persona = styled(VStack)`
     min-height: fit-content;
@@ -19,7 +20,7 @@ export default function SocialProofCard({
     background-color: ${(props) => props.bgColor};
     color: ${(props) => props.color};
     opacity: 0.76;
-    
+    width: ${isMobile ? '100%' : ''};
   `;
   const Name = styled.div`
     font-size: calc(1em + 2px);
@@ -43,8 +44,6 @@ export default function SocialProofCard({
     padding: 2.25vw 1.75vw 0;
     z-index: 3;
     font-size: ${(props) => props.fontSize};
- 
-
   `;
   return (
     <Persona
