@@ -12,11 +12,13 @@ import About from "./pages/About/About";
 import NotFound from "./pages/NotFound";
 import Footer from "./layouts/Footer";
 import FAQ from "./layouts/FAQ";
+import BlogPost from "./pages/Blog/BlogPost";
 
 const routes = [
   { path: ROUTES.HOME, element: <Home /> },
   { path: ROUTES.ABOUT, element: <About /> },
   { path: ROUTES.BLOG, element: <Blog /> },
+  { path: ROUTES.BLOG_POST, element: <BlogPost /> },
   {
     path: ROUTES.INDIVIDUAL,
     element: <ServicePage service={HomeServicesMenuData[0]} />,

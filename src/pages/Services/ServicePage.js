@@ -1,41 +1,40 @@
 import {
   Box,
-  HStack,
-  VStack,
-  FormControl,
-  FormLabel,
-  Input,
-  FormHelperText,
-  FormErrorMessage,
-  Text,
   Button,
+  FormControl,
+  FormErrorMessage,
+  FormHelperText,
+  FormLabel,
+  HStack,
+  Input,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { PageTitle } from "../About/sections/AboutHero";
 import styled from "@emotion/styled";
-import { MDfont, SMfont } from "../../assets/styles/theme";
+import { MDfont } from "../../assets/styles/theme";
 
-const StyledServicePageHighlightedParagraph = styled(Box)`
+export const StyledServicePageHighlightedParagraph = styled(Box)`
   padding: ${(props) => props.padding};
   position: relative;
   font-weight: 500;
   width: ${(props) => props.width};
 `;
-const StyledServicePageHeading = styled(Box)`
+export const StyledServicePageHeading = styled(Box)`
   font-weight: 700;
   font-size: calc(5px + 1em);
   margin: ${(props) => props.margin};
   // align-self: flex-start;
   width: 90%;
-
 `;
-const StyledServicePageText = styled(Box)`
+export const StyledServicePageText = styled(Box)`
   width: 90%;
 `;
-const StyledFormControl = styled(FormControl)`
+export const StyledFormControl = styled(FormControl)`
   margin-bottom: 1em;
 `;
-const StyledInput = styled(Input)`
+export const StyledInput = styled(Input)`
   height: ${(props) => props.height};
   color: inherit;
   border-radius: 0px;
@@ -53,13 +52,13 @@ const StyledInput = styled(Input)`
     border-color: #582c12;
   }
 `;
-const StyledFormLabel = styled(FormLabel)`
+export const StyledFormLabel = styled(FormLabel)`
   color: inherit;
   font-size: calc(1em - 2px);
   margin-bottom: 2px;
   font-weight: 700;
 `;
-const StyledFormHelperText = styled(FormHelperText)`
+export const StyledFormHelperText = styled(FormHelperText)`
   color: green;
   font-size: calc(1em - 3px);
 `;
@@ -85,7 +84,7 @@ export default function ServicePage({ service }) {
       <HStack
         px={{ base: 8, xs: 10, sm: 10, md: 16, lg: 20, xl: 28 }}
         h="fit"
-        justifyContent={{base: "center", md:"space-between"}}
+        justifyContent={{ base: "center", md: "space-between" }}
         alignItems={{ base: "center", md: "flex-start" }}
         gap={7}
         color="inherit"
@@ -94,7 +93,7 @@ export default function ServicePage({ service }) {
         <VStack
           w={{ base: "90%", xs: "76%", md: "68%", lg: "60%", xl: "60%" }}
           alignItems={{ base: "center", md: "flex-start" }}
-          mb={{base:"8vw", md:"0"}}
+          mb={{ base: "8vw", md: "0" }}
         >
           <Box
             height={{ base: "25vh", sm: "35vh", md: "50vh" }}
