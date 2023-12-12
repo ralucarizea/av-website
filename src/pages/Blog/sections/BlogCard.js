@@ -1,7 +1,7 @@
 import { Button, Text, VStack, Image, Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
-import { LGfont, MDfont} from "../../../assets/styles/theme";
+import { LGfont, MDfont } from "../../../assets/styles/theme";
 import { articleTags } from "../../../assets/constants/data";
 
 export const MainCategoryTag = styled(Box)`
@@ -66,16 +66,11 @@ export default function BlogCard({ titleBold, title, content, keywords, img }) {
       </Text>
       <Text>{content}</Text>
       <Button
-        color="inherit"
+        color={articleTags[keywords[0]]?.color}
         alignSelf={"flex-end"}
         fontSize={MDfont}
-        bgColor={"transparent"}
-        _focus={{
-          backgroundColor: articleTags[keywords[0]]?.bgColor,
-          color: articleTags[keywords[0]]?.color,
-          transition: "all 0.35s ease-out allow-discrete"
-        }}
-        _hover={{ textDecoration: "underline", }}
+        bgColor={articleTags[keywords[0]]?.bgColor}
+        _hover={{ textDecoration: "underline" }}
       >
         {" "}
         Citește mai multe
