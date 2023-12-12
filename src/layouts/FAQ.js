@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <Box
       height="fit-content"
-      mt={{ base: "180px", xs: "100px", md: "100px", xl: "120px" }}
+      mt={{ base: "150px", md: "250px", xl: "280px" }}
       px={{ base: "20px", xs: "36px", md: "60px", xl: "84px" }}
       display={"flex"}
       flexDirection="column"

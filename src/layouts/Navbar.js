@@ -13,10 +13,9 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  DrawerHeader,
+  
   DrawerBody,
-  DrawerFooter,
-  Input,
+
   Icon,
   VStack,
 } from "@chakra-ui/react";
@@ -43,8 +42,8 @@ const NavSidebarButton = styled(Link)`
 
 const NavLink = styled(Link)`
   font-family: "DM Sans";
-  letter-spacing: -1px;
-  font-size: calc(8px + 0.45vw);
+  letter-spacing: -0.5px;
+  font-size: calc(9px + 0.45vw);
   font-weight: 400;
   margin: 0px 2vw;
   color: inherit;
@@ -169,7 +168,7 @@ const Navbar = () => {
                     color="accents.red"
                   />
                 </Link>
-                <Link to={ROUTES.ONLINE} >
+                <Link to={ROUTES.ONLINE}>
                   <SidebarButton
                     text={"Psihoterapie online"}
                     color="accents.red"
