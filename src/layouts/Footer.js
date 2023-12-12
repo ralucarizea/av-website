@@ -42,6 +42,7 @@ export default function Footer() {
         color="neutrals.light"
         alignContent={"center"}
         pb="2vw"
+        zIndex={12121}
       >
         <Text
           textAlign="center"
