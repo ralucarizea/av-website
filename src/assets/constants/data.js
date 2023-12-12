@@ -1,5 +1,6 @@
 export const articles = [
   {
+    id: 1,
     titleBold: "Puterea vindecătoare a grupului:",
     title:
       "cum ne ajută traumele celor din jur să ni le vindecăm pe ale noastre",
@@ -8,6 +9,7 @@ export const articles = [
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/group-min_sbytkz.jpg",
   },
   {
+    id: 2,
     titleBold: "Prietenie la terapie -",
     title: "gestionarea dificultăților întâmpinate în conexiunile sociale",
     content: " ",
@@ -15,6 +17,7 @@ export const articles = [
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/friends-min_mqzcua.jpg",
   },
   {
+    id: 3,
     titleBold: "Bolile psihiatrice nu sunt obstacole imposibil de depășit",
     title: "",
     content: " ",
@@ -22,6 +25,7 @@ export const articles = [
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/mental-illness-min_dkrswd.jpg",
   },
   {
+    id: 4,
     titleBold: "Reconsolidarea încrederii în partener:",
     title: "mai poate fi posibilă după adulter?",
     content: " ",
@@ -29,6 +33,7 @@ export const articles = [
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/couple-min_rtlmca.jpg",
   },
   {
+    id: 5,
     titleBold: "Relația părinte-adolescent rebel:",
     title: " eliminarea decalajului dintre generații",
     content: " ",
@@ -36,6 +41,7 @@ export const articles = [
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369312/articleCovers/mother-and-son-happiness-min_uzqmc7.jpg",
   },
   {
+    id: 6,
     titleBold: "Depresia & singurătatea:",
     title: "care o provoacă pe care?",
     content: " ",
@@ -310,6 +316,7 @@ export const ROUTES = {
   HOME: "/",
   ABOUT: "/despre-mine",
   BLOG: "/blog",
+  BLOG_POST: "/blog/:id",
   SERVICES: "/servicii",
   INDIVIDUAL: "/servicii/psihoterapie-individuala",
   COUPLE: "/servicii/psihoterapie-cuplu-familie",

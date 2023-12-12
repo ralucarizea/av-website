@@ -1,8 +1,9 @@
 import { Button, Text, VStack, Image, Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
-import { LGfont, MDfont } from "../../../assets/styles/theme";
+import { LGfont, MDfont} from "../../../assets/styles/theme";
 import { articleTags } from "../../../assets/constants/data";
+import { Link } from "react-router-dom";
 
 export const MainCategoryTag = styled(Box)`
   border: 0.5px solid;
@@ -22,7 +23,14 @@ export const MainCategoryTag = styled(Box)`
   padding: 1px 3px;
 `;
 
-export default function BlogCard({ titleBold, title, content, keywords, img }) {
+export default function BlogCard({
+  titleBold,
+  title,
+  content,
+  keywords,
+  img,
+  id,
+}) {
   return (
     <VStack
       p={4}
@@ -66,6 +74,8 @@ export default function BlogCard({ titleBold, title, content, keywords, img }) {
       </Text>
       <Text>{content}</Text>
       <Button
+        as={Link}
+        to={`/blog/${id}`}
         color={articleTags[keywords[0]]?.color}
         alignSelf={"flex-end"}
         fontSize={MDfont}

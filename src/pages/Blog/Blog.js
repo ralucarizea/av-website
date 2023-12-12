@@ -11,6 +11,7 @@ export default function Blog() {
       behavior: "smooth",
     });
   }, []);
+
   return (
     <VStack
       h="fit"
