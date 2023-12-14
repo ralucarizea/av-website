@@ -83,7 +83,7 @@ const FAQ = () => {
                   fontWeight="600"
                   fontFamily="sans"
                   fontSize={{
-                    base: "13px",
+                    base: "14px",
                     xs: "14px",
                     md: "17px",
                     xl: "21px",
@@ -120,7 +120,7 @@ const FAQ = () => {
                 // ml="16px"
                 fontFamily="sans"
                 fontWeight="300"
-                fontSize={{ base: "12px", xs: "14px", md: "15px", xl: "16px" }}
+                fontSize={{ base: "13px", xs: "14px", md: "16px", xl: "17px" }}
               >
                 {faqMainpage[qa].answer}
               </AccordionPanel>

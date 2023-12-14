@@ -16,14 +16,14 @@ export default function About() {
   }, []);
   return (
     <>
-      <AboutHero />
+      <AboutHero id="story"/>
       <PerformanceCounter />
-      <AboutTherapeuticStyle />
+      <AboutTherapeuticStyle/>
       {Object.keys(resumeData).map((index) => (
         <AboutParallaxPiece key={index} element={resumeData[index]} />
       ))}
       <AboutBanner />
-      <AboutPhotoGallery />
+      <AboutPhotoGallery id="personalGallery"/>
     </>
   );
 }

@@ -60,19 +60,19 @@ export const theme = extendTheme({
   },
   colors: {
     accents: {
-      yellow: "#f8c00f",
-      red: "#d21e1f",
-      lime: "#A8CE27",
-      army: "#4B510B",
+      yellow: "#ebb471",
+      red: "#ca4958",
+      lime: "#e4fde1",
+      army: "#623891",
     },
     tints: {
-      yellow: "#fdf2ce",
-      red: "#fadcdc",
-      lime: "#EBF5C9",
+      yellow: "#f9e7d2",
+      red: "#EAB8BE",
+      lime: "#CCF5EE",
     },
     neutrals: {
-      dark: "#582C12",
-      light: "#f6e1d5",
+      dark: "#201E28",
+      light: "#FCFCFD",
     },
   },
 });

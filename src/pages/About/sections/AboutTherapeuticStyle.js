@@ -43,12 +43,13 @@ export const CaptionText = styled(Box)`
 export default function AboutTherapeuticStyle() {
   return (
     <Flex
+      id="resume"
       minH="auto"
       maxW="100%"
       color="neutrals.dark"
       flexWrap={"wrap"}
       mx={{ base: "44px", md: "8vw", lg: "10vw" }}
-      my={{base: "40px", }}
+      my={{ base: "40px" }}
       justifyContent="center"
     >
       <Text

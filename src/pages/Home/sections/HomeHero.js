@@ -44,7 +44,6 @@ function HomeHero() {
             lg: "500px",
             xl: "600px",
           }}
-     
           src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702369421/portraitImages/15-min_lr9tdd.jpg"
           objectFit="cover"
           objectPosition="center"
@@ -107,9 +106,9 @@ function HomeHero() {
             text="Solicită o programare"
             width={"fit"}
             height={"5%"}
-          >
-            {" "}
-          </StyledButton>
+            color={"#fff"}
+            bgColor={"accents.red"}
+          />
         </Box>
       </Flex>
       <VStack
@@ -122,11 +121,19 @@ function HomeHero() {
         justifyContent={"center"}
         fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "24px" }}
       >
-        <Text alignSelf={"center"} w="50%" textAlign={"center"} pb="1.75vw"> 
+        <Text alignSelf={"center"} w="50%" textAlign={"center"} pb="1.75vw">
           "Unexpressed emotions will never die. They are buried alive and will
           come forth later in uglier ways"
         </Text>
-        <Text alignSelf={"flex-end"} w="30%" fontFamily="sans" fontStyle={"italic"}> - Sigmund Freud </Text>
+        <Text
+          alignSelf={"flex-end"}
+          w="30%"
+          fontFamily="sans"
+          fontStyle={"italic"}
+        >
+          {" "}
+          - Sigmund Freud{" "}
+        </Text>
       </VStack>
     </Flex>
   );

@@ -4,6 +4,8 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react";
 
 import { MDfont, SMfont, XXLfont } from "../assets/styles/theme";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../assets/constants/data";
 
 export default function PuzzlePieceBase({ width, height, clipPath, service }) {
   const { isOpen, onToggle } = useDisclosure();
@@ -80,7 +82,7 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
               }}
               // _groupHover={{ display: "inline-block" }}
             >
-              Citește mai mult
+              <Link to={ROUTES[service.route]} > Citește mai mult</Link>
               <ArrowForwardIcon
                 display="none"
                 mx="4px"

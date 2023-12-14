@@ -1,10 +1,12 @@
 import { Text, VStack, Flex, Box } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
 import LogoContainer from "../components/LogoContainer";
 import { StyledStackBox } from "../pages/Home/sections/HomeInfoBanner";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../assets/constants/data";
 
 const FooterNavbarCategoryTag = styled(Text)`
   font-size: calc(1.1em - 1px);
@@ -19,11 +21,21 @@ const FooterNavbarCategoryLink = styled(Text)`
   letter-spacing: 0px;
   line-height: 1.25em;
   margin: 8px 0px;
+`;
+const StyledLink = styled(Link)`
   &:hover {
-    // text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
+    transition: font-style font-weight 0.3s ease-in-out;
   }
 `;
 export default function Footer() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <VStack
       mt={{ base: "44vw", xs: "28vw", sm: "14vw", md: "16vw", lg: "20vw" }}
@@ -55,8 +67,8 @@ export default function Footer() {
             lg: "42%",
             xl: "37%",
           }}
-          pt={{ base: "12vw", sm: "5vw", md: "6vw", lg: "5vw" }}
-          pb="2vw"
+          pt={{ base: "12vw", sm: "5vw", md: "6vw", lg: "6vw" }}
+          pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "5vw" }}
           fontSize={XXXLfont}
           fontFamily={"handwritten"}
           letterSpacing={"tight"}
@@ -81,6 +93,8 @@ export default function Footer() {
             lg: "64px",
             xl: "64px",
           }}
+          color={"accents.army"}
+          bgColor={"#fff"}
         />
       </VStack>
       <Flex
@@ -139,9 +153,13 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                Certificări & specializări
+                <Link to={ROUTES.ABOUT / `#resume`}>
+                  Certificări & specializări
+                </Link>
               </FooterNavbarCategoryLink>
-              <FooterNavbarCategoryLink>Povestea mea </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+                <Link to={`${ROUTES.ABOUT}#resume`}>Povestea mea </Link>
+              </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 Galerie foto personală
               </FooterNavbarCategoryLink>
@@ -161,20 +179,28 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>SERVICII</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                Psihoterapie individuală
+                <StyledLink to={ROUTES.INDIVIDUAL}>
+                  Psihoterapie individuală
+                </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                Psihoterapie de cuplu/familie{" "}
+                <StyledLink to={ROUTES.COUPLE}>
+                  Psihoterapie de cuplu/familie
+                </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                Terapie prin hipnoză
-              </FooterNavbarCategoryLink>
-              <FooterNavbarCategoryLink>Traumă</FooterNavbarCategoryLink>
-              <FooterNavbarCategoryLink>
-                Evaluare psihologică
+                <StyledLink to={ROUTES.HIPNO}>Terapie prin hipnoză</StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                Psihoterapie online
+                <StyledLink to={ROUTES.TRAUMA}>Traumă</StyledLink>
+              </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+                <StyledLink to={ROUTES.EVALUATION}>
+                  Evaluare psihologică
+                </StyledLink>
+              </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+                <StyledLink to={ROUTES.ONLINE}>Psihoterapie online</StyledLink>
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>

@@ -4,7 +4,16 @@ export const articles = [
     titleBold: "Puterea vindecătoare a grupului:",
     title:
       "cum ne ajută traumele celor din jur să ni le vindecăm pe ale noastre",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["traumă", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/group-min_sbytkz.jpg",
   },
@@ -12,7 +21,16 @@ export const articles = [
     id: 2,
     titleBold: "Prietenie la terapie -",
     title: "gestionarea dificultăților întâmpinate în conexiunile sociale",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["relații", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/friends-min_mqzcua.jpg",
   },
@@ -20,7 +38,16 @@ export const articles = [
     id: 3,
     titleBold: "Bolile psihiatrice nu sunt obstacole imposibil de depășit",
     title: "",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["psihiatrie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/mental-illness-min_dkrswd.jpg",
   },
@@ -28,7 +55,16 @@ export const articles = [
     id: 4,
     titleBold: "Reconsolidarea încrederii în partener:",
     title: "mai poate fi posibilă după adulter?",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["cuplu", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/couple-min_rtlmca.jpg",
   },
@@ -36,7 +72,16 @@ export const articles = [
     id: 5,
     titleBold: "Relația părinte-adolescent rebel:",
     title: " eliminarea decalajului dintre generații",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["familie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369312/articleCovers/mother-and-son-happiness-min_uzqmc7.jpg",
   },
@@ -44,7 +89,16 @@ export const articles = [
     id: 6,
     titleBold: "Depresia & singurătatea:",
     title: "care o provoacă pe care?",
-    content: " ",
+    content: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
     keywords: ["psihiatrie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/identity-crisis-min_lncqrk.jpg",
   },
@@ -149,6 +203,7 @@ export const HomeAboutIntroListContent = {
 };
 export const HomeServicesMenuData = {
   0: {
+    id: 0,
     title: "Psihoterapie individuală",
     brief:
       "Navigate life's challenges with tailored sessions for self-discovery and positive change.",
@@ -167,8 +222,10 @@ export const HomeServicesMenuData = {
     bgColor: "tints.red",
     color: "accents.army",
     img: "/images/servicesImages/woman-at-therapy2.jpg",
+    route: "INDIVIDUAL",
   },
   1: {
+    id: 1,
     title: "Psihoterapie de cuplu/familie",
     brief:
       "Strengthen relationships through collaborative sessions, fostering effective communication.",
@@ -187,8 +244,10 @@ export const HomeServicesMenuData = {
     bgColor: "accents.army",
     color: "tints.lime",
     img: "/images/servicesImages/family.jpg",
+    route: "COUPLE",
   },
   2: {
+    id: 2,
     title: "Traumă",
     brief:
       "Heal from past experiences in a safe environment, promoting resilience.",
@@ -207,8 +266,10 @@ export const HomeServicesMenuData = {
     bgColor: "tints.yellow",
     color: "neutrals.dark",
     img: "/images/servicesImages/individual.jpg",
+    route: "TRAUMA",
   },
   3: {
+    id: 3,
     title: "Hipnoză",
     brief:
       "Unlock your subconscious in order to heal your deepest emotional wounds.",
@@ -227,8 +288,10 @@ export const HomeServicesMenuData = {
     bgColor: "neutrals.light",
     color: "accents.red",
     img: "/images/servicesImages/hypnosis.jpg",
+    route: "HIPNO",
   },
   4: {
+    id: 4,
     title: "Evaluare psihologică",
     brief: "Gain insights into your traits, strengths, and growth areas.",
     description: {
@@ -246,8 +309,10 @@ export const HomeServicesMenuData = {
     bgColor: "tints.lime",
     color: "accents.army",
     img: "/images/servicesImages/individual-thoughtful.jpg",
+    route: "EVALUATION",
   },
   5: {
+    id: 5,
     title: "Psihoterapie online",
     brief:
       "Access convenient support for expert guidance and tailored coping strategies.",
@@ -266,6 +331,7 @@ export const HomeServicesMenuData = {
     bgColor: "accents.red",
     color: "#fff",
     img: "/images/servicesImages/online2.jpg",
+    route: "ONLINE",
   },
 };
 export const performanceCounterData = {
@@ -318,6 +384,7 @@ export const ROUTES = {
   BLOG: "/blog",
   BLOG_POST: "/blog/:id",
   SERVICES: "/servicii",
+  SERVICE_PAGE: "/servicii/:title",
   INDIVIDUAL: "/servicii/psihoterapie-individuala",
   COUPLE: "/servicii/psihoterapie-cuplu-familie",
   HIPNO: "/servicii/hipnoterapie",

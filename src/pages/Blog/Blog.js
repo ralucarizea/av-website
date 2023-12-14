@@ -26,8 +26,8 @@ export default function Blog() {
         columnGap={4}
         rowGap={8}
       >
-        {articles.map((article, index) => (
-          <BlogCard key={index} img={article.img} {...article} />
+        {articles.map((article) => (
+          <BlogCard key={article.id} img={article.img} {...article} />
         ))}
       </SimpleGrid>
     </VStack>

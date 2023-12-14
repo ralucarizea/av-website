@@ -13,9 +13,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  
   DrawerBody,
-
   Icon,
   VStack,
 } from "@chakra-ui/react";
@@ -57,7 +55,7 @@ const Navbar = () => {
     <Flex
       width="100%"
       maxWidth="100vw"
-      minHeight="10.5vh"
+      maxHeight="11vh"
       height="fit-content"
       justifyContent={"space-between"}
       boxShadow={"0px 1.5px 8px 1px rgba(0,0,0,0.05)"}
@@ -68,8 +66,7 @@ const Navbar = () => {
     >
       <LogoContainer
         color={"neutrals.dark"}
-        justifyContent={"flex-start"}
-        width={"25%"}
+        // justifyContent={"flex-start"}
       />
       <Show above="sm">
         <NavbarButtonsContainer color={"accents.red"}>
@@ -144,6 +141,12 @@ const Navbar = () => {
                 alignItems={"flex-start"}
                 justifyContent={"space-evenly"}
               >
+                <Link to={ROUTES.ABOUT} onClick={onClose}>
+                  <SidebarButton text={"DESPRE MINE"} color="accents.red" />
+                </Link>
+                <Link to={ROUTES.BLOG} onClick={onClose}>
+                  <SidebarButton text={"ARTICOLE"} color="accents.red" />
+                </Link>
                 <Link to={ROUTES.INDIVIDUAL} onClick={onClose}>
                   <SidebarButton
                     text={"Psihoterapie individuală"}

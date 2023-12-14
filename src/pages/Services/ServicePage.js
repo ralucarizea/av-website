@@ -10,10 +10,11 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PageTitle } from "../About/sections/AboutHero";
 import styled from "@emotion/styled";
 import { MDfont } from "../../assets/styles/theme";
+import { useLocation } from "react-router-dom";
 
 export const StyledServicePageHighlightedParagraph = styled(Box)`
   padding: ${(props) => props.padding};
@@ -26,10 +27,10 @@ export const StyledServicePageHeading = styled(Box)`
   font-size: calc(5px + 1em);
   margin: ${(props) => props.margin};
   // align-self: flex-start;
-  width: 90%;
+  width: 60%;
 `;
 export const StyledServicePageText = styled(Box)`
-  width: 90%;
+  width: 60%;
 `;
 export const StyledFormControl = styled(FormControl)`
   margin-bottom: 1em;
@@ -64,6 +65,8 @@ export const StyledFormHelperText = styled(FormHelperText)`
 `;
 
 export default function ServicePage({ service }) {
+  const location = useLocation()
+  
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -73,6 +76,15 @@ export default function ServicePage({ service }) {
   const handleInputChange = (e) => setInput(e.target.value);
 
   const isError = input === "";
+
+    console.debug(location)
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [service.id]);
+
   return (
     <VStack
       color="neutrals.dark"

@@ -72,7 +72,7 @@ export default function BlogCard({
         </Text>
         {title}
       </Text>
-      <Text>{content}</Text>
+      {/* <Text>{content.high}</Text> */}
       <Button
         as={Link}
         to={`/blog/${id}`}

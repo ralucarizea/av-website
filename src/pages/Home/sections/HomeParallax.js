@@ -28,9 +28,9 @@ function HomeParallax() {
         sm: "17vh",
         md: "25vh",
         lg: "40vh",
-        xl: "80vh",
+        xl: "50vh",
       }}
-      border="1px solid blue"
+      // border="1px solid blue"
       position="relative"
       color="accents.army"
       lineHeight={"xs"}
