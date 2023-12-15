@@ -7,25 +7,40 @@ import { ROUTES } from "../assets/constants/data";
 export default function LogoContainer({ color }) {
   return (
     <Link to={ROUTES.HOME}>
-      <Flex alignItems={"center"}>
+      <Flex alignItems={"center"} h="100%" >
         <Image
-          w={{ base: "", sm: "", md: "", lg: "", xl: "130px" }}
-          h={{ base: "", sm: "", md: "", lg: "", xl: "110px" }}
+          w={{
+            base: "80px",
+            xs: "80px",
+            sm: "100px",
+            md: "100px",
+            lg: "100px",
+            xl: "130px",
+          }}
+          h={{
+            base: "70px",
+            xs: "75px",
+            sm: "85px",
+            md: "90px",
+            lg: "90px",
+            xl: "100px",
+          }}
           src={"/images/brainLogo.png"}
           ml="8px"
         />
         <Flex flexDirection={"column"} minW="fit" alignItems={"center"}>
-          {" "}
           <Box
             minW="fit"
-            fontFamily={"WardahRounded"}
+            fontFamily={"EdwardianScript"}
+            lineHeight={"2xs"}
             fontSize={{
-              base: "16px",
-              sm: "16px",
-              md: "17px",
-              lg: "20px",
-              xl: "22px",
+              base: "26px",
+              sm: "28px",
+              md: "28px",
+              lg: "32px",
+              xl: "36px",
             }}
+            mb={{base: "-6px", md: "-8px"}}
           >
             Adina Varodi
           </Box>
@@ -34,7 +49,7 @@ export default function LogoContainer({ color }) {
             letterSpacing={"1px"}
             fontWeight={600}
             fontSize={{
-              base: "8px",
+              base: "10px",
               sm: "9px",
               md: "10px",
               lg: "11px",

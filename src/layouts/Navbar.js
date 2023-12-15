@@ -30,13 +30,6 @@ const NavbarButtonsContainer = styled(Flex)`
   padding-right: 10vw;
   width: 100%;
 `;
-const NavSidebarButton = styled(Link)`
-  font-family: "DM Sans";
-  letter-spacing: 0.5px;
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0px 2vw;
-`;
 
 const NavLink = styled(Link)`
   font-family: "DM Sans";
@@ -55,7 +48,7 @@ const Navbar = () => {
     <Flex
       width="100%"
       maxWidth="100vw"
-      maxHeight="11vh"
+      minHeight="11vh"
       height="fit-content"
       justifyContent={"space-between"}
       boxShadow={"0px 1.5px 8px 1px rgba(0,0,0,0.05)"}

@@ -1,9 +1,10 @@
 import React from "react";
-import { Flex, Box, Text, Show, VStack, Image } from "@chakra-ui/react";
+import { Flex, Box, Text, Show, VStack, Image, Button } from "@chakra-ui/react";
 import { HeroHeading } from "../../../assets/constants/styledcomponents";
 import StyledListItem from "../../../components/StyledListItem";
 import { HomeAboutIntroListContent } from "../../../assets/constants/data";
 import { MDfont, XXLfont, LGfont } from "../../../assets/styles/theme";
+import SidebarButton from "../../../components/SidebarButton";
 
 function HomeAboutIntro() {
   return (
@@ -45,17 +46,19 @@ function HomeAboutIntro() {
         objectPosition={"bottom"}
       />
       <VStack
-        maxW={{ base: "65%", lg: "40%" }}
+        maxW={{ base: "70%", lg: "40%" }}
         h="fit"
         justifyContent={{ base: "center", lg: "space-evenly" }}
-        m={{ base: 4, sm: 6, md: 0 }}
+        mt={{ base: 4, sm: 6, md: 0 }}
         alignItems={"flex-start"}
+        // border="1px solid pink"
       >
         <HeroHeading fontSize={XXLfont}> Licensed psychologist, MD</HeroHeading>
         <Text
           mt={{ base: 2, sm: 3, md: 6, lg: 8, xl: 10 }}
           mb={{ base: 2, sm: 3, md: 4, xl: 4 }}
-          w={{ base: "100%", lg: "88%" }}
+          w={{ base: "100%", lg: "90%" }}
+          fontSize={{ base: "13px", sm: "14px", md: "15px", xl: "16px" }}
         >
           I help people find relief from anxiety, depression, trauma and other
           mental stress that prevents one from enjoying a full life. My
@@ -84,16 +87,26 @@ function HomeAboutIntro() {
           </VStack>
         </Show>
         <Show below="md">
-          <VStack w="70%" alignItems={"center"}>
-            <HeroHeading fontSize={"18px"} mb={{ base: "10px", lg: "16px" }}>
+          <VStack
+            w={{ base: "100%", sm: "70%" }}
+            alignItems={{ base: "center", xs: "flex-start" }}
+            // border="1px solid red"
+          >
+            <HeroHeading
+              fontSize={"18px"}
+              mb={{ base: "10px", lg: "16px" }}
+              w="100%"
+              // border="1px solid purple"
+            >
               Te pot ajuta cu următoarele tipuri de probleme:
             </HeroHeading>
             <VStack
-              maxW="45vw"
-              alignItems="flex-start"
+              w={"fit"}
+              alignItems={"flex-start"}
               flexWrap={"wrap"}
-              h="250px"
-              ml={{ base: "-48px", xs: "-8px", sm: 0 }}
+              h={{ base: "fit-content", sm: "250px" }}
+              // border="1px solid green"
+              // ml={{ base: "0px", xs: "-16px", sm: 0 }}
             >
               {Object.keys(HomeAboutIntroListContent).map((index) => (
                 <StyledListItem
@@ -105,6 +118,16 @@ function HomeAboutIntro() {
             </VStack>
           </VStack>
         </Show>
+        <Box
+          // border="1px solid red"
+          alignSelf={{ base: "center", lg: "flex-start" }}
+        >
+          <SidebarButton
+            text={" Află mai multe despre mine"}
+            color="accents.army"
+            textTransform={"none"}
+          />
+        </Box>
       </VStack>
     </Flex>
   );

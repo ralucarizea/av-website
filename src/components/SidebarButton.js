@@ -1,7 +1,7 @@
-import { Button,} from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import React from "react";
 
-export default function SidebarButton({ text, color }) {
+export default function SidebarButton({ text, color, textTransform = "uppercase" }) {
   return (
     <Button
       fontFamily={"sans"}
@@ -9,10 +9,10 @@ export default function SidebarButton({ text, color }) {
       sx={{
         span: {
           paddingBottom: "5px",
-          letterSpacing: "1px",
+          letterSpacing: "0.5px",
           fontSize: "13px",
           //   paddingRight: "15px",
-          textTransform: "uppercase",
+          textTransform: `${textTransform}`,
           position: "relative",
           _after: {
             content: '""',
@@ -35,7 +35,6 @@ export default function SidebarButton({ text, color }) {
             _after: {
               transform: "scaleX(1)",
               transformOrigin: "bottom left",
-              
             },
           },
         },

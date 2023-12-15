@@ -3,7 +3,7 @@ import { Flex, Box, Text, VStack } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { XXLfont } from "../../../assets/styles/theme";
 export const PageTitle = styled(Text)`
-  font-family: "WardahRounded";
+  font-family: "EdwardianScript";
   font-size: calc(16px + 0.95vw);
   color: inherit;
   text-align: center;

@@ -20,15 +20,30 @@ function HomeHero() {
         justifyContent="center"
         minH="60vh"
         w="inherit"
-        px={[1, 3, 4, 8, 10, 12, 20]}
-        pt={[16, 20, 22, 20, 20, 24]}
+        px={{ base: 1, xs: 8, md: 8, lg: 12, xl: 20 }}
+        pt={{ base: 16, xs: 14, sm: 12, md: 8, lg: 12, xl: 20 }}
+        // pt={[16, 20, 22, 20, 20, 24]}
       >
         <Image
-          mr={[0, 2, 4, 4, 6, 12, 20]}
-          ml={[0, 2, 4, 0, 6, 12, 20]}
+          // mr={[0, 2, 4, 4, 6, 12, 20]}
+          mr={{
+            base: 0,
+            sm: 8,
+            md: 10,
+            lg: 12,
+            xl: 20,
+          }}
+          // ml={[0, 2, 4, 0, 6, 12, 20]}
+          ml={{
+            base: 0,
+            sm: 0,
+            md: 0,
+            lg: 12,
+            xl: 20,
+          }}
           borderRadius={"280px 280px 0 0"}
           h={{
-            base: "33vh",
+            base: "38vh",
             xs: "42vh",
             sm: "54vh",
             md: "58vh",
@@ -37,7 +52,7 @@ function HomeHero() {
           }}
           minW="220px"
           w={{
-            base: "240px",
+            base: "250px",
             xs: "280px",
             sm: "320px",
             md: "420px",
@@ -50,8 +65,14 @@ function HomeHero() {
           zIndex="2"
         />
         <Box
-          w="25%"
-          minW="220px"
+          w={{
+            base: "60%",
+            xs: "55%",
+            sm: "31%",
+            md: "33%",
+            lg: "30%",
+            xl: "28%",
+          }}
           fontSize={{
             base: "11px",
             xs: "xs",
@@ -60,6 +81,7 @@ function HomeHero() {
             lg: "sm",
             xl: "md",
           }}
+          mb={{ base: "20px", sm: "0px" }}
         >
           <HeroHeading
             fontSize={{
@@ -77,24 +99,27 @@ function HomeHero() {
           <Text
             fontFamily={"handwritten"}
             fontSize={{
-              base: "md",
-              xs: "lg",
-              sm: "lg",
-              md: "xl",
-              lg: "xl",
-              xl: "3xl",
+              base: "33px",
+              md: "36px",
+              lg: "42px",
+              xl: "48px",
             }}
             lineHeight={"xs"}
-            my={[3.5, 4, 5]}
+            my={{
+              base: "12px",
+              sm: "14px",
+              md: "14px",
+              lg: "14px",
+              xl: "18px",
+            }}
             textAlign={{ base: "center", sm: "right" }}
           >
-            {" "}
             Bine ai venit!
           </Text>
           <Text
             fontFamily={"sans"}
-            my={{ base: 2, md: 4, lg: 8, xl: 12 }}
-            mr={{ base: 2, md: 4, lg: 6, xl: 16 }}
+            my={{ base: 2, sm: 5, md: 5, lg: 8, xl: 10 }}
+            mr={{ base: 2, sm: 3, md: 4, lg: 6, xl: 14 }}
             display={{ base: "none", sm: "block" }}
             lineHeight={"lg"}
           >
@@ -104,8 +129,8 @@ function HomeHero() {
           </Text>
           <StyledButton
             text="Solicită o programare"
-            width={"fit"}
-            height={"5%"}
+            width={{base: "", sm:"", lg:"fit"}}
+            height={{base: "", sm:"", lg:"56px"}}
             color={"#fff"}
             bgColor={"accents.red"}
           />
@@ -114,22 +139,42 @@ function HomeHero() {
       <VStack
         bg={"accents.army"}
         color="neutrals.light"
-        h="50vh"
+        h={{ base: "33vh", sm: "42vh", md: "44vh", lg: "50vh"}}
         zIndex="-1"
-        mt="-20px"
+        mt={"-20px"}
         fontFamily="handwritten"
         justifyContent={"center"}
-        fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "24px" }}
+        fontSize={{
+          base: "30px",
+          sm: "33px",
+          md: "36px",
+          lg: "42px",
+          xl: "48px",
+        }}
+        lineHeight={"2xs"}
       >
-        <Text alignSelf={"center"} w="50%" textAlign={"center"} pb="1.75vw">
+        <Text
+          alignSelf={"center"}
+          w={{ base: "70%", sm: "50%" }}
+          textAlign={"center"}
+          py="1.75vw"
+        >
           "Unexpressed emotions will never die. They are buried alive and will
           come forth later in uglier ways"
         </Text>
         <Text
-          alignSelf={"flex-end"}
-          w="30%"
+          alignSelf={{ base: "center", sm: "flex-end" }}
+          w={{ base: "auto", sm: "30%" }}
+          mt="2vw"
           fontFamily="sans"
           fontStyle={"italic"}
+          fontSize={{
+            base: "14px",
+            sm: "15px",
+            md: "18px",
+            lg: "20px",
+            xl: "20px",
+          }}
         >
           {" "}
           - Sigmund Freud{" "}

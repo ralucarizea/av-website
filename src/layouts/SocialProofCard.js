@@ -24,7 +24,7 @@ export default function SocialProofCard({
   `;
   const Name = styled.div`
     font-size: calc(1em + 2px);
-    font-family: "WardahRounded";
+    font-family: "EdwardianScript";
     margin-top: 1.5vw;
     margin-bottom: 2.5vw;
     max-width: 90%;

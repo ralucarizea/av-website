@@ -10,7 +10,7 @@ const breakpoints = {
 export const theme = extendTheme({
   fonts: {
     sans: "DM Sans",
-    handwritten: "WardahRounded",
+    handwritten: "EdwardianScript",
     serif: "DM Serif Display",
   },
   fontSizes: {

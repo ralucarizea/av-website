@@ -9,7 +9,7 @@ const ParallaxText = styled(Text)`
   font-size: ${(props) => props.fontSize};
   position: absolute;
   width: 28%;
-  font-family: "WardahRounded";
+  font-family: "EdwardianScript";
   top: ${(props) => props.top};
   right: ${(props) => props.right};
   left: ${(props) => props.left};

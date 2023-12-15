@@ -12,6 +12,12 @@
   font-style: normal;
   src: url("./WardahRounded.ttf") format("truetype");
 }
+@font-face {
+  font-family: "EdwardianScript";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./EdwardianScriptITC.ttf") format("truetype");
+}
 
 
 /*-----------------------------Serif (display) font*/
