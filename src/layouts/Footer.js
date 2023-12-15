@@ -51,7 +51,7 @@ export default function Footer() {
         sm: "14vw",
         md: "16vw",
         lg: "12vw",
-        xl: "400px",
+        xl: "4vw",
       }}
       fontSize={MDfont}
       zIndex={100}
@@ -116,8 +116,8 @@ export default function Footer() {
           xs: "5vw 0",
           sm: "4vw 1vw 1vw",
           md: "5vw 1vw",
-          lg: "0 1vw ",
-          xl: "0 1vw",
+          lg: "2vw 1vw",
+          xl: "2vw 1vw",
         }}
         h="fit"
         minH={{ base: "auto", sm: "65vh", md: "62vh", lg: "60vh", xl: "58vh" }}
