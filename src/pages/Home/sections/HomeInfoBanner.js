@@ -1,11 +1,9 @@
 import React from "react";
 import { Box, Text, Flex, VStack, Icon } from "@chakra-ui/react";
-import { XXXLfont } from "../../../assets/styles/theme";
 import styled from "@emotion/styled";
 import { IoCalendarNumberOutline } from "react-icons/io5";
 import { TbMessages } from "react-icons/tb";
 import { TbHeartHandshake } from "react-icons/tb";
-import { CalendarIcon } from "@chakra-ui/icons";
 
 export const StyledStackBox = styled(Box)`
   // background: pink;
@@ -25,7 +23,27 @@ export const StyledStack = styled(Flex)`
   align-items: center;
   height: 300px;
 `;
+export const SectionTitle = styled(Box)`
+  text-align: center;
+  width: 68%;
+  font-family: "EdwardianScript";
+  font-size: 60px;
+  margin-bottom: 56px;
 
+  @media screen and (max-width: 1000px) {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 820px) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 33px;
+    margin-bottom: 16px;
+  }
+`;
 export default function HomeInfoBanner() {
   return (
     <VStack
@@ -36,15 +54,7 @@ export default function HomeInfoBanner() {
       maxW="100vw"
       justifyContent={"space-evenly"}
     >
-      <Text
-        fontSize={XXXLfont}
-        fontFamily={"handwritten"}
-        mb={{ base: 4, md: 10, lg: 16 }}
-        w="68%"
-        textAlign={"center"}
-      >
-        Cum se desfasoară o sedintă
-      </Text>
+      <SectionTitle>Cum se desfasoara o sedinta</SectionTitle>
       <Flex
         direction={{ base: "column", md: "row" }}
         wrap="wrap"

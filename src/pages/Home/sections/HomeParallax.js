@@ -18,6 +18,7 @@ const ParallaxText = styled(Text)`
 function HomeParallax() {
   return (
     <Box
+      border="2px solid red"
       maxW="100vw"
       h="fit-content"
       minH={{ base: "100vh" }}
@@ -32,12 +33,13 @@ function HomeParallax() {
       }}
       // border="1px solid blue"
       position="relative"
-      color="accents.army"
-      lineHeight={"xs"}
+      color="accents.yellow"
+      lineHeight={"2.5rem"}
     >
+      <Text color="red" textAlign={'center'}> AICI TREBUIE MODIFICAT </Text>
       <Box
         margin="0 auto"
-        bgColor="tints.lime"
+        bgColor="tints.yellow"
         w={{ base: "50%", xs: "46%", sm: "42%", md: "38%", lg: "32%" }}
         h={{
           base: "50vh",
@@ -51,12 +53,12 @@ function HomeParallax() {
       />
       <ParallaxText
         fontSize={{
-          base: "19px",
-          xs: "22px",
-          sm: "27px",
-          md: "30px",
-          lg: "36px",
-          xl: "40px",
+          base: "32px",
+          xs: "33px",
+          sm: "37px",
+          md: "42px",
+          lg: "48px",
+          xl: "64px",
         }}
         top={{
           base: "27%",
@@ -64,7 +66,7 @@ function HomeParallax() {
           sm: "32%",
           md: "37%",
           lg: "37%",
-          xl: "42%",
+          xl: "40%",
         }}
         left={{ base: "23%", xs: "25%", sm: "23%", md: "24%", lg: "30%" }}
         textAlign={"left"}
@@ -75,14 +77,14 @@ function HomeParallax() {
       </ParallaxText>
       <ParallaxText
         fontSize={{
-          base: "19px",
-          xs: "22px",
-          sm: "27px",
-          md: "30px",
-          lg: "36px",
-          xl: "40px",
+          base: "32px",
+          xs: "33px",
+          sm: "37px",
+          md: "42px",
+          lg: "48px",
+          xl: "64px",
         }}
-        top={{ base: "36%", xs: "35%", md: "48%", lg: "59%" }}
+        top={{ base: "36%", xs: "35%", md: "48%", lg: "61%" }}
         right={{ base: "18%", xs: "20%", md: "24%", lg: "28%" }}
         textAlign={"right"}
         mixBlendMode={"multiply"}

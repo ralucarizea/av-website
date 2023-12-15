@@ -20,10 +20,9 @@ export default function SocialProofCard({
     background-color: ${(props) => props.bgColor};
     color: ${(props) => props.color};
     opacity: 0.76;
-    width: ${isMobile ? '100%' : ''};
+    width: ${isMobile ? "100%" : ""};
   `;
   const Name = styled.div`
-    font-size: calc(1em + 2px);
     font-family: "EdwardianScript";
     margin-top: 1.5vw;
     margin-bottom: 2.5vw;
@@ -60,7 +59,7 @@ export default function SocialProofCard({
       }}
     >
       <Caption fontSize={MDfont}>{reviewText}</Caption>
-      <Name fontSize={MDfont}>
+      <Name fontSize={{ base: "24px",  md: "40px", xl: "48px" }}>
         - {name}, {age} ani
       </Name>
     </Persona>

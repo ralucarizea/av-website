@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex } from "@chakra-ui/react";
+import { Text, Flex, Box } from "@chakra-ui/react";
 import {
   emptyPieceHeights,
   emptyPieceWidths,
@@ -21,6 +21,7 @@ import {
   emptyMD,
   emptySM,
 } from "../../../assets/constants/constants";
+import { SectionTitle } from "./HomeInfoBanner";
 
 export default function HomeServicesMenu() {
   return (
@@ -34,7 +35,7 @@ export default function HomeServicesMenu() {
       justifyContent={"center"}
       flexWrap={"wrap"}
     >
-      <Text
+      {/* <Text
         mb="6vw"
         fontSize={XXXLfont}
         fontFamily={"handwritten"}
@@ -44,7 +45,11 @@ export default function HomeServicesMenu() {
       >
         {" "}
         Servicii
-      </Text>
+      </Text> */}
+      <Flex w="100%" justifyContent={"center"}>
+        <SectionTitle>Servicii</SectionTitle>
+      </Flex>
+
       {Object.keys(HomeServicesMenuData).map((element, index) =>
         index % 2 === 0 ? (
           <PuzzlePieceBase

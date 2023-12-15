@@ -13,6 +13,7 @@ import "./styles.css";
 import { socialProofReviews } from "../assets/constants/data";
 import SocialProofCard from "./SocialProofCard";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
+import { SectionTitle } from "../pages/Home/sections/HomeInfoBanner";
 
 export default function SocialProof() {
   const [isMobile] = useMediaQuery("(max-width: 425px)");
@@ -81,11 +82,9 @@ export default function SocialProof() {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
-          fontSize={XXXLfont}
-          fontFamily={"handwritten"}
           color="neutrals.dark"
         >
-          Ce spun alti clienti
+          <SectionTitle>Ce spun alti clienti</SectionTitle>
         </Flex>
         <Flex
           width="100%"

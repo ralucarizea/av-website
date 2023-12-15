@@ -21,7 +21,7 @@ function HomeHero() {
         minH="60vh"
         w="inherit"
         px={{ base: 1, xs: 8, md: 8, lg: 12, xl: 20 }}
-        pt={{ base: 20, xs: 16, sm: 16, md: 12, lg: 16, xl: 20 }}
+        pt={{ base: 20, xs: 16, sm: 16, md: 1, lg: 16, xl: 20 }}
         // pt={[16, 20, 22, 20, 20, 24]}
       >
         <Image
