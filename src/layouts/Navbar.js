@@ -89,7 +89,7 @@ const Navbar = () => {
                   <Link to={ROUTES.EVALUATION}>Evaluare psihologică</Link>
                 </MenuItem>
                 <MenuItem my="4px">
-                  <Link to={ROUTES.ONLINE}>Psihoterapie online</Link>
+                  <Link to={ROUTES.SEXOLOGY}>Psihosexologie</Link>
                 </MenuItem>
               </MenuList>
             </Menu>
@@ -153,7 +153,7 @@ const Navbar = () => {
                   <SidebarButton text={"Hipnoză"} color="accents.red" />
                 </Link>
                 <Link to={ROUTES.TRAUMA} onClick={onClose}>
-                  <SidebarButton text={"Traumă"} color="accents.red" />
+                  <SidebarButton text={"Terapie prin Somatic Experiencing"} color="accents.red" />
                 </Link>
                 <Link to={ROUTES.EVALUATION} onClick={onClose}>
                   <SidebarButton
@@ -161,9 +161,9 @@ const Navbar = () => {
                     color="accents.red"
                   />
                 </Link>
-                <Link to={ROUTES.ONLINE}>
+                <Link to={ROUTES.SEXOLOGY}>
                   <SidebarButton
-                    text={"Psihoterapie online"}
+                    text={"PSihosexologie"}
                     color="accents.red"
                   />
                 </Link>

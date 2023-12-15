@@ -77,7 +77,8 @@ export default function SocialProof() {
         // bgColor={"aliceblue"}
       >
         <Flex
-          pb="10vw"
+          mt="16px"
+          pb="4vw"
           width="100%"
           flexDirection={"column"}
           justifyContent={"center"}

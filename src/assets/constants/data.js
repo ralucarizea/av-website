@@ -248,7 +248,7 @@ export const HomeServicesMenuData = {
   },
   2: {
     id: 2,
-    title: "Traumă",
+    title: "Terapie prin Somatic Experiencing®",
     brief:
       "Heal from past experiences in a safe environment, promoting resilience.",
     description: {
@@ -264,13 +264,13 @@ export const HomeServicesMenuData = {
     price: "",
     duration: "",
     bgColor: "tints.yellow",
-    color: "neutrals.dark",
+    color: "accents.yellow",
     img: "/images/servicesImages/individual.jpg",
     route: "TRAUMA",
   },
   3: {
     id: 3,
-    title: "Hipnoză",
+    title: "Hipnoterapie",
     brief:
       "Unlock your subconscious in order to heal your deepest emotional wounds.",
     description: {
@@ -286,13 +286,13 @@ export const HomeServicesMenuData = {
     price: "",
     duration: "",
     bgColor: "accents.yellow",
-    color: "tints.yellow",
+    color: "accents.red",
     img: "/images/servicesImages/hypnosis.jpg",
     route: "HIPNO",
   },
   4: {
     id: 4,
-    title: "Evaluare psihologică",
+    title: "Evaluare psihologica",
     brief: "Gain insights into your traits, strengths, and growth areas.",
     description: {
       highlightedParagraph:
@@ -313,7 +313,7 @@ export const HomeServicesMenuData = {
   },
   5: {
     id: 5,
-    title: "Psihoterapie online",
+    title: "Psihosexologie",
     brief:
       "Access convenient support for expert guidance and tailored coping strategies.",
     description: {
@@ -330,8 +330,8 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.red",
     color: "#fff",
-    img: "/images/servicesImages/online2.jpg",
-    route: "ONLINE",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702368909/serviceImages/strong-couple_fonqnk.jpg",
+    route: "SEXOLOGY",
   },
 };
 export const performanceCounterData = {
@@ -390,7 +390,7 @@ export const ROUTES = {
   HIPNO: "/servicii/hipnoterapie",
   TRAUMA: "/servicii/trauma",
   EVALUATION: "/servicii/evaluare-psihologica",
-  ONLINE: "/servicii/psihoterapie-online",
+  SEXOLOGY: "/servicii/psihosexologie",
   ARTICLE: "/:articleID",
   NOT_FOUND: "*",
 };

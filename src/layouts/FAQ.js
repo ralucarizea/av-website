@@ -28,13 +28,14 @@ const FAQ = () => {
       <Box
         pb={{ base: "18vw", xs: "8vw", md: "8vw", xl: "6vw" }}
         fontSize={{
-          base: "20px",
-          xs: "24px",
-          sm: "30px",
-          md: "36px",
-          lg: "48px",
+          base: "33px",
+          xs: "33px",
+          sm: "38px",
+          md: "42px",
+          lg: "52px",
           xl: "60px",
         }}
+        lineHeight={"none"}
         fontFamily={"handwritten"}
         width={{
           base: "80%",

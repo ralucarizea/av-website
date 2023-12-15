@@ -40,7 +40,7 @@ const routes = [
     element: <ServicePage service={HomeServicesMenuData[4]} />,
   },
   {
-    path: ROUTES.ONLINE,
+    path: ROUTES.SEXOLOGY,
     element: <ServicePage service={HomeServicesMenuData[5]} />,
   },
   { path: ROUTES.NOT_FOUND, element: <NotFound /> },

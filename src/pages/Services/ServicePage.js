@@ -185,19 +185,19 @@ export default function ServicePage({ service }) {
           top="90px"
         >
           <Text
-            w={{ base: "70%", lg: "70%", xl: "80%" }}
+            w={{ base: "70%", lg: "80%", xl: "80%" }}
             my={{ base: "4.75vw", sm: "3.5vw", lg: "2vw" }}
             fontFamily={"handwritten"}
-            lineHeight={"2xs"}
+            lineHeight={"2.25rem"}
             fontSize={{
-              base: "16px",
-              xs: "17px",
-              sm: "18px",
-              lg: "20px",
-              xl: "22px",
+              base: "35px",
+              xs: "37px",
+              sm: "38px",
+              lg: "44px",
+              xl: "45px",
             }}
           >
-            Hai să ne cunoastem mai bine!
+            Hai sa ne cunoastem mai bine!
           </Text>
           <VStack
             w={{ base: "70%", lg: "70%", xl: "80%" }}
