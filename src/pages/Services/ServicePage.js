@@ -30,7 +30,7 @@ export const StyledServicePageHeading = styled(Box)`
   width: 60%;
 `;
 export const StyledServicePageText = styled(Box)`
-  width: 60%;
+  width: 75%;
 `;
 export const StyledFormControl = styled(FormControl)`
   margin-bottom: 1em;
