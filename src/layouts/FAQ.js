@@ -32,8 +32,8 @@ const FAQ = () => {
           xs: "24px",
           sm: "30px",
           md: "36px",
-          lg: "40px",
-          xl: "44px",
+          lg: "48px",
+          xl: "60px",
         }}
         fontFamily={"handwritten"}
         width={{

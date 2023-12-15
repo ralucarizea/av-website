@@ -22,22 +22,23 @@ export default function SocialProofCard({
     opacity: 0.76;
     width: ${isMobile ? "100%" : ""};
   `;
-  const Name = styled.div`
+  const Name = styled(Box)`
     font-family: "EdwardianScript";
     margin-top: 1.5vw;
     margin-bottom: 2.5vw;
     max-width: 90%;
     text-align: center;
     font-size: ${(props) => props.fontSize};
-    line-height: 1.1em;
+    // line-height: 1.1em;
   `;
 
   const Caption = styled(Box)`
     height: 100%;
     max-width: 80%;
     text-align: center;
-    line-height: 1.65em;
+    line-height: 1.35em;
     font-family: "DM Sans";
+    font-weight: 600;
     display: flex;
     align-items: center;
     padding: 2.25vw 1.75vw 0;
@@ -48,18 +49,20 @@ export default function SocialProofCard({
     <Persona
       bgColor={bgColor}
       color={color}
-      height={{ base: "36vh", sm: "35vh", md: "35vh", lg: "36vh", xl: "38vh" }}
+      height={{ base: "40vh", sm: "40vh", md: "39vh", lg: "36vh", xl: "38vh" }}
       width={{
         base: "43vw",
-        xs: "40vw",
-        sm: "35vw",
-        md: "34vw",
+        xs: "42vw",
+        sm: "40vw",
+        md: "38vw",
         lg: "36vw",
         xl: "38vw",
       }}
     >
-      <Caption fontSize={MDfont}>{reviewText}</Caption>
-      <Name fontSize={{ base: "24px",  md: "40px", xl: "48px" }}>
+      <Caption fontSize={{ base: "14px", sm: "15px", md: "15px", lg: "16px", xl: "17px" }}>
+        {reviewText}
+      </Caption>
+      <Name fontSize={{ base: "25px", md: "28px", xl: "33px" }}>
         - {name}, {age} ani
       </Name>
     </Persona>

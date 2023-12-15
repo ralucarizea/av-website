@@ -3,7 +3,10 @@ import React, { useEffect } from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
 import LogoContainer from "../components/LogoContainer";
-import { StyledStackBox } from "../pages/Home/sections/HomeInfoBanner";
+import {
+  SectionTitle,
+  StyledStackBox,
+} from "../pages/Home/sections/HomeInfoBanner";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../assets/constants/data";
@@ -21,6 +24,10 @@ const FooterNavbarCategoryLink = styled(Text)`
   letter-spacing: 0px;
   line-height: 1.25em;
   margin: 8px 0px;
+
+  @media screen and (max-width: 640px) {
+    margin: 5px 0px;
+  }
 `;
 const StyledLink = styled(Link)`
   &:hover {
@@ -30,15 +37,22 @@ const StyledLink = styled(Link)`
   }
 `;
 export default function Footer() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
   return (
     <VStack
-      mt={{ base: "44vw", xs: "28vw", sm: "14vw", md: "16vw", lg: "20vw" }}
+      mt={{
+        base: "44vw",
+        xs: "28vw",
+        sm: "14vw",
+        md: "16vw",
+        lg: "12vw",
+        xl: "400px",
+      }}
       fontSize={MDfont}
       zIndex={100}
       gap={0}
@@ -54,29 +68,26 @@ export default function Footer() {
         bg="accents.army"
         color="neutrals.light"
         alignContent={"center"}
-        pb="2vw"
+        pb={{ base: "6vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
         zIndex={12121}
       >
-        <Text
-          textAlign="center"
+        <VStack
+          justifyContent={"center"}
           w={{
             base: "80%",
-            xs: "60%",
-            sm: "52%",
-            md: "50%",
-            lg: "42%",
-            xl: "37%",
+            xs: "72%",
+            sm: "70%",
+            md: "66%",
+            lg: "60%",
+            xl: "45%",
           }}
-          pt={{ base: "12vw", sm: "5vw", md: "6vw", lg: "6vw" }}
-          pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "5vw" }}
-          fontSize={XXXLfont}
-          fontFamily={"handwritten"}
-          letterSpacing={"tight"}
-          lineHeight={"sm"}
+          pt={{ base: "10vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
+          // pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "2vw" }}
         >
-          {" "}
-          Lasa-ma sa te ghidez in procesul tau de vindecare{" "}
-        </Text>
+          <SectionTitle>
+            Lasa-ma sa te ghidez in procesul tau de vindecare
+          </SectionTitle>
+        </VStack>
         <StyledButton
           text={"Fă o programare online"}
           width={{
@@ -100,10 +111,16 @@ export default function Footer() {
       <Flex
         // bg="neutrals.light"
         color="accents.red"
-        py="3vw"
-        px="2vw"
+        padding={{
+          base: "5.5vw 0",
+          xs: "5vw 0",
+          sm: "4vw 1vw 1vw",
+          md: "5vw 1vw",
+          lg: "0 1vw ",
+          xl: "0 1vw",
+        }}
         h="fit"
-        minH="58vh"
+        minH={{ base: "auto", sm: "65vh", md: "62vh", lg: "60vh", xl: "58vh" }}
         w="100%"
         justifyContent={{ base: "flex-start", md: "space-between" }}
         flexDirection={{ base: "column", md: "row" }}
@@ -118,8 +135,8 @@ export default function Footer() {
         />
         <Flex
           mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
-          pr={{ base: "10vw", md: "36px", lg: "48px", xl: "84px" }}
-          pl={{ base: "10vw", md: "36px", lg: "48px", xl: "84px" }}
+          pr={{ base: "10vw", md: "12px", lg: "48px", xl: "84px" }}
+          pl={{ base: "10vw", md: "12px", lg: "48px", xl: "84px" }}
           flexWrap={{ base: "wrap", sm: "nowrap" }}
           w="100%"
           justifyContent={{ base: "center", md: "space-evenly" }}

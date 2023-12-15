@@ -29,6 +29,7 @@ export const SectionTitle = styled(Box)`
   font-family: "EdwardianScript";
   font-size: 60px;
   margin-bottom: 56px;
+  line-height: 3rem;
 
   @media screen and (max-width: 1000px) {
     font-size: 52px;
@@ -38,10 +39,12 @@ export const SectionTitle = styled(Box)`
   @media screen and (max-width: 820px) {
     font-size: 48px;
     margin-bottom: 24px;
+    line-height: 2rem;
   }
   @media screen and (max-width: 640px) {
     font-size: 33px;
     margin-bottom: 16px;
+    line-height: 1.6rem;
   }
 `;
 export default function HomeInfoBanner() {
