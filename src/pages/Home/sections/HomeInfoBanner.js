@@ -51,7 +51,7 @@ export default function HomeInfoBanner() {
   return (
     <VStack
       bg="accents.army"
-      color="tints.red"
+      color="neutrals.light"
       p="6vw"
       h="auto"
       maxW="100vw"
