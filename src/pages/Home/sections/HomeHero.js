@@ -21,7 +21,7 @@ function HomeHero() {
         minH="60vh"
         w="inherit"
         px={{ base: 1, xs: 8, md: 8, lg: 12, xl: 20 }}
-        pt={{ base: 16, xs: 14, sm: 12, md: 8, lg: 12, xl: 20 }}
+        pt={{ base: 20, xs: 16, sm: 16, md: 12, lg: 16, xl: 20 }}
         // pt={[16, 20, 22, 20, 20, 24]}
       >
         <Image
@@ -66,7 +66,7 @@ function HomeHero() {
         />
         <Box
           w={{
-            base: "60%",
+            base: "65%",
             xs: "55%",
             sm: "31%",
             md: "33%",
@@ -85,7 +85,7 @@ function HomeHero() {
         >
           <HeroHeading
             fontSize={{
-              base: "md",
+              base: "lg",
               xs: "lg",
               sm: "lg",
               md: "xl",
@@ -106,9 +106,9 @@ function HomeHero() {
             }}
             lineHeight={"xs"}
             my={{
-              base: "12px",
-              sm: "14px",
-              md: "14px",
+              base: "14px",
+              sm: "14.5px",
+              md: "15px",
               lg: "14px",
               xl: "18px",
             }}
@@ -129,8 +129,8 @@ function HomeHero() {
           </Text>
           <StyledButton
             text="Solicită o programare"
-            width={{base: "", sm:"", lg:"fit"}}
-            height={{base: "", sm:"", lg:"56px"}}
+            width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
+            height={{ base: "40px", sm: "42px", md: "48px",lg: "48px", xl: "56px" }}
             color={"#fff"}
             bgColor={"accents.red"}
           />
@@ -139,7 +139,7 @@ function HomeHero() {
       <VStack
         bg={"accents.army"}
         color="neutrals.light"
-        h={{ base: "33vh", sm: "42vh", md: "44vh", lg: "50vh"}}
+        h={{ base: "33vh", sm: "42vh", md: "44vh", lg: "50vh" }}
         zIndex="-1"
         mt={"-20px"}
         fontFamily="handwritten"

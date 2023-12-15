@@ -7,7 +7,7 @@ import { ROUTES } from "../assets/constants/data";
 export default function LogoContainer({ color }) {
   return (
     <Link to={ROUTES.HOME}>
-      <Flex alignItems={"center"} h="100%" >
+      <Flex alignItems={"center"} h="100%" pl="10px" w="max-content">
         <Image
           w={{
             base: "80px",
@@ -15,7 +15,7 @@ export default function LogoContainer({ color }) {
             sm: "100px",
             md: "100px",
             lg: "100px",
-            xl: "130px",
+            xl: "110px",
           }}
           h={{
             base: "70px",
@@ -26,7 +26,7 @@ export default function LogoContainer({ color }) {
             xl: "100px",
           }}
           src={"/images/brainLogo.png"}
-          ml="8px"
+          
         />
         <Flex flexDirection={"column"} minW="fit" alignItems={"center"}>
           <Box

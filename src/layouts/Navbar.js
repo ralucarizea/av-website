@@ -57,10 +57,7 @@ const Navbar = () => {
       top={0}
       bg="#fff"
     >
-      <LogoContainer
-        color={"neutrals.dark"}
-        // justifyContent={"flex-start"}
-      />
+      <LogoContainer color={"neutrals.dark"} s />
       <Show above="sm">
         <NavbarButtonsContainer color={"accents.red"}>
           <NavLink>
