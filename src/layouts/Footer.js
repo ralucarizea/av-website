@@ -185,7 +185,7 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 <Text fontWeight={500}> Adresa e-mail: </Text>{" "}
-                adinavarodi@psihoterapeut.ro
+                psihoterapeut@adinavarodi.com
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>
