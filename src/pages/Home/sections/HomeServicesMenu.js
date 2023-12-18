@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex} from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 
 import PuzzlePieceBase from "../../../components/PuzzlePieceBase";
 import { HomeServicesMenuData } from "../../../assets/constants/data";
@@ -17,10 +17,10 @@ export default function HomeServicesMenu() {
   return (
     <Flex
       maxW="100vw"
-      py="14vw"
-      px={{ xs: "12vw", sm: "8vw", md: "10vw", lg: "8vw"}}
+      py={{ base: "20vw", sm: "8vw", md: "10vw", lg: "8vw" }}
+      px={{ xs: "12vw", sm: "8vw", md: "10vw", lg: "8vw" }}
       mb="14vh"
-        // bg="pink"
+      // bg="pink"
       alignItems={"center"}
       justifyContent={"center"}
       flexWrap={"wrap"}

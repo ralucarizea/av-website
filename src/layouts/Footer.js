@@ -147,9 +147,6 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>LOCAȚIE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                Calea Moșilor, nr. 214, bl. C10, sc.C, ap 89
-              </FooterNavbarCategoryLink>
-              <FooterNavbarCategoryLink>
                 Strada Anastasie Simu 6, București 010294
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
@@ -184,7 +181,7 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>CONTACT</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                <Text fontWeight={500}> Nr. telefon: </Text> +40183003923
+                <Text fontWeight={500}> Nr. telefon: </Text> +40 743 121 886
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 <Text fontWeight={500}> Adresa e-mail: </Text>{" "}

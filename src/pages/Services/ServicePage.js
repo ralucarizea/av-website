@@ -46,7 +46,7 @@ export const StyledInput = styled(Input)`
   color: inherit;
   border-radius: 0px;
   border: 0px;
-  border-bottom: 1px solid #582c12;
+  border-bottom: 0.5px solid #582c12;
   padding-left: 4px;
   color: rgba(88, 44, 18, 0.7);
   font-weight: 500;
@@ -96,7 +96,7 @@ export default function ServicePage({ service }) {
 
   return (
     <VStack
-      color={"accents.army"}
+      color={"neutrals.dark"}
       fontFamily="sans"
       lineHeight={"sm"}
       fontSize={MDfont}
@@ -140,8 +140,8 @@ export default function ServicePage({ service }) {
               height="97%"
               position="absolute"
               borderRadius={{ base: "0 8rem 0 4rem", lg: "0 12rem 0 8rem" }}
-              bgColor={service.bgColor}
-              opacity="0.1"
+              bgColor="#fcf5f1"
+              opacity="0.8"
               top="0"
               left="0"
               bottom="0"
@@ -193,6 +193,7 @@ export default function ServicePage({ service }) {
           borderRadius={{ base: "0 0 80px 80px", md: "0 0 0 100px" }}
           position="sticky"
           top="90px"
+          // color="accents.red"
         >
           <Text
             w={{ base: "70%", lg: "80%", xl: "80%" }}
@@ -269,7 +270,7 @@ export default function ServicePage({ service }) {
                 xl: "14px 18px",
               }}
               alignSelf="center"
-              bgColor="neutrals.dark"
+              bgColor="accents.red"
               color="neutrals.light"
               height="fit"
               fontSize={{ base: "11px", xs: "12px", lg: "14px" }}

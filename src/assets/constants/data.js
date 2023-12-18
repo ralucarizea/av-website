@@ -427,7 +427,7 @@ export const socialProofReviews = [
       "Interacțiune foarte buna, o persoana deosebita și un profesionist actual și profund!! M a ajutat foarte mult in problema expusă de mine!! ",
     rating: "",
     bgColor: "tints.red",
-    color: "accents.army",
+    color: "accents.red",
     ratedService: "Psihoterapie individuala (online)",
   },
   {
@@ -438,7 +438,7 @@ export const socialProofReviews = [
     caption: "O doamna psiholoaga extraordinara , recomand!",
     rating: "",
     bgColor: "tints.yellow",
-    color: "accents.yellow",
+    color: "accents.lime",
     ratedService: "Psihoterapie individuala ",
   },
   {
@@ -449,8 +449,8 @@ export const socialProofReviews = [
     caption:
       "O doamna de nota 10. Am reușit sa ma deschid din prima ședință, unde mi s-a oferit încrederea si spatiul necesar. Abia astept sa revin. ",
     rating: "",
-    bgColor: "tints.red",
-    color: "accents.red",
+    bgColor: "accents.red",
+    color: "tints.red",
     ratedService: "Psihoterapie individuala",
   },
   {
@@ -461,8 +461,8 @@ export const socialProofReviews = [
     caption:
       "Am avut o prima ședință din care am reușit sa ma deschid datorita ei. Aștept cu nerăbdare ședințele următoare și sunt încrezător ca voi depăși obstacolele.",
     rating: "",
-    bgColor: "accents.yellow",
-    color: "neutrals.light",
+    bgColor: "tints.army",
+    color: "accents.red",
     ratedService: "Psihoterapie individuala",
   },
   {
@@ -473,8 +473,8 @@ export const socialProofReviews = [
     caption:
       "O persoana bine organizata care asculta si da sfaturi in consecinta, te simti in siguranta din momentul in care intri in cabinet.",
     rating: "",
-    bgColor: "tints.lime",
-    color: "accents.army",
+    bgColor: "accents.lime",
+    color: "tints.army",
     ratedService: "Psihoterapie individuala ",
   },
   {
@@ -485,8 +485,8 @@ export const socialProofReviews = [
     caption:
       "Foarte multumita. Copilul o place si vrea sa mearga in continuare.",
     rating: "",
-    bgColor: "accents.red",
-    color: "neutrals.light",
+    bgColor: "tints.red",
+    color: "accents.army",
     ratedService: "Psihoterapie individuala (copii)",
   },
   {
@@ -497,7 +497,7 @@ export const socialProofReviews = [
     caption: "M-a ajutat cu tot ce am avut nevoie.",
     rating: "",
     bgColor: "tints.yellow",
-    color: "neutrals.dark",
+    color: "accents.red",
     ratedService: "Psihoterapie individuala (online)",
   },
   {
@@ -543,7 +543,7 @@ export const socialProofReviews = [
       "O persoana foarte calda, m-am deschis cu usurinta si am putut comunica foarte bine.",
     rating: "",
     bgColor: "tints.red",
-    color: "neutrals.dark",
+    color: "accents.army",
     ratedService: "Psihoterapie individuala (online)",
   },
   {
@@ -554,8 +554,8 @@ export const socialProofReviews = [
     caption:
       "Inca de la inceput mi-am dat seama ca Adina Varodi este un psiholog devotat, care a investit foarte mult timp pentru a-si dezvolta abilitatile terapeutice. Fiecare sedinta de terapie ma ajuta sa ma apropii si mai mult de telul meu si astfel astept cu nerabdare urmatoarea intalnire. Recomand cu incredere!!! ",
     rating: "",
-    bgColor: "accents.red",
-    color: "neutrals.light",
+    bgColor: "accents.yellow",
+    color: "tints.yellow",
     ratedService: "Psihoterapie individuala",
   },
   {
@@ -566,8 +566,8 @@ export const socialProofReviews = [
     caption:
       "Apreciez faptul ca Adina este o persoana empatica si am reusit sa ma conectez cu ea inca din primele minute. Ii place ceea ce face si asta se vede. ",
     rating: "",
-    bgColor: "tints.yellow",
-    color: "neutrals.dark",
+    bgColor: "tints.lime",
+    color: "accents.army",
     ratedService: "Psihoterapie individuala",
   },
   {
@@ -578,8 +578,8 @@ export const socialProofReviews = [
     caption:
       "Este fascinant cate lucruri se afla in inconstientul nostru si ne influenteaza viata. Eu inca ma aflu intr-un proces al descoperirii care imi imbunatateste viata prin schimbari mici dar cu un impact foarte mare. Recomand cu caldura.",
     rating: "",
-    bgColor: "tints.lime",
-    color: "accents.army",
+    bgColor: "accents.lime",
+    color: "tints.army",
     ratedService: "Psihoterapie individuala ",
   },
   {

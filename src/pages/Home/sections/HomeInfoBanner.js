@@ -43,7 +43,7 @@ export const SectionTitle = styled(Box)`
   }
   @media screen and (max-width: 640px) {
     font-size: 44px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     line-height: 1.6rem;
   }
 `;
