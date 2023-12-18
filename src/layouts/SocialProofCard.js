@@ -2,25 +2,25 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Box, VStack } from "@chakra-ui/react";
 import "./styles.css";
-import { MDfont } from "../assets/styles/theme";
 
 export default function SocialProofCard({
   name,
   reviewText,
-  age,
   bgColor,
   color,
   isMobile,
+  ratedService,
 }) {
   const Persona = styled(VStack)`
+    border-radius: ${(props) => props.borderRadius};
     min-height: fit-content;
     height: ${(props) => props.height};
-    width: ${(props) => props.width};
+    // width: ${(props) => props.width};
     justify-content: space-between;
     background-color: ${(props) => props.bgColor};
     color: ${(props) => props.color};
     opacity: 0.76;
-    width: ${isMobile ? "100%" : ""};
+    width: ${isMobile ? "80%" : ""};
   `;
   const Name = styled(Box)`
     font-family: "EdwardianScript";
@@ -45,26 +45,33 @@ export default function SocialProofCard({
     z-index: 3;
     font-size: ${(props) => props.fontSize};
   `;
+
   return (
     <Persona
+      borderRadius="16px"
       bgColor={bgColor}
       color={color}
       height={{ base: "40vh", sm: "40vh", md: "39vh", lg: "36vh", xl: "38vh" }}
       width={{
-        base: "43vw",
-        xs: "42vw",
         sm: "40vw",
         md: "38vw",
         lg: "36vw",
         xl: "38vw",
       }}
     >
-      <Caption fontSize={{ base: "14px", sm: "15px", md: "15px", lg: "16px", xl: "17px" }}>
+      <Caption
+        fontSize={{
+          base: "14px",
+          sm: "15px",
+          md: "15px",
+          lg: "16px",
+          xl: "17px",
+        }}
+      >
         {reviewText}
       </Caption>
-      <Name fontSize={{ base: "25px", md: "28px", xl: "33px" }}>
-        - {name}, {age} ani
-      </Name>
+      {/* <ServiceReviewed> Serviciul evaluat - {ratedService} </ServiceReviewed> */}
+      <Name fontSize={{ base: "25px", md: "28px", xl: "33px" }}>- {name}</Name>
     </Persona>
   );
 }

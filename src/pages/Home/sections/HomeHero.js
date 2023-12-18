@@ -48,7 +48,7 @@ function HomeHero() {
             sm: "58vh",
             md: "65vh",
             lg: "70vh",
-            xl: "78vh",
+            xl: "76vh",
           }}
           minW="220px"
           w={{
@@ -57,7 +57,7 @@ function HomeHero() {
             sm: "340px",
             md: "420px",
             lg: "500px",
-            xl: "600px",
+            xl: "590px",
           }}
           src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702893481/portraitImages/23-1_w5h6ca.jpg"
           objectFit="cover"
@@ -130,15 +130,21 @@ function HomeHero() {
           <StyledButton
             text="Solicită o programare"
             width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
-            height={{ base: "40px", sm: "42px", md: "48px",lg: "48px", xl: "56px" }}
+            height={{
+              base: "40px",
+              sm: "42px",
+              md: "48px",
+              lg: "48px",
+              xl: "56px",
+            }}
             color={"#fff"}
             bgColor={"accents.red"}
           />
         </Box>
       </Flex>
       <VStack
-        bg={"accents.army"}
-        color="neutrals.light"
+        bg="tints.army"
+        color={"accents.army"}
         h={{ base: "33vh", sm: "42vh", md: "44vh", lg: "50vh" }}
         zIndex="-1"
         mt={"-20px"}

@@ -209,7 +209,9 @@ export default function Footer() {
                 <StyledLink to={ROUTES.HIPNO}>Terapie prin hipnoză</StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <StyledLink to={ROUTES.TRAUMA}>Terapie prin Somatic Experiencing</StyledLink>
+                <StyledLink to={ROUTES.TRAUMA}>
+                  Terapie prin Somatic Experiencing
+                </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 <StyledLink to={ROUTES.EVALUATION}>
@@ -218,6 +220,9 @@ export default function Footer() {
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 <StyledLink to={ROUTES.SEXOLOGY}>Psihosexologie</StyledLink>
+              </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+                <StyledLink to={ROUTES.GROUP}>Psihoterapie de grup</StyledLink>
               </FooterNavbarCategoryLink>
             </Box>
           </StyledStackBox>

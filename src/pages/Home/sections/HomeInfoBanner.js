@@ -50,8 +50,8 @@ export const SectionTitle = styled(Box)`
 export default function HomeInfoBanner() {
   return (
     <VStack
-      bg="accents.army"
-      color="neutrals.light"
+      bg="tints.lime"
+      color="accents.lime"
       p="6vw"
       h="auto"
       maxW="100vw"

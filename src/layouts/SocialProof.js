@@ -12,11 +12,11 @@ import "swiper/css/navigation";
 import "./styles.css";
 import { socialProofReviews } from "../assets/constants/data";
 import SocialProofCard from "./SocialProofCard";
-import { MDfont, XXXLfont } from "../assets/styles/theme";
+import { MDfont } from "../assets/styles/theme";
 import { SectionTitle } from "../pages/Home/sections/HomeInfoBanner";
 
 export default function SocialProof() {
-  const [isMobile] = useMediaQuery("(max-width: 425px)");
+  const [isMobile] = useMediaQuery("(max-width: 640px)");
 
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
@@ -39,6 +39,7 @@ export default function SocialProof() {
             age={review.age}
             bgColor={review.bgColor}
             color={review.color}
+            ratedService={review.ratedService}
           />
         ),
         // renderThumb: <CarouselThumb text={index}></CarouselThumb>,
@@ -83,7 +84,7 @@ export default function SocialProof() {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
-          color="neutrals.dark"
+          color="accents.army"
         >
           <SectionTitle>Ce spun alti clienti</SectionTitle>
         </Flex>
@@ -104,7 +105,7 @@ export default function SocialProof() {
           >
             <Icon
               as={VscArrowLeft}
-              fill="neutrals.dark"
+              fill="accents.army"
               width={{
                 base: "16px",
                 xs: "18px",
@@ -133,7 +134,7 @@ export default function SocialProof() {
           >
             <Icon
               as={VscArrowRight}
-              fill="neutrals.dark"
+              fill="accents.army"
               width={{
                 base: "16px",
                 xs: "18px",

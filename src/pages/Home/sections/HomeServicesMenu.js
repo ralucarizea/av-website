@@ -1,25 +1,15 @@
 import React from "react";
-import { Text, Flex, Box } from "@chakra-ui/react";
-import {
-  emptyPieceHeights,
-  emptyPieceWidths,
-  filledPieceHeights,
-  filledPieceWidths,
-  emptyPieceClipPaths,
-  filledPieceClipPaths,
-} from "../../../assets/constants/constants";
+import { Text, Flex} from "@chakra-ui/react";
+
 import PuzzlePieceBase from "../../../components/PuzzlePieceBase";
 import { HomeServicesMenuData } from "../../../assets/constants/data";
-import { XXXLfont } from "../../../assets/styles/theme";
 import {
   filledXL,
   filledLG,
   filledMD,
-  filledSM,
   emptyXL,
   emptyLG,
   emptyMD,
-  emptySM,
 } from "../../../assets/constants/constants";
 import { SectionTitle } from "./HomeInfoBanner";
 
@@ -28,9 +18,9 @@ export default function HomeServicesMenu() {
     <Flex
       maxW="100vw"
       py="14vw"
-      px={{ xs: "12vw", sm: "8vw" }}
+      px={{ xs: "12vw", sm: "8vw", md: "10vw", lg: "8vw"}}
       mb="14vh"
-      //   bg="pink"
+        // bg="pink"
       alignItems={"center"}
       justifyContent={"center"}
       flexWrap={"wrap"}
@@ -46,7 +36,7 @@ export default function HomeServicesMenu() {
         {" "}
         Servicii
       </Text> */}
-      <Flex w="100%" justifyContent={"center"}>
+      <Flex w="100%" justifyContent={"center"} color="accents.army">
         <SectionTitle>Servicii</SectionTitle>
       </Flex>
 

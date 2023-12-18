@@ -28,9 +28,15 @@ export const StyledServicePageHeading = styled(Box)`
   margin: ${(props) => props.margin};
   // align-self: flex-start;
   width: 60%;
+  @media screen and (max-width: 820px) {
+    align-self: flex-start;
+  }
 `;
 export const StyledServicePageText = styled(Box)`
   width: 75%;
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 export const StyledFormControl = styled(FormControl)`
   margin-bottom: 1em;
@@ -58,6 +64,9 @@ export const StyledFormLabel = styled(FormLabel)`
   font-size: calc(1em - 2px);
   margin-bottom: 2px;
   font-weight: 700;
+  @media screen and (max-width: 640px) {
+    font-size: 12px;
+  }
 `;
 export const StyledFormHelperText = styled(FormHelperText)`
   color: green;
@@ -65,8 +74,8 @@ export const StyledFormHelperText = styled(FormHelperText)`
 `;
 
 export default function ServicePage({ service }) {
-  const location = useLocation()
-  
+  const location = useLocation();
+
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -77,8 +86,8 @@ export default function ServicePage({ service }) {
 
   const isError = input === "";
 
-    console.debug(location)
-    useEffect(() => {
+  console.debug(location);
+  useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -87,7 +96,7 @@ export default function ServicePage({ service }) {
 
   return (
     <VStack
-      color="neutrals.dark"
+      color={"accents.army"}
       fontFamily="sans"
       lineHeight={"sm"}
       fontSize={MDfont}
@@ -131,7 +140,8 @@ export default function ServicePage({ service }) {
               height="97%"
               position="absolute"
               borderRadius={{ base: "0 8rem 0 4rem", lg: "0 12rem 0 8rem" }}
-              bgColor="rgba(246, 225, 214, 0.25)"
+              bgColor={service.bgColor}
+              opacity="0.1"
               top="0"
               left="0"
               bottom="0"
@@ -178,7 +188,7 @@ export default function ServicePage({ service }) {
             xl: "21vw",
           }}
           marginRight={{ base: "0", lg: "20px", xl: "100px" }}
-          bgColor="rgba(246, 225, 214, 0.35)"
+          bgColor={"rgba(246, 225, 214, 0.35)"}
           h="fit"
           borderRadius={{ base: "0 0 80px 80px", md: "0 0 0 100px" }}
           position="sticky"

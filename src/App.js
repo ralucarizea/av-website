@@ -43,6 +43,10 @@ const routes = [
     path: ROUTES.SEXOLOGY,
     element: <ServicePage service={HomeServicesMenuData[5]} />,
   },
+  {
+    path: ROUTES.GROUP,
+    element: <ServicePage service={HomeServicesMenuData[6]} />,
+  },
   { path: ROUTES.NOT_FOUND, element: <NotFound /> },
 ];
 

@@ -28,10 +28,10 @@ const FAQ = () => {
       <Box
         pb={{ base: "18vw", xs: "8vw", md: "8vw", xl: "6vw" }}
         fontSize={{
-          base: "33px",
-          xs: "33px",
-          sm: "38px",
-          md: "42px",
+          base: "40px",
+          xs: "42px",
+          sm: "42px",
+          md: "44px",
           lg: "52px",
           xl: "60px",
         }}

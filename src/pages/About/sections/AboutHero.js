@@ -9,12 +9,13 @@ export const PageTitle = styled(Text)`
   text-align: center;
   margin: 7vw auto 4vw;
   width: 80%;
+  line-height:1.85rem;
 
   @media screen and (max-width: 900px) {
    margin: 11vw auto 3vw;
 }
   @media screen and (max-width: 900px) {
-   margin: 12vw auto 3vw;
+   margin: 12vw auto 8vw;
 }
 `;
 

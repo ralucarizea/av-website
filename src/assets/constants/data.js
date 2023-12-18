@@ -220,7 +220,7 @@ export const HomeServicesMenuData = {
     price: "",
     duration: "",
     bgColor: "tints.red",
-    color: "accents.army",
+    color: "accents.red",
     img: "/images/servicesImages/woman-at-therapy2.jpg",
     route: "INDIVIDUAL",
   },
@@ -306,7 +306,7 @@ export const HomeServicesMenuData = {
     },
     price: "",
     duration: "",
-    bgColor: "tints.lime",
+    bgColor: "tints.army",
     color: "accents.army",
     img: "/images/servicesImages/individual-thoughtful.jpg",
     route: "EVALUATION",
@@ -332,6 +332,28 @@ export const HomeServicesMenuData = {
     color: "#fff",
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702368909/serviceImages/strong-couple_fonqnk.jpg",
     route: "SEXOLOGY",
+  },
+  6: {
+    id: 6,
+    title: "Psihoterapie de grup",
+    brief:
+      "Access convenient support for expert guidance and tailored coping strategies.",
+    description: {
+      highlightedParagraph:
+        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      secondParagraph:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondHeading: "Saliquam quis lobortis quam",
+      thirdParagraph:
+        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    },
+    price: "",
+    duration: "",
+    bgColor: "accents.lime",
+    color: "tints.lime",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702368909/serviceImages/strong-couple_fonqnk.jpg",
+    route: "GROUP",
   },
 };
 export const performanceCounterData = {
@@ -391,12 +413,13 @@ export const ROUTES = {
   TRAUMA: "/servicii/trauma",
   EVALUATION: "/servicii/evaluare-psihologica",
   SEXOLOGY: "/servicii/psihosexologie",
+  GROUP: "/servicii/psihoterapie-de-grup",
   ARTICLE: "/:articleID",
   NOT_FOUND: "*",
 };
 export const socialProofReviews = [
   {
-    name: "",
+    name: "Ionela S.",
     age: "",
     thumbnail: "",
     date: "22 ianuarie 2023",
@@ -408,7 +431,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (online)",
   },
   {
-    name: "",
+    name: "Madalin S.",
     age: "",
     thumbnail: "",
     date: "12 ianuarie 2023",
@@ -419,7 +442,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala ",
   },
   {
-    name: "",
+    name: "Bianca A.",
     age: "",
     thumbnail: "",
     date: "20 septembrie 2022",
@@ -431,7 +454,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala",
   },
   {
-    name: "",
+    name: "Andrei C.",
     age: "",
     thumbnail: "",
     date: "1 august 2022",
@@ -443,7 +466,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala",
   },
   {
-    name: "",
+    name: "Daniela G.",
     age: "",
     thumbnail: "",
     date: "13 aprilie 2022",
@@ -455,7 +478,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala ",
   },
   {
-    name: "",
+    name: "Marcu F.",
     age: "",
     thumbnail: "",
     date: "6 ianuarie 2022",
@@ -467,10 +490,10 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (copii)",
   },
   {
-    name: "",
+    name: "Pandele A.",
     age: "",
     thumbnail: "",
-    date: "6 ianuarie 2022",
+    date: "8 ianuarie 2022",
     caption: "M-a ajutat cu tot ce am avut nevoie.",
     rating: "",
     bgColor: "tints.yellow",
@@ -478,10 +501,10 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (online)",
   },
   {
-    name: "",
+    name: "Doina M.",
     age: "",
     thumbnail: "",
-    date: "18 noimebrie 2021",
+    date: "18 noiembrie 2021",
     caption: "Un adevarat profesionist, foarte prietenoasa, un bun ascultator.",
     rating: "",
     bgColor: "accents.army",
@@ -489,10 +512,10 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (online)",
   },
   {
-    name: "",
+    name: "Ana Maria Dan G.",
     age: "",
     thumbnail: "",
-    date: "17 noimebrie 2021",
+    date: "17 noiembrie 2021",
     caption:
       "Ma simt mai usoara dupa sedinte si am prins curaj sa fac si niste schimbari in viata mea",
     rating: "",
@@ -501,7 +524,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (online)",
   },
   {
-    name: "",
+    name: "Albert V.",
     age: "",
     thumbnail: "",
     date: "12 noiembrie 2021",
@@ -512,7 +535,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala",
   },
   {
-    name: "",
+    name: "Diana F.",
     age: "",
     thumbnail: "",
     date: "12 octombrie 2021",
@@ -524,7 +547,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala (online)",
   },
   {
-    name: "",
+    name: "Alexandra A.",
     age: "",
     thumbnail: "",
     date: "20 septembrie 2021",
@@ -536,7 +559,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala",
   },
   {
-    name: "",
+    name: "Roxana D.",
     age: "",
     thumbnail: "",
     date: "22 iulie 2021",
@@ -548,7 +571,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala",
   },
   {
-    name: "",
+    name: "Bogdan M.",
     age: "",
     thumbnail: "",
     date: "8 iulie 2021",
@@ -560,7 +583,7 @@ export const socialProofReviews = [
     ratedService: "Psihoterapie individuala ",
   },
   {
-    name: "",
+    name: "Ionut Valentin P.",
     age: "",
     thumbnail: "",
     date: "5 iulie 2021",
@@ -570,86 +593,5 @@ export const socialProofReviews = [
     bgColor: "accents.army",
     color: "tints.red",
     ratedService: "Psihoterapie individuala ",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "26 iunie 2021",
-    caption:
-      "Cu foarte mult profesionalism și o primire călduroasă, Adina Varodi mi-a întrecut așteptările în primele sesiuni de terapie.",
-    rating: "",
-    bgColor: "tints.yellow",
-    color: "accents.red",
-    ratedService: "Psihoterapie individuala",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "17 iunie 2021",
-    caption:
-      "O experienta placuta, nu ma asteptam sa fie asa de bine, in special pentru ca nu am mai fost pana acum la psiholog.",
-    rating: "",
-    bgColor: "accents.yellow",
-    color: "neutrals.dark",
-    ratedService: "Psihoterapie individuala",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "15 mai 2021",
-    caption: "O doamna de excepție, cu siguranță vom reveni.",
-    rating: "",
-    bgColor: "tints.red",
-    color: "neutrals.dark",
-    ratedService: "Psihoterapie individuala",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "7 februarie 2021",
-    caption:
-      "Serviciu de calitate. Adina este foarte receptiva la nevoile clientului si se pliaza foarte bine in functie de personalitatea fiecaruia. Sunt fericita sa lucrez cu ea. ",
-    rating: "",
-    bgColor: "accents.army",
-    color: "tints.lime",
-    ratedService: "Psihoterapie individuala",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "22 iulie 2020",
-    caption:
-      "Sunt multumita, drept dovada merg in continuare la sedinte. Comunicarea dintre noi este foarte buna.",
-    rating: "",
-    bgColor: "accents.yellow",
-    color: "tints.yellow",
-    ratedService: "Psihoterapie individuala",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "23 februarie 2019",
-    caption:
-      "Am avut doar o primă întâlnire, dar pot să spun deja că serviciul oferit de doamna psiholog este unul calitativ, profesionist și mai ales, centrat pe client. Am apreciat modul în care m-a convins să o aleg anume pe dânsa. Abia aștept și restul întâlnirilor. ",
-    rating: "",
-    bgColor: "tints.lime",
-    color: "accents.army",
-  },
-  {
-    name: "",
-    age: "",
-    thumbnail: "",
-    date: "",
-    caption:
-      "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; ",
-    rating: "",
-    bgColor: "tints.yellow",
-    color: "accents.army",
   },
 ];
