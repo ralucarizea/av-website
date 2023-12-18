@@ -21,7 +21,7 @@ function HomeHero() {
         minH="60vh"
         w="inherit"
         px={{ base: 1, xs: 8, md: 8, lg: 12, xl: 20 }}
-        pt={{ base: 20, xs: 16, sm: 16, md: 1, lg: 16, xl: 20 }}
+        pt={{ base: 20, xs: 16, sm: 16, md: 16, lg: 16, xl: 20 }}
         // pt={[16, 20, 22, 20, 20, 24]}
       >
         <Image
@@ -43,23 +43,23 @@ function HomeHero() {
           }}
           borderRadius={"280px 280px 0 0"}
           h={{
-            base: "38vh",
-            xs: "42vh",
-            sm: "54vh",
-            md: "58vh",
-            lg: "64vh",
-            xl: "75vh",
+            base: "45vh",
+            xs: "48vh",
+            sm: "58vh",
+            md: "65vh",
+            lg: "70vh",
+            xl: "78vh",
           }}
           minW="220px"
           w={{
-            base: "250px",
-            xs: "280px",
-            sm: "320px",
+            base: "280px",
+            xs: "320px",
+            sm: "340px",
             md: "420px",
             lg: "500px",
             xl: "600px",
           }}
-          src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702369421/portraitImages/15-min_lr9tdd.jpg"
+          src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702893481/portraitImages/23-1_w5h6ca.jpg"
           objectFit="cover"
           objectPosition="center"
           zIndex="2"

@@ -60,13 +60,13 @@ export const theme = extendTheme({
   },
   colors: {
     accents: {
-      yellow: "#ebb471",
+      yellow: "#e8aa5e",
       red: "#ca4958",
       lime: "#e4fde1",
       army: "#623891",
     },
     tints: {
-      yellow: "#f9e7d2",
+      yellow: "#fbeee0",
       red: "#EAB8BE",
       lime: "#CCF5EE",
     },
