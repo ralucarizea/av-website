@@ -21,7 +21,7 @@ function HomeAboutIntro() {
       gap={{ md: 6, lg: 14, xl: 20 }}
       fontFamily={"sans"}
       lineHeight={"sm"}
-      alignItems={"center"}
+      alignItems={"flex-start"}
     >
       <Image
         // h={{
@@ -36,10 +36,9 @@ function HomeAboutIntro() {
         minH="400px"
         maxH="650px"
         w={{
-          base: "65vw",
-          xs: "60vw",
-          sm: "57vw",
-          md: "60vw",
+          base: "75%",
+          sm: "62%",
+          md: "55%",
           lg: "40vw",
           xl: "33vw",
         }}
@@ -49,12 +48,12 @@ function HomeAboutIntro() {
         objectPosition={"center"}
       />
       <VStack
-        maxW={{ base: "70%", lg: "40%" }}
-        h="auto"
+        maxW={{ base: "75%", sm: "62%", md: "55%", lg: "40%" }}
+        h="inherit"
         justifyContent={{ base: "center", lg: "space-between" }}
         mt={{ base: 4, sm: 6, md: 0 }}
         alignItems={"flex-start"}
-        // border="1px solid pink"
+        border="1px solid pink"
       >
         <HeroHeading fontSize={XXLfont}> Licensed psychologist, MD</HeroHeading>
         <Text
@@ -93,7 +92,7 @@ function HomeAboutIntro() {
         <Show below="md">
           <VStack
             w={{ base: "100%", sm: "70%" }}
-            alignItems={{ base: "center", xs: "flex-start" }}
+            alignItems={{ base:  "flex-start" }}
             // border="1px solid red"
           >
             <HeroHeading
