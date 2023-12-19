@@ -145,28 +145,29 @@ function HomeHero() {
       <VStack
         bg="tints.army"
         color={"accents.army"}
-        h={{ base: "33vh", sm: "42vh", md: "44vh", lg: "50vh" }}
+        h={{ base: "33vh", sm: "38vh", md: "44vh", lg: "55vh" }}
         zIndex="-1"
-        mt={"-20px"}
+        mt={"-28px"}
         fontFamily="handwritten"
         justifyContent={"center"}
         fontSize={{
-          base: "30px",
-          sm: "33px",
-          md: "36px",
-          lg: "42px",
-          xl: "48px",
+          base: "34px",
+          sm: "40px",
+          md: "42px",
+          lg: "48px",
+          xl: "52px",
         }}
-        lineHeight={"2xs"}
+        lineHeight={{base: "0.75em", sm:"0.9em", md:"1em"}}
       >
         <Text
           alignSelf={"center"}
-          w={{ base: "70%", sm: "50%" }}
+          w={{ base: "65%", sm:"45%", md: "40%" }}
           textAlign={"center"}
-          py="1.75vw"
+          pt="2.5vw"
+          pb="1.25vw"
         >
-          "Unexpressed emotions will never die. They are buried alive and will
-          come forth later in uglier ways"
+          If you want to choose the pleasure of growth, prepare yourself for
+          some pain.
         </Text>
         <Text
           alignSelf={{ base: "center", sm: "flex-end" }}
@@ -183,7 +184,7 @@ function HomeHero() {
           }}
         >
           {" "}
-          - Sigmund Freud{" "}
+          - Irvin D. Yalom
         </Text>
       </VStack>
     </Flex>
