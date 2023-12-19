@@ -53,7 +53,7 @@ function HomeAboutIntro() {
         justifyContent={{ base: "center", lg: "space-between" }}
         mt={{ base: 4, sm: 6, md: 0 }}
         alignItems={"flex-start"}
-        border="1px solid pink"
+        // border="1px solid pink"
       >
         <HeroHeading fontSize={XXLfont}> Licensed psychologist, MD</HeroHeading>
         <Text
@@ -92,7 +92,7 @@ function HomeAboutIntro() {
         <Show below="md">
           <VStack
             w={{ base: "100%", sm: "70%" }}
-            alignItems={{ base:  "flex-start" }}
+            alignItems={{ base: "flex-start" }}
             // border="1px solid red"
           >
             <HeroHeading
