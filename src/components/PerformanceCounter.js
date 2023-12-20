@@ -34,7 +34,7 @@ export default function PerformanceCounter() {
                 minWidth="fit-content"
                 width={{ base: "40%", xs: "45%", lg: "21%" }}
                 letterSpacing={"-0.75px"}
-                fontWeight="500"
+                fontWeight="00"
                 fontFamily={"sans"}
                 fontSize={{
                   base: "12.5px",
@@ -55,12 +55,13 @@ export default function PerformanceCounter() {
                     lg: "calc(9.75vw - 10px) ",
                     xl: "calc(8.8vw - 10px) ",
                   }}
-                  opacity="0.12"
+                  opacity="0.16"
                   fontFamily={"serif"}
                   letterSpacing={"-1px"}
                   fontWeight={"400"}
                   minWidth={"fit-content"}
                   ref={countUpRef}
+                  color={performanceCounterData[index].color}
                 />
 
                 <Text
@@ -69,6 +70,7 @@ export default function PerformanceCounter() {
                   top="50%"
                   left="50%"
                   transform="translate(-50%, -50%)"
+                  color={performanceCounterData[index].color}
                 >
                   {performanceCounterData[index].indicator}
                 </Text>

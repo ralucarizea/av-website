@@ -7,8 +7,8 @@ export default function AboutBanner() {
     <VStack
     mb="10vw"
       py={{base: "8vw", md: "4.75vw"}}
-      bg="tints.lime"
-      color="accents.lime"
+      bg="accents.red"
+      color="neutrals.light"
       flexDirection={{ base: "column" }}
       w="100%"
       px={{ base: "3vw", sm: "7vw", md: "8vw", lg: "10vw" }}
@@ -16,7 +16,7 @@ export default function AboutBanner() {
       fontSize={MDfont}
     >
       <Show above="md">
-        <Divider w="99%" />
+        <Divider borderColor="neutrals.light" w="99%" />
       </Show>
       <HStack
         px={{ base: "6.5vw", sm: "4vw", md: "0vw", lg: "2vw" }}

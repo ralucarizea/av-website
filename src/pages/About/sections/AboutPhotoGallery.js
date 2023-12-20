@@ -36,7 +36,7 @@ function AboutPhotoGallery() {
       alignItems={"flex-end"}
     >
       <VStack
-        mb={{ base: "28px", sm: "40px", md: "64px", lg: "70px" }}
+        mb={{ base: "28px", sm: "40px", md: "64px", lg: "60px" }}
         pl={{
           base: "24px",
           xs: "48px",
@@ -49,10 +49,11 @@ function AboutPhotoGallery() {
         w="100%"
         h="fit-content"
         fontFamily={"handwritten"}
-        fontSize={XXXLfont}
+        fontSize={{base: "40px", sm: "48px", md: "52px", lg: "60px", xl:"72px"}}
+        color="accents.red"
       >
-        <Text>...dar înainte de orice, sunt </Text>
-        <Text>un simplu om</Text>
+        <Text mb="-44px">...dar înainte de orice, sunt </Text>
+        <Text >un simplu om</Text>
       </VStack>
       <VStack
         mr={{ base: "24px", sm: "40px", md: "60px" }}

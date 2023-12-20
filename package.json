@@ -29,6 +29,7 @@
     "react-router-dom": "^6.20.0",
     "react-scripts": "^5.0.1",
     "react-spring-carousel": "^2.0.19",
+    "react-vertical-timeline-component": "^3.6.0",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "swiper": "^11.0.5",

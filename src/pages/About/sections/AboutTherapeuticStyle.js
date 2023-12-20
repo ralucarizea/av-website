@@ -53,11 +53,11 @@ export default function AboutTherapeuticStyle() {
       justifyContent="center"
     >
       <Text
-        w={{ base: "50%", sm: "100%" }}
+        w={{ base: "65%", sm: "100%" }}
         textAlign={"center"}
         py={{ base: "7vw", md: "5vw", lg: "3vw" }}
         fontFamily={"serif"}
-        fontSize={XXXLfont}
+        fontSize={{base: "20px", sm:"28px", md: "38px", lg: "44px", xl: "48px"}}
         lineHeight={"xs"}
       >
         Abordarea mea terapeutică

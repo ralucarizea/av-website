@@ -27,7 +27,7 @@ export default function AboutHero() {
       w="full"
       color={"neutrals.dark"}
       zIndex="1"
-      mb={{base: "10vw", md:"12vw", xl:"8vw"}}
+      mb={{base: "10vw", md:"12vw", xl:"16vw"}}
     >
       <PageTitle>Despre mine</PageTitle>
       <Flex
@@ -40,22 +40,22 @@ export default function AboutHero() {
         px={{ base: 3, sm: 8, md: 12, lg: 16, xl: 20 }}
         mt={{ base: "60px", sm: "76px", md: "60px", lg: "80px", xl: "120px" }}
         mb={{ base: "60px", xs: "60px", sm: "70px", md: "80px", xl: "100px" }}
-        border={"1px solid red"}
+        // border={"1px solid red"}
       >
         <Box
           borderRadius={"13vw 0 0 4vw"}
           h={{
-            base: "50vh",
-            xs: "58vh",
-            sm: "57vh",
+            base: "420px",
+            xs: "500px",
+            sm: "480px",
             md: "690px",
             lg: "750px",
             xl: "880px",
           }}
           w={{
-            base: "56vw",
-            xs: "46vw",
-            sm: "48vw",
+            base: "320px",
+            xs: "420px",
+            sm: "400px",
             md: "470px",
             lg: "550px",
             xl: "600px",
@@ -74,7 +74,7 @@ export default function AboutHero() {
           alignItems="flex-start"
           padding={{ base: "30px", md: "20px", lg: "24px 30px" }}
           alignSelf={{base: "center", md: "flex-end"}}
-          ml={{base: "-20px",md:"-80px", lg:"-48px"}}
+          ml={{base: "0",md:"-80px", lg:"-48px"}}
           mt={{base:"-48px", md: 0}}
           mb={{base:"0", md:"-80px", lg:"-36px"}}
           
@@ -87,8 +87,8 @@ export default function AboutHero() {
             xl: "730px",
           }}
           w={{
-            base: "55vw",
-            xs: "410px",
+            base: "320px",
+            xs: "420px",
             sm: "410px",
             md: "420px",
             lg: "430px",
@@ -96,7 +96,7 @@ export default function AboutHero() {
           }}
           minW={{ base: "240px", xs: "200px" }}
           fontSize={{
-            base: "11px",
+            base: "12px",
             xs: "xs",
             sm: "xs",
             md: "sm",
