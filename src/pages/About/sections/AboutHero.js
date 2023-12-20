@@ -7,7 +7,7 @@ export const PageTitle = styled(Text)`
   font-size: calc(40px + 0.95vw);
   color: inherit;
   text-align: center;
-  margin: 7vw auto 4vw;
+  margin: 7vw auto 5vw;
   width: 80%;
   line-height: 1.85rem;
 

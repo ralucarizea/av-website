@@ -5,10 +5,10 @@ import { MDfont } from "../../../assets/styles/theme";
 export default function AboutBanner() {
   return (
     <VStack
-    mb="10vw"
-      py={{base: "8vw", md: "4.75vw"}}
-      bg="accents.red"
-      color="neutrals.light"
+      mb="10vw"
+      py={{ base: "8vw", md: "4.75vw" }}
+      bg="rgb(253, 248, 241)"
+      color="accents.red"
       flexDirection={{ base: "column" }}
       w="100%"
       px={{ base: "3vw", sm: "7vw", md: "8vw", lg: "10vw" }}
@@ -26,7 +26,6 @@ export default function AboutBanner() {
         gap="5%"
         flexDirection={{ base: "column", md: "row" }}
       >
-
         <Box
           w="100%"
           my={{ base: "3vw", md: "1vw" }}
