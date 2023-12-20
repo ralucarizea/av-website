@@ -2,9 +2,13 @@ import React from "react";
 import { Flex, Box, Text, Show, VStack, Image, Button } from "@chakra-ui/react";
 import { HeroHeading } from "../../../assets/constants/styledcomponents";
 import StyledListItem from "../../../components/StyledListItem";
-import { HomeAboutIntroListContent } from "../../../assets/constants/data";
+import {
+  HomeAboutIntroListContent,
+  ROUTES,
+} from "../../../assets/constants/data";
 import { MDfont, XXLfont, LGfont } from "../../../assets/styles/theme";
 import SidebarButton from "../../../components/SidebarButton";
+import { Link } from "react-router-dom";
 
 function HomeAboutIntro() {
   return (
@@ -24,27 +28,28 @@ function HomeAboutIntro() {
       alignItems={"flex-start"}
     >
       <Image
-        // h={{
-        //   base: "45vh",
-        //   xs: "52vh",
-        //   sm: "64vh",
-        //   md: "70vh",
-        //   lg: "75vh",
-        //   xl: "75vh",
-        // }}
+        h={{
+          base: "45vh",
+          xs: "52vh",
+          sm: "64vh",
+          md: "70vh",
+          lg: "75vh",
+          xl: "90vh",
+        }}
+        // h="auto"
         minW="220px"
         minH="400px"
-        maxH="650px"
+        // maxH="650px"
         w={{
           base: "75%",
           sm: "62%",
           md: "55%",
           lg: "40vw",
-          xl: "33vw",
+          xl: "35vw",
         }}
         // maxW="600px"
         src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702369436/portraitImages/1_wjbbkb.jpg"
-        objectFit={"contain"}
+        objectFit={"cover"}
         objectPosition={"center"}
       />
       <VStack
@@ -55,19 +60,28 @@ function HomeAboutIntro() {
         alignItems={"flex-start"}
         // border="1px solid pink"
       >
-        <HeroHeading fontSize={XXLfont}> Licensed psychologist, MD</HeroHeading>
+        <HeroHeading fontSize={XXLfont}>
+          {" "}
+          Să te deschizi în fața cuiva este foarte greu, știu
+        </HeroHeading>
         <Text
           mt={{ base: 2, sm: 3, md: 6, lg: 5, xl: 10 }}
           mb={{ base: 2, sm: 3, md: 4, xl: 4 }}
           w={{ base: "100%", lg: "90%" }}
           fontSize={{ base: "13px", sm: "14px", md: "15px", xl: "16px" }}
         >
-          Misiunea mea este să îmi călăuzesc clienții către depășirea diverselor provocări ale vieții precum anxietatea,
-          depresia sau traumele din copilărie, ce îi împiedică să simtă bucuria
-          unei vieți complete. Metodele mele se concentrează pe cultivarea unei
-          conexiuni cu adevăratul sine, combinând tehnici relaționale și
-          transpersonale. Sunt determinată să te ajut să îți atingi aspirațiile
-          de transformare și dezvoltare personală, punându-mi la dispoziție toată experiența pentru a crea împreună cu tine o strategia personalizată de vindecare.
+          ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
+          misiunea mea este să îmi călăuzesc clienții către depășirea diverselor
+          provocări ale vieții precum anxietatea, depresia sau traumele din
+          copilărie, ce îi împiedică să simtă bucuria unei vieți complete.
+          <Text my="8px">
+            Metodele mele se concentrează pe cultivarea unei conexiuni cu
+            adevăratul sine, combinând tehnici relaționale și transpersonale.
+            Sunt determinată să te ajut să îți atingi aspirațiile de
+            transformare și dezvoltare personală, punându-mi la dispoziție toată
+            experiența pentru a crea împreună cu tine o strategia personalizată
+            de vindecare.{" "}
+          </Text>
         </Text>
         <Show above="md">
           <HeroHeading fontSize={LGfont} mb={{ base: "10px", lg: "16px" }}>
@@ -123,11 +137,14 @@ function HomeAboutIntro() {
           mt={{ base: "20px", lg: "16px" }}
           alignSelf={{ base: "center", lg: "flex-start" }}
         >
-          <SidebarButton
-            text={" Află mai multe despre mine"}
-            color="accents.army"
-            textTransform={"none"}
-          />
+          <Link to={ROUTES.ABOUT}>
+            {" "}
+            <SidebarButton
+              text={" Află mai multe despre mine"}
+              color="accents.army"
+              textTransform={"none"}
+            />
+          </Link>
         </Box>
       </VStack>
     </Flex>

@@ -15,18 +15,18 @@ import "react-vertical-timeline-component/style.min.css";
 import { Box, ListItem, Text, UnorderedList, VStack } from "@chakra-ui/react";
 
 export default function About() {
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <AboutHero id="story" />
       <AboutBanner />
       <PerformanceCounter />
-      {/* <AboutTherapeuticStyle /> */}
+      <AboutTherapeuticStyle />
 
       <Box my={{ xl: "20vw" }} fontFamily={"sans"}>
         <Box mb="10vw">
