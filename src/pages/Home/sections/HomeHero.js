@@ -123,9 +123,10 @@ function HomeHero() {
             display={{ base: "none", sm: "block" }}
             lineHeight={"lg"}
           >
-            My therapeutic style is rooted in the belief that people are
-            intrinsically valued and are deserving of fundamental human
-            connection; to be seen,to be heard,and to be understood.
+            Începe o experiență terapeutică personalizată care îți onorează
+            povestea, îți hrănește bunăstarea și te ghidează spre împuternicirea
+            vocii tale interioare. Calea ta către claritate și pace poate începe
+            aici!
           </Text>
           <StyledButton
             text="Solicită o programare"
@@ -157,11 +158,11 @@ function HomeHero() {
           lg: "48px",
           xl: "52px",
         }}
-        lineHeight={{base: "0.75em", sm:"0.9em", md:"1em"}}
+        lineHeight={{ base: "0.75em", sm: "0.9em", md: "1em" }}
       >
         <Text
           alignSelf={"center"}
-          w={{ base: "65%", sm:"45%", md: "40%" }}
+          w={{ base: "65%", sm: "45%", md: "40%" }}
           textAlign={"center"}
           pt="2.5vw"
           pb="1.25vw"

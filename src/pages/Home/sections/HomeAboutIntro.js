@@ -62,13 +62,12 @@ function HomeAboutIntro() {
           w={{ base: "100%", lg: "90%" }}
           fontSize={{ base: "13px", sm: "14px", md: "15px", xl: "16px" }}
         >
-          I help people find relief from anxiety, depression, trauma and other
-          mental stress that prevents one from enjoying a full life. My
-          therapeutic approach is relational and transpersonal with an intention
-          of supporting clients to more compassionately and curiously connect
-          with their authentic selves. Here to help you to reach your desired
-          goals for change and personal development, through a holistic and
-          personalised therapy plan.
+          Misiunea mea este să îmi călăuzesc clienții către depășirea diverselor provocări ale vieții precum anxietatea,
+          depresia sau traumele din copilărie, ce îi împiedică să simtă bucuria
+          unei vieți complete. Metodele mele se concentrează pe cultivarea unei
+          conexiuni cu adevăratul sine, combinând tehnici relaționale și
+          transpersonale. Sunt determinată să te ajut să îți atingi aspirațiile
+          de transformare și dezvoltare personală, punându-mi la dispoziție toată experiența pentru a crea împreună cu tine o strategia personalizată de vindecare.
         </Text>
         <Show above="md">
           <HeroHeading fontSize={LGfont} mb={{ base: "10px", lg: "16px" }}>
