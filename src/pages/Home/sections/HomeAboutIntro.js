@@ -121,7 +121,7 @@ function HomeAboutIntro() {
           </VStack>
         </Show>
         <Box
-          mt={{ base: "20px", lg: "0" }}
+          mt={{ base: "20px", lg: "16px" }}
           alignSelf={{ base: "center", lg: "flex-start" }}
         >
           <SidebarButton

@@ -115,7 +115,7 @@ export default function Footer() {
           base: "5.5vw 0",
           xs: "5vw 0",
           sm: "4vw 1vw 1vw",
-          md: "5vw 1vw",
+          md: "5vw 3vw",
           lg: "2vw 1vw",
           xl: "2vw 1vw",
         }}
@@ -123,7 +123,7 @@ export default function Footer() {
         minH={{ base: "auto", sm: "65vh", md: "62vh", lg: "60vh", xl: "58vh" }}
         w="100%"
         justifyContent={{ base: "flex-start", md: "space-between" }}
-        flexDirection={{ base: "column", md: "row" }}
+        flexDirection={{ base: "column", lg: "row" }}
         alignItems={{ base: "center", md: "flex-start" }}
         // textAlign={{base:"center", md: "left"}}
       >
