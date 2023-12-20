@@ -26,11 +26,10 @@ import styled from "@emotion/styled";
 import { MDfont } from "../../assets/styles/theme";
 const StyledTabPanel = styled(TabPanel)`
   width: 100%;
+  min-height: 15vw;
   height: 100%;
   padding-left: 36px;
   padding-top: 48px;
-  color: ${(props) => props.bgColor};
-  background-color: ${(props) => props.color};
 `;
 export default function About() {
   // useEffect(() => {
@@ -94,14 +93,12 @@ export default function About() {
           // variant="enclosed"
           px="10vw"
           h="fit"
-          orientation={{ base: "horizontal", md: "vertical" }}
           fontSize={MDfont}
         >
-          <TabList borderLeft="0" my={{ base: "16px", sm: "22px", lg: "32px" }}>
+          <TabList borderLeft="0">
             <Tab
               py={{ base: "16px", sm: "22px", lg: "32px" }}
               fontWeight="600"
-              _selected={{ borderInlineEnd: "2px solid" }}
               color="tints.army"
               bgColor="accents.army"
               fontSize={MDfont}
@@ -111,7 +108,6 @@ export default function About() {
             <Tab
               py={{ base: "16px", sm: "22px", lg: "32px" }}
               fontWeight="600"
-              _selected={{ borderInlineEnd: "2px solid" }}
               color="tints.red"
               bgColor="accents.red"
               fontSize={MDfont}
@@ -121,7 +117,6 @@ export default function About() {
             <Tab
               py={{ base: "16px", sm: "22px", lg: "32px" }}
               fontWeight="600"
-              _selected={{ borderInlineEnd: "2px solid" }}
               color="tints.lime"
               bgColor="accents.lime"
               fontSize={MDfont}
@@ -131,7 +126,6 @@ export default function About() {
             <Tab
               py={{ base: "16px", sm: "22px", lg: "32px" }}
               fontWeight="600"
-              _selected={{ borderInlineEnd: "2px solid" }}
               color="tints.yellow"
               bgColor="accents.yellow"
               fontSize={MDfont}
@@ -139,7 +133,7 @@ export default function About() {
               Teste de specialitate cu licență
             </Tab>
           </TabList>
-          <TabPanels my={{ base: "16px", sm: "22px", lg: "32px" }}>
+          <TabPanels>
             <StyledTabPanel color="accents.army" bgColor="tints.army">
               <UnorderedList
                 spacing={3}
@@ -182,7 +176,7 @@ export default function About() {
                 ))}
               </UnorderedList>{" "}
             </StyledTabPanel>
-            <StyledTabPanel color="accents.yellow" bgColor="tints.yellow">
+            <StyledTabPanel color="accents.yellow" bgColor="rgb(253, 248, 241)">
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
