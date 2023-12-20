@@ -28,7 +28,7 @@ export const CaptionTitle = styled(Box)`
 `;
 export const CaptionText = styled(Box)`
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   min-width: 300px;
   font-family: "DM Sans";
   font-weight: 400;
@@ -57,7 +57,13 @@ export default function AboutTherapeuticStyle() {
         textAlign={"center"}
         py={{ base: "7vw", md: "5vw", lg: "3vw" }}
         fontFamily={"serif"}
-        fontSize={{base: "20px", sm:"28px", md: "38px", lg: "44px", xl: "48px"}}
+        fontSize={{
+          base: "20px",
+          sm: "28px",
+          md: "38px",
+          lg: "44px",
+          xl: "48px",
+        }}
         lineHeight={"xs"}
       >
         Abordarea mea terapeutică
@@ -79,11 +85,10 @@ export default function AboutTherapeuticStyle() {
           />
         </CaptionTitle>
         <CaptionText>
-          Lorem ipsum dolor sit amet consectetur. Tristique libero cras dolor
-          morbi. Amet neque elementum et amet nunc amet. Ut lacus nulla
-          odio.Hostwinds has a rating of 4.74 stars from 7,761 reviews,
-          indicating that most customers are generally satisfied with their
-          purchases.
+          De-a lungul timpului, am investit foarte mult în abilitatea de a
+          asculta cu răbdare, de a înțelege și de a resimți emoțiile altora, în
+          scopul oferirii de susținere și compasiune în relațiile atât din viața
+          mea profesională, cât și în cea personală.
         </CaptionText>
       </CaptionBox>
       <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
@@ -103,16 +108,14 @@ export default function AboutTherapeuticStyle() {
           />
         </CaptionTitle>
         <CaptionText>
-          {" "}
-          Simple, flexible, and powerful. All it takes are boards, lists, and
-          cards to get a clear view of who’s doing what and what needs to get
-          done. Reviewers satisfied with Hostwinds most frequently mention good
-          service, google search, and front line.
+          Sunt o persoană flexibilă, adaptabilă și deschisă la schimbare,
+          capabilă să se ajusteze cu ușurință la situații noi sau cerințe,
+          manifestând o atitudine receptivă și înțelegătoare.
         </CaptionText>
       </CaptionBox>
       <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
         <CaptionTitle textAlign={"right"}>
-          Autentică{" "}
+          Autentică
           <Icon
             transform={`rotate(270deg)`}
             opacity="0.5"
@@ -128,15 +131,16 @@ export default function AboutTherapeuticStyle() {
         </CaptionTitle>
         <CaptionText>
           {" "}
-          No need to start from scratch. Jump-start your workflow with a proven
-          playbook designed for different teams. Customize it to make it
-          yours.Hostwinds is proud to be one of the best web and cloud hosting
-          providers on the market.
+          Îmi folosesc autenticitatea și conștiența de sine pentru a sprijini
+          procesul de vindecare și creștere personală al clienților. Astfel,
+          reușesc să creez un mediu sigur și de încredere în care clienții se
+          simt liberi să exploreze și să împărtășească aspecte sensibile ale
+          vieții lor.
         </CaptionText>
       </CaptionBox>
       <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
         <CaptionTitle>
-          Diversificată{" "}
+          Diversificată
           <Icon
             transform={`rotate(90deg)`}
             opacity="0.1"
@@ -151,11 +155,12 @@ export default function AboutTherapeuticStyle() {
           />
         </CaptionTitle>
         <CaptionText>
-          {" "}
-          Connect the apps your team already uses into your Trello workflow or
-          add a Power-Up to fine-tune your specific needs. We stand out from the
-          rest by providing reward-winning 24/7 support, fast hosting,
-          dependable services, and affordable pricing worldwide.
+          Ca psihoterapeut integrativ, am grijă să îmi adaptez intervențiile
+          terapeutice și să îmbin tehnici (cum ar fi terapia
+          cognitiv-comportamentală, terapia psihodinamică, terapia experiențială
+          sau terapia de cuplu) în funcție de situația și obiectivele
+          clienților, pentru a le oferi acestora în cel mai eficient mod
+          suportul necesar.
         </CaptionText>
       </CaptionBox>
       <CaptionTitle></CaptionTitle>

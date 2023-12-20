@@ -363,92 +363,184 @@ export const performanceCounterData = {
   3: { indicator: "specializări", number: 13, color: "accents.yellow" },
 };
 export const resumeData = {
-  0: {
-    // title: "Studii şi formare continuă",
-    achievements: [
-      "Cursant în cadrul Asociației SE Somatic Experiencing Romania, specializare în psihosomatică, metoda psiho-biologică dezvoltată de Dr. Peter Levine (în curs)",
-      "Absolvent în cadrul Asociației de cercetare, consiliere și Psihoterapie Integrativă (ACCPI), specializare Hipnoterapie Ericksoniană, Institut European acreditat EAIP, COPSI ",
-      "Curs de specializare continuă în ”Vindecarea rănilor materne transgeneraționale” - organizat de Florin Vancea, doctor în psihologie, psihoterapeut principal, formator în Psihoterapie Experienţială (24-27 februarie)",
-      "Participare la Conferința Națională APAR - ediția XVIII, pe tema „TULBURĂRI NEUROCOGNITIVE”, conferință avizată de Colegiul Psihologilor din România cu 32 credite profesionale la care am participat fizic (20-23 aprilie)",
-      "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, unde am participat fizic la Sibiu (23-25 noiembrie)",
-    ],
-    years: ["2023 - prezent"],
-    bgColor: "rgb(255, 238, 235)",
-    color: "rgb(208, 83, 64)",
-    icon: "",
+  certifications: {
+    0: {
+      // title: "Studii şi formare continuă",
+      achievements: [
+        "Cursant în cadrul Asociației SE Somatic Experiencing Romania, specializare în psihosomatică, metoda psiho-biologică dezvoltată de Dr. Peter Levine (în curs)",
+        "Absolvent în cadrul Asociației de cercetare, consiliere și Psihoterapie Integrativă (ACCPI), specializare Hipnoterapie Ericksoniană, Institut European acreditat EAIP, COPSI ",
+        "Curs de specializare continuă în ”Vindecarea rănilor materne transgeneraționale” - organizat de Florin Vancea, doctor în psihologie, psihoterapeut principal, formator în Psihoterapie Experienţială (24-27 februarie)",
+        "Participare la Conferința Națională APAR - ediția XVIII, pe tema „TULBURĂRI NEUROCOGNITIVE”, conferință avizată de Colegiul Psihologilor din România cu 32 credite profesionale la care am participat fizic (20-23 aprilie)",
+        "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, unde am participat fizic la Sibiu (23-25 noiembrie)",
+      ],
+      years: ["2023 - prezent"],
+      bgColor: "rgb(255, 238, 235)",
+      color: "rgb(208, 83, 64)",
+      icon: "",
+    },
+    1: {
+      // title: "Experiență profesională",
+      achievements: [
+        "Curs de specializare continuă în `Perspectiva traumei`- tabără rezidențială - Asociația Psihologilor Atestați din România (APAR) (25 - 28 august)",
+        "Participare la Conferința Națională APAR - ediția XVII, pe tema „COMPETENȚE ADAPTATIVE ȘI DEZADAPTATIVE”, conferință avizată de Colegiul Psihologilor din România cu 20 credite ce s-a desfășurat online (8 - 10 mai)",
+        "Curs specializare 12 luni intensiv „Psihosexologie - Evaluare și intervenție terapeutică” - Curs organizat de Institutul SPER (Societatea de Psihoterapie Experențială Română din București) (debutul în februarie)",
+      ],
+      years: ["2022 - 2023"],
+      bgColor: "rgb(247, 245, 255)",
+      color: "rgb(80, 47, 111)",
+      icon: "",
+    },
+    2: {
+      // title: "Workshop-uri",
+      achievements: [
+        "Participare la Conferința Națională internațională APAR editia XVI pe tematica „RESTRUCTURĂRI PSIHOLOGICE ÎN CRIZĂ”, conferință avizata de Colegiul Psihologilor din România cu 19 credite (12 - 16 mai)",
+        "Curs de specializare formare continuă „Psihoterapia traumei” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, (16 - 20 iunie)",
+        "Certificat de participare la workshop-ul formativ, specializare „Evaluare si interventie clinica in traumă” - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite / Curs sustinut de membru Asociația Expert Psy / Psiholog clinician principal, Florina Bicoiu (20 februarie)",
+        "Psihotraumă – evaluare și intervenţie psihologică",
+        "Evaluarea psihologică în deteriorarea cognitivă a adultului",
+      ],
+      years: ["2021 - 2022"],
+      bgColor: "rgb(237, 255, 248)",
+      color: "rgb(38, 126, 93)",
+      icon: "",
+    },
+    3: {
+      // title: "Workshop-uri",
+      achievements: [
+        "Curs specializare 6 luni intensiv „Curs terapie sistemica” - Curs organizat de Asociația de Psihoterapie Integrativă și Psihologie clinică din Iași, Formator în psihoterapie sistemică de familie și cuplu, Psiholog clinician principal - Cristian Petrescu (octombrie 2020 - martie 2021)",
+        "Curs de specializare formare continuă in „Transfromarea vieții și a scenariului de viață prin știința epigeneticii” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă (9 noiembrie)",
+        "Certificat de participare la workshop-ul formativ, specializare `Tehnici de hipnoterapie aplicate in managementul stresului` - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite/ Curs susținut de Asociația Română de Psihoterapie Integrativă / Președinte, psih.dr.Gina Chiriac (28 octombrie)",
+        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică a copilului abuzat/neglijat”- Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy / Președinte, psih.pr.dr.Armand VELEANOVICI (9 iunie)",
+        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică în situații de divort” - Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy/Președinte, psih.pr.dr.Armand VELEANOVICI (10 iunie)",
+      ],
+      years: ["2020 - 2021"],
+      bgColor: "rgb(251, 238, 224)",
+      color: "rgb(208, 83, 64)",
+      icon: "",
+    },
+    4: {
+      // title: "Workshop-uri",
+      achievements: [
+        "Curs specializare - „Consilier pentru dezvoltare personală” - Organizat de Confident Business Training SRL (22 - 28 ianuarie)",
+        "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Ghina Chiriac/ Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
+        "Certificat de participare la workshop-ul formativ, „Lucrul cu umbra” - organizat de Coralina Chiriac / Sediul Asociației Române de Psihoterapie Integrativă (28 octombrie)",
+      ],
+      years: ["2019 - 2020"],
+      bgColor: "rgb(253, 248, 241)",
+      color: "rgb(80, 47, 111)",
+      icon: "",
+    },
+    5: {
+      // title: "Workshop-uri",
+      achievements: [
+        "Curs de formare continuă in „Psihoterapia Transgenerațională” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, 19 septembrie 2018",
+        "Program Masteral Româno-Britanic de formare în Psihoterapie Integrativă absolvit la Asociația Română de Psihoterapie Integrativă, București - formare profesională în Psihoterapie integrativă, 2017-2019",
+      ],
+      years: ["2017 - 2019"],
+      bgColor: "rgb(237, 255, 248)",
+      color: "rgb(38, 126, 93)",
+      icon: "",
+    },
+    6: {
+      // title: "Workshop-uri",
+      achievements: [
+        "Facultatea de Psihologie şi Sociologie, Universitatea Spiru Haret, Bucureşti.",
+      ],
+      years: ["1998 - 2002"],
+      bgColor: "rgb(251, 238, 224)",
+      color: "rgb(208, 83, 64)",
+      icon: "",
+    },
   },
-  1: {
-    // title: "Experiență profesională",
-    achievements: [
-      "Curs de specializare continuă în `Perspectiva traumei`- tabără rezidențială - Asociația Psihologilor Atestați din România (APAR) (25 - 28 august)",
-      "Participare la Conferința Națională APAR - ediția XVII, pe tema „COMPETENȚE ADAPTATIVE ȘI DEZADAPTATIVE”, conferință avizată de Colegiul Psihologilor din România cu 20 credite ce s-a desfășurat online (8 - 10 mai)",
-      "Curs specializare 12 luni intensiv „Psihosexologie - Evaluare și intervenție terapeutică” - Curs organizat de Institutul SPER (Societatea de Psihoterapie Experențială Română din București) (debutul în februarie)",
-    ],
-    years: ["2022 - 2023"],
-    bgColor: "rgb(247, 245, 255)",
-    color: "rgb(80, 47, 111)",
-    icon: "",
+  experience: {
+    0: {
+      date: "2021 - prezent",
+      title:
+        "Psihoterapeut membru la Asociația Psihologilor Atestați din România (APAR)",
+    },
+    1: {
+      date: "2019 - prezent",
+      title:
+        "Consilier Psihologic, Psiholog clinician și Psihoterapeut integrativ pentru adulți și copii la Cabinet Individual de Psihologie Adina Varodi, București",
+    },
   },
-  2: {
-    // title: "Workshop-uri",
-    achievements: [
-      "Participare la Conferința Națională internațională APAR editia XVI pe tematica „RESTRUCTURĂRI PSIHOLOGICE ÎN CRIZĂ”, conferință avizata de Colegiul Psihologilor din România cu 19 credite (12 - 16 mai)",
-      "Curs de specializare formare continuă „Psihoterapia traumei” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, (16 - 20 iunie)",
-      "Certificat de participare la workshop-ul formativ, specializare „Evaluare si interventie clinica in traumă” - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite / Curs sustinut de membru Asociația Expert Psy / Psiholog clinician principal, Florina Bicoiu (20 februarie)",
-      "Psihotraumă – evaluare și intervenţie psihologică",
-      "Evaluarea psihologică în deteriorarea cognitivă a adultului",
-    ],
-    years: ["2021 - 2022"],
-    bgColor: "rgb(237, 255, 248)",
-    color: "rgb(38, 126, 93)",
-    icon: "",
+  affiliations: {
+    0: {
+      date: "",
+      title:
+        "Membru al Asociației Psihologilor Atestați din Romania - A.P.A.R.",
+    },
+    1: {
+      date: "",
+      title:
+        "Membru al Asociației de Cercetare, Consiliere și Psihoterapie Integrativă (ACCPI)",
+    },
+    2: {
+      date: "",
+      title: "Membru al Colegiului Psihologilor din România (COPSI)",
+    },
+    3: {
+      date: "",
+      title: "Membru al Federației Române de Psihoterapie Integrativă (FRP)",
+    },
+    4: {
+      date: "",
+      title: "Membru al Asociației Europene de Psihoterapie Integrativă (EAIP)",
+    },
+    5: {
+      date: "",
+      title:
+        "Cabinet Individual de Psihologie Adina Varodi - cod unic înregistrare Colegiul Psihologilor 10B9556 | Str. Cpt. Juverdeanu nr.51, Sect.2, București",
+    },
   },
-  3: {
-    // title: "Workshop-uri",
-    achievements: [
-      "Curs specializare 6 luni intensiv „Curs terapie sistemica” - Curs organizat de Asociația de Psihoterapie Integrativă și Psihologie clinică din Iași, Formator în psihoterapie sistemică de familie și cuplu, Psiholog clinician principal - Cristian Petrescu (octombrie 2020 - martie 2021)",
-      "Curs de specializare formare continuă in „Transfromarea vieții și a scenariului de viață prin știința epigeneticii” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă (9 noiembrie)",
-      "Certificat de participare la workshop-ul formativ, specializare `Tehnici de hipnoterapie aplicate in managementul stresului` - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite/ Curs susținut de Asociația Română de Psihoterapie Integrativă / Președinte, psih.dr.Gina Chiriac (28 octombrie)",
-      "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică a copilului abuzat/neglijat”- Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy / Președinte, psih.pr.dr.Armand VELEANOVICI (9 iunie)",
-      "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică în situații de divort” - Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy/Președinte, psih.pr.dr.Armand VELEANOVICI (10 iunie)",
-    ],
-    years: ["2020 - 2021"],
-    bgColor: "rgb(251, 238, 224)",
-    color: "rgb(208, 83, 64)",
-    icon: "",
+  accreditations: {
+    0: {
+      date: "",
+      title:
+        "Certificat European de Psihoterapeut Integrativ eliberat de Asociația Europeană de Psihoterapie Integrativă",
+    },
+    1: {
+      date: "",
+      title:
+        "Atestat de liberă practică în Psihologie clinică, nivel autonom, eliberat de Colegiul Psihologilor din România - Cod 23242",
+    },
+    2: {
+      date: "",
+      title:
+        "Atestat de liberă practică în Psihoterapie Integrativa, nivel autonom, eliberat de Colegiul Psihologilor din România - Cod 23242",
+    },
   },
-  4: {
-    // title: "Workshop-uri",
-    achievements: [
-      "Curs specializare - „Consilier pentru dezvoltare personală” - Organizat de Confident Business Training SRL (22 - 28 ianuarie)",
-      "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Ghina Chiriac/ Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
-      "Certificat de participare la workshop-ul formativ, „Lucrul cu umbra” - organizat de Coralina Chiriac / Sediul Asociației Române de Psihoterapie Integrativă (28 octombrie)",
-    ],
-    years: ["2019 - 2020"],
-    bgColor: "rgb(253, 248, 241)",
-    color: "rgb(80, 47, 111)",
-    icon: "",
-  },
-  5: {
-    // title: "Workshop-uri",
-    achievements: [
-      "Curs de formare continuă in „Psihoterapia Transgenerațională” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, 19 septembrie 2018",
-      "Program Masteral Româno-Britanic de formare în Psihoterapie Integrativă absolvit la Asociația Română de Psihoterapie Integrativă, București - formare profesională în Psihoterapie integrativă, 2017-2019",
-    ],
-    years: ["2017 - 2019"],
-    bgColor: "rgb(237, 255, 248)",
-    color: "rgb(38, 126, 93)",
-    icon: "",
-  },
-  6: {
-    // title: "Workshop-uri",
-    achievements: [
-      "Facultatea de Psihologie şi Sociologie, Universitatea Spiru Haret, Bucureşti.",
-    ],
-    years: ["1998 - 2002"],
-    bgColor: "rgb(251, 238, 224)",
-    color: "rgb(208, 83, 64)",
-    icon: "",
+  licensedTests: {
+    0: {
+      date: "iulie 2020",
+      title:
+        "Licență de utilizare Testul Arborelui - Karl Koch, Editura Profex (Testcentral)",
+    },
+    1: {
+      date: "iulie 2020",
+      title:
+        "Licență de utilizare Inventarul de Depresie Beck (BDI-II) - Aaron T.Beck, Robert A. Steer, Gregory K. Brown (SC RTS Romanian Psychological Testing Services)",
+    },
+    2: {
+      date: "18.01.2021",
+      title:
+        "Licența de utilizare Desenul Persoanei - Ada Abraham (Testcentral)",
+    },
+    3: {
+      date: "14.12.2021",
+      title:
+        "Licența de utilizare Inventarul de personalitate DECAS (Psiho Proiect)",
+    },
+    4: {
+      date: "18.03.2022 ",
+      title:
+        "Licență de utilizare Personality Clinical Form PCF (Psiho Proiect)",
+    },
+    5: {
+      date: "06.11.2023",
+      title:
+        "Licenta de utilizare MMSE 2 Mini Mental State Examination (Testcentral)",
+    },
   },
 };
 export const ROUTES = {
