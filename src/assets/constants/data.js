@@ -381,7 +381,7 @@ export const resumeData = {
     1: {
       // title: "Experiență profesională",
       achievements: [
-        "Curs de specializare continuă în `Perspectiva traumei`- tabără rezidențială - Asociația Psihologilor Atestați din România (APAR) (25 - 28 august)",
+        "Curs de specializare continuă în „Perspectiva traumei”- tabără rezidențială - Asociația Psihologilor Atestați din România (APAR) (25 - 28 august)",
         "Participare la Conferința Națională APAR - ediția XVII, pe tema „COMPETENȚE ADAPTATIVE ȘI DEZADAPTATIVE”, conferință avizată de Colegiul Psihologilor din România cu 20 credite ce s-a desfășurat online (8 - 10 mai)",
         "Curs specializare 12 luni intensiv „Psihosexologie - Evaluare și intervenție terapeutică” - Curs organizat de Institutul SPER (Societatea de Psihoterapie Experențială Română din București) (debutul în februarie)",
       ],
@@ -395,7 +395,7 @@ export const resumeData = {
       achievements: [
         "Participare la Conferința Națională internațională APAR editia XVI pe tematica „RESTRUCTURĂRI PSIHOLOGICE ÎN CRIZĂ”, conferință avizata de Colegiul Psihologilor din România cu 19 credite (12 - 16 mai)",
         "Curs de specializare formare continuă „Psihoterapia traumei” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, (16 - 20 iunie)",
-        "Certificat de participare la workshop-ul formativ, specializare „Evaluare si interventie clinica in traumă” - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite / Curs sustinut de membru Asociația Expert Psy / Psiholog clinician principal, Florina Bicoiu (20 februarie)",
+        "Certificat de participare la workshop-ul formativ, specializare „Evaluare si interventie clinica in traumă” - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite - Curs sustinut de membru Asociația Expert Psy - Psiholog clinician principal, Florina Bicoiu (20 februarie)",
         "Psihotraumă – evaluare și intervenţie psihologică",
         "Evaluarea psihologică în deteriorarea cognitivă a adultului",
       ],
@@ -409,9 +409,9 @@ export const resumeData = {
       achievements: [
         "Curs specializare 6 luni intensiv „Curs terapie sistemica” - Curs organizat de Asociația de Psihoterapie Integrativă și Psihologie clinică din Iași, Formator în psihoterapie sistemică de familie și cuplu, Psiholog clinician principal - Cristian Petrescu (octombrie 2020 - martie 2021)",
         "Curs de specializare formare continuă in „Transfromarea vieții și a scenariului de viață prin știința epigeneticii” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă (9 noiembrie)",
-        "Certificat de participare la workshop-ul formativ, specializare `Tehnici de hipnoterapie aplicate in managementul stresului` - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite/ Curs susținut de Asociația Română de Psihoterapie Integrativă / Președinte, psih.dr.Gina Chiriac (28 octombrie)",
-        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică a copilului abuzat/neglijat”- Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy / Președinte, psih.pr.dr.Armand VELEANOVICI (9 iunie)",
-        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică în situații de divort” - Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite / Curs susținut de Asociația Expert Psy/Președinte, psih.pr.dr.Armand VELEANOVICI (10 iunie)",
+        "Certificat de participare la workshop-ul formativ, specializare „Tehnici de hipnoterapie aplicate in managementul stresului” - Curs avizat de Colegiul Psihologilor din România, Comisia psihoterapie și creditat cu 10 credite - Curs susținut de Asociația Română de Psihoterapie Integrativă / Președinte, psih.dr.Gina Chiriac (28 octombrie)",
+        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică a copilului abuzat/neglijat”- Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite - Curs susținut de Asociația Expert Psy / Președinte, psih.pr.dr.Armand VELEANOVICI (9 iunie)",
+        "Curs de formare continuă în psihologie clinica „Evaluarea psihologică clinică în situații de divort” - Curs avizat de Colegiul Psihologilor din România, Comisia de Psihologie Clinică și Psihoterapie și creditat cu 10 credite - Curs susținut de Asociația Expert Psy/Președinte, psih.pr.dr.Armand VELEANOVICI (10 iunie)",
       ],
       years: ["2020 - 2021"],
       bgColor: "rgb(251, 238, 224)",
@@ -422,8 +422,8 @@ export const resumeData = {
       // title: "Workshop-uri",
       achievements: [
         "Curs specializare - „Consilier pentru dezvoltare personală” - Organizat de Confident Business Training SRL (22 - 28 ianuarie)",
-        "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Ghina Chiriac/ Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
-        "Certificat de participare la workshop-ul formativ, „Lucrul cu umbra” - organizat de Coralina Chiriac / Sediul Asociației Române de Psihoterapie Integrativă (28 octombrie)",
+        "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Ghina Chiriac - Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
+        "Certificat de participare la workshop-ul formativ, „Lucrul cu umbra” - organizat de Coralina Chiriac - Sediul Asociației Române de Psihoterapie Integrativă (28 octombrie)",
       ],
       years: ["2019 - 2020"],
       bgColor: "rgb(253, 248, 241)",

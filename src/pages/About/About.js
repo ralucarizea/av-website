@@ -45,7 +45,7 @@ export default function About() {
       <PerformanceCounter />
       <AboutTherapeuticStyle />
       <Box
-        my={{ base: "12vw", sm: "10vw", md: "8vw", lg: "16vw", xl: "20vw" }}
+        my={{ base: "28vw", sm: "10vw", md: "8vw", lg: "16vw", xl: "20vw" }}
         fontFamily={"sans"}
       >
         <Box mb="10vw">
@@ -77,6 +77,7 @@ export default function About() {
                 spacing={3}
                 fontWeight="500"
                 letterSpacing={"-0.5px"}
+                fontSize={{base: "13.5px", sm: "14px", md: "15px", lg: "16px"}}
               >
                 {resumeData.certifications[index]?.achievements?.map(
                   (achievement) => (
@@ -91,13 +92,14 @@ export default function About() {
           my={{ base: "28vw", sm: "18vw", md: "16vw", lg: "16vw", xl: "20vw" }}
           isFitted
           // variant="enclosed"
-          px="10vw"
+          px={{base: "3vw", md: "10vw"}}
           h="fit"
           fontSize={MDfont}
         >
           <TabList borderLeft="0">
             <Tab
-              py={{ base: "16px", sm: "22px", lg: "32px" }}
+              py={{ base: "12px", sm: "22px", lg: "32px" }}
+              px={{ base: "8px", sm: "16px", lg: "18px" }}
               fontWeight="600"
               color="tints.army"
               bgColor="accents.army"
@@ -106,7 +108,8 @@ export default function About() {
               Experiență profesională
             </Tab>
             <Tab
-              py={{ base: "16px", sm: "22px", lg: "32px" }}
+              py={{ base: "12px", sm: "22px", lg: "32px" }}
+              px={{ base: "8px", sm: "16px", lg: "18px" }}
               fontWeight="600"
               color="tints.red"
               bgColor="accents.red"
@@ -115,7 +118,8 @@ export default function About() {
               Afilieri
             </Tab>
             <Tab
-              py={{ base: "16px", sm: "22px", lg: "32px" }}
+              py={{ base: "12px", sm: "22px", lg: "32px" }}
+              px={{ base: "8px", sm: "16px", lg: "18px" }}
               fontWeight="600"
               color="tints.lime"
               bgColor="accents.lime"
@@ -124,7 +128,8 @@ export default function About() {
               Acreditări
             </Tab>
             <Tab
-              py={{ base: "16px", sm: "22px", lg: "32px" }}
+              py={{ base: "12px", sm: "22px", lg: "32px" }}
+              px={{ base: "8px", sm: "16px", lg: "18px" }}
               fontWeight="600"
               color="tints.yellow"
               bgColor="accents.yellow"
