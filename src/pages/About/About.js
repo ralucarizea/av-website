@@ -156,7 +156,7 @@ export default function About() {
               >
                 {Object.keys(resumeData.affiliations).map((index) => (
                   <ListItem key={index}>
-                    {resumeData.affiliations[index].title} -{" "}
+                    {resumeData.affiliations[index].title} 
                     {resumeData.affiliations[index].date}
                   </ListItem>
                 ))}
@@ -170,7 +170,7 @@ export default function About() {
               >
                 {Object.keys(resumeData.accreditations).map((index) => (
                   <ListItem key={index}>
-                    {resumeData.accreditations[index].title} -{" "}
+                    {resumeData.accreditations[index].title} 
                     {resumeData.accreditations[index].date}
                   </ListItem>
                 ))}
