@@ -16,7 +16,7 @@ function HomeAboutIntro() {
       maxW="100vw"
       h="fit"
       px={{ base: 5, xs: 6, sm: 8, md: 12, lg: 14, xl: 16 }}
-      py={{ base: 16, xs: 20, sm: 22, md: 24, lg: 20, xl: 28 }}
+      py={{ base: 24, xs: 20, sm: 22, md: 24, lg: 20, xl: 28 }}
       // py={[16, 20, 22, 24, 20, 28]}
       justifyContent={"center"}
       flexWrap="wrap"

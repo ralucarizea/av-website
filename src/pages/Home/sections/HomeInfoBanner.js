@@ -44,7 +44,7 @@ export const SectionTitle = styled(Box)`
   @media screen and (max-width: 640px) {
     font-size: 44px;
     margin-bottom: 32px;
-    line-height: 1.6rem;
+    line-height: 1.9rem;
   }
 `;
 export default function HomeInfoBanner() {
