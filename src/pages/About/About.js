@@ -88,7 +88,7 @@ export default function About() {
           ))}
         </VerticalTimeline>
         <Tabs
-          my={{ base: "12vw", sm: "10vw", md: "16vw", lg: "16vw", xl: "20vw" }}
+          my={{ base: "28vw", sm: "18vw", md: "16vw", lg: "16vw", xl: "20vw" }}
           isFitted
           // variant="enclosed"
           px="10vw"
