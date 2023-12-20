@@ -30,6 +30,11 @@ export const StyledServicePageHeading = styled(Box)`
   width: 60%;
   @media screen and (max-width: 820px) {
     align-self: flex-start;
+    width: 80%;
+
+  }
+  @media screen and (max-width: 640px) {
+    width: 100%;
   }
 `;
 export const StyledServicePageText = styled(Box)`
