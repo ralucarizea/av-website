@@ -7,7 +7,7 @@ import { ROUTES } from "../assets/constants/data";
 export default function LogoContainer({ color }) {
   return (
     <Link to={ROUTES.HOME}>
-      <Flex alignItems={"center"} h="100%" pl="10px" w="max-content">
+      <Flex alignItems={"center"} h="100%" pl={{base: "4px", sm: "10px"}} w="max-content">
         <Image
           w={{
             base: "80px",
