@@ -73,14 +73,14 @@ function HomeAboutIntro() {
           ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
           misiunea mea este să îmi călăuzesc clienții către depășirea diverselor
           provocări ale vieții precum anxietatea, depresia sau traumele din
-          copilărie, ce îi împiedică să simtă bucuria unei vieți complete.
+          copilărie, ce îi împiedică să simtă bucuria unei vieți autentice.
           <Text my="8px">
             Metodele mele se concentrează pe cultivarea unei conexiuni cu
             adevăratul sine, combinând tehnici relaționale și transpersonale.
             Sunt determinată să te ajut să îți atingi aspirațiile de
             transformare și dezvoltare personală, punându-mi la dispoziție toată
-            experiența pentru a crea împreună cu tine o strategia personalizată
-            de vindecare.{" "}
+            experiența pentru a crea împreună cu tine o strategie personalizată
+            de vindecare.
           </Text>
         </Text>
         <Show above="md">

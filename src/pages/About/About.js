@@ -48,11 +48,11 @@ export default function About() {
         my={{ base: "28vw", sm: "10vw", md: "8vw", lg: "16vw", xl: "20vw" }}
         fontFamily={"sans"}
       >
-        <Box mb="10vw">
-          <PageTitle mb="8vw">Studii si formare continua </PageTitle>
+        <Box mb={{base:"20vw", md: "10vw", xl:"8vw"}}>
+          <PageTitle mb={"8vw"}>Studii si formare continua </PageTitle>
         </Box>
 
-        <VerticalTimeline lineColor="rgb(0,0,0, 0.1)">
+        <VerticalTimeline lineColor="rgb(0,0,0, 0.1)" >
           {Object.keys(resumeData.certifications).map((index) => (
             <VerticalTimelineElement
               key={index}
@@ -153,7 +153,7 @@ export default function About() {
                 ))}
               </UnorderedList>
             </StyledTabPanel>
-            <StyledTabPanel color="accents.red" bgColor="tints.red">
+            <StyledTabPanel color="accents.red" bgColor="rgb(255, 238, 235)">
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
