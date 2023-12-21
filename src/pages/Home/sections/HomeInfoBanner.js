@@ -42,8 +42,8 @@ export const SectionTitle = styled(Box)`
     line-height: 2rem;
   }
   @media screen and (max-width: 640px) {
-    font-size: 44px;
-    margin-bottom: 32px;
+    font-size: 42px;
+    margin-bottom: 16px;
     line-height: 1.9rem;
   }
 `;
@@ -52,7 +52,7 @@ export default function HomeInfoBanner() {
     <VStack
       bg="tints.lime"
       color="accents.lime"
-      p={{ base: "14vw 6vw", sm: "10vw 6vw", md: "8vw 6vw", lg: "6vw" }}
+      p={{ base: "17vw 6vw", sm: "10vw 6vw", md: "8vw 6vw", lg: "6vw" }}
       h="auto"
       maxW="100vw"
       justifyContent={"space-evenly"}
@@ -68,7 +68,7 @@ export default function HomeInfoBanner() {
         fontFamily={"sans"}
         fontWeight={"500"}
         gap={4}
-        mt={{ base: "8vw", md: "3vw" }}
+        mt={{ base: "5vw", md: "3.5vw" }}
       >
         <Flex
           alignItems="center"

@@ -17,7 +17,7 @@ export default function HomeServicesMenu() {
   return (
     <Flex
       maxW="100vw"
-      py={{ base: "20vw", sm: "8vw", md: "10vw", lg: "8vw" }}
+      py={{ base: "24vw", sm: "10vw", md: "10vw", lg: "8vw" }}
       px={{ xs: "12vw", sm: "8vw", md: "10vw", lg: "8vw" }}
       mb="14vh"
       // bg="pink"
@@ -36,7 +36,7 @@ export default function HomeServicesMenu() {
         {" "}
         Servicii
       </Text> */}
-      <Flex w="100%" justifyContent={"center"} color="accents.army">
+      <Flex w="100%" justifyContent={"center"} color="accents.army" mb={{base: "32px", sm:"", }}>
         <SectionTitle>Servicii</SectionTitle>
       </Flex>
 

@@ -10,7 +10,7 @@ export default function PerformanceCounter() {
       h="fit"
       my={{base: "2vw", md: "3vw",  lg: "5vw" }}
       py="8vw"
-      px={{ base: "16vw", sm: "14vw", md: "12vw",  lg: "3.75vw" }}
+      px={{ base: "12vw", sm: "12vw", md: "12vw",  lg: "3.75vw" }}
       justifyContent={"space-evenly"}
       alignItems={"center"}
       color="neutrals.dark"
@@ -37,7 +37,7 @@ export default function PerformanceCounter() {
                 fontWeight="00"
                 fontFamily={"sans"}
                 fontSize={{
-                  base: "12.5px",
+                  base: "12.75px",
                   xs: "calc(11px + 0.45vw)",
                   sm: "calc(11px + 0.5vw)",
                   md: "calc(11px + 0.5vw)",
@@ -48,9 +48,9 @@ export default function PerformanceCounter() {
               >
                 <Box
                   fontSize={{
-                    base: "calc(16vw - 10px)",
-                    xs: "calc(13vw - 10px)",
-                    sm: "calc(12vw - 10px)",
+                    base: "calc(17.5vw - 10px)",
+                    xs: "calc(15.5vw - 10px)",
+                    sm: "calc(13.5vw - 10px)",
                     md: "calc(10.5vw - 5px) ",
                     lg: "calc(9.75vw - 10px) ",
                     xl: "calc(8.8vw - 10px) ",
