@@ -204,7 +204,7 @@ export const HomeAboutIntroListContent = {
 export const HomeServicesMenuData = {
   0: {
     id: 0,
-    title: "Psihoterapie individuală",
+    title: "Psihoterapie individuala",
     brief:
       "Navigate life's challenges with tailored sessions for self-discovery and positive change.",
     description: {

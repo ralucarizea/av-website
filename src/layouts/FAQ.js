@@ -26,7 +26,7 @@ const FAQ = () => {
       color={"accents.army"}
     >
       <Box
-        pb={{ base: "18vw", xs: "8vw", md: "8vw", xl: "6vw" }}
+        pb={{ base: "14vw", xs: "8vw", md: "8vw", xl: "6vw" }}
         fontSize={{
           base: "40px",
           xs: "42px",
@@ -35,10 +35,10 @@ const FAQ = () => {
           lg: "52px",
           xl: "60px",
         }}
-        lineHeight={"none"}
+        lineHeight={"2.25rem"}
         fontFamily={"handwritten"}
         width={{
-          base: "80%",
+          base: "75%",
           xs: "70%",
           sm: "65%",
           md: "60%",

@@ -68,20 +68,20 @@ export default function Footer() {
         bg="accents.army"
         color="neutrals.light"
         alignContent={"center"}
-        pb={{ base: "6vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
+        pb={{ base: "5vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
         zIndex={12121}
       >
         <VStack
           justifyContent={"center"}
           w={{
-            base: "80%",
+            base: "90%",
             xs: "72%",
             sm: "70%",
             md: "66%",
             lg: "60%",
             xl: "45%",
           }}
-          pt={{ base: "10vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
+          pt={{ base: "8vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
           // pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "2vw" }}
         >
           <SectionTitle>
@@ -112,7 +112,7 @@ export default function Footer() {
         // bg="neutrals.light"
         color="accents.red"
         padding={{
-          base: "5.5vw 0",
+          base: "5vw 0 0",
           xs: "5vw 0",
           sm: "4vw 1vw 1vw",
           md: "5vw 3vw",
@@ -131,7 +131,7 @@ export default function Footer() {
           color={"neutrals.dark"}
           justifyContent={{ base: "center", md: "flex-start" }}
           width={{ base: "15%", md: "22%" }}
-          mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
+          mt={{ base: "3vw", md: "8vw", lg: "7vw", xl: "4vw" }}
         />
         <Flex
           mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
