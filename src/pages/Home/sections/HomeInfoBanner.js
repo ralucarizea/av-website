@@ -16,6 +16,10 @@ export const StyledStackBox = styled(Box)`
   justify-content: center;
   // align-items: center;
   gap: 1.5vw;
+  @media screen and (max-width: 490px) {
+    width: 75%;
+    gap: 16px;
+  }
 `;
 export const StyledStack = styled(Flex)`
   flex-direction: column;

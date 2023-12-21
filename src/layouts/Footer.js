@@ -68,20 +68,20 @@ export default function Footer() {
         bg="accents.army"
         color="neutrals.light"
         alignContent={"center"}
-        pb={{ base: "5vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
+        pb={{ base: "7vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
         zIndex={12121}
       >
         <VStack
           justifyContent={"center"}
           w={{
-            base: "90%",
+            base: "88%",
             xs: "72%",
             sm: "70%",
             md: "66%",
             lg: "60%",
             xl: "45%",
           }}
-          pt={{ base: "8vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
+          pt={{ base: "10.5vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
           // pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "2vw" }}
         >
           <SectionTitle>
@@ -112,8 +112,8 @@ export default function Footer() {
         // bg="neutrals.light"
         color="accents.red"
         padding={{
-          base: "5vw 0 0",
-          xs: "5vw 0",
+          base: "5vw 0 16px",
+          xs: "5vw 0 8px",
           sm: "4vw 1vw 1vw",
           md: "5vw 3vw",
           lg: "2vw 1vw",
@@ -141,7 +141,7 @@ export default function Footer() {
           w="100%"
           justifyContent={{ base: "center", md: "space-evenly" }}
           alignItems={{ base: "center", sm: "flex-start" }}
-          gap={{ base: 3, sm: 5, md: 7 }}
+          gap={{ base: 3.5, sm: 5, md: 7 }}
         >
           <StyledStackBox>
             <Box h="fit">
