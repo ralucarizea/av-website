@@ -1,15 +1,18 @@
 import { ListItem, UnorderedList } from "@chakra-ui/react";
 import FirstFAQ from "../../components/firstFAQ";
+import SecondFAQ from "../../components/SecondFAQ";
+import ThirdFAQ from "../../components/ThirdFAQ";
+import FourthFAQ from "../../components/FourthFAQ";
+import FifthFAQ from "../../components/FifthFAQ";
 
 export const articles = [
   {
     id: 1,
     titleBold: "Puterea vindecătoare a grupului:",
     title:
-      "cum ne ajută traumele celor din jur să ni le vindecăm pe ale noastre",
+      "principii si recompense in urma tepraiei",
     content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+      highlightedParagraph: "Psihoterapia de grup poate oferi o serie de beneficii semnificative atunci când este folosită pentru tratarea traumei. Traumele pot afecta profund individul și pot influența relațiile, comportamentele și starea emoțională. În cadrul unui grup terapeutic, persoanele care au experimentat traume similare sau diferite pot beneficia de următoarele aspecte:",
       firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
       secondParagraph:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
@@ -143,7 +146,7 @@ export const faqMainpage = {
   },
   1: {
     question: "Cum ar trebui să mă pregătesc pentru prima ședință de terapie?",
-    answer: "",
+    answer: () => <SecondFAQ />,
     description: "",
     price: "",
     duration: "",
@@ -153,7 +156,7 @@ export const faqMainpage = {
   2: {
     question:
       "Care sunt regulile cele mai importante pe care trebuie să le respect în relația terapeut-client?",
-    answer: "",
+    answer: () => <ThirdFAQ />,
     description: "",
     price: "",
     duration: "",
@@ -162,7 +165,7 @@ export const faqMainpage = {
   },
   3: {
     question: "Cât durează un proces terapeutic complet?",
-    answer: "",
+    answer: () => <FourthFAQ />,
     description: "",
     price: "",
     duration: "",
@@ -171,7 +174,7 @@ export const faqMainpage = {
   },
   4: {
     question: "Ce se întâmplă dacă nu mai pot ajunge la o ședință programată?",
-    answer: "",
+    answer: () => <FifthFAQ />,
     description: "",
     price: "",
     duration: "",

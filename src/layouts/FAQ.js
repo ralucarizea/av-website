@@ -50,7 +50,7 @@ const FAQ = () => {
         Întrebari frecvent întalnite
       </Box>
       <Box
-        width={{ base: "85%", xs: "74%", md: "72%", xl: "70%" }}
+        width={{ base: "92%", xs: "85%", md: "80%", xl: "70%" }}
         alignItems={"center"}
         fontSize={MDfont}
       >
@@ -123,7 +123,9 @@ const FAQ = () => {
                 fontWeight="300"
                 fontSize={{ base: "13px", xs: "14px", md: "16px", xl: "17px" }}
               >
-  {typeof faqMainpage[qa].answer === 'function' ? faqMainpage[qa].answer() : faqMainpage[qa].answer}
+                {typeof faqMainpage[qa].answer === "function"
+                  ? faqMainpage[qa].answer()
+                  : faqMainpage[qa].answer}
               </AccordionPanel>
             </AccordionItem>
           ))}

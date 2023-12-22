@@ -45,29 +45,44 @@ export default function BlogPost() {
     <VStack h="fit" w="100%" fontFamily={"sans"} color="neutrals.dark">
       <HStack
         // border="1px solid pink"
-        w={{ base: "85%", sm: "80%", lg: "65%" }}
-        mt={{ base: "", sm: "16vw", md: "8vw", lg: "8vw", xl: "3vw" }}
+        w={{ base: "85%", sm: "80%", lg: "68%" }}
+        mt={{ base: "18vw", sm: "16vw", md: "8vw", lg: "8vw", xl: "4vw" }}
         flexDirection={{ base: "column", md: "row" }}
       >
-        <VStack w={{ base: "75%", md: "45%" }} alignItems={"flex-start"}>
+        <VStack
+          w={{ base: "95%", sm: "70%", md: "45%" }}
+          alignItems={"flex-start"}
+        >
           <Title
-            fontSize={{ base: "", sm: "2xl", md: "2xl", lg: "3xl", xl: "4xl" }}
+            fontSize={{
+              base: "md",
+              xs:"lg",
+              sm: "2xl",
+              md: "2xl",
+              lg: "3xl",
+              xl: "4xl",
+            }}
           >
             {article.titleBold} {article.title}
           </Title>
           <HStack
             h="fit"
-            ml="2%"
+            ml={{ base: "0", sm: "2%" }}
             mt="3%"
             mb={{ base: "24px", md: 0 }}
             // border="1px solid green"
             w="110%"
             justifyContent={{ base: "center", md: "flex-start" }}
-            fontSize={SMfont}
+            fontSize={{
+              base: "11px",
+              sm: "13px",
+              md: "14px",
+              lg: "16px",
+            }}
           >
             <Text
               textTransform={"uppercase"}
-              letterSpacing={"2px"}
+              letterSpacing={"1.5px"}
               color="rgba(0,0,0, 0.55)"
             >
               de Adina Varodi
@@ -80,7 +95,7 @@ export default function BlogPost() {
             />
             <Text
               textTransform={"uppercase"}
-              letterSpacing={"2px"}
+              letterSpacing={"1.5px"}
               color="rgba(0,0,0, 0.55)"
               ml="2%"
             >
@@ -95,7 +110,7 @@ export default function BlogPost() {
         />
       </HStack>
       <VStack
-        w="50%"
+        w={{ base: "80%", xs: "75%", md: "60%", lg: "50%" }}
         mt={{ base: "5vw", sm: "4vw", md: "3vw", lg: "3vw", xl: "2vw" }}
         fontSize={MDfont}
       >
@@ -106,7 +121,7 @@ export default function BlogPost() {
         </Box>
         <Box>
           <Subtitle
-            mb={{ base: "20px", md: "24px", lg: "28px", xl: "32px" }}
+            mb={{ base: "18px", md: "24px", lg: "28px", xl: "32px" }}
             fontSize={XXLfont}
           >
             {" "}
@@ -119,7 +134,7 @@ export default function BlogPost() {
         </Box>
         <Box>
           <Subtitle
-            mb={{ base: "20px", md: "24px", lg: "28px", xl: "32px" }}
+            mb={{ base: "18px", md: "24px", lg: "28px", xl: "32px" }}
             fontSize={XXLfont}
           >
             {article.content.secondHeading}
