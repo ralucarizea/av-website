@@ -123,7 +123,7 @@ const FAQ = () => {
                 fontWeight="300"
                 fontSize={{ base: "13px", xs: "14px", md: "16px", xl: "17px" }}
               >
-                {faqMainpage[qa].answer}
+  {typeof faqMainpage[qa].answer === 'function' ? faqMainpage[qa].answer() : faqMainpage[qa].answer}
               </AccordionPanel>
             </AccordionItem>
           ))}

@@ -1,3 +1,6 @@
+import { ListItem, UnorderedList } from "@chakra-ui/react";
+import FirstFAQ from "../../components/firstFAQ";
+
 export const articles = [
   {
     id: 1,
@@ -131,8 +134,7 @@ export const faqMainpage = {
   0: {
     question:
       "Care este diferența între o sesiune de psihoterapie și una de hipnoterapie?",
-    answer:
-      "Navigate life's challenges with tailored sessions for self-discovery and positive change.",
+    answer: () => <FirstFAQ />,
     description: "",
     price: "",
     duration: "",
@@ -141,8 +143,7 @@ export const faqMainpage = {
   },
   1: {
     question: "Cum ar trebui să mă pregătesc pentru prima ședință de terapie?",
-    answer:
-      "Strengthen relationships through collaborative sessions, fostering effective communication.",
+    answer: "",
     description: "",
     price: "",
     duration: "",
@@ -152,8 +153,7 @@ export const faqMainpage = {
   2: {
     question:
       "Care sunt regulile cele mai importante pe care trebuie să le respect în relația terapeut-client?",
-    answer:
-      "Heal from past experiences in a safe environment, promoting resilience.",
+    answer: "",
     description: "",
     price: "",
     duration: "",
@@ -162,8 +162,7 @@ export const faqMainpage = {
   },
   3: {
     question: "Cât durează un proces terapeutic complet?",
-    answer:
-      "Unlock your subconscious in order to heal your deepest emotional wounds.",
+    answer: "",
     description: "",
     price: "",
     duration: "",
@@ -172,7 +171,7 @@ export const faqMainpage = {
   },
   4: {
     question: "Ce se întâmplă dacă nu mai pot ajunge la o ședință programată?",
-    answer: "Gain insights into your traits, strengths, and growth areas.",
+    answer: "",
     description: "",
     price: "",
     duration: "",
@@ -205,8 +204,7 @@ export const HomeServicesMenuData = {
   0: {
     id: 0,
     title: "Psihoterapie individuala",
-    brief:
-      "Navigate life's challenges with tailored sessions for self-discovery and positive change.",
+    brief: "Drumul spre regasirea de sine autentica",
     description: {
       highlightedParagraph:
         "Psihoterapia individuală este o formă de terapie în care un psihoterapeut lucrează cu un singur client, într-o relație de colaborare și încredere. Scopul acestei terapii este de a ajuta persoana să înțeleagă și să depășească problemele emoționale, comportamentale sau interpersonale cu care se confruntă. Psihoterapia individuală are ca bază teoria și practicile psihologiei și se bazează pe dialogul terapeut-client, într-un mediu sigur și confidențial.",
@@ -228,7 +226,7 @@ export const HomeServicesMenuData = {
     id: 1,
     title: "Psihoterapie de cuplu/familie",
     brief:
-      "Strengthen relationships through collaborative sessions, fostering effective communication.",
+      " Locul unde descoperim impreuna care sunt actiunile specifice pe care ni le dorim fiecare, apoi validarea, ascultarea activa si construirea unor noi credinte noi, autentice cuplului renascut",
     description: {
       highlightedParagraph:
         "Psihoterapia de cuplu este o formă de terapie în care un terapeut lucrează cu un cuplu pentru a-i ajuta să-și îmbunătățească relația și să-și rezolve problemele. Scopul acestei terapii este de a îmbunătăți comunicarea, de a înțelege și de a rezolva conflictele, de a reconstrui încrederea și de a dezvolta o relație mai sănătoasă și mai satisfăcătoare.",
@@ -250,7 +248,7 @@ export const HomeServicesMenuData = {
     id: 2,
     title: "Terapie prin Somatic Experiencing®",
     brief:
-      "Heal from past experiences in a safe environment, promoting resilience.",
+      "Depasirea ranilor traumatice emotionale, fiziologice nu doar cognitive reprezinta vindecarea evenimentelor din cele trei raspunsuri: lupta, fugi, ori inghet pentru protectie.",
     description: {
       highlightedParagraph:
         "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
@@ -272,7 +270,7 @@ export const HomeServicesMenuData = {
     id: 3,
     title: "Hipnoterapie",
     brief:
-      "Unlock your subconscious in order to heal your deepest emotional wounds.",
+      "Vindecarea tuturor ranilor din trecut la nivel inconstient cu ajutorul transelor specifice",
     description: {
       highlightedParagraph:
         "Hipnoza eriksoniană, numită și hipnoza conversațională sau hipnoza indirectă, este o formă de terapie hipnotică dezvoltată de psihoterapeutul Milton H. Erickson. Acest tip de hipnoză este caracterizat de abordarea indirectă și subtilă a sugestiilor hipnotice, prin intermediul limbajului metaforic, indicilor nonverbali și a tehnicilor de conversație.",
@@ -293,7 +291,8 @@ export const HomeServicesMenuData = {
   4: {
     id: 4,
     title: "Evaluare psihologica",
-    brief: "Gain insights into your traits, strengths, and growth areas.",
+    brief:
+      "Ajutor de specialitate testat stiintific cu ajutorul unor baterii de teste specifice pentru identificarea disfunctionalitatilor cum ar fi ADHD, PTSD, OCD, etc",
     description: {
       highlightedParagraph:
         "Evaluarea clinică este un proces complex și sistematic de evaluare a stării de sănătate a unei persoane, care implică colectarea și analiza informațiilor relevante legate de istoricul personal și medical al individului, simptomele și problemele sale actuale, funcționarea psihologică și socială, precum și a altor factori relevanți pentru sănătatea și bunăstarea sa.",
@@ -315,7 +314,7 @@ export const HomeServicesMenuData = {
     id: 5,
     title: "Psihosexologie",
     brief:
-      "Access convenient support for expert guidance and tailored coping strategies.",
+      "Te confrunti cu disfunctionalitati legate de orientarea sexuala (nevoi sexuale pe parcusul vietii), ori identitatea sexuala (cu care ne nastem)",
     description: {
       highlightedParagraph:
         "Psihosexologia este un domeniu interdisciplinar care se ocupă de studierea și înțelegerea relației dintre aspectele psihologice și aspectele sexuale ale indivizilor. Aceasta abordează aspectele emoționale, mentale, comportamentale și sociale ale sexualității umane și își propune să identifice și să soluționeze problemele și dificultățile legate de sexualitatea umană.",
@@ -337,7 +336,7 @@ export const HomeServicesMenuData = {
     id: 6,
     title: "Psihoterapie de grup",
     brief:
-      "Access convenient support for expert guidance and tailored coping strategies.",
+      "Grup de suport unde poti sa iti impartasesti experienta si sa experimentezi ca nu esti singur in trauma pe care o resimti (lucru care ajuta la vindecare si restructurarea intregi identitati).",
     description: {
       highlightedParagraph:
         "Psihoterapia de grup reprezintă forma de terapie în care întâlnirile și ședința terapeutică se desfășoară cu participarea unui grup de persoane.",

@@ -61,7 +61,7 @@ export default function HomeInfoBanner() {
       maxW="100vw"
       justifyContent={"space-evenly"}
     >
-      <SectionTitle>Cum se desfasoara o sedinta</SectionTitle>
+      <SectionTitle>Care sunt etapele unui proces terapeutic</SectionTitle>
       <Flex
         direction={{ base: "column", md: "row" }}
         wrap="wrap"
@@ -89,8 +89,7 @@ export default function HomeInfoBanner() {
             h={{ base: "24px", sm: "26px", lg: "36px", xl: "48px" }}
           />
           <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Lorem ipsum dolor sit amet consectetur. Tristique libero cras dolor
-            morbi. Amet neque elementum et amet nunc amet.
+            Prima etapă este cea de cunoaștere: pe baza întrebărilor deschise și a dialogului prietenos, voi efectua o anamneză ce încadrează traseul obiectivelor & nevoilor ce te-au determinat să apelezi la terapie
           </Text>
         </Flex>
         <Flex
@@ -108,9 +107,10 @@ export default function HomeInfoBanner() {
             h={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
           />
           <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Lorem ipsum dolor sit amet consectetur. Tristique libero cras dolor
-            morbi. Amet neque elementum et amet nunc amet. Amet neque elementum
-            et amet nunc amet.
+            Mai departe, concepem împreună o alianță terapeutică bazată pe non-judecată,
+            vulnerabilitate & încredere, unde greutățile pot
+            fi depășite cu ajutorul metodelor specifice disfuncționalităților
+            identificate.
           </Text>
         </Flex>
         <Flex
@@ -128,11 +128,10 @@ export default function HomeInfoBanner() {
             h={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
           />
           <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Lorem ipsum dolor sit amet consectetur. Tristique libero cras dolor
-            morbi. Amet neque elementum. Lorem ipsum.
+            Ultima etapă constă în reîncadrarea situațiilor supărătoare, în explorarea & integrarea în viața de zi cu zi a soluțiilor de vindecare găsite împreună, precum și în
+            regăsirea sinelui autentic.
           </Text>
         </Flex>
-        {/* Add a third box if needed with another icon */}
       </Flex>
     </VStack>
   );

@@ -8,7 +8,7 @@ export const CaptionBox = styled(Box)`
   height: 100%;
   padding: ${(props) => props.p};
   min-width: 350px;
-  font-size: calc(12.5px + 0.15vw);
+  font-size: calc(13.5px + 0.15vw);
 
   @media only screen and (max-width: 550px) {
     min-width: fit-content;
@@ -68,7 +68,7 @@ export default function AboutTherapeuticStyle() {
       >
         Abordarea mea terapeutică
       </Text>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
         <CaptionTitle>
           Empatică
           <Icon
@@ -91,7 +91,7 @@ export default function AboutTherapeuticStyle() {
           mea profesională, cât și în cea personală.
         </CaptionText>
       </CaptionBox>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
         <CaptionTitle textAlign={"right"}>
           Flexibilă
           <Icon
@@ -113,7 +113,7 @@ export default function AboutTherapeuticStyle() {
           manifestând o atitudine receptivă și înțelegătoare.
         </CaptionText>
       </CaptionBox>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
         <CaptionTitle textAlign={"right"}>
           Autentică
           <Icon
@@ -138,7 +138,7 @@ export default function AboutTherapeuticStyle() {
           vieții lor.
         </CaptionText>
       </CaptionBox>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 8vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 5.5vw" }}>
         <CaptionTitle>
           Diversificată
           <Icon
