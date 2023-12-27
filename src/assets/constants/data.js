@@ -4,22 +4,19 @@ import SecondFAQ from "../../components/SecondFAQ";
 import ThirdFAQ from "../../components/ThirdFAQ";
 import FourthFAQ from "../../components/FourthFAQ";
 import FifthFAQ from "../../components/FifthFAQ";
+import FirstArticle from "../../components/FirstArticle";
+import SecondArticle from "../../components/SecondArticle";
+import ThirdArticle from "../../components/ThirdArticle";
+import FourthArticle from "../../components/FourthArticle";
+import FifthArticle from "../../components/FifthArticle";
+import SixthArticle from "../../components/SixthArticle";
 
 export const articles = [
   {
     id: 1,
     titleBold: "Puterea vindecătoare a grupului:",
-    title:
-      "principii si recompense in urma tepraiei",
-    content: {
-      highlightedParagraph: "Psihoterapia de grup poate oferi o serie de beneficii semnificative atunci când este folosită pentru tratarea traumei. Traumele pot afecta profund individul și pot influența relațiile, comportamentele și starea emoțională. În cadrul unui grup terapeutic, persoanele care au experimentat traume similare sau diferite pot beneficia de următoarele aspecte:",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    title: "principii si recompense in urma tepraiei",
+    content: () => <FirstArticle />,
     keywords: ["traumă", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/group-min_sbytkz.jpg",
   },
@@ -27,16 +24,7 @@ export const articles = [
     id: 2,
     titleBold: "Prietenie la terapie -",
     title: "gestionarea dificultăților întâmpinate în conexiunile sociale",
-    content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    content: () => <SecondArticle />,
     keywords: ["relații", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/friends-min_mqzcua.jpg",
   },
@@ -44,16 +32,7 @@ export const articles = [
     id: 3,
     titleBold: "Bolile psihiatrice nu sunt obstacole imposibil de depășit",
     title: "",
-    content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    content: () => <ThirdArticle />,
     keywords: ["psihiatrie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/mental-illness-min_dkrswd.jpg",
   },
@@ -61,16 +40,7 @@ export const articles = [
     id: 4,
     titleBold: "Reconsolidarea încrederii în partener:",
     title: "mai poate fi posibilă după adulter?",
-    content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    content: () => <FourthArticle />,
     keywords: ["cuplu", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/couple-min_rtlmca.jpg",
   },
@@ -78,16 +48,7 @@ export const articles = [
     id: 5,
     titleBold: "Relația părinte-adolescent rebel:",
     title: " eliminarea decalajului dintre generații",
-    content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    content: () => <FifthArticle />,
     keywords: ["familie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369312/articleCovers/mother-and-son-happiness-min_uzqmc7.jpg",
   },
@@ -95,16 +56,7 @@ export const articles = [
     id: 6,
     titleBold: "Depresia & singurătatea:",
     title: "care o provoacă pe care?",
-    content: {
-      highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
-      secondHeading: "Saliquam quis lobortis quam",
-      thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    },
+    content: () => <SixthArticle />,
     keywords: ["psihiatrie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/identity-crisis-min_lncqrk.jpg",
   },
@@ -229,7 +181,7 @@ export const HomeServicesMenuData = {
     id: 1,
     title: "Psihoterapie de cuplu/familie",
     brief:
-      " Locul unde descoperim impreuna care sunt actiunile specifice pe care ni le dorim fiecare, apoi validarea, ascultarea activa si construirea unor noi credinte noi, autentice cuplului renascut",
+      "Pune la dispoziție un spațiu menit identificării obiectivelor individuale, ascultării active a partenerului și creării unor noi credințe sănătoase pentru un parteneriat reînnoit.",
     description: {
       highlightedParagraph:
         "Psihoterapia de cuplu este o formă de terapie în care un terapeut lucrează cu un cuplu pentru a-i ajuta să-și îmbunătățească relația și să-și rezolve problemele. Scopul acestei terapii este de a îmbunătăți comunicarea, de a înțelege și de a rezolva conflictele, de a reconstrui încrederea și de a dezvolta o relație mai sănătoasă și mai satisfăcătoare.",
@@ -251,7 +203,7 @@ export const HomeServicesMenuData = {
     id: 2,
     title: "Terapie prin Somatic Experiencing®",
     brief:
-      "Depasirea ranilor traumatice emotionale, fiziologice nu doar cognitive reprezinta vindecarea evenimentelor din cele trei raspunsuri: lupta, fugi, ori inghet pentru protectie.",
+      "Vindecarea traumei înseamnă abordarea rănilor emoționale și fiziologice, dincolo de aspectele cognitive, și implică analiza instinctelor de luptă, fugă sau îngheț",
     description: {
       highlightedParagraph:
         "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
@@ -273,7 +225,7 @@ export const HomeServicesMenuData = {
     id: 3,
     title: "Hipnoterapie",
     brief:
-      "Vindecarea tuturor ranilor din trecut la nivel inconstient cu ajutorul transelor specifice",
+      "Abordarea rănilor din trecut la nivel subconștient folosind transe țintite pentru vindecare",
     description: {
       highlightedParagraph:
         "Hipnoza eriksoniană, numită și hipnoza conversațională sau hipnoza indirectă, este o formă de terapie hipnotică dezvoltată de psihoterapeutul Milton H. Erickson. Acest tip de hipnoză este caracterizat de abordarea indirectă și subtilă a sugestiilor hipnotice, prin intermediul limbajului metaforic, indicilor nonverbali și a tehnicilor de conversație.",
@@ -295,7 +247,7 @@ export const HomeServicesMenuData = {
     id: 4,
     title: "Evaluare psihologica",
     brief:
-      "Ajutor de specialitate testat stiintific cu ajutorul unor baterii de teste specifice pentru identificarea disfunctionalitatilor cum ar fi ADHD, PTSD, OCD, etc",
+      "Asistență profesională, dovedită științific, care utilizează suite de teste precise pentru a diagno afecțiuni precum ADHD, PTSD, TOC și altele.",
     description: {
       highlightedParagraph:
         "Evaluarea clinică este un proces complex și sistematic de evaluare a stării de sănătate a unei persoane, care implică colectarea și analiza informațiilor relevante legate de istoricul personal și medical al individului, simptomele și problemele sale actuale, funcționarea psihologică și socială, precum și a altor factori relevanți pentru sănătatea și bunăstarea sa.",
@@ -317,7 +269,7 @@ export const HomeServicesMenuData = {
     id: 5,
     title: "Psihosexologie",
     brief:
-      "Te confrunti cu disfunctionalitati legate de orientarea sexuala (nevoi sexuale pe parcusul vietii), ori identitatea sexuala (cu care ne nastem)",
+      "Dă-ți voie să depășești orice disfuncționalitate legată de orientarea sexuală (nevoi sexuale pe parcusul vieții), ori identitatea sexuală (cu care ne nastem)",
     description: {
       highlightedParagraph:
         "Psihosexologia este un domeniu interdisciplinar care se ocupă de studierea și înțelegerea relației dintre aspectele psihologice și aspectele sexuale ale indivizilor. Aceasta abordează aspectele emoționale, mentale, comportamentale și sociale ale sexualității umane și își propune să identifice și să soluționeze problemele și dificultățile legate de sexualitatea umană.",

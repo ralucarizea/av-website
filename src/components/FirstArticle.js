@@ -14,7 +14,7 @@ const FirstArticle = () => {
       </Text>
       <UnorderedList>
         <ListItem>
-          <strong>Suport social și empatie:</strong>Grupurile terapeutice oferă
+          <strong>Suport social și empatie: </strong>Grupurile terapeutice oferă
           un mediu sigur și acceptant în care membrii pot împărtăși experiențele
           lor și pot primi sprijin din partea celorlalți. Empatia și înțelegerea
           celor care au trecut prin traume similare pot ajuta la reducerea

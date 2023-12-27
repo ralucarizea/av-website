@@ -56,7 +56,7 @@ export default function BlogPost() {
           <Title
             fontSize={{
               base: "md",
-              xs:"lg",
+              xs: "lg",
               sm: "2xl",
               md: "2xl",
               lg: "3xl",
@@ -114,7 +114,7 @@ export default function BlogPost() {
         mt={{ base: "5vw", sm: "4vw", md: "3vw", lg: "3vw", xl: "2vw" }}
         fontSize={MDfont}
       >
-        <Box
+        {/* <Box
           mb={{ base: "4vw", sm: "3.5vw", md: "3vw", lg: "2.5vw", xl: "1.5vw" }}
         >
           {article.content.highlightedParagraph}
@@ -140,7 +140,8 @@ export default function BlogPost() {
             {article.content.secondHeading}
           </Subtitle>
           <Text> {article.content.thirdParagraph}</Text>
-        </Box>
+        </Box> */}
+        {article.content}
       </VStack>
     </VStack>
   );

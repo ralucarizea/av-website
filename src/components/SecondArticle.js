@@ -26,22 +26,23 @@ const SecondArticle = () => {
           încrederea poate fi afectată și pot apărea probleme semnificative.
         </ListItem>
         <ListItem>
-          <strong>Egoism și lipsă de empatie:</strong>Atunci când unul sau ambii
-          parteneri sunt preocupați exclusiv de propriile nevoi și dorințe, iar
-          empatia lipsește, relația poate deveni unilaterală și neechilibrată.
+          <strong>Egoism și lipsă de empatie: </strong>Atunci când unul sau
+          ambii parteneri sunt preocupați exclusiv de propriile nevoi și
+          dorințe, iar empatia lipsește, relația poate deveni unilaterală și
+          neechilibrată.
         </ListItem>
         <ListItem>
-          <strong>Lipsa de respect reciproc:</strong>
+          <strong>Lipsa de respect reciproc: </strong>
           Respecul reciproc este esențial pentru orice relație sănătoasă. Lipsa
           de respect poate duce la comportamente dăunătoare și conflictuale.
         </ListItem>
         <ListItem>
-          <strong>Diferențe în valorile și obiectivele de viață:</strong>
+          <strong>Diferențe în valorile și obiectivele de viață: </strong>
           Divergențele semnificative în ceea ce privește valorile fundamentale,
           obiectivele și aspirațiile pot crea tensiuni în relație.
         </ListItem>
         <ListItem>
-          <strong>Stiluri diferite de gestionare a conflictelor:</strong>
+          <strong>Stiluri diferite de gestionare a conflictelor: </strong>
           Dacă partenerii au abordări diferite în gestionarea conflictelor,
           acest lucru poate contribui la escaladarea și perpetuarea problemelor.
         </ListItem>
@@ -71,29 +72,29 @@ const SecondArticle = () => {
           încrederea poate fi afectată și pot apărea probleme semnificative.
         </ListItem>
         <ListItem>
-          <strong>Stresul și presiunile externe:</strong>Factori externi, cum ar
-          fi problemele financiare, presiunile de la locul de muncă sau alte
+          <strong>Stresul și presiunile externe: </strong>Factori externi, cum
+          ar fi problemele financiare, presiunile de la locul de muncă sau alte
           stresori, pot afecta calitatea relației.
         </ListItem>
         <ListItem>
-          <strong>Prejudecăți și discriminare:</strong>
+          <strong>Prejudecăți și discriminare: </strong>
           Factori precum rasismul, sexismul sau alte forme de discriminare pot
           afecta relațiile interpersonale și sociale.
         </ListItem>
         <ListItem>
-          <strong>Dezavantaje socioeconomice:</strong>
+          <strong>Dezavantaje socioeconomice: </strong>
           Disparitățile economice sau sociale pot contribui la tensiuni în
           relații, de exemplu, dacă există diferențe semnificative de statut sau
           acces la resurse.
         </ListItem>
         <ListItem>
-          <strong>Influența mass-media:</strong>
+          <strong>Influența mass-media: </strong>
           Imaginile și idealurile prezentate în mass-media pot influența
           așteptările și comportamentele într-o relație, adesea creând standarde
           nerealiste.
         </ListItem>
         <ListItem>
-          <strong>Izolarea socială:</strong>
+          <strong>Izolarea socială: </strong>
           Lipsa de suport social și izolarea pot contribui la disfuncționalități
           într-o relație. Este important să existe conexiuni sociale sănătoase
           în afara relației principale.
