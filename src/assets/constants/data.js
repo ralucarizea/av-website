@@ -185,7 +185,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Psihoterapia de cuplu este o formă de terapie în care un terapeut lucrează cu un cuplu pentru a-i ajuta să-și îmbunătățească relația și să-și rezolve problemele. Scopul acestei terapii este de a îmbunătăți comunicarea, de a înțelege și de a rezolva conflictele, de a reconstrui încrederea și de a dezvolta o relație mai sănătoasă și mai satisfăcătoare.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Psihoterapia de cuplu implică participarea ambilor parteneri, și terapeutul le oferă un mediu sigur și confidențial în care să-și exprime grijile și frustrările. Terapeutul facilitează comunicarea deschisă și dialogul constructiv între parteneri, ajutându-i să-și înțeleagă mai bine nevoile și dorințele reciproce. De asemenea, terapeutul poate oferi strategii și tehnici pentru a rezolva conflictele, a gestiona emoțiile și a învăța să comunice eficient și empatic.Psihoterapia de cuplu poate aborda o varietate de probleme precum comunicarea defectuoasă, conflictele constante, infidelitatea, gelozia, problemele sexuale, construirea și menținerea încrederei, probleme de parenting, dificultăți în adaptarea la schimbări majore în viața de cuplu etc.",
       secondHeading: "Saliquam quis lobortis quam",
@@ -207,7 +207,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
       secondHeading: "Saliquam quis lobortis quam",
@@ -229,7 +229,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Hipnoza eriksoniană, numită și hipnoza conversațională sau hipnoza indirectă, este o formă de terapie hipnotică dezvoltată de psihoterapeutul Milton H. Erickson. Acest tip de hipnoză este caracterizat de abordarea indirectă și subtilă a sugestiilor hipnotice, prin intermediul limbajului metaforic, indicilor nonverbali și a tehnicilor de conversație.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Hipnoza eriksoniană se distinge prin faptul că nu implică o stare de transă profundă sau relaxare profundă, așa cum este asociată cu hipnoza tradițională. În schimb, se folosesc conversații relaxate și metafore care să atingă nivelul subconștientului și să stimuleze schimbările dorite. Terapeutul hipnotic utilizează sugestii indirecte, precum povestiri, sugestii ambigue și întrebări, pentru a ajunge la nivelul de înțelegere și receptivitate al subconștientului.",
       secondHeading: "Saliquam quis lobortis quam",
@@ -251,7 +251,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Evaluarea clinică este un proces complex și sistematic de evaluare a stării de sănătate a unei persoane, care implică colectarea și analiza informațiilor relevante legate de istoricul personal și medical al individului, simptomele și problemele sale actuale, funcționarea psihologică și socială, precum și a altor factori relevanți pentru sănătatea și bunăstarea sa.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Scopul principal al evaluării clinice este de a obține o înțelegere completă și detaliată a nevoilor și dificultăților pacientului, pentru a putea face un diagnostic corect și pentru a dezvolta un plan de tratament adecvat. Procesul de evaluare clinică poate implica mai multe etape, cum ar fi: Interviul clinic: Include o discuție între pacient și profesionistul de sănătate mintală, în care se obțin informații despre simptome, istoricul medical, evenimentele de viață semnificative, antecedente familiale și alte detalii relevante. Evaluarea psihologică: Aceasta implică utilizarea unor instrumente și teste standardizate pentru a evalua funcționarea și starea mentală a persoanei. De exemplu, pot fi utilizate teste de evaluare a personalității, teste cognitive, teste de depresie și anxietate, sau alte instrumente specifice. Observația și evaluarea comportamentului: Profesionistul de sănătate mintală poate observa comportamentul și interacțiunile persoanei într-un mediu clinic sau natural. Aceasta poate furniza informații suplimentare despre problemele și dificultățile cu care se confruntă individul. Analiza informațiilor: Profesionistul de sănătate mintală analizează și sintetizează toate informațiile colectate în timpul evaluării clinice. Aceasta implică formularea unui diagnostic, identificarea factorilor de risc și a nevoilor individuale, și stabilirea unui plan de tratament personalizat.",
       secondHeading: "Saliquam quis lobortis quam",
@@ -273,7 +273,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Psihosexologia este un domeniu interdisciplinar care se ocupă de studierea și înțelegerea relației dintre aspectele psihologice și aspectele sexuale ale indivizilor. Aceasta abordează aspectele emoționale, mentale, comportamentale și sociale ale sexualității umane și își propune să identifice și să soluționeze problemele și dificultățile legate de sexualitatea umană.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Psihosexologii își folosesc cunoștințele din psihologie, terapie sexuală, sexologie, consiliere și alte domenii conexe pentru a aborda o gamă largă de subiecte și probleme legate de sexualitate. Acestea pot include, dar nu se limitează la: Disfuncții sexuale: Psihosexologii pot ajuta persoanele care se confruntă cu dificultăți în domeniul sexual, cum ar fi disfuncții erectile, disfuncții de orgasm, probleme legate de libidou (dorința sexuală) sau probleme de cuplu legate de sexualitate. Terapie sexuală: Psihosexologii oferă consiliere și terapie pentru a ajuta indivizii sau cuplurile să exploreze și să-și îmbunătățească satisfacția sexuală, să construiască relații sănătoase și să depășească eventualele obstacole legate de sexualitate. Educație sexuală: Psihosexologii pot fi implicați în furnizarea de informații și educație sexuală pentru a ajuta oamenii să dobândească cunoștințe și abilități adecvate legate de sexualitatea umană. Consiliere în probleme de identitate sexuală: Psihosexologii pot oferi orientare și sprijin pentru persoanele care explorează și își clarifică identitatea sexuală sau ale celor care se confruntă cu dificultăți în acceptarea și integrarea acestei identități. Consiliere în probleme de relaționare și comunicare sexuală: Psihosexologii pot ajuta indivizii și cuplurile să își îmbunătățească comunicarea și să abordeze problemele de relaționare care pot afecta sexualitatea.",
       secondHeading: "Saliquam quis lobortis quam",
@@ -295,7 +295,7 @@ export const HomeServicesMenuData = {
     description: {
       highlightedParagraph:
         "Psihoterapia de grup reprezintă forma de terapie în care întâlnirile și ședința terapeutică se desfășoară cu participarea unui grup de persoane.",
-      firstHeading: "Sed ut perspiciatis unde omnis iste natus et",
+      firstHeading: "",
       secondParagraph:
         "Întâlnirile se realizează săptămânal sub îndrumarea unui specialist (psiholog cu formare în terapie de grup) și există o temă stabilită în prealabil (depresie, anxietate, divorț, alcoolism, pierderea cuiva drag, singurătate, etc). De ce să apelezi la psihoterapie de grup? Simți că viața ta s-a schimbat și starea ta psihică se înrăutățește? Ei bine, la Clinica Alegria vei găsi un spațiu sigur și primitor. Apelând la un grup terapeutic, vei cunoaște persoane care trec prin probleme similare cu ale tale și veți putea împărtăși experiențele. Există indivizi care fac față unor situații mai bine decât ceilalți, iar exemplul lor oferă speranță și puterea de a merge mai departe. Cei care intră în terapia de grup se simt demoralizați și simt că nu au nimic valoros de dăruit celorlalți, dar când descoperă că pot fi de ajutor, se simt revigorați și stima lor de sine crește. Oamenii se pot ajuta unii pe alții ascultându-se, oferind confort si susținere, încurajându-se reciproc.",
       secondHeading: "Saliquam quis lobortis quam",
