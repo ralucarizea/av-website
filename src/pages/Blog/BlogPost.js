@@ -141,7 +141,9 @@ export default function BlogPost() {
           </Subtitle>
           <Text> {article.content.thirdParagraph}</Text>
         </Box> */}
-        {article.content}
+        {typeof article.content === "function"
+          ? article.content()
+          : article.content}
       </VStack>
     </VStack>
   );

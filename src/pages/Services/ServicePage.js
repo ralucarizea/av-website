@@ -37,7 +37,9 @@ export const StyledServicePageHeading = styled(Box)`
   }
 `;
 export const StyledServicePageText = styled(Box)`
-  width: 75%;
+margin: 16px 0px;  
+margin-left: 16px;
+width: 75%;
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -153,31 +155,42 @@ export default function ServicePage({ service }) {
               zIndex="-1"
             ></Box>
           </StyledServicePageHighlightedParagraph>
-          <StyledServicePageHeading
-            margin={{
-              base: "6vw 0 2.75vw",
-              sm: "6vw 0 2.5vw",
-              md: "6vw 0 2.25vw",
-              lg: "4vw 0 1.75vw",
-              xl: "3vw 0 1.5vw",
-            }}
-          >
-            {service.description?.firstHeading}
-          </StyledServicePageHeading>
+
+          {service.description?.firstHeading !== "" ? (
+            <StyledServicePageHeading
+              margin={{
+                base: "6vw 0 2.75vw",
+                sm: "6vw 0 2.5vw",
+                md: "6vw 0 2.25vw",
+                lg: "4vw 0 1.75vw",
+                xl: "3vw 0 1.5vw",
+              }}
+            >
+              {service.description?.firstHeading}
+            </StyledServicePageHeading>
+          ) : (
+            <></>
+          )}
           <StyledServicePageText>
             {service.description?.secondParagraph}
           </StyledServicePageText>
-          <StyledServicePageHeading
-            margin={{
-              base: "6vw 0 2.75vw",
-              sm: "7.5vw 0 2.5vw",
-              md: "6vw 0 2.25vw",
-              lg: "4vw 0 1.75vw",
-              xl: "3vw 0 1.5vw",
-            }}
-          >
-            {service.description?.secondHeading}
-          </StyledServicePageHeading>
+
+          {service.description?.secondHeading !== "" ? (
+            <StyledServicePageHeading
+              margin={{
+                base: "6vw 0 2.75vw",
+                sm: "7.5vw 0 2.5vw",
+                md: "6vw 0 2.25vw",
+                lg: "4vw 0 1.75vw",
+                xl: "3vw 0 1.5vw",
+              }}
+            >
+              {service.description?.secondHeading}
+            </StyledServicePageHeading>
+          ) : (
+            <></>
+          )}
+
           <StyledServicePageText>
             {service.description?.thirdParagraph}
           </StyledServicePageText>
