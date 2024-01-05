@@ -144,9 +144,9 @@ function HomeHero() {
         </Box>
       </Flex>
       <VStack
-        bg="tints.army"
+        bg="#f3f0ff"
         color={"accents.army"}
-        h={{ base: "33vh", sm: "38vh", md: "44vh", lg: "55vh" }}
+        h={{ base: "35vh", sm: "40vh", md: "47vh", lg: "53vh" }}
         zIndex="-1"
         mt={"-28px"}
         fontFamily="handwritten"
@@ -156,19 +156,21 @@ function HomeHero() {
           sm: "40px",
           md: "42px",
           lg: "48px",
-          xl: "52px",
+          xl: "46px",
         }}
-        lineHeight={{ base: "0.75em", sm: "0.9em", md: "1em" }}
+        lineHeight={{ base: "0.75em", sm: "0.9em", md: "0.9em" }}
       >
         <Text
           alignSelf={"center"}
-          w={{ base: "65%", sm: "45%", md: "40%" }}
+          w={{ base: "75%", sm: "55%", md: "46%" }}
           textAlign={"center"}
-          pt="2.5vw"
+          pt="3vw"
           pb="1.25vw"
         >
-          If you want to choose the pleasure of growth, prepare yourself for
-          some pain.
+          Viata nu este ceva la care poti da un raspuns astazi. Ar trebui sa te
+          bucuri de procesul de asteptare, de procesul de a deveni ceea ce esti.
+          Nu este nimic mai incantator decat sa plantezi seminte de flori si sa
+          nu stii ce fel de flori vor aparea
         </Text>
         <Text
           alignSelf={{ base: "center", sm: "flex-end" }}
@@ -185,7 +187,7 @@ function HomeHero() {
           }}
         >
           {" "}
-          - Irvin D. Yalom
+          - Milton H. Erickson
         </Text>
       </VStack>
     </Flex>

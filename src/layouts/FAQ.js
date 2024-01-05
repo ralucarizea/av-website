@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <Box
       height="fit-content"
-      mt={{ base: "150px", md: "250px", xl: "280px" }}
+      mt={{ base: "180px", md: "250px", xl: "280px" }}
       px={{ base: "20px", xs: "36px", md: "60px", xl: "84px" }}
       display={"flex"}
       flexDirection="column"
@@ -28,12 +28,12 @@ const FAQ = () => {
       <Box
         pb={{ base: "14vw", xs: "8vw", md: "8vw", xl: "6vw" }}
         fontSize={{
-          base: "40px",
-          xs: "42px",
-          sm: "42px",
-          md: "44px",
+          base: "46px",
+          xs: "48px",
+          sm: "50px",
+          md: "50px",
           lg: "52px",
-          xl: "60px",
+          xl: "72px",
         }}
         lineHeight={"2.25rem"}
         fontFamily={"handwritten"}

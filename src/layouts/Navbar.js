@@ -80,10 +80,10 @@ const Navbar = () => {
                   <Link to={ROUTES.COUPLE}>Psihoterapie de cuplu/familie</Link>
                 </MenuItem>
                 <MenuItem my="4px">
-                  <Link to={ROUTES.HIPNO}>Hipnoză</Link>
+                  <Link to={ROUTES.HIPNO}>Hipnoterapie</Link>
                 </MenuItem>
                 <MenuItem my="4px">
-                  <Link to={ROUTES.TRAUMA}>Traumă</Link>
+                  <Link to={ROUTES.TRAUMA}>Terapie prin Somatic Experiencing</Link>
                 </MenuItem>
                 <MenuItem my="4px">
                   <Link to={ROUTES.EVALUATION}>Evaluare psihologică</Link>

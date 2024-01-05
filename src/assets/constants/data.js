@@ -15,7 +15,8 @@ export const articles = [
   {
     id: 1,
     titleBold: "Puterea vindecătoare a grupului:",
-    title: "principii si recompense in urma tepraiei",
+    publicationDate: "12 AUG, 2023",
+    title: "principii și recompense în urma terapiei",
     content: () => <FirstArticle />,
     keywords: ["traumă", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/group-min_sbytkz.jpg",
@@ -24,6 +25,7 @@ export const articles = [
     id: 2,
     titleBold: "Prietenie la terapie -",
     title: "gestionarea dificultăților întâmpinate în conexiunile sociale",
+    publicationDate: "8 MAI, 2023",
     content: () => <SecondArticle />,
     keywords: ["relații", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/friends-min_mqzcua.jpg",
@@ -31,6 +33,7 @@ export const articles = [
   {
     id: 3,
     titleBold: "Bolile psihiatrice nu sunt obstacole imposibil de depășit",
+    publicationDate: "19 DEC, 2022",
     title: "",
     content: () => <ThirdArticle />,
     keywords: ["psihiatrie", "", ""],
@@ -39,6 +42,7 @@ export const articles = [
   {
     id: 4,
     titleBold: "Reconsolidarea încrederii în partener:",
+    publicationDate: "1 APR, 2023",
     title: "mai poate fi posibilă după adulter?",
     content: () => <FourthArticle />,
     keywords: ["cuplu", "", ""],
@@ -48,6 +52,7 @@ export const articles = [
     id: 5,
     titleBold: "Relația părinte-adolescent rebel:",
     title: " eliminarea decalajului dintre generații",
+    publicationDate: "5 IUL, 2023",
     content: () => <FifthArticle />,
     keywords: ["familie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369312/articleCovers/mother-and-son-happiness-min_uzqmc7.jpg",
@@ -56,6 +61,7 @@ export const articles = [
     id: 6,
     titleBold: "Depresia & singurătatea:",
     title: "care o provoacă pe care?",
+    publicationDate: "29 NOV, 2022",
     content: () => <SixthArticle />,
     keywords: ["psihiatrie", "", ""],
     img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702369311/articleCovers/identity-crisis-min_lncqrk.jpg",
@@ -174,7 +180,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "tints.red",
     color: "accents.red",
-    img: "/images/servicesImages/woman-at-therapy2.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704476182/serviceImages/side-view-young-girl-talking-therapist_1_-min_te62se.jpg",
     route: "INDIVIDUAL",
   },
   1: {
@@ -196,7 +202,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.army",
     color: "tints.lime",
-    img: "/images/servicesImages/family.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av5_suand1.jpg",
     route: "COUPLE",
   },
   2: {
@@ -206,13 +212,12 @@ export const HomeServicesMenuData = {
       "Vindecarea traumei înseamnă abordarea rănilor emoționale și fiziologice, dincolo de aspectele cognitive, și implică analiza instinctelor de luptă, fugă sau îngheț",
     description: {
       highlightedParagraph:
-        "Mauris eu nisi eget nisi imperdiet vestibulum. Nunc sodales vehicula risus. Suspendisse id mauris sodales, blandit tortor eu, sodales justo. Morbi tincidunt, ante vel suscipit volutpat, turpis enim volutpSectetur adipiscing elit, sed do eiusm onsectetur adipiscing elit, sed do eiusm od tempor incididunt ut labore. Ut vel placerat eros, eu tincidunt velit. Consectetur adipiscing elit, adipiscing elit, sed do.",
+        "Metoda Somatic Experiencing este o abordare terapeutică dezvoltată de psihologul Peter Levine. Această metodă se concentrează pe rezolvarea traumelor și a stresului prin intermediul corpului. Somatic Experiencing crede că traumele pot fi înmagazinate în corp și că unicitatea fiecărei persoane necesită o abordare individualizată pentru vindecare.",
       firstHeading: "",
-      secondParagraph:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat",
+      secondParagraph: "Prin intermediul Somatic Experiencing, se explorează senzațiile și reacțiile corporale asociate cu traumele și stresul. Scopul este de a reda sistemului nervos autonom abilitatea de a se regla și de a se vindeca. Terapeutul lucrează cu pacientul pentru a recunoaște și a elibera tensiunile din corp, ajutându-l să își regăsească resursele interne și să își reconstruiască capacitatea de a face față provocărilor",
       secondHeading: "",
       thirdParagraph:
-        "Curabitur pellentesque odio magna, id malesuada arcu sodales ut. Sed sed quam ut ex bibendum commodo id id magna. Aliquam sed ligula sed ante blandit volutpat. Ut bibendum, nisi et mattis vulputate, odio arcu aliquet metus, nec dapibus risus risus quis lectus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "Această metodă poate fi folosită în tratarea unei game variate de traume și tulburări, incluzând tulburarea de stres posttraumatic (PTSD), anxietatea, depresia și alte afecțiuni legate de stres. Somatic Experiencing poate ajuta pacienții să recapete controlul asupra corpului și să își îmbunătățească calitatea vieții.",
     },
     price: "",
     duration: "",
@@ -240,14 +245,14 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.yellow",
     color: "tints.yellow",
-    img: "/images/servicesImages/hypnosis.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av3_tfhiku.jpg",
     route: "HIPNO",
   },
   4: {
     id: 4,
     title: "Evaluare psihologica",
     brief:
-      "Asistență profesională, dovedită științific, care utilizează suite de teste precise pentru a diagno afecțiuni precum ADHD, PTSD, TOC și altele.",
+      "Asistență profesională, dovedită științific, care utilizează suite de teste precise pentru a diagnostica afecțiuni precum ADHD, PTSD, TOC și altele.",
     description: {
       highlightedParagraph:
         "Evaluarea clinică este un proces complex și sistematic de evaluare a stării de sănătate a unei persoane, care implică colectarea și analiza informațiilor relevante legate de istoricul personal și medical al individului, simptomele și problemele sale actuale, funcționarea psihologică și socială, precum și a altor factori relevanți pentru sănătatea și bunăstarea sa.",
@@ -262,7 +267,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "tints.army",
     color: "accents.army",
-    img: "/images/servicesImages/individual-thoughtful.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av2_dgirf0.jpg",
     route: "EVALUATION",
   },
   5: {
@@ -284,7 +289,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.red",
     color: "#fff",
-    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702368909/serviceImages/strong-couple_fonqnk.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av5_suand1.jpg",
     route: "SEXOLOGY",
   },
   6: {
@@ -306,7 +311,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.lime",
     color: "tints.lime",
-    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1702368909/serviceImages/strong-couple_fonqnk.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704476376/serviceImages/hands-united-heart-community-love-min_ldjnwf.jpg",
     route: "GROUP",
   },
 };
@@ -324,8 +329,8 @@ export const resumeData = {
         "Cursant în cadrul Asociației SE Somatic Experiencing Romania, specializare în psihosomatică, metoda psiho-biologică dezvoltată de Dr. Peter Levine (în curs)",
         "Absolvent în cadrul Asociației de cercetare, consiliere și Psihoterapie Integrativă (ACCPI), specializare Hipnoterapie Ericksoniană, Institut European acreditat EAIP, COPSI ",
         "Curs de specializare continuă în ”Vindecarea rănilor materne transgeneraționale” - organizat de Florin Vancea, doctor în psihologie, psihoterapeut principal, formator în Psihoterapie Experienţială (24-27 februarie)",
-        "Participare la Conferința Națională APAR - ediția XVIII, pe tema „TULBURĂRI NEUROCOGNITIVE”, conferință avizată de Colegiul Psihologilor din România cu 32 credite profesionale la care am participat fizic (20-23 aprilie)",
-        "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, unde am participat fizic la Sibiu (23-25 noiembrie)",
+        "Participare la Conferința Națională APAR - ediția XVIII, pe tema „TULBURĂRI NEUROCOGNITIVE”, conferință avizată de Colegiul Psihologilor din România cu 32 credite profesionale (20-23 aprilie)",
+        "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, Sibiu (23-25 noiembrie)",
       ],
       years: ["2023 - prezent"],
       bgColor: "rgb(255, 238, 235)",

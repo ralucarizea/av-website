@@ -13,11 +13,9 @@ import { Link } from "react-router-dom";
 function HomeAboutIntro() {
   return (
     <Flex
-      maxW="100vw"
       h="fit"
       px={{ base: 5, xs: 6, sm: 8, md: 12, lg: 14, xl: 16 }}
       py={{ base: 24, xs: 20, sm: 22, md: 24, lg: 20, xl: 28 }}
-      // py={[16, 20, 22, 24, 20, 28]}
       justifyContent={"center"}
       flexWrap="wrap"
       color={"neutrals.dark"}
@@ -33,41 +31,44 @@ function HomeAboutIntro() {
           xs: "52vh",
           sm: "64vh",
           md: "70vh",
-          lg: "75vh",
+          lg: "80vh",
           xl: "90vh",
         }}
-        // h="auto"
         minW="220px"
         minH="400px"
-        // maxH="650px"
         w={{
           base: "75%",
           sm: "62%",
           md: "55%",
-          lg: "40vw",
+          lg: "41vw",
           xl: "35vw",
         }}
-        // maxW="600px"
         src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702369436/portraitImages/1_wjbbkb.jpg"
         objectFit={"cover"}
         objectPosition={"center"}
       />
       <VStack
         maxW={{ base: "75%", sm: "62%", md: "55%", lg: "40%" }}
-        h="inherit"
+        h={{
+          base: "fit",
+          xs: "fit",
+          sm: "fit",
+          md: "fit",
+          lg: "fit",
+          xl: "90vh",
+        }}
         justifyContent={{ base: "center", lg: "space-between" }}
         mt={{ base: 4, sm: 6, md: 0 }}
         alignItems={"flex-start"}
-        // border="1px solid pink"
       >
         <HeroHeading fontSize={XXLfont}>
           {" "}
           Să te deschizi în fața cuiva este foarte greu, știu
         </HeroHeading>
         <Text
-          mt={{ base: 2, sm: 3, md: 6, lg: 5, xl: 10 }}
-          mb={{ base: 2, sm: 3, md: 4, xl: 4 }}
-          w={{ base: "100%", lg: "90%" }}
+          mt={{ base: 2, sm: 3, md: 6, lg: 2, xl: 10 }}
+          mb={{ base: 2, sm: 3, md: 4, lg: 1, xl: 4 }}
+          w={{ base: "100%", lg: "96%", xl: "87%" }}
           fontSize={{ base: "13px", sm: "14px", md: "15px", xl: "16px" }}
         >
           ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
@@ -134,7 +135,7 @@ function HomeAboutIntro() {
           </VStack>
         </Show>
         <Box
-          mt={{ base: "20px", lg: "16px" }}
+          mt={{ base: "20px", lg: "12px" }}
           alignSelf={{ base: "center", lg: "flex-start" }}
         >
           <Link to={ROUTES.ABOUT}>

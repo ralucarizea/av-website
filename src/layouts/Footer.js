@@ -203,7 +203,7 @@ export default function Footer() {
                 </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <StyledLink to={ROUTES.HIPNO}>Terapie prin hipnoză</StyledLink>
+                <StyledLink to={ROUTES.HIPNO}>Hipnoterapie</StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 <StyledLink to={ROUTES.TRAUMA}>

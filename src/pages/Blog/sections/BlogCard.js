@@ -1,7 +1,7 @@
 import { Button, Text, VStack, Image, Box } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import React from "react";
-import { LGfont, MDfont} from "../../../assets/styles/theme";
+import { LGfont, MDfont } from "../../../assets/styles/theme";
 import { articleTags } from "../../../assets/constants/data";
 import { Link } from "react-router-dom";
 
@@ -77,12 +77,20 @@ export default function BlogCard({
         as={Link}
         to={`/blog/${id}`}
         color={articleTags[keywords[0]]?.color}
-        alignSelf={"flex-end"}
-        fontSize={MDfont}
+        alignSelf={{ base: "center", md: "flex-end" }}
+        fontSize={{
+          base: "11px",
+          xs: "11.5px",
+          sm: "12px",
+          md: "14px",
+          lg: "16px",
+        }}
         bgColor={articleTags[keywords[0]]?.bgColor}
         _hover={{ textDecoration: "underline" }}
+        p={{ base: "6px", sm: "8px", md: "12px" }}
+        mt={{ base: "20px", sm: "28px", md: "48px" }}
+        h={{base: "28px", sm: "36px", md: "40px", lg: "44px"}}
       >
-        {" "}
         Citește mai multe
       </Button>
     </VStack>

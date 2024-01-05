@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 import { Route, Routes } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import { HomeServicesMenuData, ROUTES } from "./assets/constants/data";
@@ -55,6 +56,7 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
+      <ParallaxProvider>
       <Navbar />
       <Routes>
         {routes.map(({ path, element }, index) => (
@@ -63,6 +65,7 @@ function App() {
       </Routes>
       <FAQ />
       <Footer />
+      </ParallaxProvider>
     </ChakraProvider>
   );
 }

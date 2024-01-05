@@ -31,22 +31,22 @@ export const SectionTitle = styled(Box)`
   text-align: center;
   width: 68%;
   font-family: "EdwardianScript";
-  font-size: 60px;
+  font-size: 72px;
   margin-bottom: 56px;
   line-height: 3rem;
 
   @media screen and (max-width: 1000px) {
-    font-size: 52px;
+    font-size: 53px;
     margin-bottom: 24px;
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 24px;
     line-height: 2rem;
   }
   @media screen and (max-width: 640px) {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 16px;
     line-height: 1.9rem;
   }

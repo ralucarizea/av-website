@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { HiPuzzle } from "react-icons/hi";
 import React from "react";
 import { XXXLfont } from "../../../assets/styles/theme";
+import { PageTitle } from "./AboutHero";
 export const CaptionBox = styled(Box)`
   width: 50%;
   height: 100%;
@@ -28,7 +29,7 @@ export const CaptionTitle = styled(Box)`
 `;
 export const CaptionText = styled(Box)`
   margin: 0 auto;
-  width: 85%;
+  width: 88%;
   min-width: 300px;
   font-family: "DM Sans";
   font-weight: 400;
@@ -52,7 +53,7 @@ export default function AboutTherapeuticStyle() {
       my={{ base: "40px" }}
       justifyContent="center"
     >
-      <Text
+      {/* <Text
         w={{ base: "65%", sm: "100%" }}
         textAlign={"center"}
         py={{ base: "7vw", md: "5vw", lg: "3vw" }}
@@ -65,10 +66,10 @@ export default function AboutTherapeuticStyle() {
           xl: "48px",
         }}
         lineHeight={"xs"}
-      >
-        Abordarea mea terapeutică
-      </Text>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
+      > */}
+      <PageTitle> Abordarea mea terapeutica </PageTitle>
+      {/* </Text> */}
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "2.65vw 4.75vw" }}>
         <CaptionTitle>
           Empatică
           <Icon
@@ -84,6 +85,7 @@ export default function AboutTherapeuticStyle() {
             zIndex="-2"
           />
         </CaptionTitle>
+
         <CaptionText>
           De-a lungul timpului, am investit foarte mult în abilitatea de a
           asculta cu răbdare, de a înțelege și de a resimți emoțiile altora, în
@@ -91,7 +93,7 @@ export default function AboutTherapeuticStyle() {
           mea profesională, cât și în cea personală.
         </CaptionText>
       </CaptionBox>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "2.65vw 4.75vw" }}>
         <CaptionTitle textAlign={"right"}>
           Flexibilă
           <Icon
@@ -113,7 +115,7 @@ export default function AboutTherapeuticStyle() {
           manifestând o atitudine receptivă și înțelegătoare.
         </CaptionText>
       </CaptionBox>
-      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "3vw 6.5vw" }}>
+      <CaptionBox p={{ base: "3vw 36px", md: "3vw 5vw", xl: "2.65vw 4.75vw" }}>
         <CaptionTitle textAlign={"right"}>
           Autentică
           <Icon

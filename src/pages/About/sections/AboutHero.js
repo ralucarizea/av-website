@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { XXLfont } from "../../../assets/styles/theme";
 export const PageTitle = styled(Text)`
   font-family: "EdwardianScript";
-  font-size: calc(40px + 0.95vw);
+  font-size: calc(52px + 0.95vw);
   color: inherit;
   text-align: center;
   margin: 7vw auto 5vw;
@@ -29,7 +29,7 @@ export default function AboutHero() {
       zIndex="1"
       mb={{base: "10vw", md:"12vw", xl:"16vw"}}
     >
-      <PageTitle>Despre mine</PageTitle>
+      {/* <PageTitle>Despre mine</PageTitle> */}
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         // flexWrap="wrap"

@@ -55,13 +55,14 @@ export default function BlogPost() {
         >
           <Title
             fontSize={{
-              base: "md",
+              base: "lg",
               xs: "lg",
               sm: "2xl",
               md: "2xl",
               lg: "3xl",
               xl: "4xl",
             }}
+            textAlign={{base: "center", md: "left"}}
           >
             {article.titleBold} {article.title}
           </Title>
@@ -99,7 +100,7 @@ export default function BlogPost() {
               color="rgba(0,0,0, 0.55)"
               ml="2%"
             >
-              OCT 23, 2023
+              {article.publicationDate}
             </Text>
           </HStack>
         </VStack>

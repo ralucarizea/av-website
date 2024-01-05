@@ -24,7 +24,7 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
       onMouseEnter={onToggle}
       onMouseLeave={onToggle}
     >
-      <Box width="60%" textAlign={"center"}>
+      <Box width="67%" textAlign={"center"}>
         {" "}
         <Box
           fontSize={{ base: "lg", lg: "xl", xl: "3xl" }}

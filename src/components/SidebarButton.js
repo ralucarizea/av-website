@@ -10,7 +10,7 @@ export default function SidebarButton({ text, color, textTransform = "uppercase"
         span: {
           paddingBottom: "5px",
           letterSpacing: "0.5px",
-          fontSize: "13px",
+          fontSize: "14px",
           //   paddingRight: "15px",
           textTransform: `${textTransform}`,
           position: "relative",
