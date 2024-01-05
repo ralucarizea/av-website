@@ -7,8 +7,14 @@ const SecondArticle = () => {
       fontFamily="inherit"
       fontSize={{ base: "14.5px", sm: "14px", md: "15px", lg: "17px" }}
     >
-      <Text my="8px"         fontSize={{base: "calc(1em + 1px)", md: "calc(1em + 2px)", xl : "calc(1em + 3px)" }}
->
+      <Text
+        my="8px"
+        fontSize={{
+          base: "calc(1em + 1px)",
+          md: "calc(1em + 2px)",
+          xl: "calc(1em + 2px)",
+        }}
+      >
         Depresia și singurătatea pot fi interconectate și pot influența reciproc
         una pe cealaltă. Există mai mulți factori care pot contribui la această
         relație complexă:

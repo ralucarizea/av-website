@@ -7,8 +7,14 @@ const SecondArticle = () => {
       fontFamily="inherit"
       fontSize={{ base: "14.5px", sm: "14px", md: "15px", lg: "17px" }}
     >
-      <Text my="8px"         fontSize={{base: "calc(1em + 1px)", md: "calc(1em + 2px)", xl : "calc(1em + 3px)" }}
->
+      <Text
+        my="8px"
+        fontSize={{
+          base: "calc(1em + 1px)",
+          md: "calc(1em + 2px)",
+          xl: "calc(1em + 2px)",
+        }}
+      >
         Reconsolidarea terapiei de cuplu poate fi un proces important și benefic
         pentru îmbunătățirea unei relații. Iată câțiva pași generali pe care
         puteți să-i urmați în acest proces:
@@ -28,7 +34,7 @@ const SecondArticle = () => {
           reciprocă.
         </ListItem>
         <ListItem my={{ base: "4px", md: "8px", lg: "16px" }}>
-          <strong>EReangajament: </strong> Discutarea și reconfirmarea
+          <strong>Reangajament: </strong> Discutarea și reconfirmarea
           angajamentului față de relație pot fi un pas important în
           reconsolidarea terapiei de cuplu. Stabilirea sau redefinirea
           obiectivelor comune poate contribui la construirea unei viziuni comune
@@ -48,7 +54,7 @@ const SecondArticle = () => {
           pot ajuta să evitați repetarea acestora în viitor.
         </ListItem>
         <ListItem my={{ base: "4px", md: "8px", lg: "16px" }}>
-          <strong>SAdoptarea schimbărilor pozitive: </strong>
+          <strong>Adoptarea schimbărilor pozitive: </strong>
           Identificarea schimbărilor concrete și pozitive pe care le puteți face
           în comportamentul și comunicarea voastră poate consolida relația. Este
           important să vă angajați activ în aceste schimbări și să vă sprijiniți

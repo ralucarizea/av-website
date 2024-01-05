@@ -68,7 +68,7 @@ export default function AboutHero() {
           zIndex={1}
         />
         <VStack
-          bg="tints.army"
+          bg="#f7f4fa"
           color="accents.army"
           boxShadow={"0px 3px 11px 2px rgba(0,0,0,0.07)"}
           alignItems="flex-start"

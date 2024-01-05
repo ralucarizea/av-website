@@ -7,7 +7,7 @@ export default function AboutBanner() {
     <VStack
       mb="10vw"
       py={{ base: "8vw", md: "4.75vw" }}
-      bg="rgb(253, 248, 241)"
+      bg="#fefbf6"
       color="accents.red"
       flexDirection={{ base: "column" }}
       w="100%"
