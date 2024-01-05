@@ -24,12 +24,20 @@ import {
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { MDfont } from "../../assets/styles/theme";
+const StyledVerticalTimeline = styled(VerticalTimeline)`
+  &:before {
+    width: 2px;
+    margin-left: -1px;
+  }
+`;
+
 const StyledTabPanel = styled(TabPanel)`
   width: 100%;
   min-height: 15vw;
   height: 100%;
   padding-left: 36px;
   padding-top: 48px;
+  color: inherit;
 `;
 export default function About() {
   // useEffect(() => {
@@ -52,7 +60,7 @@ export default function About() {
           <PageTitle mb={"8vw"}>Studii si formare continua</PageTitle>
         </Box>
 
-        <VerticalTimeline lineColor="rgb(0,0,0, 0.1)">
+        <StyledVerticalTimeline lineColor="#eaeaea">
           {Object.keys(resumeData.certifications).map((index) => (
             <VerticalTimelineElement
               key={index}
@@ -69,7 +77,12 @@ export default function About() {
               date={resumeData.certifications[index].years}
               iconStyle={{
                 background: resumeData.certifications[index].color,
-                color: resumeData.certifications[index].bgColor,
+                border: "none",
+                boxShadow: "none",
+                width: "18px",
+                height: "18px",
+                marginLeft: "-10px",
+                marginTop: "20px",
               }}
             >
               <UnorderedList
@@ -92,23 +105,27 @@ export default function About() {
               </UnorderedList>
             </VerticalTimelineElement>
           ))}
-        </VerticalTimeline>
+        </StyledVerticalTimeline>
         <Tabs
           my={{ base: "28vw", sm: "18vw", md: "16vw", lg: "16vw", xl: "20vw" }}
           // isFitted
           align="start"
-          // variant='solid-rounded'
+          variant="enclosed"
           px={{ base: "3vw", md: "10vw" }}
           h="fit"
           fontSize={MDfont}
         >
-          <TabList borderLeft="0">
+          <TabList
+            borderLeft="0"
+            color="accents.army"
+            borderColor="accents.army"
+          >
             <Tab
               py={{ base: "12px", sm: "17px", lg: "16px" }}
               px={{ base: "8px", sm: "11px", lg: "14px" }}
               fontWeight="600"
-              color="tints.army"
-              bgColor="accents.army"
+              // color="tints.army"
+              // bgColor="accents.army"
               fontSize={MDfont}
             >
               Experiență profesională
@@ -117,8 +134,8 @@ export default function About() {
               py={{ base: "12px", sm: "17px", lg: "16px" }}
               px={{ base: "8px", sm: "11px", lg: "14px" }}
               fontWeight="600"
-              color="tints.red"
-              bgColor="accents.red"
+              // color="tints.red"
+              // bgColor="accents.red"
               fontSize={MDfont}
             >
               Afilieri
@@ -127,8 +144,8 @@ export default function About() {
               py={{ base: "12px", sm: "17px", lg: "16px" }}
               px={{ base: "8px", sm: "11px", lg: "14px" }}
               fontWeight="600"
-              color="tints.lime"
-              bgColor="accents.lime"
+              // color="tints.lime"
+              // bgColor="accents.lime"
               fontSize={MDfont}
             >
               Acreditări
@@ -137,15 +154,15 @@ export default function About() {
               py={{ base: "12px", sm: "17px", lg: "16px" }}
               px={{ base: "8px", sm: "11px", lg: "14px" }}
               fontWeight="600"
-              color="tints.yellow"
-              bgColor="accents.yellow"
+              // color="tints.yellow"
+              // bgColor="accents.yellow"
               fontSize={MDfont}
             >
               Teste de specialitate cu licență
             </Tab>
           </TabList>
-          <TabPanels>
-            <StyledTabPanel color="accents.army" bgColor="#fbfaff">
+          <TabPanels color="accents.army">
+            <StyledTabPanel>
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
@@ -159,7 +176,7 @@ export default function About() {
                 ))}
               </UnorderedList>
             </StyledTabPanel>
-            <StyledTabPanel color="accents.red" bgColor="#fffbfa">
+            <StyledTabPanel>
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
@@ -173,7 +190,7 @@ export default function About() {
                 ))}
               </UnorderedList>
             </StyledTabPanel>
-            <StyledTabPanel color="accents.lime" bgColor="#fafffd">
+            <StyledTabPanel>
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
@@ -187,7 +204,7 @@ export default function About() {
                 ))}
               </UnorderedList>{" "}
             </StyledTabPanel>
-            <StyledTabPanel color="accents.yellow" bgColor="#fdfbf7">
+            <StyledTabPanel>
               <UnorderedList
                 spacing={3}
                 fontWeight="500"
