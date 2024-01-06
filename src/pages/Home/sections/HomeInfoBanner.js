@@ -29,10 +29,10 @@ export const StyledStack = styled(Flex)`
 `;
 export const SectionTitle = styled(Box)`
   text-align: center;
-  width: 68%;
+  width: 60%;
   font-family: "EdwardianScript";
-  font-size: 72px;
-  margin-bottom: 56px;
+  font-size: 68px;
+  margin-bottom: 44px;
   line-height: 3rem;
 
   @media screen and (max-width: 1000px) {
@@ -56,60 +56,67 @@ export default function HomeInfoBanner() {
     <VStack
       bg="tints.lime"
       color="accents.lime"
-      p={{ base: "17vw 6vw", sm: "10vw 6vw", md: "8vw 6vw", lg: "6vw" }}
+      p={{
+        base: "17vw 6vw",
+        sm: "10vw 6vw",
+        md: "8.25vw 5.75vw",
+        lg: "6vw 3vw 5vw",
+        xl: "6vw 5.75vw 5vw",
+      }}
       h="auto"
       maxW="100vw"
       justifyContent={"space-evenly"}
     >
-      <SectionTitle>Care sunt etapele unui proces terapeutic</SectionTitle>
+      <SectionTitle >Care sunt etapele unui proces terapeutic</SectionTitle>
       <Flex
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column", sm: "row" }}
         wrap="wrap"
         justifyContent="center"
-        alignItems={{ base: "center", md: "flex-start" }}
-        // bg="green.700"
+        alignItems={{ base: "center", sm: "flex-start" }}
         color="inherit"
         fontFamily={"sans"}
         fontWeight={"500"}
         gap={4}
-        mt={{ base: "5vw", md: "3.5vw" }}
+        mt={{ base: "5vw", md: "2.8vw" }}
       >
         <Flex
           alignItems="center"
           flexDirection={"column"}
           textAlign="center"
-          maxW={{ base: "65%", sm: "45%", md: "52%", xl: "28%" }}
-          p={2}
-          minW="200px"
+          maxW={{ base: "65%", sm: "45%", md: "32%", lg: "32%",  xl: "28%" }}
+          p={{base: 4, sm: 6, md: 3, lg: 2}}
+          minW="180px"
         >
           <Icon
             mb={{ base: "8px", md: "16px" }}
             as={IoCalendarNumberOutline}
-            w={{ base: "24px", sm: "26px", lg: "36px", xl: "48px" }}
-            h={{ base: "24px", sm: "26px", lg: "36px", xl: "48px" }}
+            w={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
+            h={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Prima etapă este cea de cunoaștere: pe baza întrebărilor deschise și a dialogului prietenos, voi efectua o anamneză ce încadrează traseul obiectivelor & nevoilor ce te-au determinat să apelezi la terapie
+          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+            Prima etapă este cea de cunoaștere: pe baza întrebărilor deschise și
+            a dialogului prietenos, voi efectua o anamneză ce încadrează traseul
+            obiectivelor & nevoilor ce te-au determinat să apelezi la terapie
           </Text>
         </Flex>
         <Flex
           alignItems="center"
           flexDirection={"column"}
           textAlign="center"
-          maxW={{ base: "65%", sm: "45%", md: "52%", xl: "28%" }}
-          p={2}
-          minW="200px"
+          maxW={{ base: "65%", sm: "45%", md: "32%", lg: "32%", xl: "28%" }}
+          p={{base: 4, sm: 6, md: 3, lg: 2}}
+          minW="180px"
         >
           <Icon
             mb={{ base: "6px", md: "16px" }}
             as={TbMessages}
-            w={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
-            h={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
+            w={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
+            h={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Mai departe, concepem împreună o alianță terapeutică bazată pe non-judecată,
-            vulnerabilitate & încredere, unde greutățile pot
-            fi depășite cu ajutorul metodelor specifice disfuncționalităților
+          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+            Mai departe, concepem împreună o alianță terapeutică bazată pe
+            non-judecată, vulnerabilitate & încredere, unde greutățile pot fi
+            depășite cu ajutorul metodelor specifice disfuncționalităților
             identificate.
           </Text>
         </Flex>
@@ -117,19 +124,20 @@ export default function HomeInfoBanner() {
           alignItems="center"
           flexDirection={"column"}
           textAlign="center"
-          maxW={{ base: "65%", sm: "45%", md: "52%", xl: "28%" }}
-          p={2}
-          minW="200px"
+          maxW={{ base: "65%", sm: "45%", md: "32%", lg: "32%", xl: "28%" }}
+          p={{base: 4, sm: 6, md: 3, lg: 2}}
+          minW="180px"
         >
           <Icon
             mb={{ base: "8px", md: "16px" }}
             as={TbHeartHandshake}
-            w={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
-            h={{ base: "24px", sm: "28px", lg: "36px", xl: "48px" }}
+            w={{ base: "30px", sm: "34px", lg: "42px", xl: "52px" }}
+            h={{ base: "30px", sm: "34px", lg: "42px", xl: "52px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w="80%">
-            Ultima etapă constă în reîncadrarea situațiilor supărătoare, în explorarea & integrarea în viața de zi cu zi a soluțiilor de vindecare găsite împreună, precum și în
-            regăsirea sinelui autentic.
+          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+            Ultima etapă constă în reîncadrarea situațiilor supărătoare, în
+            explorarea & integrarea în viața de zi cu zi a soluțiilor de
+            vindecare găsite împreună, precum și în regăsirea sinelui autentic.
           </Text>
         </Flex>
       </Flex>

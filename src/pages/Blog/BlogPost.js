@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import { articles } from "../../assets/constants/data";
 import { useParams } from "react-router-dom";
-import { MDfont, SMfont, XXLfont, XXXLfont } from "../../assets/styles/theme";
+import { MDfont} from "../../assets/styles/theme";
 import { PageTitle } from "../About/sections/AboutHero";
 import {
-  Box,
-  Button,
   Divider,
-  FormErrorMessage,
   HStack,
   Heading,
   Image,
