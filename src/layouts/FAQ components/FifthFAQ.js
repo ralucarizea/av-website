@@ -16,7 +16,7 @@ const ThirdFAQ = () => {
       <UnorderedList>
         <ListItem>
           <strong>Notificare în prealabil: </strong>În mod ideal, ar trebui să
-          anunți terapeutul <strong>cu 24h înainte</strong> dacă știi că nu
+          anunți terapeutul <strong>cu cel putin 24h înainte</strong> dacă știi că nu
           poți participa la o sesiune programată. Acest lucru oferă terapeutului
           posibilitatea de a ajusta programul și poate facilita reprogramarea.
         </ListItem>
