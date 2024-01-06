@@ -16,13 +16,13 @@ const ThirdFAQ = () => {
       <UnorderedList>
         <ListItem>
           <strong>Notificare în prealabil: </strong>În mod ideal, ar trebui să
-          anunți terapeutul cu 24h înainte dacă știi că nu poți participa la o
-          sesiune programată. Acest lucru oferă terapeutului posibilitatea de a
-          ajusta programul și poate facilita reprogramarea.
+          anunți terapeutul <strong>cu 24h înainte</strong> dacă știi că nu
+          poți participa la o sesiune programată. Acest lucru oferă terapeutului
+          posibilitatea de a ajusta programul și poate facilita reprogramarea.
         </ListItem>
         <ListItem>
           <strong>Politica de anulare a terapeutului: </strong> Dacă ratezi o
-          sesiune fără să anunți în prealabil ședința va fi achitată în termen
+          sesiune fără să anunți în prealabil cu minim 24h, <strong>ședința va fi achitată integral</strong> în termen
           de 24h, ori în cadrul următoarei ședințe stabilite de comun acord în
           următoarele maxim 2 săptămâni. Este foarte important să menții
           continuitatea în procesul terapeutic, iar reprogramarea poate fi o

@@ -213,7 +213,8 @@ export const HomeServicesMenuData = {
       highlightedParagraph:
         "Metoda Somatic Experiencing este o abordare terapeutică dezvoltată de psihologul Peter Levine. Această metodă se concentrează pe rezolvarea traumelor și a stresului prin intermediul corpului. Somatic Experiencing crede că traumele pot fi înmagazinate în corp și că unicitatea fiecărei persoane necesită o abordare individualizată pentru vindecare.",
       firstHeading: "",
-      secondParagraph: "Prin intermediul Somatic Experiencing, se explorează senzațiile și reacțiile corporale asociate cu traumele și stresul. Scopul este de a reda sistemului nervos autonom abilitatea de a se regla și de a se vindeca. Terapeutul lucrează cu pacientul pentru a recunoaște și a elibera tensiunile din corp, ajutându-l să își regăsească resursele interne și să își reconstruiască capacitatea de a face față provocărilor",
+      secondParagraph:
+        "Prin intermediul Somatic Experiencing, se explorează senzațiile și reacțiile corporale asociate cu traumele și stresul. Scopul este de a reda sistemului nervos autonom abilitatea de a se regla și de a se vindeca. Terapeutul lucrează cu pacientul pentru a recunoaște și a elibera tensiunile din corp, ajutându-l să își regăsească resursele interne și să își reconstruiască capacitatea de a face față provocărilor",
       secondHeading: "",
       thirdParagraph:
         "Această metodă poate fi folosită în tratarea unei game variate de traume și tulburări, incluzând tulburarea de stres posttraumatic (PTSD), anxietatea, depresia și alte afecțiuni legate de stres. Somatic Experiencing poate ajuta pacienții să recapete controlul asupra corpului și să își îmbunătățească calitatea vieții.",
