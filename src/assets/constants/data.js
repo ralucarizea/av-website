@@ -201,7 +201,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "accents.army",
     color: "tints.lime",
-    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av5_suand1.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475956/serviceImages/people-holding-together-hands-cute-paper-family_l8zeao.jpg",
     route: "COUPLE",
   },
   2: {
