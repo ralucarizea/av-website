@@ -2,7 +2,6 @@ import React from "react";
 import AboutHero, { PageTitle } from "./sections/AboutHero";
 import PerformanceCounter from "../../components/PerformanceCounter";
 import AboutTherapeuticStyle from "./sections/AboutTherapeuticStyle";
-import AboutParallaxPiece from "./sections/AboutParallaxPiece";
 import AboutBanner from "./sections/AboutBanner";
 import AboutPhotoGallery from "./sections/AboutPhotoGallery";
 import { resumeData } from "../../assets/constants/data";

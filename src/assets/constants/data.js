@@ -1,15 +1,14 @@
-import { ListItem, UnorderedList } from "@chakra-ui/react";
-import FirstFAQ from "../../components/firstFAQ";
-import SecondFAQ from "../../components/SecondFAQ";
-import ThirdFAQ from "../../components/ThirdFAQ";
-import FourthFAQ from "../../components/FourthFAQ";
-import FifthFAQ from "../../components/FifthFAQ";
-import FirstArticle from "../../components/FirstArticle";
-import SecondArticle from "../../components/SecondArticle";
-import ThirdArticle from "../../components/ThirdArticle";
-import FourthArticle from "../../components/FourthArticle";
-import FifthArticle from "../../components/FifthArticle";
-import SixthArticle from "../../components/SixthArticle";
+import FirstFAQ from "../../layouts/FAQ components/FirstFAQ";
+import SecondFAQ from "../../layouts/FAQ components/SecondFAQ";
+import ThirdFAQ from "../../layouts/FAQ components/ThirdFAQ";
+import FourthFAQ from "../../layouts/FAQ components/FourthFAQ";
+import FifthFAQ from "../../layouts/FAQ components/FifthFAQ";
+import FirstArticle from "../../pages/Blog/sections/FirstArticle";
+import SecondArticle from "../../pages/Blog/sections/SecondArticle";
+import ThirdArticle from "../../pages/Blog/sections/ThirdArticle";
+import FourthArticle from "../../pages/Blog/sections/FourthArticle";
+import FifthArticle from "../../pages/Blog/sections/FifthArticle";
+import SixthArticle from "../../pages/Blog/sections/SixthArticle";
 
 export const articles = [
   {

@@ -12,7 +12,7 @@ import ServicePage from "./pages/Services/ServicePage";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound";
 import Footer from "./layouts/Footer";
-import FAQ from "./layouts/FAQ";
+import FAQ from "./layouts/FAQ components/FAQ";
 import BlogPost from "./pages/Blog/BlogPost";
 
 const routes = [

@@ -1,7 +1,7 @@
 import { React } from "react";
 import { ListItem, Text, UnorderedList, Box } from "@chakra-ui/react";
 
-const firstFAQ = () => {
+const FirstFAQ = () => {
   return (
     <Box fontFamily="inherit" fontSize="inherit">
       <Text>
@@ -67,4 +67,4 @@ const firstFAQ = () => {
   );
 };
 
-export default firstFAQ;
+export default FirstFAQ;

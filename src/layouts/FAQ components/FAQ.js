@@ -9,8 +9,8 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 import { VscArrowRight } from "react-icons/vsc";
-import { faqMainpage } from "../assets/constants/data";
-import { MDfont } from "../assets/styles/theme";
+import { faqMainpage } from "../../assets/constants/data";
+import { MDfont } from "../../assets/styles/theme";
 
 const FAQ = () => {
   return (
