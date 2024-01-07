@@ -12,7 +12,7 @@ export default function StyledListItem({ text, angle, color }) {
         as={HiPuzzle}
         color={color}
       />
-      <Text ml={0.5} fontSize={"calc(11px + 0.25vw)"} fontWeight="500">
+      <Text ml={0.5} fontSize={"calc(11px + 0.4vw)"} fontWeight="500">
         {text}
       </Text>
     </Flex>

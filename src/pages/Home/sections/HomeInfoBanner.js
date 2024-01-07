@@ -50,6 +50,11 @@ export const SectionTitle = styled(Box)`
     margin-bottom: 16px;
     line-height: 1.9rem;
   }
+  @media screen and (max-width: 490px) {
+    font-size: 44px;
+    margin-bottom: 16px;
+    line-height: 1.9rem;
+  }
 `;
 export default function HomeInfoBanner() {
   return (
@@ -57,7 +62,7 @@ export default function HomeInfoBanner() {
       bg="tints.lime"
       color="accents.lime"
       p={{
-        base: "17vw 6vw",
+        base: "20vw 6vw 15vw",
         sm: "10vw 6vw",
         md: "8.25vw 5.75vw",
         lg: "6vw 3vw 5vw",
@@ -93,7 +98,7 @@ export default function HomeInfoBanner() {
             w={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
             h={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+          <Text fontSize={{ base: "13px", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
             Prima etapă este cea de cunoaștere: pe baza întrebărilor deschise și
             a dialogului prietenos, voi efectua o anamneză ce încadrează traseul
             obiectivelor & nevoilor ce te-au determinat să apelezi la terapie
@@ -113,7 +118,7 @@ export default function HomeInfoBanner() {
             w={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
             h={{ base: "30px", sm: "34px", lg: "42px", xl: "50px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+          <Text fontSize={{ base: "13px", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
             Mai departe, concepem împreună o alianță terapeutică bazată pe
             non-judecată, vulnerabilitate & încredere, unde greutățile pot fi
             depășite cu ajutorul metodelor specifice disfuncționalităților
@@ -134,7 +139,7 @@ export default function HomeInfoBanner() {
             w={{ base: "30px", sm: "34px", lg: "42px", xl: "52px" }}
             h={{ base: "30px", sm: "34px", lg: "42px", xl: "52px" }}
           />
-          <Text fontSize={{ base: "xs", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
+          <Text fontSize={{ base: "13px", sm: "sm", lg: "md" }} mt={2} w={{md: "100%", lg: "87%"}}>
             Ultima etapă constă în reîncadrarea situațiilor supărătoare, în
             explorarea & integrarea în viața de zi cu zi a soluțiilor de
             vindecare găsite împreună, precum și în regăsirea sinelui autentic.

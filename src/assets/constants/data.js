@@ -223,7 +223,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "tints.yellow",
     color: "accents.red",
-    img: "/images/servicesImages/individual.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704564531/psihosomatic2_ijc21o.jpg",
     route: "TRAUMA",
   },
   3: {
@@ -316,9 +316,9 @@ export const HomeServicesMenuData = {
   },
 };
 export const performanceCounterData = {
-  0: { indicator: "pacienți", number: 248, color: "accents.army" },
+  0: { indicator: "pacienți", number: 5760, color: "accents.army" },
   1: { indicator: "ani de experiență", number: 6, color: "accents.lime" },
-  2: { indicator: "ore de practică", number: 7000, color: "accents.red" },
+  2: { indicator: "ore de practică", number: 8000, color: "accents.red" },
   3: { indicator: "specializări", number: 7, color: "accents.yellow" },
 };
 export const resumeData = {
@@ -381,7 +381,7 @@ export const resumeData = {
       // title: "Workshop-uri",
       achievements: [
         "Curs specializare - „Consilier pentru dezvoltare personală” - Organizat de Confident Business Training SRL (22 - 28 ianuarie)",
-        "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Ghina Chiriac - Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
+        "Certificat de participare la workshop-ul formativ, „Gestionarea conflictelor în cuplu și stresul emoțional” - organizat de Gina Chiriac - Sediul Asociației Române de Psihoterapie Integrativă (4 octombrie)",
         "Certificat de participare la workshop-ul formativ, „Lucrul cu umbra” - organizat de Coralina Chiriac - Sediul Asociației Române de Psihoterapie Integrativă (28 octombrie)",
       ],
       years: ["2019 - 2020"],

@@ -102,7 +102,7 @@ export const LGfont = {
   xl: "xl",
 };
 export const XXLfont = {
-  base: "md",
+  base: "19px",
   xs: "lg",
   sm: "lg",
   md: "lg",

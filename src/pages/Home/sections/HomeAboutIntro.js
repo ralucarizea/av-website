@@ -15,7 +15,7 @@ function HomeAboutIntro() {
     <Flex
       h="fit"
       px={{ base: 5, xs: 6, sm: 8, md: 12, lg: 14, xl: 16 }}
-      py={{ base: 24, xs: 20, sm: 22, md: 24, lg: 20, xl: 28 }}
+      py={{ base: "90px", xs: 24, sm: 22, md: 24, lg: 20, xl: 28 }}
       justifyContent={"center"}
       flexWrap="wrap"
       color={"neutrals.dark"}
@@ -61,15 +61,14 @@ function HomeAboutIntro() {
         mt={{ base: 4, sm: 6, md: 0 }}
         alignItems={"flex-start"}
       >
-        <HeroHeading fontSize={XXLfont}>
-          {" "}
+        <HeroHeading>
           Să te deschizi în fața cuiva este foarte greu, știu
         </HeroHeading>
         <Text
-          mt={{ base: 2, sm: 3, md: 6, lg: 2, xl: 10 }}
-          mb={{ base: 2, sm: 3, md: 4, lg: 1, xl: 4 }}
+          mt={{ base: 2, sm: 3, md: 6, lg: 4, xl: 7 }}
+          mb={{ base: 2, sm: 3, md: 4, lg: 2, xl: 6 }}
           w={{ base: "100%", lg: "96%", xl: "87%" }}
-          fontSize={{ base: "13px", sm: "14px", md: "15px", xl: "16px" }}
+          fontSize={{ base: "13.75px", sm: "14px", md: "16px", xl: "16px" }}
         >
           ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
           misiunea mea este să îmi călăuzesc clienții către depășirea diverselor
@@ -85,7 +84,7 @@ function HomeAboutIntro() {
           </Text>
         </Text>
         <Show above="md">
-          <HeroHeading fontSize={LGfont} mb={{ base: "10px", lg: "16px" }}>
+          <HeroHeading  mb={{ base: "10px", lg: "16px" }}>
             Te pot ajuta cu următoarele tipuri de probleme:{" "}
           </HeroHeading>
           <VStack
@@ -111,7 +110,7 @@ function HomeAboutIntro() {
           >
             <HeroHeading
               fontSize={"18px"}
-              mb={{ base: "10px", lg: "16px" }}
+              mb={{ base: "13px", lg: "16px" }}
               w="100%"
               // border="1px solid purple"
             >
