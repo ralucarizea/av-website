@@ -267,7 +267,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "tints.army",
     color: "accents.army",
-    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av2_dgirf0.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704640237/evaluarepsiho_dkxwet.jpg",
     route: "EVALUATION",
   },
   5: {
