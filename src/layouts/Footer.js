@@ -68,26 +68,48 @@ export default function Footer() {
         bg="accents.army"
         color="neutrals.light"
         alignContent={"center"}
-        pb={{ base: "7vw", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
+        pb={{ base: "32px", xs: "28px", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
         zIndex={12121}
       >
-        <VStack
-          justifyContent={"center"}
+        <Box
+          pt={{ base: "10vw", xs: "11.75vw", sm: "13.5vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
+          textAlign="center"
+          fontFamily="handwritten"
           w={{
             base: "88%",
-            xs: "72%",
-            sm: "70%",
-            md: "66%",
+            xs: "68%",
+            sm: "58%",
+            md: "60%",
             lg: "60%",
             xl: "45%",
           }}
-          pt={{ base: "10.5vw", sm: "13vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
-          // pb={{ base: "12vw", sm: "5vw", md: "6vw", lg: "2vw" }}
+          mb={{
+            base: "16px",
+  
+            sm: "",
+            md: "",
+            lg: "52px",
+            xl: "66px",
+          }}
+          fontSize={{
+            base: "40px",
+            xs: "44px",
+            sm: "50px",
+            md: "",
+            lg: "52px",
+            xl: "66px",
+          }}
+          lineHeight={{
+            base: "1.8rem",
+            xs: "2rem",
+            sm: "2.4rem",
+            md: "",
+            lg: "",
+            xl: "",
+          }}
         >
-          <SectionTitle>
-            Lasa-ma sa te ghidez in procesul tau de vindecare
-          </SectionTitle>
-        </VStack>
+          Lasa-ma sa te ghidez in procesul tau de vindecare
+        </Box>
         <StyledButton
           text={"Fă o programare online"}
           width={{

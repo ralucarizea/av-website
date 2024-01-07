@@ -65,11 +65,11 @@ export default function SocialProofCard({
     >
       <Caption
         fontSize={{
-          base: "14px",
-          sm: "15px",
-          md: "15px",
-          lg: "16px",
-          xl: "17px",
+          base: "14.25px",
+          sm: "15.75px",
+          md: "16px",
+          lg: "17px",
+          xl: "18.5px",
         }}
       >
         {reviewText}

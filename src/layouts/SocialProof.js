@@ -55,14 +55,7 @@ export default function SocialProof() {
     bottom: ${(props) => props.bottom};
     border-radius: 50%;
     background: transparent;
-    &:hover {
-       {
-        background-color: #fadcdc;
-        color: pink;
-        opacity: 0.8;
-        transition: 210ms ease-in;
-      }
-    }
+    
   `;
 
   return (
@@ -79,7 +72,7 @@ export default function SocialProof() {
       >
         <Flex
           mt="16px"
-          pb="4vw"
+          pb={{ base: "8vw", md: "4vw" }}
           width="100%"
           flexDirection={"column"}
           justifyContent={"center"}
@@ -107,21 +100,20 @@ export default function SocialProof() {
               as={VscArrowLeft}
               fill="accents.army"
               width={{
-                base: "16px",
-                xs: "18px",
-                sm: "20px",
-                md: "20px",
-                lg: "24px",
-                xl: "26px",
+                base: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px",
+                xl: "36px",
               }}
               height={{
-                base: "16px",
-                xs: "18px",
-                sm: "20px",
-                md: "20px",
-                lg: "24px",
-                xl: "26px",
+                base: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px",
+                xl: "36px",
               }}
+            
             />
           </StyledSliderButton>
           {carouselFragment}
@@ -136,20 +128,18 @@ export default function SocialProof() {
               as={VscArrowRight}
               fill="accents.army"
               width={{
-                base: "16px",
-                xs: "18px",
-                sm: "20px",
-                md: "20px",
-                lg: "24px",
-                xl: "26px",
+                base: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px",
+                xl: "36px",
               }}
               height={{
-                base: "16px",
-                xs: "18px",
-                sm: "20px",
-                md: "20px",
-                lg: "24px",
-                xl: "26px",
+                base: "20px",
+                sm: "24px",
+                md: "28px",
+                lg: "32px",
+                xl: "36px",
               }}
             />
           </StyledSliderButton>

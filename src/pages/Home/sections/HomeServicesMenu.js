@@ -17,7 +17,7 @@ export default function HomeServicesMenu() {
   return (
     <Flex
       maxW="100vw"
-      py={{ base: "32vw", sm: "10vw", md: "10vw", lg: "8vw" }}
+      py={{ base: "32vw", sm: "10vw", md: "10vw", lg: "10vw" }}
       px={{ xs: "12vw", sm: "8vw", md: "10vw", lg: "8vw" }}
       mb={{base: "3vh", md: "14vh"}}
       // bg="pink"
