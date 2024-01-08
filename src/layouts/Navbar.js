@@ -58,7 +58,7 @@ const Navbar = () => {
       bg="#fff"
     >
       <LogoContainer color={"neutrals.dark"} s />
-      <Show above="sm">
+      <Show above="641px">
         <NavbarButtonsContainer color={"accents.red"}>
           <NavLink>
             <Menu>
@@ -105,7 +105,7 @@ const Navbar = () => {
           </NavLink>
         </NavbarButtonsContainer>
       </Show>
-      <Show below="sm">
+      <Show below="640px">
         <Button
           mr="16px"
           alignSelf="center"

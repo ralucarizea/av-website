@@ -15,11 +15,10 @@ export const HeroHeading = styled(Text)`
   }
 
   @media screen and (max-width: 820px) {
-    font-size: 24px;
-    margin-top: 24px;
+    font-size: 22px;
   }
   @media screen and (max-width: 640px) {
-    font-size: 20px;
-    margin-top: 30px;
+    font-size: 21px;
+    margin-top: 10px;
   }
 `;

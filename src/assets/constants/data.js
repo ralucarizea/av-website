@@ -9,6 +9,8 @@ import ThirdArticle from "../../pages/Blog/sections/ThirdArticle";
 import FourthArticle from "../../pages/Blog/sections/FourthArticle";
 import FifthArticle from "../../pages/Blog/sections/FifthArticle";
 import SixthArticle from "../../pages/Blog/sections/SixthArticle";
+import PsychosexologySectionArticle from "../../pages/Services/sections/PsychosexologySectionArticle"
+import EvaluationSectionArticle from "../../pages/Services/sections/EvaluationSectionArticle"
 
 export const articles = [
   {
@@ -257,8 +259,7 @@ export const HomeServicesMenuData = {
       highlightedParagraph:
         "Evaluarea clinică este un proces complex și sistematic de evaluare a stării de sănătate a unei persoane, care implică colectarea și analiza informațiilor relevante legate de istoricul personal și medical al individului, simptomele și problemele sale actuale, funcționarea psihologică și socială, precum și a altor factori relevanți pentru sănătatea și bunăstarea sa.",
       firstHeading: "",
-      secondParagraph:
-        "Scopul principal al evaluării clinice este de a obține o înțelegere completă și detaliată a nevoilor și dificultăților pacientului, pentru a putea face un diagnostic corect și pentru a dezvolta un plan de tratament adecvat. Procesul de evaluare clinică poate implica mai multe etape, cum ar fi: Interviul clinic: Include o discuție între pacient și profesionistul de sănătate mintală, în care se obțin informații despre simptome, istoricul medical, evenimentele de viață semnificative, antecedente familiale și alte detalii relevante. Evaluarea psihologică: Aceasta implică utilizarea unor instrumente și teste standardizate pentru a evalua funcționarea și starea mentală a persoanei. De exemplu, pot fi utilizate teste de evaluare a personalității, teste cognitive, teste de depresie și anxietate, sau alte instrumente specifice. Observația și evaluarea comportamentului: Profesionistul de sănătate mintală poate observa comportamentul și interacțiunile persoanei într-un mediu clinic sau natural. Aceasta poate furniza informații suplimentare despre problemele și dificultățile cu care se confruntă individul. Analiza informațiilor: Profesionistul de sănătate mintală analizează și sintetizează toate informațiile colectate în timpul evaluării clinice. Aceasta implică formularea unui diagnostic, identificarea factorilor de risc și a nevoilor individuale, și stabilirea unui plan de tratament personalizat.",
+      secondParagraph: () => <EvaluationSectionArticle />,
       secondHeading: "",
       thirdParagraph:
         "Evaluarea clinică poate fi efectuată de diferite cadre medicale sau terapeutice, cum ar fi psihologii clinicieni, psihiatrii, asistenții sociali și alți specialiști în domeniul sănătății mintale. Este un proces individualizat și atent, care se axează pe înțelegerea și sprijinirea nevoilor și bunăstării pacientului.",
@@ -267,7 +268,7 @@ export const HomeServicesMenuData = {
     duration: "",
     bgColor: "tints.army",
     color: "accents.army",
-    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704640237/evaluarepsiho_dkxwet.jpg",
+    img: "https://res.cloudinary.com/dd82hyvds/image/upload/v1704475856/serviceImages/av2_dgirf0.jpg", 
     route: "EVALUATION",
   },
   5: {
@@ -279,8 +280,7 @@ export const HomeServicesMenuData = {
       highlightedParagraph:
         "Psihosexologia este un domeniu interdisciplinar care se ocupă de studierea și înțelegerea relației dintre aspectele psihologice și aspectele sexuale ale indivizilor. Aceasta abordează aspectele emoționale, mentale, comportamentale și sociale ale sexualității umane și își propune să identifice și să soluționeze problemele și dificultățile legate de sexualitatea umană.",
       firstHeading: "",
-      secondParagraph:
-        "Psihosexologii își folosesc cunoștințele din psihologie, terapie sexuală, sexologie, consiliere și alte domenii conexe pentru a aborda o gamă largă de subiecte și probleme legate de sexualitate. Acestea pot include, dar nu se limitează la: Disfuncții sexuale: Psihosexologii pot ajuta persoanele care se confruntă cu dificultăți în domeniul sexual, cum ar fi disfuncții erectile, disfuncții de orgasm, probleme legate de libidou (dorința sexuală) sau probleme de cuplu legate de sexualitate. Terapie sexuală: Psihosexologii oferă consiliere și terapie pentru a ajuta indivizii sau cuplurile să exploreze și să-și îmbunătățească satisfacția sexuală, să construiască relații sănătoase și să depășească eventualele obstacole legate de sexualitate. Educație sexuală: Psihosexologii pot fi implicați în furnizarea de informații și educație sexuală pentru a ajuta oamenii să dobândească cunoștințe și abilități adecvate legate de sexualitatea umană. Consiliere în probleme de identitate sexuală: Psihosexologii pot oferi orientare și sprijin pentru persoanele care explorează și își clarifică identitatea sexuală sau ale celor care se confruntă cu dificultăți în acceptarea și integrarea acestei identități. Consiliere în probleme de relaționare și comunicare sexuală: Psihosexologii pot ajuta indivizii și cuplurile să își îmbunătățească comunicarea și să abordeze problemele de relaționare care pot afecta sexualitatea.",
+      secondParagraph: () => <PsychosexologySectionArticle />,
       secondHeading: "",
       thirdParagraph:
         "Psihosexologia este un domeniu sensibil și confidențial, care caută să înțeleagă și să sprijine indivizii în explorarea și exprimarea sănătoasă a sexualității lor. Psihosexologii lucrează în mod individual sau cu cupluri, de obicei în cadrul unui mediu terapeutic sigur și etic.",

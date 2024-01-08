@@ -3,7 +3,7 @@ import { Box, Button, Collapse, VStack } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react";
 
-import { MDfont, SMfont, XXLfont } from "../assets/styles/theme";
+import {  SMfont} from "../assets/styles/theme";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../assets/constants/data";
 
@@ -19,32 +19,33 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
       width={width}
       height={height}
       lineHeight={"2xs"}
-      mx="-0.75vw"
+      mx="-0.75vw"s
       role="group"
       onMouseEnter={onToggle}
       onMouseLeave={onToggle}
     >
-      <Box width="67%" textAlign={"center"}>
+      <Box width="69%" textAlign={"center"} mb="-8px">
         {" "}
         <Box
           fontSize={{ base: "lg", lg: "xl", xl: "3xl" }}
           fontFamily={"serif"}
           lineHeight={"none"}
-          mb={{ base: "10px", md: "12px", lg: "14px" }}
+          // mb={{ base: "10px", md: "12px", lg: "14px" }}
         >
           {service.title}
         </Box>
         <Collapse in={isOpen} animateOpacity>
-          <Box>
+          <Box w="102%">
             <Box
+              mt={{ base: "8px", md: "12px", lg: "14px" }}
               mb={{
-                base: "10px",
+                base: "8px",
                 md: "12px",
                 lg: "12px",
                 xl: "16px",
               }}
               fontSize={{
-                base: "11.5px",
+                base: "11.75px",
                 md: "12px",
                 lg: "13.5px",
                 xl: "16px",
@@ -82,7 +83,7 @@ export default function PuzzlePieceBase({ width, height, clipPath, service }) {
               }}
               // _groupHover={{ display: "inline-block" }}
             >
-              <Link to={ROUTES[service.route]} > Citește mai mult</Link>
+              <Link to={ROUTES[service.route]}> Citește mai mult</Link>
               <ArrowForwardIcon
                 display="none"
                 mx="4px"

@@ -37,9 +37,9 @@ export const StyledServicePageHeading = styled(Box)`
   }
 `;
 export const StyledServicePageText = styled(Box)`
-margin: 16px 0px;  
+margin-top: 16px ;  
 margin-left: 16px;
-width: 75%;
+width: 78%;
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -105,11 +105,11 @@ export default function ServicePage({ service }) {
       color={"neutrals.dark"}
       fontFamily="sans"
       lineHeight={"sm"}
-      fontSize={MDfont}
+      fontSize={{base: "14px", sm: "15px", md: "16px"}}
     >
       <PageTitle>{service.title}</PageTitle>
       <HStack
-        px={{ base: 8, xs: 10, sm: 10, md: 16, lg: 20, xl: 28 }}
+        px={{ base: 3, xs: 6, sm: 8, md: 10, lg: 16, xl: 28 }}
         h="fit"
         justifyContent={{ base: "center", md: "space-between" }}
         alignItems={{ base: "center", md: "flex-start" }}
@@ -132,20 +132,22 @@ export default function ServicePage({ service }) {
           />
           <StyledServicePageHighlightedParagraph
             padding={{
-              base: "16px 16px 4px 8px",
+              base: "16px 20px",
               xs: "16px 8px 8px 8px",
               sm: "20px 20px 20px 8px",
               md: "20px 20px 20px 8px",
               lg: "24px 22px 24px 8px",
             }}
             width={{ base: "100%", xs: "99%", md: "98%", lg: "97%", xl: "96%" }}
+            // textAlign={{base: "center", md:"left"}}
+            fontWeight={600}
           >
             {service.description?.highlightedParagraph}
             <Box
               width="97%"
               height="97%"
               position="absolute"
-              borderRadius={{ base: "0 8rem 0 4rem", lg: "0 12rem 0 8rem" }}
+              borderRadius={{ base: "0 6rem 0 4rem", lg: "0 12rem 0 8rem" }}
               bgColor="#fcf5f1"
               opacity="0.8"
               top="0"
@@ -172,7 +174,10 @@ export default function ServicePage({ service }) {
             <></>
           )}
           <StyledServicePageText>
-            {service.description?.secondParagraph}
+            {}
+            {typeof service.description?.secondParagraph === "function"
+          ? service.description?.secondParagraph()
+          : service.description?.secondParagraph}
           </StyledServicePageText>
 
           {service.description?.secondHeading !== "" ? (
@@ -216,14 +221,15 @@ export default function ServicePage({ service }) {
             w={{ base: "70%", lg: "80%", xl: "80%" }}
             my={{ base: "4.75vw", sm: "3.5vw", lg: "2vw" }}
             fontFamily={"handwritten"}
-            lineHeight={"2.25rem"}
+            lineHeight={{base: "1.55rem", md:"2rem"}}
             fontSize={{
-              base: "35px",
-              xs: "37px",
+              base: "32px",
+              xs: "36px",
               sm: "38px",
-              lg: "44px",
-              xl: "45px",
+              lg: "40px",
+              xl: "43px",
             }}
+            textAlign={{base: "center", md:"left"}}
           >
             Hai sa ne cunoastem mai bine!
           </Text>

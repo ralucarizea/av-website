@@ -4,7 +4,7 @@ import { HiPuzzle } from "react-icons/hi";
 
 export default function StyledListItem({ text, angle, color }) {
   return (
-    <Flex width="fit-content" h="fit" justifyContent={"flex-start"} m={1} alignItems={"center"}>
+    <Flex width="fit-content" h="fit" justifyContent={"flex-start"} m={0.9} ml={2.75} alignItems={"center"}>
       <Icon
         transform={`rotate(${angle}deg)`}
         w="23px"
@@ -12,7 +12,7 @@ export default function StyledListItem({ text, angle, color }) {
         as={HiPuzzle}
         color={color}
       />
-      <Text ml={0.5} fontSize={"calc(11px + 0.4vw)"} fontWeight="500">
+      <Text ml={0.5} fontSize={{base: "14px", sm: "15px", md: "15.75px", lg: "15.8px"}} fontWeight="500">
         {text}
       </Text>
     </Flex>

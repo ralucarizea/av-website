@@ -16,7 +16,7 @@ function HomeHero() {
         flexDirection={{ base: "column-reverse", sm: "row" }}
         textAlign={{ base: "center", sm: "left" }}
         flexWrap="wrap"
-        alignItems="center"
+        alignItems={{ base: "center", sm: "top", md: "center" }}
         justifyContent="center"
         minH="60vh"
         w="inherit"
@@ -45,7 +45,7 @@ function HomeHero() {
           h={{
             base: "45vh",
             xs: "48vh",
-            sm: "58vh",
+            sm: "60vh",
             md: "65vh",
             lg: "70vh",
             xl: "76vh",
@@ -68,26 +68,27 @@ function HomeHero() {
           w={{
             base: "65%",
             xs: "55%",
-            sm: "31%",
+            sm: "35%",
             md: "33%",
             lg: "30%",
             xl: "28%",
           }}
           fontSize={{
-            base: "11px",
-            xs: "xs",
-            sm: "xs",
+            base: "13px",
+            xs: "13.75px",
+            sm: "14px",
             md: "sm",
             lg: "sm",
             xl: "md",
           }}
+          fontFamily={"sans"}
           mb={{ base: "20px", sm: "0px" }}
         >
           <HeroHeading
             fontSize={{
               base: "lg",
-              xs: "lg",
-              sm: "lg",
+              xs: "22px",
+              sm: "22px",
               md: "xl",
               lg: "2xl",
               xl: "3xl",
@@ -100,9 +101,11 @@ function HomeHero() {
             fontFamily={"handwritten"}
             fontSize={{
               base: "33px",
-              md: "36px",
-              lg: "42px",
-              xl: "48px",
+              xs: "33.5px",
+              sm: "35px",
+              md: "41px",
+              lg: "44px",
+              xl: "46px",
             }}
             lineHeight={"xs"}
             my={{
@@ -118,8 +121,8 @@ function HomeHero() {
           </Text>
           <Text
             fontFamily={"sans"}
-            my={{ base: 2, sm: 5, md: 5, lg: 8, xl: 10 }}
-            mr={{ base: 2, sm: 3, md: 4, lg: 6, xl: 14 }}
+            my={{ base: 2, sm: 4, md: 5, lg: 8, xl: 10 }}
+            mr={{ base: 2, sm: 4, md: 4, lg: 6, xl: 14 }}
             display={{ base: "none", sm: "block" }}
             lineHeight={"lg"}
           >
@@ -132,8 +135,9 @@ function HomeHero() {
             text="Solicită o programare"
             width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
             height={{
-              base: "40px",
-              sm: "42px",
+              base: "44px",
+              xs: "46px",
+              sm: "47px",
               md: "48px",
               lg: "48px",
               xl: "56px",
@@ -146,26 +150,27 @@ function HomeHero() {
       <VStack
         bg="#f3f0ff"
         color={"accents.army"}
-        h={{ base: "35vh", sm: "40vh", md: "47vh", lg: "53vh" }}
+        h={{ base: "38vh", sm: "40vh", md: "48vh", lg: "52vh" }}
         zIndex="-1"
         mt={"-28px"}
         fontFamily="handwritten"
         justifyContent={"center"}
         fontSize={{
-          base: "34px",
-          sm: "40px",
-          md: "42px",
-          lg: "48px",
+          base: "30.5px",
+          xs: "33.5px",
+          sm: "35px",
+          md: "41px",
+          lg: "44px",
           xl: "46px",
         }}
-        lineHeight={{ base: "0.75em", sm: "0.9em", md: "0.9em" }}
+        lineHeight={{ base: "0.82em", xs: "0.9em", md: "0.85em" }}
       >
         <Text
           alignSelf={"center"}
-          w={{ base: "75%", sm: "55%", md: "46%" }}
+          w={{ base: "74%", sm: "55%", md: "50%" }}
           textAlign={"center"}
-          pt="3vw"
-          pb="1.25vw"
+          pt={{ base: "12vw", xs: "10vw", sm: "10vw", md: "9vw", lg: "6vw" }}
+          pb={{ base: "2vw", sm: "1.6vw", md: "1.25vw" }}
         >
           Viata nu este ceva la care poti da un raspuns astazi. Ar trebui sa te
           bucuri de procesul de asteptare, de procesul de a deveni ceea ce esti.
@@ -173,13 +178,14 @@ function HomeHero() {
           nu stii ce fel de flori vor aparea
         </Text>
         <Text
-          alignSelf={{ base: "center", sm: "flex-end" }}
-          w={{ base: "auto", sm: "30%" }}
-          mt="2vw"
+          alignSelf={{ base: "center", md: "flex-end" }}
+          w={{ base: "auto", md: "30%" }}
+          mt={{ base: "2.25vw", md: "3.75vw" }}
+          mb={{ base: "2.5vw", sm: "1.7vw", md: "3.75vw" }}
           fontFamily="sans"
           fontStyle={"italic"}
           fontSize={{
-            base: "14px",
+            base: "14.5px",
             sm: "15px",
             md: "18px",
             lg: "20px",

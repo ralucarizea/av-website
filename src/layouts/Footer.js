@@ -12,21 +12,32 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../assets/constants/data";
 
 const FooterNavbarCategoryTag = styled(Text)`
-  font-size: calc(1.1em - 1px);
-  font-weight: 600;
+  font-size: calc(1.05em - 1px);
+  font-weight: 700;
   letter-spacing: -0.5px;
   //   width: fit-content;
 `;
 const FooterNavbarCategoryLink = styled(Text)`
   //   width: 80%;
-  font-size: calc(1.1em - 1px);
-  font-weight: 300;
+  font-size: 16.5px;
+  font-weight: 400;
   letter-spacing: 0px;
   line-height: 1.25em;
   margin: 8px 0px;
 
+  @media screen and (max-width: 1350px) {
+    font-size: 15.5px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 820px) {
+    font-size: 14.5px;
+    margin: 7px 0px;
+  }
   @media screen and (max-width: 640px) {
-    margin: 5px 0px;
+    margin: 4px 0px;
+    font-size: 14px;
   }
 `;
 const StyledLink = styled(Link)`
@@ -46,7 +57,7 @@ export default function Footer() {
   return (
     <VStack
       mt={{
-        base: "44vw",
+        base: "40vw",
         xs: "28vw",
         sm: "14vw",
         md: "16vw",
@@ -62,50 +73,64 @@ export default function Footer() {
       //   justifyContent={{base: "space-between", md:"flex-start"}}
     >
       <VStack
-        style={{ zIndex: 30000 }}
+        style={{ zIndex: 10 }}
         h="fit"
         w="100%"
         bg="accents.army"
         color="neutrals.light"
         alignContent={"center"}
-        pb={{ base: "32px", xs: "28px", sm: "9vw", md: "7vw", lg: "4vw", xl: "4vw" }}
+        pb={{
+          base: "20px",
+          xs: "28px",
+          sm: "9vw",
+          md: "7vw",
+          lg: "4vw",
+          xl: "4vw",
+        }}
         zIndex={12121}
       >
         <Box
-          pt={{ base: "10vw", xs: "11.75vw", sm: "13.5vw", md: "11.5vw", lg: "10vw", xl: "8vw" }}
+          pt={{
+            base: "12.35vw",
+            xs: "11.75vw",
+            sm: "13.5vw",
+            md: "11.5vw",
+            lg: "10vw",
+            xl: "8vw",
+          }}
           textAlign="center"
           fontFamily="handwritten"
           w={{
-            base: "88%",
+            base: "70%",
             xs: "68%",
             sm: "58%",
-            md: "60%",
-            lg: "60%",
+            md: "53%",
+            lg: "40%",
             xl: "45%",
           }}
           mb={{
             base: "16px",
-  
-            sm: "",
-            md: "",
-            lg: "52px",
-            xl: "66px",
+            xs: "12px",
+            sm: "20px",
+            md: "36px",
+            lg: "40px",
+            xl: "58px",
           }}
           fontSize={{
             base: "40px",
-            xs: "44px",
+            xs: "43px",
             sm: "50px",
             md: "",
             lg: "52px",
             xl: "66px",
           }}
           lineHeight={{
-            base: "1.8rem",
+            base: "1.65rem",
             xs: "2rem",
             sm: "2.4rem",
-            md: "",
-            lg: "",
-            xl: "",
+            md: "2.5rem",
+            lg: "2.7rem",
+            xl: "3rem",
           }}
         >
           Lasa-ma sa te ghidez in procesul tau de vindecare
@@ -123,7 +148,7 @@ export default function Footer() {
             base: "40px",
             sm: "48px",
             md: "50px",
-            lg: "64px",
+            lg: "60px",
             xl: "64px",
           }}
           color={"accents.army"}
@@ -134,17 +159,17 @@ export default function Footer() {
         // bg="neutrals.light"
         color="accents.red"
         padding={{
-          base: "5vw 0 16px",
-          xs: "5vw 0 8px",
+          base: "16px 0 16px",
+          xs: "4vw 0 8px",
           sm: "4vw 1vw 1vw",
-          md: "5vw 3vw",
+          md: "4vw 3vw",
           lg: "2vw 1vw",
           xl: "2vw 1vw",
         }}
         h="fit"
         minH={{ base: "auto", sm: "65vh", md: "62vh", lg: "60vh", xl: "58vh" }}
         w="100%"
-        justifyContent={{ base: "flex-start", md: "space-between" }}
+        justifyContent={{ base: "flex-start", lg: "space-between" }}
         flexDirection={{ base: "column", lg: "row" }}
         alignItems={{ base: "center", md: "flex-start" }}
         // textAlign={{base:"center", md: "left"}}
@@ -152,13 +177,20 @@ export default function Footer() {
         <LogoContainer
           color={"neutrals.dark"}
           justifyContent={{ base: "center", md: "flex-start" }}
-          width={{ base: "15%", md: "22%" }}
-          mt={{ base: "3vw", md: "8vw", lg: "7vw", xl: "4vw" }}
+          width={{ base: "0%", md: "22%" }}
+          mt={{ base: "1vw", md: "8vw", lg: "7vw", xl: "4vw" }}
         />
         <Flex
-          mt={{ base: "4vw", md: "8vw", lg: "7vw", xl: "4vw" }}
-          pr={{ base: "10vw", md: "12px", lg: "48px", xl: "84px" }}
-          pl={{ base: "10vw", md: "12px", lg: "48px", xl: "84px" }}
+          mt={{
+            base: "4vw",
+            xs: "10px",
+            sm: "26px",
+            md: "4vw",
+            lg: "10vw",
+            xl: "4vw",
+          }}
+          pr={{ base: "8vw", sm: "20px", md: "12px", lg: "0", xl: "84px" }}
+          pl={{ base: "8vw", sm: "20px", md: "12px", lg: "0px", xl: "84px" }}
           flexWrap={{ base: "wrap", sm: "nowrap" }}
           w="100%"
           justifyContent={{ base: "center", md: "space-evenly" }}
@@ -175,7 +207,7 @@ export default function Footer() {
                 Strada Copăceni 46, București 030396
               </FooterNavbarCategoryLink>
             </Box>
-            <Box h="fit">
+            <Box h="fit" >
               <FooterNavbarCategoryTag>PROGRAM</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
                 Luni-Vineri: 10:00 - 18:00

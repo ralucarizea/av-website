@@ -4,18 +4,31 @@ import styled from "@emotion/styled";
 import { XXLfont } from "../../../assets/styles/theme";
 export const PageTitle = styled(Text)`
   font-family: "EdwardianScript";
-  font-size: calc(52px + 0.95vw);
+  font-size: calc(48px + 0.95vw);
   color: inherit;
   text-align: center;
-  margin: 7vw auto 5vw;
-  width: 80%;
-  line-height: 1.85rem;
+  margin: 7vw auto 3vw;
+  width: 75%;
+  line-height: 2.15rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     margin: 11vw auto 3vw;
+    font-size: calc(43px + 0.95vw);
+
   }
-  @media screen and (max-width: 900px) {
-    margin: 12vw auto 8vw;
+  @media screen and (max-width: 700px) {
+    margin: 11vw auto 3vw;
+    font-size: calc(40px + 0.95vw);
+    width: 55%;
+
+
+  }
+  @media screen and (max-width: 490px) {
+    margin: 15vw auto 8vw;
+    width: 95%;
+    font-size: calc(36px + 0.85vw);
+    line-height: 1.95rem;
+
   }
 `;
 

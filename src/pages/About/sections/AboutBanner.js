@@ -11,7 +11,7 @@ export default function AboutBanner() {
       color="accents.red"
       flexDirection={{ base: "column" }}
       w="100%"
-      px={{ base: "3vw", sm: "7vw", md: "8vw", lg: "10vw" }}
+      px={{ base: "3vw", sm: "7vw", md: "5vw", lg: "10vw" }}
       fontFamily={"sans"}
       fontSize={MDfont}
     >

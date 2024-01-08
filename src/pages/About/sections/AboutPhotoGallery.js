@@ -79,31 +79,31 @@ function AboutPhotoGallery() {
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369363/personalGallery/18-min_gaasjj.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722342/personalGallery/18-min-compressed_mitgrx.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369362/personalGallery/17-min_jvs05y.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/17-min-compressed_mv6gpr.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369361/personalGallery/16-min_mnk9kw.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/16-min-compressed_kbgrbj.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369360/personalGallery/15-min_ag5r2z.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722336/personalGallery/15-min-compressed_oyg3ni.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369359/personalGallery/14-min_vvj0ag.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722341/personalGallery/14-min-compressed_aujrze.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369358/personalGallery/13-min_lqqt6h.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722342/personalGallery/13-min-compressed_eit3za.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369358/personalGallery/12-min_qd24yw.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722336/personalGallery/12-min-compressed_oeasjg.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
@@ -111,7 +111,7 @@ function AboutPhotoGallery() {
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369356/personalGallery/10-min_gu0e48.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/10-min-compressed_p95y8p.jpg`}
             alt={``}
           />
         </Marquee>
@@ -124,11 +124,11 @@ function AboutPhotoGallery() {
           speed="25"
         >
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369355/personalGallery/9-min_yrt0jz.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/9-min-compressed_s0qe8y.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369354/personalGallery/8-min_ymhvde.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722340/personalGallery/8-min-compressed_tozxu1.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
@@ -136,31 +136,31 @@ function AboutPhotoGallery() {
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369353/personalGallery/6-min_hf7ncv.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722343/personalGallery/6-min-compressed_cqdgv4.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369352/personalGallery/5-min_ttvtpf.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/5-min-compressed_ln7y4w.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369351/personalGallery/4-min_vydbee.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722343/personalGallery/4-min-compressed_hsijeq.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369350/personalGallery/3-min_hxlz1y.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/3-min-compressed_pmtah5.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369350/personalGallery/2-min_e8dilq.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722338/personalGallery/2-min-compressed_dikn5y.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369349/personalGallery/1-min_kyc8ev.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722337/personalGallery/1-min-compressed_gjwnr6.jpg`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369349/personalGallery/0-min_fib9e2.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/0-min-compressed_lhqnjs.jpg`}
             alt={``}
           />
         </Marquee>

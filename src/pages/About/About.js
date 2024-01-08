@@ -20,6 +20,7 @@ import {
   TabPanels,
   Tabs,
   UnorderedList,
+  useMediaQuery
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { MDfont } from "../../assets/styles/theme";
@@ -39,12 +40,14 @@ const StyledTabPanel = styled(TabPanel)`
   color: inherit;
 `;
 export default function About() {
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  const [isMobile] = useMediaQuery("(max-width: 1170px)");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <AboutHero id="story" />
@@ -80,7 +83,7 @@ export default function About() {
                 boxShadow: "none",
                 width: "18px",
                 height: "18px",
-                marginLeft: "-10px",
+                marginLeft: isMobile ? "10px" : "-10px",
                 marginTop: "20px",
               }}
             >

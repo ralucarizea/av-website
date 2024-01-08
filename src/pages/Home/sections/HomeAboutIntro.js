@@ -14,8 +14,8 @@ function HomeAboutIntro() {
   return (
     <Flex
       h="fit"
-      px={{ base: 5, xs: 6, sm: 8, md: 12, lg: 14, xl: 16 }}
-      py={{ base: "90px", xs: 24, sm: 22, md: 24, lg: 20, xl: 28 }}
+      px={{ base: 0, xs: 6, sm: 8, md: 12, lg: 14, xl: 16 }}
+      py={{ base: "90px ", xs: 24, sm: 28, md: 24, lg: 24, xl: 28 }}
       justifyContent={"center"}
       flexWrap="wrap"
       color={"neutrals.dark"}
@@ -66,9 +66,9 @@ function HomeAboutIntro() {
         </HeroHeading>
         <Text
           mt={{ base: 2, sm: 3, md: 6, lg: 4, xl: 7 }}
-          mb={{ base: 2, sm: 3, md: 4, lg: 2, xl: 6 }}
+          mb={{ base: 0, sm: 3, md: 4, lg: 2, xl: 6 }}
           w={{ base: "100%", lg: "96%", xl: "87%" }}
-          fontSize={{ base: "13.75px", sm: "14px", md: "16px", xl: "16px" }}
+          fontSize={{ base: "14px", sm: "15px", md: "16px", xl: "16px" }}
         >
           ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
           misiunea mea este să îmi călăuzesc clienții către depășirea diverselor
@@ -84,14 +84,14 @@ function HomeAboutIntro() {
           </Text>
         </Text>
         <Show above="md">
-          <HeroHeading  mb={{ base: "10px", lg: "16px" }}>
+          <HeroHeading mb={{ base: "10px", lg: "16px" }}>
             Te pot ajuta cu următoarele tipuri de probleme:{" "}
           </HeroHeading>
           <VStack
             flexWrap={"wrap"}
-            h={{ base: "480px", md: "200px", lg: "250px", xl: "280px" }}
+            h={{ md: "200px", lg: "250px", xl: "280px" }}
             alignItems="flex-start"
-            ml="-10px"
+            ml="-13px"
           >
             {Object.keys(HomeAboutIntroListContent).map((index) => (
               <StyledListItem
@@ -104,7 +104,7 @@ function HomeAboutIntro() {
         </Show>
         <Show below="md">
           <VStack
-            w={{ base: "100%", sm: "70%" }}
+            w={{ base: "100%", sm: "75%" }}
             alignItems={{ base: "flex-start" }}
             // border="1px solid red"
           >
@@ -120,7 +120,7 @@ function HomeAboutIntro() {
               w={"fit"}
               alignItems={"flex-start"}
               flexWrap={"wrap"}
-              h={{ base: "fit-content", sm: "250px" }}
+              h={{ base: "fit-content", sm: "260px" }}
               // border="1px solid green"
             >
               {Object.keys(HomeAboutIntroListContent).map((index) => (
@@ -139,11 +139,15 @@ function HomeAboutIntro() {
         >
           <Link to={ROUTES.ABOUT}>
             {" "}
-            <SidebarButton
-              text={" Află mai multe despre mine"}
+            <Button
               color="accents.army"
+              fontSize={{ base: "14px", sm: "15px", md: "16px", xl: "16px" }}
               textTransform={"none"}
-            />
+              bg="none"
+              pl={{ base: "16px", md: "0px" }}
+            >
+              Află mai multe despre mine
+            </Button>
           </Link>
         </Box>
       </VStack>

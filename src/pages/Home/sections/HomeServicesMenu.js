@@ -25,7 +25,7 @@ export default function HomeServicesMenu() {
       justifyContent={"center"}
       flexWrap={"wrap"}
     >
-      <Flex w="100%" justifyContent={"center"} color="accents.army" mb={{base: "32px", sm:"", }}>
+      <Flex w="100%" justifyContent={"center"} color="accents.army" mb={{base: "36px", sm:"", }}>
         <SectionTitle>Servicii</SectionTitle>
       </Flex>
 
