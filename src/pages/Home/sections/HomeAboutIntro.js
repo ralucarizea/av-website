@@ -148,31 +148,39 @@ function HomeAboutIntro() {
               bg="transparent"
               pl={{ base: "16px", md: "0px" }}
               sx={{
-                paddingBottom: "5px",
-                letterSpacing: "0.25px",
-                position: "relative",
-                _after: {
-                  content: '""',
-                  position: "absolute",
-                  width: "100%",
-                  transform: "scaleX(0)",
-                  height: "0.5px",
-                  bottom: "0",
-                  left: "0",
-                  transformOrigin: "bottom right",
-                  transition: "transform 0.35s ease-out",
+                span: {
+                  paddingBottom: "5px",
+                  letterSpacing: "0.25px",
+                  position: "relative",
+                  _after: {
+                    content: '""',
+                    position: "absolute",
+                    width: "100%",
+                    transform: "scaleX(0)",
+                    height: "0.5px",
+                    bottom: "0",
+                    left: "0",
+                    
+                    backgroundColor: "accents.red",
+
+                    transformOrigin: "bottom right",
+                    transition: "transform 0.35s ease-out",
+                  },
                 },
 
                 "&:hover": {
-                  color: "accents.red",
-                  _after: {
-                    transform: "scaleX(1)",
-                    transformOrigin: "bottom left",
+                  span: {
+                    bgColor: "transparent",
+                    color: "accents.red",
+                    _after: {
+                      transform: "scaleX(1)",
+                      transformOrigin: "bottom left",
+                    },
                   },
                 },
               }}
             >
-              Află mai multe despre mine
+              <span> Află mai multe despre mine </span>
             </Button>
           </Link>
         </Box>
