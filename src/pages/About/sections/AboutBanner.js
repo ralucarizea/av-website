@@ -5,22 +5,21 @@ import { MDfont } from "../../../assets/styles/theme";
 export default function AboutBanner() {
   return (
     <VStack
-      mb="10vw"
-      py={{ base: "8vw", md: "4.75vw" }}
+      mb={{base: "20vw", sm: "10vw"}}
+      py={{ base: "8vw", md: "4.5vw" }}
       bg="#fefbf6"
       color="accents.red"
       flexDirection={{ base: "column" }}
       w="100%"
-      px={{ base: "3vw", sm: "7vw", md: "5vw", lg: "10vw" }}
+      px={{ base: "3vw", sm: "7vw", md: "5vw", lg: "6.5vw" }}
       fontFamily={"sans"}
-      fontSize={MDfont}
+      fontSize={{base: "14px", sm: "15px", md: "16px", lg: "16.5px"}}
     >
       <Show above="md">
         <Divider borderColor="neutrals.light" w="99%" />
       </Show>
       <HStack
-        px={{ base: "6.5vw", sm: "4vw", md: "0vw", lg: "2vw" }}
-        mt="1vw"
+        px={{ base: "8.5vw", sm: "4vw", md: "0vw", lg: "2vw" }}
         w="100%"
         justifyContent={"space-between"}
         gap="5%"
@@ -28,7 +27,7 @@ export default function AboutBanner() {
       >
         <Box
           w="100%"
-          my={{ base: "3vw", md: "1vw" }}
+          my={{ base: "6vw", md: "1vw" }}
           fontSize={{
             base: "24px",
             xs: "28px",

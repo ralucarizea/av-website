@@ -134,6 +134,9 @@ const Navbar = () => {
                 alignItems={"flex-start"}
                 justifyContent={"space-evenly"}
               >
+                <Link to={ROUTES.HOME} onClick={onClose}>
+                  <SidebarButton text={"ACASĂ"} color="accents.red" />
+                </Link>
                 <Link to={ROUTES.ABOUT} onClick={onClose}>
                   <SidebarButton text={"DESPRE MINE"} color="accents.red" />
                 </Link>
@@ -153,7 +156,7 @@ const Navbar = () => {
                   />
                 </Link>
                 <Link to={ROUTES.HIPNO} onClick={onClose}>
-                  <SidebarButton text={"Hipnoză"} color="accents.red" />
+                  <SidebarButton text={"Hipnoterapie"} color="accents.red" />
                 </Link>
                 <Link to={ROUTES.TRAUMA} onClick={onClose}>
                   <SidebarButton

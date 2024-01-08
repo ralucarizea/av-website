@@ -37,7 +37,7 @@ export default function PerformanceCounter() {
                 fontWeight="00"
                 fontFamily={"sans"}
                 fontSize={{
-                  base: "12.75px",
+                  base: "13.5px",
                   xs: "calc(11px + 0.45vw)",
                   sm: "calc(11px + 0.5vw)",
                   md: "calc(11px + 0.5vw)",
@@ -48,12 +48,12 @@ export default function PerformanceCounter() {
               >
                 <Box
                   fontSize={{
-                    base: "calc(17.5vw - 10px)",
+                    base: "calc(17.5vw - 2px)",
                     xs: "calc(15.5vw - 10px)",
                     sm: "calc(13.5vw - 10px)",
                     md: "calc(10.5vw - 5px) ",
                     lg: "calc(9.75vw - 10px) ",
-                    xl: "calc(8.8vw - 10px) ",
+                    xl: "calc(8.3vw - 10px) ",
                   }}
                   opacity="0.16"
                   fontFamily={"serif"}

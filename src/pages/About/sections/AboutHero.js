@@ -17,7 +17,7 @@ export const PageTitle = styled(Text)`
 
   }
   @media screen and (max-width: 700px) {
-    margin: 11vw auto 3vw;
+    margin: 11vw auto 5vw;
     font-size: calc(40px + 0.95vw);
     width: 55%;
 
