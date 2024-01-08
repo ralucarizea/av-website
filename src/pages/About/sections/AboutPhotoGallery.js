@@ -34,6 +34,7 @@ function AboutPhotoGallery() {
       fontFamily={"sans"}
       color="neutrals.dark"
       alignItems={"flex-end"}
+      
     >
       <VStack
         mb={{ base: "28px", sm: "40px", md: "64px", lg: "60px" }}
@@ -52,7 +53,7 @@ function AboutPhotoGallery() {
         fontSize={{base: "40px", sm: "48px", md: "52px", lg: "60px", xl:"72px"}}
         color="accents.red"
       >
-        <Text mb="-44px">...dar înainte de orice, sunt </Text>
+        <Text id="personalGallery" mb="-44px">...dar înainte de orice, sunt </Text>
         <Text >un simplu om</Text>
       </VStack>
       <VStack

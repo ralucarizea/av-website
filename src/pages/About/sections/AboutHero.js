@@ -35,6 +35,7 @@ export const PageTitle = styled(Text)`
 export default function AboutHero() {
   return (
     <Flex
+    id="story"
       flexDirection={"column"}
       h="fit"
       w="full"

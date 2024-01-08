@@ -21,10 +21,7 @@ export default function SocialProofCard({
     color: ${(props) => props.color};
     opacity: 0.76;
     width: ${isMobile ? "80%" : ""};
-    &:hover {
-      box-shadow: 0px 1px 25px 0px;
-      transition: all 0.5s ease-out;
-    }
+    
   `;
   const Name = styled(Box)`
     font-family: "EdwardianScript";

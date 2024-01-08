@@ -10,6 +10,7 @@ import {
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../assets/constants/data";
+import { HashLink } from "react-router-hash-link";
 
 const FooterNavbarCategoryTag = styled(Text)`
   font-size: calc(1.05em - 1px);
@@ -47,6 +48,13 @@ const StyledLink = styled(Link)`
     transition: font-style font-weight 0.3s ease-in-out;
   }
 `;
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -160; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
 export default function Footer() {
   // useEffect(() => {
   //   window.scrollTo({
@@ -207,7 +215,7 @@ export default function Footer() {
                 Strada Copăceni 46, București 030396
               </FooterNavbarCategoryLink>
             </Box>
-            <Box h="fit" >
+            <Box h="fit">
               <FooterNavbarCategoryTag>PROGRAM</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
                 Luni-Vineri: 10:00 - 18:00
@@ -221,15 +229,17 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                <Link to={ROUTES.ABOUT / `#resume`}>
+                <HashLink smooth scroll={scrollWithOffset} to={`${ROUTES.ABOUT}#certifications`}>
                   Certificări & specializări
-                </Link>
+                </HashLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <Link to={`${ROUTES.ABOUT}#resume`}>Povestea mea </Link>
+                <HashLink smooth to={`${ROUTES.ABOUT}#story`}>Povestea mea </HashLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                Galerie foto personală
+                <HashLink smooth scroll={scrollWithOffset} to={`${ROUTES.ABOUT}#personalGallery`}>
+                  Galerie foto personală{" "}
+                </HashLink>
               </FooterNavbarCategoryLink>
             </Box>
             <Box h="fit">

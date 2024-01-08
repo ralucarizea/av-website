@@ -20,10 +20,11 @@ import {
   TabPanels,
   Tabs,
   UnorderedList,
-  useMediaQuery
+  useMediaQuery,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { MDfont } from "../../assets/styles/theme";
+import { Link } from "react-router-dom";
 const StyledVerticalTimeline = styled(VerticalTimeline)`
   &:before {
     width: 2px;
@@ -50,7 +51,7 @@ export default function About() {
   }, []);
   return (
     <>
-      <AboutHero id="story" />
+      <AboutHero />
       <AboutBanner />
       <PerformanceCounter />
       <AboutTherapeuticStyle />
@@ -58,7 +59,7 @@ export default function About() {
         my={{ base: "28vw", sm: "10vw", md: "8vw", lg: "16vw", xl: "20vw" }}
         fontFamily={"sans"}
       >
-        <Box mb={{ base: "20vw", md: "10vw", xl: "8vw" }}>
+        <Box mb={{ base: "20vw", md: "10vw", xl: "8vw" }} id="certifications">
           <PageTitle mb={"8vw"}>Studii si formare continua</PageTitle>
         </Box>
 
@@ -222,7 +223,7 @@ export default function About() {
             </StyledTabPanel>
           </TabPanels>
         </Tabs>
-        <AboutPhotoGallery id="personalGallery" />
+        <AboutPhotoGallery  />
       </Box>
     </>
   );
