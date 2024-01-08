@@ -4,7 +4,7 @@ import { Text } from "@chakra-ui/react";
 export const HeroHeading = styled(Text)`
   font-family: "DM Serif Display";
   line-height: 1.1;
-  font-size: 30px;
+  font-size: 29px;
   width: ${(props) => props.width};
 
   @media screen and (max-width: 1350px) {

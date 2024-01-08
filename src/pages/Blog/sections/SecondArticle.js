@@ -110,7 +110,7 @@ const SecondArticle = () => {
           în afara relației principale.
         </ListItem>
       </UnorderedList>
-      <Text my="1vw">
+      <Text my="16px">
         Este important să recunoaștem că relațiile pot fi afectate de o
         combinație de factori personali și sociali, iar abordarea pentru
         rezolvarea problemelor poate varia în funcție de circumstanțe. În multe

@@ -67,7 +67,7 @@ function HomeAboutIntro() {
         <Text
           mt={{ base: 2, sm: 3, md: 6, lg: 4, xl: 7 }}
           mb={{ base: 0, sm: 3, md: 4, lg: 2, xl: 6 }}
-          w={{ base: "100%", lg: "96%", xl: "87%" }}
+          w={{ base: "100%", lg: "96%", xl: "70%" }}
           fontSize={{ base: "14px", sm: "15px", md: "16px", xl: "16px" }}
         >
           ...dar este singurul mod în care îți dai voie să te vindeci. De aceea,
@@ -84,7 +84,10 @@ function HomeAboutIntro() {
           </Text>
         </Text>
         <Show above="md">
-          <HeroHeading mb={{ base: "10px", lg: "16px" }}>
+          <HeroHeading
+            mb={{ base: "10px", lg: "12px" }}
+            w={{ lg: "90%", xl: "80%" }}
+          >
             Te pot ajuta cu următoarele tipuri de probleme:{" "}
           </HeroHeading>
           <VStack

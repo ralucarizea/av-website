@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { articles } from "../../assets/constants/data";
 import { useParams } from "react-router-dom";
 import { MDfont} from "../../assets/styles/theme";
-import { PageTitle } from "../About/sections/AboutHero";
 import {
   Divider,
   HStack,
@@ -52,8 +51,8 @@ export default function BlogPost() {
         >
           <Title
             fontSize={{
-              base: "lg",
-              xs: "lg",
+              base: "23px",
+              xs: "24px",
               sm: "2xl",
               md: "2xl",
               lg: "3xl",
