@@ -169,7 +169,7 @@ function HomeHero() {
           alignSelf={"center"}
           w={{ base: "74%", sm: "55%", md: "50%" }}
           textAlign={"center"}
-          pt={{ base: "12vw", xs: "10vw", sm: "10vw", md: "9vw", lg: "6vw" }}
+          pt={{ base: "12vw", xs: "10vw", sm: "10vw", md: "9vw", lg: "8vw" }}
           pb={{ base: "2vw", sm: "1.6vw", md: "1.25vw" }}
         >
           Viata nu este ceva la care poti da un raspuns astazi. Ar trebui sa te
