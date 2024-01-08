@@ -88,13 +88,13 @@ function HomeAboutIntro() {
             mb={{ base: "10px", lg: "12px" }}
             w={{ lg: "90%", xl: "80%" }}
           >
-            Te pot ajuta cu următoarele tipuri de probleme:{" "}
+            Te pot ajuta cu următoarele tipuri de probleme:
           </HeroHeading>
           <VStack
             flexWrap={"wrap"}
             h={{ md: "200px", lg: "250px", xl: "280px" }}
             alignItems="flex-start"
-            ml="-13px"
+            ml="-10px"
           >
             {Object.keys(HomeAboutIntroListContent).map((index) => (
               <StyledListItem
@@ -160,15 +160,16 @@ function HomeAboutIntro() {
                     height: "0.5px",
                     bottom: "0",
                     left: "0",
-                    
+
                     backgroundColor: "accents.red",
 
                     transformOrigin: "bottom right",
                     transition: "transform 0.35s ease-out",
                   },
                 },
-
+                "&:active": { bgColor: "transparent" },
                 "&:hover": {
+                  bgColor: "transparent",
                   span: {
                     bgColor: "transparent",
                     color: "accents.red",
