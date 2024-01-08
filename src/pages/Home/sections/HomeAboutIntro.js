@@ -145,9 +145,32 @@ function HomeAboutIntro() {
             <Button
               color="accents.army"
               fontSize={{ base: "14px", sm: "15px", md: "16px", xl: "16px" }}
-              textTransform={"none"}
-              bg="none"
+              bg="transparent"
               pl={{ base: "16px", md: "0px" }}
+              sx={{
+                paddingBottom: "5px",
+                letterSpacing: "0.25px",
+                position: "relative",
+                _after: {
+                  content: '""',
+                  position: "absolute",
+                  width: "100%",
+                  transform: "scaleX(0)",
+                  height: "0.5px",
+                  bottom: "0",
+                  left: "0",
+                  transformOrigin: "bottom right",
+                  transition: "transform 0.35s ease-out",
+                },
+
+                "&:hover": {
+                  color: "accents.red",
+                  _after: {
+                    transform: "scaleX(1)",
+                    transformOrigin: "bottom left",
+                  },
+                },
+              }}
             >
               Află mai multe despre mine
             </Button>
