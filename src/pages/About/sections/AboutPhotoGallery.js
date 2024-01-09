@@ -72,47 +72,47 @@ function AboutPhotoGallery() {
           speed="25"
         >
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369366/personalGallery/20-min_vp3x0x.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/20-min_mc8klp.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369364/personalGallery/19-min_nc0end.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/19-min_abhaxm.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722342/personalGallery/18-min-compressed_mitgrx.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813890/18-min-compressed_j8fquy.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/17-min-compressed_mv6gpr.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/17-min-compressed_tdzecg.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/16-min-compressed_kbgrbj.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/16-min-compressed_djiq5t.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722336/personalGallery/15-min-compressed_oyg3ni.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/15-min-compressed_urdnhi.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722341/personalGallery/14-min-compressed_aujrze.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813892/14-min-compressed_kgkboo.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722342/personalGallery/13-min-compressed_eit3za.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/13-min-compressed_irri6a.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722336/personalGallery/12-min-compressed_oeasjg.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/12-min-compressed_x4hdsj.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369357/personalGallery/11-min_cvgajs.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/11-min_gmuxb6.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/10-min-compressed_p95y8p.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/10-min-compressed_onpv8u.webp`}
             alt={``}
           />
         </Marquee>
@@ -125,43 +125,43 @@ function AboutPhotoGallery() {
           speed="25"
         >
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/9-min-compressed_s0qe8y.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813891/9-min-compressed_bqtavk.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722340/personalGallery/8-min-compressed_tozxu1.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813891/8-min-compressed_ljtont.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1702369353/personalGallery/7-min_syikam.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/7-min_gkmjo8.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722343/personalGallery/6-min-compressed_cqdgv4.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/6-min-compressed_v0kbr7.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722335/personalGallery/5-min-compressed_ln7y4w.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813888/5-min-compressed_i2vqey.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722343/personalGallery/4-min-compressed_hsijeq.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813889/4-min-compressed_hslb1s.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/3-min-compressed_pmtah5.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813891/3-min-compressed_nnirat.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722338/personalGallery/2-min-compressed_dikn5y.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813890/2-min-compressed_cbjeyf.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722337/personalGallery/1-min-compressed_gjwnr6.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704814022/1-min-compressed_yj7gv8.webp`}
             alt={``}
           />
           <StyledMarqueeItem
-            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704722339/personalGallery/0-min-compressed_lhqnjs.jpg`}
+            src={`https://res.cloudinary.com/dd82hyvds/image/upload/v1704813890/0-min-compressed_drvryo.webp`}
             alt={``}
           />
         </Marquee>
