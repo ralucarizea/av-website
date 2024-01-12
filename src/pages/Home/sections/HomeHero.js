@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Box, Image, Text, VStack } from "@chakra-ui/react";
 import StyledButton from "../../../components/StyledButton";
 import { HeroHeading } from "../../../assets/constants/styledcomponents";
+import { Link } from "@chakra-ui/react";
 
 function HomeHero() {
   return (
@@ -131,20 +132,22 @@ function HomeHero() {
             vocii tale interioare. Calea ta către claritate și pace poate începe
             aici!
           </Text>
-          <StyledButton
-            text="Solicită o programare"
-            width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
-            height={{
-              base: "44px",
-              xs: "46px",
-              sm: "47px",
-              md: "48px",
-              lg: "48px",
-              xl: "56px",
-            }}
-            color={"#fff"}
-            bgColor={"accents.red"}
-          />
+          <Link href={"cal_live_dabaf826e277179c765c91b0e5d40a21"} isExternal>
+            <StyledButton
+              text="Solicită o programare"
+              width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
+              height={{
+                base: "44px",
+                xs: "46px",
+                sm: "47px",
+                md: "48px",
+                lg: "48px",
+                xl: "56px",
+              }}
+              color={"#fff"}
+              bgColor={"accents.red"}
+            />
+          </Link>
         </Box>
       </Flex>
       <VStack
