@@ -132,7 +132,7 @@ function HomeHero() {
             vocii tale interioare. Calea ta către claritate și pace poate începe
             aici!
           </Text>
-          <Link href={"cal_live_dabaf826e277179c765c91b0e5d40a21"} isExternal>
+          <Link href="https://cal.com/ralucarizea" isExternal>
             <StyledButton
               text="Solicită o programare"
               width={{ base: "fit", sm: "fit", md: "", lg: "fit", xl: "fit" }}
