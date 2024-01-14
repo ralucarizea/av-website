@@ -51,9 +51,9 @@ const StyledLink = styled(Link)`
 
 const scrollWithOffset = (el) => {
   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -160; 
-  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-}
+  const yOffset = -160;
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
 
 export default function Footer() {
   // useEffect(() => {
@@ -97,7 +97,6 @@ export default function Footer() {
         }}
         zIndex={12121}
       >
-        
         <Box
           pt={{
             base: "12.35vw",
@@ -145,25 +144,25 @@ export default function Footer() {
           Lasa-ma sa te ghidez in procesul tau de vindecare
         </Box>
         <Link href="https://cal.com/adinavarodi" isExternal>
-        <StyledButton
-          text={"Fă o programare online"}
-          width={{
-            base: "150px",
-            sm: "180px",
-            md: "190px",
-            lg: "220px",
-            xl: "250px",
-          }}
-          height={{
-            base: "40px",
-            sm: "48px",
-            md: "50px",
-            lg: "60px",
-            xl: "64px",
-          }}
-          color={"accents.army"}
-          bgColor={"#fff"}
-        />
+          <StyledButton
+            text={"Fă o programare online"}
+            width={{
+              base: "150px",
+              sm: "180px",
+              md: "190px",
+              lg: "220px",
+              xl: "250px",
+            }}
+            height={{
+              base: "40px",
+              sm: "48px",
+              md: "50px",
+              lg: "60px",
+              xl: "64px",
+            }}
+            color={"accents.army"}
+            bgColor={"#fff"}
+          />
         </Link>
       </VStack>
       <Flex
@@ -232,15 +231,25 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                <HashLink smooth scroll={scrollWithOffset} to={`${ROUTES.ABOUT}#certifications`}>
+                <HashLink
+                  smooth
+                  scroll={scrollWithOffset}
+                  to={`${ROUTES.ABOUT}#certifications`}
+                >
                   Certificări & specializări
                 </HashLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <HashLink smooth to={`${ROUTES.ABOUT}#story`}>Povestea mea </HashLink>
+                <HashLink smooth to={`${ROUTES.ABOUT}#story`}>
+                  Povestea mea{" "}
+                </HashLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <HashLink smooth scroll={scrollWithOffset} to={`${ROUTES.ABOUT}#personalGallery`}>
+                <HashLink
+                  smooth
+                  scroll={scrollWithOffset}
+                  to={`${ROUTES.ABOUT}#personalGallery`}
+                >
                   Galerie foto personală{" "}
                 </HashLink>
               </FooterNavbarCategoryLink>
