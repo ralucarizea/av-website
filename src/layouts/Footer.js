@@ -1,4 +1,4 @@
-import { Text, VStack, Flex, Box, Link } from "@chakra-ui/react";
+import { Text, VStack, Flex, Box, Link, LinkBox } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
@@ -143,7 +143,7 @@ export default function Footer() {
         >
           Lasa-ma sa te ghidez in procesul tau de vindecare
         </Box>
-        <Link href="https://cal.com/adinavarodi" isExternal>
+        <LinkBox href="https://cal.com/adinavarodi" isExternal>
           <StyledButton
             text={"Fă o programare online"}
             width={{
@@ -163,7 +163,7 @@ export default function Footer() {
             color={"accents.army"}
             bgColor={"#fff"}
           />
-        </Link>
+        </LinkBox>
       </VStack>
       <Flex
         // bg="neutrals.light"
