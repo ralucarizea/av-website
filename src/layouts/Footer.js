@@ -1,10 +1,10 @@
-import { Text, VStack, Flex, Box, Link, LinkBox } from "@chakra-ui/react";
+import { Text, VStack, Flex, Box, Link as ChakraLink } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import { MDfont, XXXLfont } from "../assets/styles/theme";
+import { MDfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
 import LogoContainer from "../components/LogoContainer";
 import {
-  SectionTitle,
+  // SectionTitle,
   StyledStackBox,
 } from "../pages/Home/sections/HomeInfoBanner";
 import styled from "@emotion/styled";
@@ -41,7 +41,7 @@ const FooterNavbarCategoryLink = styled(Text)`
     font-size: 14px;
   }
 `;
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   &:hover {
     font-style: italic;
     font-weight: 500;
@@ -56,12 +56,12 @@ const scrollWithOffset = (el) => {
 };
 
 export default function Footer() {
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <VStack
       mt={{
@@ -143,7 +143,7 @@ export default function Footer() {
         >
           Lasa-ma sa te ghidez in procesul tau de vindecare
         </Box>
-        <LinkBox href="https://cal.com/adinavarodi" isExternal>
+        <ChakraLink href="https://cal.com/adinavarodi" isExternal>
           <StyledButton
             text={"Fă o programare online"}
             width={{
@@ -163,7 +163,7 @@ export default function Footer() {
             color={"accents.army"}
             bgColor={"#fff"}
           />
-        </LinkBox>
+        </ChakraLink>
       </VStack>
       <Flex
         // bg="neutrals.light"

@@ -13,7 +13,6 @@ import {
 import React, { useState, useEffect } from "react";
 import { PageTitle } from "../About/sections/AboutHero";
 import styled from "@emotion/styled";
-import { MDfont } from "../../assets/styles/theme";
 import { useLocation } from "react-router-dom";
 
 export const StyledServicePageHighlightedParagraph = styled(Box)`
@@ -37,9 +36,9 @@ export const StyledServicePageHeading = styled(Box)`
   }
 `;
 export const StyledServicePageText = styled(Box)`
-margin-top: 16px ;  
-margin-left: 16px;
-width: 78%;
+  margin-top: 16px;
+  margin-left: 16px;
+  width: 78%;
   @media screen and (max-width: 820px) {
     width: 100%;
   }
@@ -80,6 +79,12 @@ export const StyledFormHelperText = styled(FormHelperText)`
 `;
 
 export default function ServicePage({ service }) {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const location = useLocation();
 
   const [input, setInput] = useState({
@@ -105,7 +110,7 @@ export default function ServicePage({ service }) {
       color={"neutrals.dark"}
       fontFamily="sans"
       lineHeight={"sm"}
-      fontSize={{base: "14px", sm: "15px", md: "16px"}}
+      fontSize={{ base: "14px", sm: "15px", md: "16px" }}
     >
       <PageTitle>{service.title}</PageTitle>
       <HStack
@@ -176,8 +181,8 @@ export default function ServicePage({ service }) {
           <StyledServicePageText>
             {}
             {typeof service.description?.secondParagraph === "function"
-          ? service.description?.secondParagraph()
-          : service.description?.secondParagraph}
+              ? service.description?.secondParagraph()
+              : service.description?.secondParagraph}
           </StyledServicePageText>
 
           {service.description?.secondHeading !== "" ? (
@@ -221,7 +226,7 @@ export default function ServicePage({ service }) {
             w={{ base: "70%", lg: "80%", xl: "80%" }}
             my={{ base: "4.75vw", sm: "3.5vw", lg: "2vw" }}
             fontFamily={"handwritten"}
-            lineHeight={{base: "1.55rem", md:"2rem"}}
+            lineHeight={{ base: "1.55rem", md: "2rem" }}
             fontSize={{
               base: "32px",
               xs: "36px",
@@ -229,7 +234,7 @@ export default function ServicePage({ service }) {
               lg: "40px",
               xl: "43px",
             }}
-            textAlign={{base: "center", md:"left"}}
+            textAlign={{ base: "center", md: "left" }}
           >
             Hai sa ne cunoastem mai bine!
           </Text>
