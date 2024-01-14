@@ -1,4 +1,4 @@
-import { Text, VStack, Flex, Box } from "@chakra-ui/react";
+import { Text, VStack, Flex, Box, Link } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { MDfont, XXXLfont } from "../assets/styles/theme";
 import StyledButton from "../components/StyledButton";
