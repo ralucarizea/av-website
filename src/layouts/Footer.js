@@ -97,6 +97,7 @@ export default function Footer() {
         }}
         zIndex={12121}
       >
+        
         <Box
           pt={{
             base: "12.35vw",
@@ -143,6 +144,7 @@ export default function Footer() {
         >
           Lasa-ma sa te ghidez in procesul tau de vindecare
         </Box>
+        <Link href="https://cal.com/adinavarodi" isExternal>
         <StyledButton
           text={"Fă o programare online"}
           width={{
@@ -162,6 +164,7 @@ export default function Footer() {
           color={"accents.army"}
           bgColor={"#fff"}
         />
+        </Link>
       </VStack>
       <Flex
         // bg="neutrals.light"
