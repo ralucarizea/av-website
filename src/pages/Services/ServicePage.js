@@ -2,18 +2,19 @@ import {
   Box,
   Button,
   FormControl,
-  FormErrorMessage,
   FormHelperText,
   FormLabel,
   HStack,
   Input,
   Text,
+  Textarea,
   VStack,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import { PageTitle } from "../About/sections/AboutHero";
 import styled from "@emotion/styled";
-import { useLocation } from "react-router-dom";
+import { useForm, ValidationError } from "@formspree/react";
 
 export const StyledServicePageHighlightedParagraph = styled(Box)`
   padding: ${(props) => props.padding};
@@ -73,37 +74,72 @@ export const StyledFormLabel = styled(FormLabel)`
     font-size: 12px;
   }
 `;
-export const StyledFormHelperText = styled(FormHelperText)`
-  color: green;
-  font-size: calc(1em - 3px);
-`;
+// export const StyledFormHelperText = styled(FormHelperText)`
+//   color: green;
+//   font-size: calc(1em - 3px);
+// `;
 
 export default function ServicePage({ service }) {
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
+  const toast = useToast();
+
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, [service.id]);
+
+  const [state, handleSubmit] = useForm("xqkrabvz");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
-  const location = useLocation();
+    if (isSubmitted) {
+      if (state.succeeded) {
+        toast({
+          title: "Vă mulțumesc pentru mesajul transmis.",
+          description:
+            "Voi încerca să vă răspund la e-mail cât se poate de repede.",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+        setName("");
+        setEmail("");
+        setMessage("");
+        setIsSubmitted(false); // Reset the submitted state
+      } else if (!state.submitting) {
+        toast({
+          title: "Submission Failed.",
+          description: "Please check your inputs and try again.",
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+        });
+        setIsSubmitted(false); // Reset the submitted state
+      }
+    }
+  }, [state, toast, isSubmitted]);
 
-  const [input, setInput] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitted(true); // Indicate a submission attempt
+    await handleSubmit(e);
+  };
 
-  const handleInputChange = (e) => setInput(e.target.value);
-
-  const isError = input === "";
-
-  console.debug(location);
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, [service.id]);
+  const handleNameChange = (e) => setName(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handleMessageChange = (e) => setMessage(e.target.value);
 
   return (
     <VStack
@@ -116,14 +152,14 @@ export default function ServicePage({ service }) {
       <HStack
         px={{ base: 3, xs: 6, sm: 8, md: 10, lg: 16, xl: 28 }}
         h="fit"
-        justifyContent={{ base: "center", md: "space-between" }}
+        justifyContent={{ base: "center", md: "space-between", lg: "center" }}
         alignItems={{ base: "center", md: "flex-start" }}
         gap={7}
         color="inherit"
         flexDirection={{ base: "column", md: "row" }}
       >
         <VStack
-          w={{ base: "90%", xs: "76%", md: "68%", lg: "60%", xl: "60%" }}
+          w={{ base: "90%", xs: "76%", md: "68%", lg: "60%", xl: "50%" }}
           alignItems={{ base: "center", md: "flex-start" }}
           mb={{ base: "8vw", md: "0" }}
         >
@@ -206,11 +242,13 @@ export default function ServicePage({ service }) {
           </StyledServicePageText>
         </VStack>
         <VStack
-          w="auto"
-          maxW={{
-            base: "100%",
-            sm: "100%",
-            md: "28vw",
+          // w="auto"
+          minW="290px"
+          w={{
+            base: "52vw",
+            xs: "48vw",
+            sm: "45vw",
+            md: "29vw",
             lg: "26vw",
             xl: "21vw",
           }}
@@ -223,12 +261,20 @@ export default function ServicePage({ service }) {
           // color="accents.red"
         >
           <Text
-            w={{ base: "70%", lg: "80%", xl: "80%" }}
-            my={{ base: "4.75vw", sm: "3.5vw", lg: "2vw" }}
+            mx={{
+              base: "12px",
+              xs: "16px",
+              sm: "0px",
+              lg: "20px",
+              xl: "24px",
+            }}
+            pl={{ base: "0px", md: "16px" }}
+            w={{ base: "100%" }}
+            my={{ base: "4.25vw", sm: "3vw", lg: "2vw" }}
             fontFamily={"handwritten"}
-            lineHeight={{ base: "1.55rem", md: "2rem" }}
+            lineHeight={{ base: "1.55rem", md: "1.8rem", xl: "1.9rem" }}
             fontSize={{
-              base: "32px",
+              base: "34px",
               xs: "36px",
               sm: "38px",
               lg: "40px",
@@ -236,14 +282,100 @@ export default function ServicePage({ service }) {
             }}
             textAlign={{ base: "center", md: "left" }}
           >
-            Hai sa ne cunoastem mai bine!
+            Ai vreo curiozitate?
           </Text>
           <VStack
-            w={{ base: "70%", lg: "70%", xl: "80%" }}
+            as="form"
+            h="100%"
+            alignItems={"flex-start"}
+            w={{ base: "70%", lg: "80%", xl: "75%" }}
             mb={{ base: "7vw", sm: "5vw", lg: "3vw" }}
+            gap={3}
+            // border="1px solid red"
+            onSubmit={onSubmit}
           >
-            <StyledFormControl isInvalid={isError}>
-              <StyledFormLabel>Nume</StyledFormLabel>
+            {/* <FormControl > */}
+            {/* <Box> */}
+            <StyledFormLabel htmlFor="name">Nume</StyledFormLabel>
+            <StyledInput
+              isRequired
+              id="full-name"
+              type="text"
+              name="name"
+              value={name}
+              onChange={handleNameChange}
+              height={{ base: "24px", sm: "28px", lg: "36px" }}
+            />
+            <ValidationError
+              prefix="Name"
+              field="email"
+              errors={state.errors}
+            />
+            {/* </Box> */}
+            {/* <Box> */}
+            <StyledFormLabel htmlFor="email">E-mail</StyledFormLabel>
+            <StyledInput
+              isRequired
+              id="email"
+              type="email"
+              name="email"
+              value={email}
+              onChange={handleEmailChange}
+              height={{ base: "24px", sm: "28px", lg: "36px" }}
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            {/* </Box> */}
+            {/* <Box> */}
+            <StyledFormLabel htmlFor="message">Mesaj</StyledFormLabel>
+            <Textarea
+              w="100%"
+              fontSize="calc(1em - 1px)"
+              borderRadius="0px"
+              border="0px"
+              borderBottom="1px"
+              borderColor="#582c12"
+              color="rgba(88, 44, 18, 0.7)"
+              isRequired
+              type="textarea"
+              id="message"
+              name="message"
+              px="8px"
+              value={message}
+              onChange={handleMessageChange}
+              height={{ base: "24px", sm: "28px", lg: "36px" }}
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            {/* </Box> */}
+            <Button
+              mt="12px"
+              padding={{
+                base: "10px 12px",
+                md: "8px 10px",
+                lg: "10px 16px",
+                xl: "14px 18px",
+              }}
+              alignSelf="center"
+              bgColor="accents.red"
+              color="neutrals.light"
+              height="fit"
+              fontSize={{ base: "11px", xs: "12px", lg: "14px" }}
+              type="submit"
+              disabled={state.submitting}
+            >
+              Trimite e-mail
+            </Button>
+          </VStack>
+          {/* </FormControl> */}
+          {/* <StyledFormControl isInvalid={isError} onSubmit={handleSubmit}>
+              <StyledFormLabel htmlFor="name">Nume</StyledFormLabel>
               <StyledInput
                 type="name"
                 value={StyledInput.name}
@@ -261,6 +393,8 @@ export default function ServicePage({ service }) {
             <StyledFormControl isInvalid={isError}>
               <StyledFormLabel>E-mail</StyledFormLabel>
               <StyledInput
+                id="email"
+                name="email"
                 type="email"
                 value={StyledInput.email}
                 onChange={handleInputChange}
@@ -304,8 +438,10 @@ export default function ServicePage({ service }) {
               fontSize={{ base: "11px", xs: "12px", lg: "14px" }}
             >
               Trimite mesajul
-            </Button>
-          </VStack>
+            </Button> 
+            </VStack>
+            
+            */}
         </VStack>
       </HStack>
     </VStack>

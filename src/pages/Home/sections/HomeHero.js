@@ -60,9 +60,9 @@ function HomeHero() {
             lg: "500px",
             xl: "590px",
           }}
-          src="https://res.cloudinary.com/dd82hyvds/image/upload/v1702893481/portraitImages/23-1_w5h6ca.jpg"
+          src="https://res.cloudinary.com/dd82hyvds/image/upload/v1705316827/portraitImages/23-1-1_ygfltk.jpg"
           objectFit="cover"
-          objectPosition="center"
+          objectPosition="right"
           zIndex="2"
         />
         <Box

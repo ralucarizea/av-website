@@ -216,11 +216,14 @@ export default function Footer() {
               <FooterNavbarCategoryLink>
                 Strada Copăceni 46, București 030396
               </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+                B-dul Dimitrie Cantemir nr. 2, bl. P3, sc. 2, București 040241
+              </FooterNavbarCategoryLink>
             </Box>
             <Box h="fit">
               <FooterNavbarCategoryTag>PROGRAM</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                Luni-Vineri: 10:00 - 18:00
+                Luni-Vineri: 09:00 - 18:00
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 Sâmbătă: 12:00 - 16:00
@@ -231,27 +234,33 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>DESPRE MINE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                <HashLink
-                  smooth
-                  scroll={scrollWithOffset}
-                  to={`${ROUTES.ABOUT}#certifications`}
-                >
-                  Certificări & specializări
-                </HashLink>
+                <StyledLink>
+                  <HashLink
+                    smooth
+                    scroll={scrollWithOffset}
+                    to={`${ROUTES.ABOUT}#certifications`}
+                  >
+                    Certificări & specializări
+                  </HashLink>
+                </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <HashLink smooth to={`${ROUTES.ABOUT}#story`}>
-                  Povestea mea{" "}
-                </HashLink>
+                <StyledLink>
+                  <HashLink smooth to={`${ROUTES.ABOUT}#story`}>
+                    Povestea mea{" "}
+                  </HashLink>
+                </StyledLink>
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                <HashLink
-                  smooth
-                  scroll={scrollWithOffset}
-                  to={`${ROUTES.ABOUT}#personalGallery`}
-                >
-                  Galerie foto personală{" "}
-                </HashLink>
+                <StyledLink>
+                  <HashLink
+                    smooth
+                    scroll={scrollWithOffset}
+                    to={`${ROUTES.ABOUT}#personalGallery`}
+                  >
+                    Galerie foto personală
+                  </HashLink>
+                </StyledLink>
               </FooterNavbarCategoryLink>
             </Box>
             <Box h="fit">
