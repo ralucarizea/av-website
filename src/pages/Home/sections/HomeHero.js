@@ -151,7 +151,7 @@ function HomeHero() {
         </Box>
       </Flex>
       <VStack
-        bg="#f3f0ff"
+        bg="#f7f5ff"
         color={"accents.army"}
         h={{ base: "38vh", sm: "40vh", md: "48vh", lg: "52vh" }}
         zIndex="-1"

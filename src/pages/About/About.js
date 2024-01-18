@@ -43,12 +43,12 @@ const StyledTabPanel = styled(TabPanel)`
 export default function About() {
   const [isMobile] = useMediaQuery("(max-width: 1170px)");
 
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
   return (
     <>
       <AboutHero />
@@ -124,8 +124,10 @@ export default function About() {
             borderColor="accents.army"
           >
             <Tab
-              py={{ base: "12px", sm: "17px", lg: "16px" }}
-              px={{ base: "8px", sm: "11px", lg: "14px" }}
+              // h="90%"
+              pt="8px"
+              pb="4px"
+              px={{ base: "8px", lg: "10px" }}
               fontWeight="600"
               // color="tints.army"
               // bgColor="accents.army"
@@ -134,8 +136,9 @@ export default function About() {
               Experiență profesională
             </Tab>
             <Tab
-              py={{ base: "12px", sm: "17px", lg: "16px" }}
-              px={{ base: "8px", sm: "11px", lg: "14px" }}
+              pt="8px"
+              pb="4px"
+              px={{ base: "8px", lg: "10px" }}
               fontWeight="600"
               // color="tints.red"
               // bgColor="accents.red"
@@ -144,8 +147,9 @@ export default function About() {
               Afilieri
             </Tab>
             <Tab
-              py={{ base: "12px", sm: "17px", lg: "16px" }}
-              px={{ base: "8px", sm: "11px", lg: "14px" }}
+              pt="8px"
+              pb="4px"
+              px={{ base: "8px", lg: "10px" }}
               fontWeight="600"
               // color="tints.lime"
               // bgColor="accents.lime"
@@ -154,8 +158,9 @@ export default function About() {
               Acreditări
             </Tab>
             <Tab
-              py={{ base: "12px", sm: "17px", lg: "16px" }}
-              px={{ base: "8px", sm: "11px", lg: "14px" }}
+              pt="8px"
+              pb="4px"
+              px={{ base: "8px", lg: "10px" }}
               fontWeight="600"
               // color="tints.yellow"
               // bgColor="accents.yellow"
@@ -223,7 +228,7 @@ export default function About() {
             </StyledTabPanel>
           </TabPanels>
         </Tabs>
-        <AboutPhotoGallery  />
+        <AboutPhotoGallery />
       </Box>
     </>
   );

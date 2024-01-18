@@ -59,7 +59,7 @@ export default function AboutBanner() {
             procese de dezvoltare personală, asociații, conferințe de
             specialitate anuale. Am învățat în ultimii ani cât de importantă e
             conexiunea cu propriul corp și cu mintea, iar acest lucru a devenit
-            o prioritate în viața mea pentru a fi în contact cu mine însumi, cât
+            o prioritate în viața mea pentru a fi în contact cu mine însămi, cât
             și cu fiecare client în parte!
           </Text>
           <Text>
