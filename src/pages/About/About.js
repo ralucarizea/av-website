@@ -72,6 +72,7 @@ export default function About() {
               contentStyle={{
                 background: resumeData.certifications[index].bgColor,
                 color: resumeData.certifications[index].color,
+                boxShadow: "none"
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  ",
