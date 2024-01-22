@@ -72,7 +72,7 @@ export default function About() {
               contentStyle={{
                 background: resumeData.certifications[index].bgColor,
                 color: resumeData.certifications[index].color,
-                boxShadow: "none"
+                boxShadow: "none",
               }}
               contentArrowStyle={{
                 borderRight: "7px solid  ",
@@ -125,6 +125,17 @@ export default function About() {
             borderColor="accents.army"
           >
             <Tab
+              pt="8px"
+              pb="4px"
+              px={{ base: "8px", lg: "10px" }}
+              fontWeight="600"
+              // color="tints.red"
+              // bgColor="accents.red"
+              fontSize={MDfont}
+            >
+              Afilieri
+            </Tab>
+            <Tab
               // h="90%"
               pt="8px"
               pb="4px"
@@ -135,17 +146,6 @@ export default function About() {
               fontSize={MDfont}
             >
               Experiență profesională
-            </Tab>
-            <Tab
-              pt="8px"
-              pb="4px"
-              px={{ base: "8px", lg: "10px" }}
-              fontWeight="600"
-              // color="tints.red"
-              // bgColor="accents.red"
-              fontSize={MDfont}
-            >
-              Afilieri
             </Tab>
             <Tab
               pt="8px"
@@ -177,10 +177,10 @@ export default function About() {
                 fontWeight="500"
                 letterSpacing={"-0.5px"}
               >
-                {Object.keys(resumeData.experience).map((index) => (
+                {Object.keys(resumeData.affiliations).map((index) => (
                   <ListItem key={index}>
-                    <strong>{resumeData.experience[index].date}: </strong>
-                    {resumeData.experience[index].title}
+                    {resumeData.affiliations[index].title}
+                    {resumeData.affiliations[index].date}
                   </ListItem>
                 ))}
               </UnorderedList>
@@ -191,14 +191,15 @@ export default function About() {
                 fontWeight="500"
                 letterSpacing={"-0.5px"}
               >
-                {Object.keys(resumeData.affiliations).map((index) => (
+                {Object.keys(resumeData.experience).map((index) => (
                   <ListItem key={index}>
-                    {resumeData.affiliations[index].title}
-                    {resumeData.affiliations[index].date}
+                    <strong>{resumeData.experience[index].date}: </strong>
+                    {resumeData.experience[index].title}
                   </ListItem>
                 ))}
               </UnorderedList>
             </StyledTabPanel>
+
             <StyledTabPanel>
               <UnorderedList
                 spacing={3}

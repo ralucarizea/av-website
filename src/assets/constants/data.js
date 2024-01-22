@@ -317,7 +317,7 @@ export const HomeServicesMenuData = {
 };
 export const performanceCounterData = {
   0: { indicator: "pacienți", number: 5760, color: "accents.army" },
-  1: { indicator: "specializări", number: 7, color: "accents.yellow" },
+  1: { indicator: "specializări", number: 6, color: "accents.yellow" },
   2: { indicator: "ani de experiență", number: 6, color: "accents.lime" },
   3: { indicator: "ore de practică", number: 8000, color: "accents.red" },
 };
