@@ -59,7 +59,7 @@ function HomeParallax() {
       }}
     >
       <Parallax speed={8}>
-        <Box
+        {/* <Box
           position="absolute"
           borderRadius="0.5rem"
           top={{
@@ -81,7 +81,7 @@ function HomeParallax() {
           bgPosition={"center"}
           zIndex={"-2"}
           minWidth="150px"
-        />
+        /> */}
       </Parallax>
       <Parallax speed={25}>
         <Box
@@ -123,7 +123,7 @@ function HomeParallax() {
         />
       </Parallax>
       <Parallax speed={70}>
-        <Box
+        {/* <Box
           position="absolute"
           top={{
             base: "1300px",
@@ -166,7 +166,7 @@ function HomeParallax() {
           bgPosition={"center"}
           zIndex={"-5"}
           borderRadius="0.5rem"
-        />
+        /> */}
       </Parallax>
       <Parallax speed={57}>
         <Box
