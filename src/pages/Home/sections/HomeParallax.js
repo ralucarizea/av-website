@@ -115,7 +115,7 @@ function HomeParallax() {
           minHeight="220px"
           minWidth="150px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/whiteroom_wp2eap.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
@@ -199,7 +199,7 @@ function HomeParallax() {
           }}
           minHeight="200px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704565655/cabinet5_fg8ri8.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
