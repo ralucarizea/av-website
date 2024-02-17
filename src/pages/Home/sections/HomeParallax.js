@@ -123,7 +123,7 @@ function HomeParallax() {
         />
       </Parallax>
       <Parallax speed={70}>
-        {/* <Box
+        <Box
           position="absolute"
           top={{
             base: "1300px",
@@ -160,16 +160,16 @@ function HomeParallax() {
           minHeight="210px"
           minWidth="140px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704565728/cabinet4_xzxheb.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
           zIndex={"-5"}
           borderRadius="0.5rem"
-        /> */}
+        />
       </Parallax>
       <Parallax speed={57}>
-        <Box
+        {/* <Box
           position="absolute"
           borderRadius="0.5rem"
           top={{
@@ -204,7 +204,7 @@ function HomeParallax() {
           bgSize={"cover"}
           bgPosition={"center"}
           zIndex={"-5"}
-        />
+        /> */}
       </Parallax>
       <Parallax speed={-13}>
         <Show below="sm">
