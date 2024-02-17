@@ -59,7 +59,7 @@ function HomeParallax() {
       }}
     >
       <Parallax speed={8}>
-        {/* <Box
+        <Box
           position="absolute"
           borderRadius="0.5rem"
           top={{
@@ -75,13 +75,13 @@ function HomeParallax() {
           h={{ base: "45vw", sm: "43vw", md: "36vw", lg: "33vw", xl: "29vw" }}
           minHeight="250px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/pinkroom_zukhge.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
           zIndex={"-2"}
           minWidth="150px"
-        /> */}
+        />
       </Parallax>
       <Parallax speed={25}>
         <Box
@@ -123,7 +123,7 @@ function HomeParallax() {
         />
       </Parallax>
       <Parallax speed={70}>
-        <Box
+        {/* <Box
           position="absolute"
           top={{
             base: "1300px",
@@ -166,7 +166,7 @@ function HomeParallax() {
           bgPosition={"center"}
           zIndex={"-5"}
           borderRadius="0.5rem"
-        />
+        /> */}
       </Parallax>
       <Parallax speed={57}>
         {/* <Box
