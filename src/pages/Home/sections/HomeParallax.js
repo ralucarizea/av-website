@@ -123,7 +123,7 @@ function HomeParallax() {
         />
       </Parallax>
       <Parallax speed={70}>
-        {/* <Box
+        <Box
           position="absolute"
           top={{
             base: "1300px",
@@ -160,16 +160,16 @@ function HomeParallax() {
           minHeight="210px"
           minWidth="140px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/whiteroom_wp2eap.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
           zIndex={"-5"}
           borderRadius="0.5rem"
-        /> */}
+        />
       </Parallax>
       <Parallax speed={57}>
-        {/* <Box
+        <Box
           position="absolute"
           borderRadius="0.5rem"
           top={{
@@ -199,12 +199,12 @@ function HomeParallax() {
           }}
           minHeight="200px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/pinkroom_zukhge.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
           zIndex={"-5"}
-        /> */}
+        />
       </Parallax>
       <Parallax speed={-13}>
         <Show below="sm">
@@ -245,15 +245,7 @@ function HomeParallax() {
         >
           Am ales un spatiu sigur, unde fricile raman la usa
         </ParallaxText>
-        {/* <ParallaxText
-          fontSize={parallaxFont}
-          top={{ base: "250px", xs: "230px", md: "345px", lg: "390px" }}
-          right={{ base: "18%", xs: "23%", md: "24%", lg: "34%" }}
-          textAlign={"right"}
-          width={{ base: "45%", sm: "40%", md: "36%", lg: "32%" }}
-        >
-          unde fricile raman la usa 
-        </ParallaxText> */}
+       
       </Parallax>
     </Box>
   );
