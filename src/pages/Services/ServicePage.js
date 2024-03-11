@@ -180,7 +180,7 @@ export default function ServicePage({ service }) {
                 lg: "2.3vw 0 1.5vw",
                 xl: "1.8vw 0 1.25vw",
               }}
-              style={{width: "90%"}}
+              style={{width: "90%", fontSize: "calc(3px + 1em)"}}
             >
               {service.description?.zeroHeading}
             </StyledServicePageHeading>
