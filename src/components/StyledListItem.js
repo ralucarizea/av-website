@@ -10,7 +10,7 @@ export default function StyledListItem(props) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTooltip(false);
-    }, 8000);
+    }, 7000);
 
     // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timer);
@@ -27,6 +27,8 @@ export default function StyledListItem(props) {
       bg="accents.red"
       color="#fff"
       style={{ zIndex: "0 !important"}}
+      onClose={() => setShowTooltip(false)} // Ensure tooltip closes on manual close events
+      onOpen={() => setShowTooltip(true)} // Open tooltip on hover
     >
       <Flex
         width="fit-content"
@@ -36,6 +38,8 @@ export default function StyledListItem(props) {
         ml={2.75}
         mr={{ base: 2, sm: 4, md: 6, lg: 3, xl: 6 }}
         alignItems={"center"}
+        onMouseEnter={() => setShowTooltip(true)} 
+        onMouseLeave={() => setShowTooltip(false)}
       >
         <Icon
           transform={`rotate(${angle}deg)`}
