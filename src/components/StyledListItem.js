@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 
 export default function StyledListItem(props) {
   
-    const [isOpen, setIsOpen] = useState(true); // Start with the tooltip open
+  const [showTooltip, setShowTooltip] = useState(true);
   
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsOpen(false); // Close the tooltip after 300 ms
-      }, 300);
-  
-      return () => clearTimeout(timer); // Clear the timeout if the component unmounts
-    }, []); // Empty dependency array means this runs once on mount
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowTooltip(false);
+    }, 300);
+
+    // Cleanup function to clear the timeout if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
   
   const { text, angle, color, tooltip, link, linkText } = props;
   return tooltip ? (
@@ -22,7 +23,7 @@ export default function StyledListItem(props) {
       hasArrow
       placement="bottom-end"
       // closeDelay={500}
-      isOpen={isOpen}
+      isOpen={showTooltip}
       bg="accents.red"
       color="#fff"
       style={{ zIndex: "0 !important"}}
