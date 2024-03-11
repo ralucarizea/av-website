@@ -11,9 +11,7 @@ export default function StyledListItem(props) {
       label={tooltip}
       hasArrow
       placement="bottom-end"
-      // closeDelay={500}
-      defaultIsOpen
-      
+      closeDelay={500}
       bg="accents.red"
       color="#fff"
       zIndex={0}
@@ -40,13 +38,16 @@ export default function StyledListItem(props) {
           fontSize={{ base: "14px", sm: "15px", md: "15.75px", lg: "15.8px" }}
           fontWeight="500"
         >
-          {text} 
+          {text}
           <Link
             ml={0.5}
             to={link ? link : null}
             fontSize={{ base: "14px", sm: "15px", md: "15.75px", lg: "15.8px" }}
             fontWeight="500"
-            style={{ fontStyle: "italic", _hover: {textDecoration: "underline"}, }}
+            style={{
+              fontStyle: "italic",
+              _hover: { textDecoration: "underline" },
+            }}
           >
             {linkText}
           </Link>
