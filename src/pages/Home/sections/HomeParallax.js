@@ -75,7 +75,7 @@ function HomeParallax() {
           h={{ base: "45vw", sm: "43vw", md: "36vw", lg: "33vw", xl: "29vw" }}
           minHeight="250px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/pinkroom_zukhge.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
@@ -115,7 +115,7 @@ function HomeParallax() {
           minHeight="220px"
           minWidth="150px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/whiteroom_wp2eap.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
@@ -160,7 +160,7 @@ function HomeParallax() {
           minHeight="210px"
           minWidth="140px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/whiteroom_wp2eap.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
@@ -199,7 +199,7 @@ function HomeParallax() {
           }}
           minHeight="200px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1704283748/pinkroom_zukhge.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
