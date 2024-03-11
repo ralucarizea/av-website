@@ -11,6 +11,7 @@ import SidebarButton from "../../../components/SidebarButton";
 import { Link } from "react-router-dom";
 
 function HomeAboutIntro() {
+  console.debug(HomeAboutIntroListContent);
   return (
     <Flex
       h="fit"
@@ -98,9 +99,13 @@ function HomeAboutIntro() {
           >
             {Object.keys(HomeAboutIntroListContent).map((index) => (
               <StyledListItem
+                key={index}
                 text={HomeAboutIntroListContent[index].text}
                 angle={HomeAboutIntroListContent[index].angle}
                 color={HomeAboutIntroListContent[index].color}
+                tooltip={HomeAboutIntroListContent[index]?.tooltip}
+                link={HomeAboutIntroListContent[index]?.link}
+                linkText={HomeAboutIntroListContent[index]?.linkText}
               />
             ))}
           </VStack>
@@ -128,9 +133,12 @@ function HomeAboutIntro() {
             >
               {Object.keys(HomeAboutIntroListContent).map((index) => (
                 <StyledListItem
+                  key={index}
                   text={HomeAboutIntroListContent[index].text}
                   angle={HomeAboutIntroListContent[index].angle}
                   color={HomeAboutIntroListContent[index].color}
+                  tooltip={HomeAboutIntroListContent[index]?.tooltip}
+                  link={HomeAboutIntroListContent[index]?.link}
                 />
               ))}
             </VStack>

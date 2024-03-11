@@ -142,26 +142,7 @@ export const faqMainpage = {
   },
 };
 
-export const HomeAboutIntroListContent = {
-  0: {
-    text: "Sindromul stresului post-traumatic",
-    angle: "0",
-    color: "tints.yellow",
-  },
-  1: { text: "Probleme de sexualitate", angle: "180", color: "accents.lime" },
-  2: { text: "Atacuri de panică", angle: "270", color: "tints.red" },
-  3: { text: "Divorț", angle: "90", color: "accents.army" },
-  4: { text: "Probleme în cuplu", angle: "180", color: "accents.yellow" },
-  5: { text: "Conflict părinte-adolescent", angle: "90", color: "accents.red" },
-  6: { text: "Lipsă de motivație/scop", angle: "270", color: "tints.lime" },
-  7: { text: "Frici / fobii", angle: "0", color: "accents.army" },
-  8: { text: " Anxietate", angle: "90", color: "neutral.dark" },
-  9: {
-    text: "Depresie",
-    angle: "180",
-    color: "accents.lime",
-  },
-};
+
 export const HomeServicesMenuData = {
   0: {
     id: 0,
@@ -298,14 +279,11 @@ export const HomeServicesMenuData = {
     brief:
       "Grup de suport unde poti sa iti impartasesti experienta si sa experimentezi ca nu esti singur in trauma pe care o resimti (lucru care ajuta la vindecare si restructurarea intregi identitati).",
     description: {
-      highlightedParagraph:
-        "Psihoterapia de grup reprezintă forma de terapie în care întâlnirile și ședința terapeutică se desfășoară cu participarea unui grup de persoane.",
+      highlightedParagraph:"Ai pierdut recent un om drag? Dacă da, poți face parte, in intervalul martie-aprilie 2024, dintr-un nou grup de suport organizat in Bucuresti, pe tema pierderii persoanelor dragi/doliului, facilitat de catre specialisti cu o experienta practica de peste 5 ani in asistarea persoanelor aflate in perioada de doliu: Adina Varodi si Elena Praz, consilieri psihologici si psihoterapeuti integrativi în incinta ”Therapy Hub Solution”. Acest atelier se va desfasura pe parcursul a 5 săptămâni, după cum urmează: 30 martie, 6 aprilie, 13 aprilie, 20 aprilie si 29 aprilie, intre orele 18:30 si 20:30, in cabinetul Therapy Hub - str. Atanasie Simu nr. 6. Taxa de participare este sub forma de donație.",
       firstHeading: "",
-      secondParagraph:
-        "Întâlnirile se realizează săptămânal sub îndrumarea unui specialist (psiholog cu formare în terapie de grup) și există o temă stabilită în prealabil (depresie, anxietate, divorț, alcoolism, pierderea cuiva drag, singurătate, etc). De ce să apelezi la psihoterapie de grup? Simți că viața ta s-a schimbat și starea ta psihică se înrăutățește? Ei bine, în cadrul ședințelor de terapie de grup vei găsi un spațiu sigur și primitor. Apelând la un grup terapeutic, vei cunoaște persoane care trec prin probleme similare cu ale tale și veți putea împărtăși experiențele. Există indivizi care fac față unor situații mai bine decât ceilalți, iar exemplul lor oferă speranță și puterea de a merge mai departe. Cei care intră în terapia de grup se simt demoralizați și simt că nu au nimic valoros de dăruit celorlalți, dar când descoperă că pot fi de ajutor, se simt revigorați și stima lor de sine crește. Oamenii se pot ajuta unii pe alții ascultându-se, oferind confort si susținere, încurajându-se reciproc.",
+      secondParagraph: "Intalnirile grupului de suport au rol de alinare si vindecare, promoveaza acceptarea, reintegrarea si respectul durerii fiecarui participant in parte. Aici, participantii pot cunoaste si alte persoane care trec prin evenimente similare si vor putea intra in contact intr-un mediu sigur cu emotiile de neinteles din aceasta perioada, pentru ca sa poata trece prin experienta dureroasa a doliului mai usor, mai putin singuri. In grupul de sprijin, fiecare participant isi impartaseste propria experienta si este ascultat fara sa fie judecat.",
       secondHeading: "",
-      thirdParagraph:
-        "Participând la ședințele de grup, vei simți că aparții cuiva, te vei simți în siguranță și valoros. Uneori, la ședințele de psihoterapie de grup se leagă prietenii durabile și sincere. Apartenența la grup nu se referă numai la suportul și încurajările celorlalți, ci și la feedback-ul onest pe care îl primești și, în general, la toate celelate aspecte care contribuie la sentimentul că „celorlalți le pasă”.",
+      thirdParagraph:"Mediul pe care il promovam in intalnirile noastre este unul de confort emotional, confidentialitate si respect reciproc, un mediu care permite procesul de (auto)vindecare naturala in perioada de doliu si previne complicatiile posibile.",
     },
     price: "",
     duration: "",
@@ -518,6 +496,30 @@ export const ROUTES = {
   GROUP: "/servicii/psihoterapie-de-grup",
   ARTICLE: "/:articleID",
   NOT_FOUND: "*",
+};
+export const HomeAboutIntroListContent = {
+  
+  0: {
+    text: "Sindromul stresului post-traumatic",
+    angle: "0",
+    color: "tints.yellow",
+  },
+  1: { text: "Probleme de sexualitate", angle: "180", color: "accents.lime" },
+  2: { text: "Atacuri de panică", angle: "270", color: "tints.red" },
+  3: { text: "Divorț", angle: "90", color: "accents.army" },
+  4: { text: "Probleme în cuplu", angle: "180", color: "accents.yellow" },
+  5: { text: "Conflict părinte-adolescent", angle: "90", color: "accents.red" },
+  6: { text: "Lipsă de motivație/scop", angle: "270", color: "tints.lime" },
+  7: { text: "Frici / fobii", angle: "0", color: "accents.army" },
+  8: { text: " Anxietate", angle: "90", color: "neutral.dark" },
+  9: {
+    text: "Depresie",
+    angle: "180",
+    color: "accents.lime",
+  },
+  
+  10: { text: "Grup de suport",tooltip: "Data începerii unui nou grup: 30.03.2024", linkText:" (click mai multe detalii!)", link: ROUTES.GROUP, angle: "0", color: "accents.red" },
+
 };
 export const socialProofReviews = [
   {

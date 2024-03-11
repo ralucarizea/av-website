@@ -2,7 +2,7 @@ import {
   Box,
   Button,
   FormControl,
-  FormHelperText,
+  // FormHelperText,
   FormLabel,
   HStack,
   Input,
@@ -90,12 +90,12 @@ export default function ServicePage({ service }) {
 
   // const location = useLocation();
 
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, [service.id]);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [service.id]);
 
   const [state, handleSubmit] = useForm("xqkrajlj");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -282,7 +282,7 @@ export default function ServicePage({ service }) {
             }}
             textAlign={{ base: "center", md: "left" }}
           >
-            Ai vreo curiozitate?
+            {service.title === 'Psihoterapie de grup' ? "Vrei sa te inscrii in grupul de suport?" : "Ai vreo curiozitate?"}
           </Text>
           <VStack
             as="form"
@@ -311,8 +311,6 @@ export default function ServicePage({ service }) {
               field="email"
               errors={state.errors}
             />
-            {/* </Box> */}
-            {/* <Box> */}
             <StyledFormLabel htmlFor="email">E-mail</StyledFormLabel>
             <StyledInput
               isRequired
@@ -328,8 +326,6 @@ export default function ServicePage({ service }) {
               field="email"
               errors={state.errors}
             />
-            {/* </Box> */}
-            {/* <Box> */}
             <StyledFormLabel htmlFor="message">Mesaj</StyledFormLabel>
             <Textarea
               w="100%"
@@ -347,6 +343,8 @@ export default function ServicePage({ service }) {
               value={message}
               onChange={handleMessageChange}
               height={{ base: "24px", sm: "28px", lg: "36px" }}
+              placeholder={service.title === 'Psihoterapie de grup' ? "Da, vreau sa ma inscriu la atelierul din data 30 martie!" : ""}
+              _placeholder={{ color: "rgba(0,0,0, 0.3)", fontStyle:"italic"}}
             />
             <ValidationError
               prefix="Message"
