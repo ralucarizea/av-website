@@ -6,8 +6,8 @@ import {
   HomeAboutIntroListContent,
   ROUTES,
 } from "../../../assets/constants/data";
-import { MDfont, XXLfont, LGfont } from "../../../assets/styles/theme";
-import SidebarButton from "../../../components/SidebarButton";
+import { MDfont } from "../../../assets/styles/theme";
+// import SidebarButton from "../../../components/SidebarButton";
 import { Link } from "react-router-dom";
 
 function HomeAboutIntro() {
@@ -139,6 +139,7 @@ function HomeAboutIntro() {
                   color={HomeAboutIntroListContent[index].color}
                   tooltip={HomeAboutIntroListContent[index]?.tooltip}
                   link={HomeAboutIntroListContent[index]?.link}
+                  linkText={HomeAboutIntroListContent[index]?.linkText}
                 />
               ))}
             </VStack>
