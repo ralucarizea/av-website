@@ -174,12 +174,13 @@ export default function ServicePage({ service }) {
           {service.description?.zeroHeading ? (
             <StyledServicePageHeading
               margin={{
-                base: "6vw 0 2.75vw",
-                sm: "6vw 0 2.5vw",
-                md: "6vw 0 2.25vw",
-                lg: "4vw 0 1.75vw",
-                xl: "3vw 0 1.5vw",
+                base: "4vw 0 2.5vw",
+                sm: "3.5vw 0 2.2vw",
+                md: "3.2vw 0 2vw",
+                lg: "2.3vw 0 1.5vw",
+                xl: "1.8vw 0 1.25vw",
               }}
+              style={{width: "90%"}}
             >
               {service.description?.zeroHeading}
             </StyledServicePageHeading>
@@ -230,7 +231,6 @@ export default function ServicePage({ service }) {
             <></>
           )}
           <StyledServicePageText>
-            {}
             {typeof service.description?.secondParagraph === "function"
               ? service.description?.secondParagraph()
               : service.description?.secondParagraph}
@@ -254,6 +254,10 @@ export default function ServicePage({ service }) {
 
           <StyledServicePageText>
             {service.description?.thirdParagraph}
+          </StyledServicePageText>
+
+          <StyledServicePageText>
+            {service.description?.fourthParagraph ?? null}
           </StyledServicePageText>
         </VStack>
         <VStack
