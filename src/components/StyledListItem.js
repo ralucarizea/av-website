@@ -14,7 +14,7 @@ export default function StyledListItem(props) {
       defaultIsOpen
       bg="accents.red"
       color="#fff"
-      zIndex={"0 !important"}
+      style={{ zIndex: "0 !important"}}
     >
       <Flex
         width="fit-content"
