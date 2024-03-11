@@ -219,7 +219,7 @@ export default function Footer() {
                 B-dul Dimitrie Cantemir nr. 2, bl. P3, sc. 2, București 040241 (Therapy Hub)
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
-                Str. Atanasie Simu nr. 6 (Therapy Hub) 
+                Str. Atanasie Simu nr. 6, Bucuresti (Therapy Hub) 
               </FooterNavbarCategoryLink>
             </Box>
             <Box h="fit">
