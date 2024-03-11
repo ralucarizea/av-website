@@ -2,7 +2,6 @@ import React from "react";
 import { Flex, Icon, Text, Tooltip } from "@chakra-ui/react";
 import { HiPuzzle } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export default function StyledListItem(props) {
   const { text, angle, color, tooltip, link, linkText } = props;

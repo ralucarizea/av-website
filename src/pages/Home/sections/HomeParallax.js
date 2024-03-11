@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Show, Text } from "@chakra-ui/react";
+import { Box, Show } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 // import img1 from "../../../assets/images/cabinet1.jpg";
 // import img2 from "../../../assets/images/cabinet2.jpg";
