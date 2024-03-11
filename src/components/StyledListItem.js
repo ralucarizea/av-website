@@ -11,10 +11,11 @@ export default function StyledListItem(props) {
       label={tooltip}
       hasArrow
       placement="bottom-end"
-      closeDelay={500}
+      // closeDelay={500}
+      defaultIsOpen
       bg="accents.red"
       color="#fff"
-      zIndex={0}
+      zIndex={"0 !important"}
     >
       <Flex
         width="fit-content"
