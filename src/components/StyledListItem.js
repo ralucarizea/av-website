@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Flex, Icon, Text, Tooltip } from "@chakra-ui/react";
 import { HiPuzzle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function StyledListItem(props) {
+  
+    const [isOpen, setIsOpen] = useState(true); // Start with the tooltip open
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsOpen(false); // Close the tooltip after 300 ms
+      }, 300);
+  
+      return () => clearTimeout(timer); // Clear the timeout if the component unmounts
+    }, []); // Empty dependency array means this runs once on mount
+  
   const { text, angle, color, tooltip, link, linkText } = props;
   return tooltip ? (
     <Tooltip
@@ -11,7 +22,7 @@ export default function StyledListItem(props) {
       hasArrow
       placement="bottom-end"
       // closeDelay={500}
-      defaultIsOpen
+      isOpen={isOpen}
       bg="accents.red"
       color="#fff"
       style={{ zIndex: "0 !important"}}
