@@ -171,6 +171,21 @@ export default function ServicePage({ service }) {
             bgSize="cover"
             mb={{ base: "3vh", xs: "3vh", sm: "4vh", md: "5vh", lg: "4vh" }}
           />
+          {service.description?.zeroHeading ? (
+            <StyledServicePageHeading
+              margin={{
+                base: "6vw 0 2.75vw",
+                sm: "6vw 0 2.5vw",
+                md: "6vw 0 2.25vw",
+                lg: "4vw 0 1.75vw",
+                xl: "3vw 0 1.5vw",
+              }}
+            >
+              {service.description?.zeroHeading}
+            </StyledServicePageHeading>
+          ) : (
+            <></>
+          )}
           <StyledServicePageHighlightedParagraph
             padding={{
               base: "16px 20px",

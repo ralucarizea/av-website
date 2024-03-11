@@ -10,7 +10,8 @@ import FourthArticle from "../../pages/Blog/sections/FourthArticle";
 import FifthArticle from "../../pages/Blog/sections/FifthArticle";
 import SixthArticle from "../../pages/Blog/sections/SixthArticle";
 import PsychosexologySectionArticle from "../../pages/Services/sections/PsychosexologySectionArticle"
-import EvaluationSectionArticle from "../../pages/Services/sections/EvaluationSectionArticle"
+import EvaluationSectionArticle from "../../pages/Services/sections/EvaluationSectionArticle";
+import ParagraphSupportGroupList from "../../pages/Services/sections/ParagraphSupportGroupList";
 
 export const articles = [
   {
@@ -279,11 +280,13 @@ export const HomeServicesMenuData = {
     brief:
       "Grup de suport unde poti sa iti impartasesti experienta si sa experimentezi ca nu esti singur in trauma pe care o resimti (lucru care ajuta la vindecare si restructurarea intregi identitati).",
     description: {
-      highlightedParagraph:"Ai pierdut recent un om drag din viata ta? Dacă da, poți face parte, in intervalul martie-aprilie 2024, dintr-un nou grup de suport organizat in Bucuresti, facilitat de catre specialisti cu o experienta practica de peste 5 ani in asistarea persoanelor aflate in perioada de doliu: Adina Varodi si Elena Praz, consilieri psihologici si psihoterapeuti integrativi în incinta ”Therapy Hub Solution”. Acest atelier se va desfasura pe parcursul a 5 săptămâni, după cum urmează: 30 martie, 6 aprilie, 13 aprilie, 20 aprilie si 29 aprilie, intre orele 18:30 si 20:30, in cabinetul Therapy Hub - str. Atanasie Simu nr. 6. Taxa de participare este sub forma de donație.",
+      zeroHeading:"Grup de suport destinat pierderii cuiva drag în caz de deces, divorț, relație de lungă durată",
+      highlightedParagraph:"Ai pierdut recent un om drag din viata ta? Dacă da, poți face parte, in intervalul martie-aprilie 2024, dintr-un nou grup de suport organizat de mine in Bucuresti, in incinta cabine Acest atelier se va desfasura pe parcursul a 5 săptămâni, după cum urmează: 30 martie, 6 aprilie, 13 aprilie, 20 aprilie si 29 aprilie, intre orele 18:30 si 20:30, in cabinetul Therapy Hub - str. Atanasie Simu nr. 6. Taxa de participare este sub forma de donație.",
       firstHeading: "",
       secondParagraph: "Intalnirile grupului de suport au rol de alinare si vindecare, promoveaza acceptarea, reintegrarea si respectul durerii fiecarui participant in parte. Aici, participantii pot cunoaste si alte persoane care trec prin evenimente similare si vor putea intra in contact intr-un mediu sigur cu emotiile de neinteles din aceasta perioada, pentru ca sa poata trece prin experienta dureroasa a doliului mai usor, mai putin singuri. In grupul de sprijin, fiecare participant isi impartaseste propria experienta si este ascultat fara sa fie judecat.",
       secondHeading: "",
       thirdParagraph:"Mediul pe care il promovam in intalnirile noastre este unul de confort emotional, confidentialitate si respect reciproc, un mediu care permite procesul de (auto)vindecare naturala in perioada de doliu si previne complicatiile posibile.",
+      fourthParagraph: <ParagraphSupportGroupList />,
     },
     price: "",
     duration: "",
