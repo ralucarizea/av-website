@@ -96,6 +96,7 @@ function HomeAboutIntro() {
             h={{ md: "200px", lg: "250px", xl: "280px" }}
             alignItems="flex-start"
             ml="-10px"
+            style={{ zIndex: "0"}}
           >
             {Object.keys(HomeAboutIntroListContent).map((index) => (
               <StyledListItem
@@ -129,6 +130,8 @@ function HomeAboutIntro() {
               alignItems={"flex-start"}
               flexWrap={"wrap"}
               h={{ base: "fit-content", sm: "260px" }}
+              style={{ zIndex: "0"}}
+
               // border="1px solid green"
             >
               {Object.keys(HomeAboutIntroListContent).map((index) => (
