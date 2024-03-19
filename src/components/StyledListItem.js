@@ -10,7 +10,7 @@ export default function StyledListItem(props) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowTooltip(false);
-    }, 7000);
+    }, 6500);
 
     // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timer);

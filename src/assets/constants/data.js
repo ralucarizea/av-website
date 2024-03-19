@@ -521,7 +521,7 @@ export const HomeAboutIntroListContent = {
     color: "accents.lime",
   },
   
-  10: { text: "Grup de suport",tooltip: "Data începerii unui nou grup: 30.03.2024", linkText:" (click mai multe detalii!)", link: ROUTES.GROUP, angle: "0", color: "accents.red" },
+  10: { text: "Grup de suport",tooltip: "Înființarea unui nou grup de suport - în curând!", linkText:" (click mai multe detalii!)", link: ROUTES.GROUP, angle: "0", color: "accents.red" },
 
 };
 export const socialProofReviews = [
