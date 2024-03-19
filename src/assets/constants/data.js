@@ -282,6 +282,8 @@ export const HomeServicesMenuData = {
     description: {
       // zeroHeading:"Grup de suport destinat pierderii cuiva drag în caz de deces, divorț, relație de lungă durată",
       // highlightedParagraph:"Ai pierdut recent un om drag din viata ta? Dacă da, poți face parte, in intervalul martie-aprilie 2024, dintr-un nou grup de suport organizat de mine in incinta cabinetului Therapy Hub - str. Atanasie Simu nr. 6, Bucuresti. Acest atelier se va desfasura pe parcursul a 5 săptămâni, după cum urmează: 30 martie, 6 aprilie, 13 aprilie, 20 aprilie si 29 aprilie, intre orele 18:30 si 20:30. Taxa de participare este sub forma de donație.",
+      highlightedParagraph:"În curând, va avea loc înființarea unui nou grup de suport!",
+
       firstHeading: "",
       secondParagraph: "Intalnirile grupului de suport au rol de alinare si vindecare, promoveaza acceptarea, reintegrarea si respectul durerii fiecarui participant in parte. Aici, participantii pot cunoaste si alte persoane care trec prin evenimente similare si vor putea intra in contact intr-un mediu sigur cu emotiile de neinteles din aceasta perioada, pentru ca sa poata trece prin experienta dureroasa a doliului mai usor, mai putin singuri. In grupul de sprijin, fiecare participant isi impartaseste propria experienta si este ascultat fara sa fie judecat.",
       secondHeading: "",
