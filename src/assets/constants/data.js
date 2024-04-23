@@ -309,11 +309,14 @@ export const resumeData = {
     0: {
       // title: "Studii şi formare continuă",
       achievements: [
+        "Participare la Conferința Națională APAR - ediția XVIII, pe tema „ABORDARI INTERDISCIPLINARE”, avizată de Colegiul Psihologilor din România cu 24 credite profesionale (20-22 aprilie)",
+        "Curs „Formare de baza în adicții-ediția a VIII-a”, în cadrul Asociatiei PREVENTIS, curs acreditat de Colegiul Psihologilor cu 32 de credite, 40h de curs, aprilie 2024",
         "Cursant în cadrul Asociației SE Somatic Experiencing Romania, specializare în psihosomatică, metoda psiho-biologică dezvoltată de Dr. Peter Levine (în curs)",
         "Absolvent în cadrul Asociației de cercetare, consiliere și Psihoterapie Integrativă (ACCPI), specializare Hipnoterapie Ericksoniană, Institut European acreditat EAIP, COPSI ",
         "Curs de specializare continuă în ”Vindecarea rănilor materne transgeneraționale” - organizat de Florin Vancea, doctor în psihologie, psihoterapeut principal, formator în Psihoterapie Experienţială (24-27 februarie)",
         "Participare la Conferința Națională APAR - ediția XVIII, pe tema „TULBURĂRI NEUROCOGNITIVE”, conferință avizată de Colegiul Psihologilor din România cu 32 credite profesionale (20-23 aprilie)",
         "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, Sibiu (23-25 noiembrie)",
+        
       ],
       years: ["2023 - prezent"],
       bgColor: "rgb(255, 246, 245)",
