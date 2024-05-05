@@ -10,6 +10,7 @@ import {
   Textarea,
   VStack,
   useToast,
+  Flex,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import { PageTitle } from "../About/sections/AboutHero";
@@ -102,6 +103,8 @@ export default function ServicePage({ service }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [age, setAge] = useState(18);
+  const [phoneNo, setPhoneNo] = useState("+40");
 
   useEffect(() => {
     if (isSubmitted) {
@@ -117,6 +120,8 @@ export default function ServicePage({ service }) {
         setName("");
         setEmail("");
         setMessage("");
+        setAge(18);
+        setPhoneNo("+40");
         setIsSubmitted(false); // Reset the submitted state
       } else if (!state.submitting) {
         toast({
@@ -140,6 +145,8 @@ export default function ServicePage({ service }) {
   const handleNameChange = (e) => setName(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handleMessageChange = (e) => setMessage(e.target.value);
+  const handleAgeChange = (e) => setAge(e.target.value);
+  const handlePhoneNoChange = (e) => setPhoneNo(e.target.value);
 
   return (
     <VStack
@@ -180,7 +187,7 @@ export default function ServicePage({ service }) {
                 lg: "2.3vw 0 1.5vw",
                 xl: "1.8vw 0 1.25vw",
               }}
-              style={{width: "90%", fontSize: "calc(3px + 1em)"}}
+              style={{ width: "90%", fontSize: "calc(3px + 1em)" }}
             >
               {service.description?.zeroHeading}
             </StyledServicePageHeading>
@@ -269,7 +276,7 @@ export default function ServicePage({ service }) {
             sm: "45vw",
             md: "29vw",
             lg: "26vw",
-            xl: "21vw",
+            xl: "22vw",
           }}
           marginRight={{ base: "0", lg: "20px", xl: "100px" }}
           bgColor={"rgba(246, 225, 214, 0.35)"}
@@ -301,13 +308,15 @@ export default function ServicePage({ service }) {
             }}
             textAlign={{ base: "center", md: "left" }}
           >
-            {service.title === 'Psihoterapie de grup' ? "Vrei sa te inscrii in grupul de suport?" : "Ai vreo curiozitate?"}
+            {service.title === "Psihoterapie de grup"
+              ? "Vrei sa te inscrii in grupul de suport?"
+              : "Ai vreo curiozitate?"}
           </Text>
           <VStack
             as="form"
             h="100%"
             alignItems={"flex-start"}
-            w={{ base: "70%", lg: "80%", xl: "75%" }}
+            w={{ base: "70%", lg: "80%", xl: "80%" }}
             mb={{ base: "7vw", sm: "5vw", lg: "3vw" }}
             gap={3}
             // border="1px solid red"
@@ -345,6 +354,60 @@ export default function ServicePage({ service }) {
               field="email"
               errors={state.errors}
             />
+            {service.title === "Psihoterapie de grup" ? (
+              <Flex
+                justifyContent="space-between"
+                w="100%"
+                my="10px"
+                alignItems={"center"}
+              >
+                <Flex
+                  flexDirection={"column"}
+                  alignItems="flex-start"
+                  width={"60%"}
+                >
+                  <StyledFormLabel htmlFor="tel">Telefon</StyledFormLabel>
+                  <StyledInput
+                    isRequired
+                    id="tel"
+                    type="tel"
+                    name="tel"
+                    value={phoneNo}
+                    onChange={handlePhoneNoChange}
+                    height={{ base: "24px", sm: "28px", lg: "36px" }}
+                  />
+                  <ValidationError
+                    prefix="tel"
+                    field="tel"
+                    errors={state.errors}
+                  />
+                </Flex>
+                <Flex
+                  flexDirection={"column"}
+                  alignItems="flex-start"
+                  width={"25%"}
+                >
+                  <StyledFormLabel htmlFor="number" ml="4px">
+                    Varsta
+                  </StyledFormLabel>
+                  <StyledInput
+                    isRequired
+                    id="number"
+                    type="number"
+                    name="number"
+                    value={age}
+                    onChange={handleAgeChange}
+                    height={{ base: "24px", sm: "28px", lg: "36px" }}
+                  />
+                  <ValidationError
+                    prefix="number"
+                    field="number"
+                    errors={state.errors}
+                  />
+                </Flex>
+              </Flex>
+            ) : null}
+
             <StyledFormLabel htmlFor="message">Mesaj</StyledFormLabel>
             <Textarea
               w="100%"
@@ -362,8 +425,12 @@ export default function ServicePage({ service }) {
               value={message}
               onChange={handleMessageChange}
               height={{ base: "24px", sm: "28px", lg: "36px" }}
-              placeholder={service.title === 'Psihoterapie de grup' ? "Da, vreau sa ma inscriu la atelierul din data 30 martie!" : ""}
-              _placeholder={{ color: "rgba(0,0,0, 0.3)", fontStyle:"italic"}}
+              placeholder={
+                service.title === "Psihoterapie de grup"
+                  ? "Da, vreau sa ma inscriu la atelierul din data 30 martie!"
+                  : ""
+              }
+              _placeholder={{ color: "rgba(0,0,0, 0.3)", fontStyle: "italic" }}
             />
             <ValidationError
               prefix="Message"
