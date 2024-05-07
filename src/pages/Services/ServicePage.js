@@ -308,7 +308,7 @@ export default function ServicePage({ service }) {
             }}
             textAlign={{ base: "center", md: "left" }}
           >
-            {service.title === "Psihoterapie de grup"
+            {service.title === "Grup dependente/codependente"
               ? "Vrei sa te inscrii in grupul de suport?"
               : "Ai vreo curiozitate?"}
           </Text>
@@ -354,7 +354,7 @@ export default function ServicePage({ service }) {
               field="email"
               errors={state.errors}
             />
-            {service.title === "Psihoterapie de grup" ? (
+            {service.title === "Grup dependente/codependente" ? (
               <Flex
                 justifyContent="space-between"
                 w="100%"
@@ -364,7 +364,7 @@ export default function ServicePage({ service }) {
                 <Flex
                   flexDirection={"column"}
                   alignItems="flex-start"
-                  width={"60%"}
+                  width={"70%"}
                 >
                   <StyledFormLabel htmlFor="tel">Telefon</StyledFormLabel>
                   <StyledInput
@@ -427,7 +427,7 @@ export default function ServicePage({ service }) {
               height={{ base: "24px", sm: "28px", lg: "36px" }}
               placeholder={
                 service.title === "Psihoterapie de grup"
-                  ? "Da, vreau sa ma inscriu la atelierul din data 30 martie!"
+                  ? "Da, as dori sa ma inscriu!"
                   : ""
               }
               _placeholder={{ color: "rgba(0,0,0, 0.3)", fontStyle: "italic" }}
