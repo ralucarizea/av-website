@@ -160,7 +160,7 @@ function HomeParallax() {
           minHeight="210px"
           minWidth="140px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179643/imag-cabinet11_vrfttl.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1720260534/IMG20240626085233_jwcnep.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
@@ -199,7 +199,7 @@ function HomeParallax() {
           }}
           minHeight="200px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1708179639/imag_cabinet22_mecglg.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1720260533/WhatsApp_Image_2024-06-25_at_12.33.51_31c72a20_u2jtsi.jpg)"
           }
           bgSize={"cover"}
           bgPosition={"center"}

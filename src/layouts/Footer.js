@@ -211,16 +211,14 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>LOCAȚIE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-                Str P-ta Alba Iulia, Nr 8, Bl I7, Sc 1 (după
-                restaurantul Arogant), et 2, ap 4 (usa alba, in stânga cum ieși
-                din lift de pe palier), interf 04.
+              Str.Ferigii nr.1, bl.19, sc.A, ap.1, Brasov
               </FooterNavbarCategoryLink>
-              <FooterNavbarCategoryLink>
+              {/* <FooterNavbarCategoryLink>
                 B-dul Dimitrie Cantemir nr. 2, bl. P3, sc. 2, București 040241 (Therapy Hub)
               </FooterNavbarCategoryLink>
               <FooterNavbarCategoryLink>
                 Str. Atanasie Simu nr. 6, Bucuresti (Therapy Hub) 
-              </FooterNavbarCategoryLink>
+              </FooterNavbarCategoryLink> */}
             </Box>
             <Box h="fit">
               <FooterNavbarCategoryTag>PROGRAM</FooterNavbarCategoryTag>
