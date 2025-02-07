@@ -199,7 +199,7 @@ function HomeParallax() {
           }}
           minHeight="200px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1720260533/WhatsApp_Image_2024-06-25_at_12.33.51_31c72a20_u2jtsi.jpg)"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1738943974/Screenshot_2025-02-07_175825_ebhzpw.png"
           }
           bgSize={"cover"}
           bgPosition={"center"}
