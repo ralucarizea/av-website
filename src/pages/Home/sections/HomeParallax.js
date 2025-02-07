@@ -197,9 +197,9 @@ function HomeParallax() {
             lg: "26vw",
             xl: "20vw",
           }}
-          minHeight="200px"
+          minHeight="250px"
           bgImage={
-            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1738944982/Screenshot_2025-02-07_175825_1_gl4x16.jpg"
+            "url(https://res.cloudinary.com/dd82hyvds/image/upload/v1738945689/Screenshot_2025-02-07_175825_1_hxxkns.png)"
           }
           bgSize={"cover"}
           bgPosition={"center"}
