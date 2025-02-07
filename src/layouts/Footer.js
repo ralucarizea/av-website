@@ -211,11 +211,16 @@ export default function Footer() {
             <Box h="fit">
               <FooterNavbarCategoryTag>LOCAȚIE</FooterNavbarCategoryTag>
               <FooterNavbarCategoryLink>
-              Str.Ferigii nr.1, bl.19, sc.A, ap.1, Brasov
+              Str. Uranus nr.2, Calea București, Brasov (in incinta clinicii Santech Medical) 
+              </FooterNavbarCategoryLink>
+              <FooterNavbarCategoryLink>
+              Str. Anastase Simu nr. 6, sc. A (partea dreapta), et. 2, ap. 5 (in incinta ”Therapy Hub”)
               </FooterNavbarCategoryLink>
               {/* <FooterNavbarCategoryLink>
                 B-dul Dimitrie Cantemir nr. 2, bl. P3, sc. 2, București 040241 (Therapy Hub)
               </FooterNavbarCategoryLink>
+              
+              Buc.: Str. Anastase Simu nr. 6, sc. A (partea dreapta), etaj 2, ap. 5 in incinta ”Therapy Hub”
               <FooterNavbarCategoryLink>
                 Str. Atanasie Simu nr. 6, Bucuresti (Therapy Hub) 
               </FooterNavbarCategoryLink> */}
