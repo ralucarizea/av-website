@@ -309,7 +309,19 @@ export const performanceCounterData = {
 };
 export const resumeData = {
   certifications: {
-    0: {
+    // 0: {
+    //   // title: "Experiență profesională",
+    //   achievements: [
+    //     "",
+    //     "",
+    //     "",
+    //   ],
+    //   years: ["2024 - prezent"],
+    //   bgColor: "rgb(251, 250, 255)",
+    //   color: "rgb(80, 47, 111)",
+    //   icon: "",
+    // },
+    1: {
       // title: "Studii şi formare continuă",
       achievements: [
         "Participare la Conferința Națională APAR - ediția XVIII, pe tema „ABORDARI INTERDISCIPLINARE”, avizată de Colegiul Psihologilor din România cu 24 credite profesionale (20-22 aprilie)",
@@ -321,12 +333,12 @@ export const resumeData = {
         "Participare la Conferința Națională de Psihiatrie și Psihologie medico-legală, Sibiu (23-25 noiembrie)",
         
       ],
-      years: ["2023 - prezent"],
+      years: ["2023 - 2024"],
       bgColor: "rgb(255, 246, 245)",
       color: "rgb(208, 83, 64)",
       icon: "",
     },
-    1: {
+    2: {
       // title: "Experiență profesională",
       achievements: [
         "Curs de specializare continuă în „Perspectiva traumei”- tabără rezidențială - Asociația Psihologilor Atestați din România (APAR) (25 - 28 august)",
@@ -338,7 +350,7 @@ export const resumeData = {
       color: "rgb(80, 47, 111)",
       icon: "",
     },
-    2: {
+    3: {
       // title: "Workshop-uri",
       achievements: [
         "Participare la Conferința Națională internațională APAR editia XVI pe tematica „RESTRUCTURĂRI PSIHOLOGICE ÎN CRIZĂ”, conferință avizata de Colegiul Psihologilor din România cu 19 credite (12 - 16 mai)",
@@ -352,7 +364,7 @@ export const resumeData = {
       color: "rgb(38, 126, 93)",
       icon: "",
     },
-    3: {
+    4: {
       // title: "Workshop-uri",
       achievements: [
         "Curs specializare 6 luni intensiv „Curs terapie sistemica” - Curs organizat de Asociația de Psihoterapie Integrativă și Psihologie clinică din Iași, Formator în psihoterapie sistemică de familie și cuplu, Psiholog clinician principal - Cristian Petrescu (octombrie 2020 - martie 2021)",
@@ -366,7 +378,7 @@ export const resumeData = {
       color: "rgb(208, 83, 64)",
       icon: "",
     },
-    4: {
+    5: {
       // title: "Workshop-uri",
       achievements: [
         "Curs specializare - „Consilier pentru dezvoltare personală” - Organizat de Confident Business Training SRL (22 - 28 ianuarie)",
@@ -378,7 +390,7 @@ export const resumeData = {
       color: "rgb(80, 47, 111)",
       icon: "",
     },
-    5: {
+    6: {
       // title: "Workshop-uri",
       achievements: [
         "Curs de formare continuă in „Psihoterapia Transgenerațională” - Tabără rezidențială - Asociația Română de Psihoterapie Integrativă, 19 septembrie 2018",
@@ -389,7 +401,7 @@ export const resumeData = {
       color: "rgb(38, 126, 93)",
       icon: "",
     },
-    6: {
+    7: {
       // title: "Workshop-uri",
       achievements: [
         "Facultatea de Psihologie şi Sociologie, Universitatea Spiru Haret, Bucureşti.",
