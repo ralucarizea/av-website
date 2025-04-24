@@ -312,7 +312,7 @@ export const resumeData = {
     0: {
       // title: "Experiență profesională",
       achievements: [
-        "Neuropsy Training Genius - curs de specialitate in care se folosesc principii validate din neuroștiință & epigenetică pentru a scăpa de blocaje și obține succes și sănătate optimă, restabilind echilibrul dintre minte și inimă; Organizator: dna.dr.Gina Chiriat, Presedinte in cadrul Asociatiei Romane de Psihoterapie Integrativa, program unic in Romania.",
+        "Neuropsy Training Genius - curs de specialitate in care se folosesc principii validate din neuroștiință & epigenetică pentru a scăpa de blocaje și obține succes și sănătate optimă, restabilind echilibrul dintre minte și inimă;    Organizat de catre Dna.Dr. Gina Chiriat, Presedinte in cadrul Asociatiei Romane de Psihoterapie Integrativa, program unic in Romania.",
         "Retreat de meditatie in tacere si curatare Hridaya Yoga, organizat de Hidraya Yoga Kamala Center",
         // "",
       ],
